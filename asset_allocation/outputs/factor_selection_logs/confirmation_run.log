@@ -1,0 +1,13 @@
+2026-10-11T10:19:35.600774+00:00 confirmation fitting Ridge__ALL n=20
+2026-10-11T10:19:36.413299+00:00 confirmation fitting Ridge__IC n=15
+2026-10-11T10:19:37.082417+00:00 confirmation fitting Ridge__HAC n=15
+2026-10-11T10:19:37.781336+00:00 confirmation fitting Ridge__EN n=10
+2026-10-11T10:19:38.324545+00:00 confirmation fitting Ridge__IC_match_HAC n=15
+2026-10-11T10:19:38.996452+00:00 confirmation fitting Ridge__IC_match_EN n=10
+2026-10-11T10:19:39.521221+00:00 confirmation fitting HGB__ALL n=20
+2026-10-11T10:19:40.712643+00:00 confirmation fitting HGB__IC n=15
+2026-10-11T10:19:41.711178+00:00 confirmation fitting HGB__HAC n=15
+2026-10-11T10:19:42.692571+00:00 confirmation fitting HGB__EN n=10
+2026-10-11T10:19:43.504784+00:00 confirmation fitting HGB__IC_match_HAC n=15
+2026-10-11T10:19:44.518878+00:00 confirmation fitting HGB__IC_match_EN n=10
+confirmation completed: asset_allocation/outputs/factor_selection_study

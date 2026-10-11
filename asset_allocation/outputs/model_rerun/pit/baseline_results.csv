@@ -1,0 +1,9 @@
+metric,value
+sampled_rows,110000.0
+sampled_train_rows,88000.0
+sampled_valid_rows,22000.0
+random_valid_pearson,0.0925492148446432
+random_valid_rmse,0.0474218228675371
+full_panel_gross_proxy_sharpe,24.13673390493941
+full_panel_mean_forward_5d_spread,0.01585781136754439
+backtest_n_dates,1036.0

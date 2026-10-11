@@ -1,0 +1,26 @@
+{
+  "protocol_sha256": "593a54c0a7e92473a51e15804aa4f3df63082f638b97fde58520c0a8f335d9fb",
+  "code_sha256": {
+    "factor_selection_study.py": "48107978dfd892b0c6fd28055b62fab964f75a3f1121e14dd12a5112b51c8e47",
+    "test_factor_selection_study.py": "4797761bd9f6ba3e70f36570424a6619426ef8621f7669ece46cc2f082a1b68c",
+    "compare_models.py": "e04f0d1e71c76ea787d356fc3b6877bf2babe2aacbcf3d46a56e585793f9d084"
+  },
+  "inputs_sha256": {
+    "pit_panel": "57447e720d1a432eba86be9dba06678dca9c062f3f2ed4def86bc0e6dc82a104",
+    "timing_manifest": "dbaa77a2c22ff2567759234d9383e20d3fd9ead39a2e9240b50b87d771ddb09d"
+  },
+  "threads_environment": {
+    "OMP_NUM_THREADS": "4",
+    "OPENBLAS_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1"
+  },
+  "selector_candidate_count": 10,
+  "inner_fold_count": 4,
+  "expected_protocol_sha256": "593a54c0a7e92473a51e15804aa4f3df63082f638b97fde58520c0a8f335d9fb",
+  "expected_main_sha256": "48107978dfd892b0c6fd28055b62fab964f75a3f1121e14dd12a5112b51c8e47",
+  "expected_test_sha256": "4797761bd9f6ba3e70f36570424a6619426ef8621f7669ece46cc2f082a1b68c",
+  "protocol_match": true,
+  "main_match": true,
+  "test_match": true,
+  "status": "passed"
+}

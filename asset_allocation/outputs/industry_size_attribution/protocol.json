@@ -1,0 +1,529 @@
+{
+  "frozen_at_utc": "2026-10-11T10:41:51.019133+00:00",
+  "protocol_sha256": "f5b715f8065db64430ae4380e67a1208b63eff5ff8a0e9f60924cee6fa34e963",
+  "protocol": {
+    "format_version": 1,
+    "scope": "Post-inspection historical diagnostics on the existing 2023/2024 temporal holdouts, not an independent blind test or a new model-selection round. Partial RankIC measures residual rank association, not causal attribution or neutralized portfolio returns. Gross five-day spreads exclude trading implementation and costs.",
+    "models": [
+      "Ridge",
+      "HGB"
+    ],
+    "control_kinds": [
+      "industry",
+      "size",
+      "industry_size"
+    ],
+    "model_parameters": {
+      "Ridge": {
+        "memory": null,
+        "steps": [
+          [
+            "preprocessing",
+            {
+              "class": "sklearn.compose._column_transformer.ColumnTransformer",
+              "params": {
+                "n_jobs": null,
+                "remainder": "drop",
+                "sparse_threshold": 0,
+                "transformer_weights": null,
+                "transformers": [
+                  [
+                    "industry",
+                    {
+                      "class": "sklearn.preprocessing._encoders.OneHotEncoder",
+                      "params": {
+                        "categories": "auto",
+                        "drop": null,
+                        "dtype": "float64",
+                        "feature_name_combiner": "concat",
+                        "handle_unknown": "error",
+                        "max_categories": null,
+                        "min_frequency": null,
+                        "sparse_output": false
+                      }
+                    },
+                    [
+                      "industry"
+                    ]
+                  ],
+                  [
+                    "size",
+                    "passthrough",
+                    [
+                      "log_market_cap"
+                    ]
+                  ]
+                ],
+                "verbose": false,
+                "verbose_feature_names_out": true
+              }
+            }
+          ],
+          [
+            "scaler",
+            {
+              "class": "sklearn.preprocessing._data.StandardScaler",
+              "params": {
+                "copy": true,
+                "with_mean": true,
+                "with_std": true
+              }
+            }
+          ],
+          [
+            "model",
+            {
+              "class": "sklearn.linear_model._ridge.Ridge",
+              "params": {
+                "alpha": 100,
+                "copy_X": true,
+                "fit_intercept": true,
+                "max_iter": null,
+                "positive": false,
+                "random_state": null,
+                "solver": "auto",
+                "tol": 0.0001
+              }
+            }
+          ]
+        ],
+        "transform_input": null,
+        "verbose": false,
+        "preprocessing": {
+          "class": "sklearn.compose._column_transformer.ColumnTransformer",
+          "params": {
+            "n_jobs": null,
+            "remainder": "drop",
+            "sparse_threshold": 0,
+            "transformer_weights": null,
+            "transformers": [
+              [
+                "industry",
+                {
+                  "class": "sklearn.preprocessing._encoders.OneHotEncoder",
+                  "params": {
+                    "categories": "auto",
+                    "drop": null,
+                    "dtype": "float64",
+                    "feature_name_combiner": "concat",
+                    "handle_unknown": "error",
+                    "max_categories": null,
+                    "min_frequency": null,
+                    "sparse_output": false
+                  }
+                },
+                [
+                  "industry"
+                ]
+              ],
+              [
+                "size",
+                "passthrough",
+                [
+                  "log_market_cap"
+                ]
+              ]
+            ],
+            "verbose": false,
+            "verbose_feature_names_out": true
+          }
+        },
+        "scaler": {
+          "class": "sklearn.preprocessing._data.StandardScaler",
+          "params": {
+            "copy": true,
+            "with_mean": true,
+            "with_std": true
+          }
+        },
+        "model": {
+          "class": "sklearn.linear_model._ridge.Ridge",
+          "params": {
+            "alpha": 100,
+            "copy_X": true,
+            "fit_intercept": true,
+            "max_iter": null,
+            "positive": false,
+            "random_state": null,
+            "solver": "auto",
+            "tol": 0.0001
+          }
+        },
+        "preprocessing__n_jobs": null,
+        "preprocessing__remainder": "drop",
+        "preprocessing__sparse_threshold": 0,
+        "preprocessing__transformer_weights": null,
+        "preprocessing__transformers": [
+          [
+            "industry",
+            {
+              "class": "sklearn.preprocessing._encoders.OneHotEncoder",
+              "params": {
+                "categories": "auto",
+                "drop": null,
+                "dtype": "float64",
+                "feature_name_combiner": "concat",
+                "handle_unknown": "error",
+                "max_categories": null,
+                "min_frequency": null,
+                "sparse_output": false
+              }
+            },
+            [
+              "industry"
+            ]
+          ],
+          [
+            "size",
+            "passthrough",
+            [
+              "log_market_cap"
+            ]
+          ]
+        ],
+        "preprocessing__verbose": false,
+        "preprocessing__verbose_feature_names_out": true,
+        "preprocessing__industry": {
+          "class": "sklearn.preprocessing._encoders.OneHotEncoder",
+          "params": {
+            "categories": "auto",
+            "drop": null,
+            "dtype": "float64",
+            "feature_name_combiner": "concat",
+            "handle_unknown": "error",
+            "max_categories": null,
+            "min_frequency": null,
+            "sparse_output": false
+          }
+        },
+        "preprocessing__size": "passthrough",
+        "preprocessing__industry__categories": "auto",
+        "preprocessing__industry__drop": null,
+        "preprocessing__industry__dtype": "float64",
+        "preprocessing__industry__feature_name_combiner": "concat",
+        "preprocessing__industry__handle_unknown": "error",
+        "preprocessing__industry__max_categories": null,
+        "preprocessing__industry__min_frequency": null,
+        "preprocessing__industry__sparse_output": false,
+        "scaler__copy": true,
+        "scaler__with_mean": true,
+        "scaler__with_std": true,
+        "model__alpha": 100,
+        "model__copy_X": true,
+        "model__fit_intercept": true,
+        "model__max_iter": null,
+        "model__positive": false,
+        "model__random_state": null,
+        "model__solver": "auto",
+        "model__tol": 0.0001
+      },
+      "HGB": {
+        "memory": null,
+        "steps": [
+          [
+            "preprocessing",
+            {
+              "class": "sklearn.compose._column_transformer.ColumnTransformer",
+              "params": {
+                "n_jobs": null,
+                "remainder": "drop",
+                "sparse_threshold": 0,
+                "transformer_weights": null,
+                "transformers": [
+                  [
+                    "industry",
+                    {
+                      "class": "sklearn.preprocessing._encoders.OneHotEncoder",
+                      "params": {
+                        "categories": "auto",
+                        "drop": null,
+                        "dtype": "float64",
+                        "feature_name_combiner": "concat",
+                        "handle_unknown": "error",
+                        "max_categories": null,
+                        "min_frequency": null,
+                        "sparse_output": false
+                      }
+                    },
+                    [
+                      "industry"
+                    ]
+                  ],
+                  [
+                    "size",
+                    "passthrough",
+                    [
+                      "log_market_cap"
+                    ]
+                  ]
+                ],
+                "verbose": false,
+                "verbose_feature_names_out": true
+              }
+            }
+          ],
+          [
+            "model",
+            {
+              "class": "sklearn.ensemble._hist_gradient_boosting.gradient_boosting.HistGradientBoostingRegressor",
+              "params": {
+                "categorical_features": "from_dtype",
+                "early_stopping": false,
+                "interaction_cst": null,
+                "l2_regularization": 0.2,
+                "learning_rate": 0.065,
+                "loss": "squared_error",
+                "max_bins": 255,
+                "max_depth": null,
+                "max_features": 1.0,
+                "max_iter": 55,
+                "max_leaf_nodes": 17,
+                "min_samples_leaf": 20,
+                "monotonic_cst": null,
+                "n_iter_no_change": 10,
+                "quantile": null,
+                "random_state": 1021,
+                "scoring": "loss",
+                "tol": 1e-07,
+                "validation_fraction": 0.1,
+                "verbose": 0,
+                "warm_start": false
+              }
+            }
+          ]
+        ],
+        "transform_input": null,
+        "verbose": false,
+        "preprocessing": {
+          "class": "sklearn.compose._column_transformer.ColumnTransformer",
+          "params": {
+            "n_jobs": null,
+            "remainder": "drop",
+            "sparse_threshold": 0,
+            "transformer_weights": null,
+            "transformers": [
+              [
+                "industry",
+                {
+                  "class": "sklearn.preprocessing._encoders.OneHotEncoder",
+                  "params": {
+                    "categories": "auto",
+                    "drop": null,
+                    "dtype": "float64",
+                    "feature_name_combiner": "concat",
+                    "handle_unknown": "error",
+                    "max_categories": null,
+                    "min_frequency": null,
+                    "sparse_output": false
+                  }
+                },
+                [
+                  "industry"
+                ]
+              ],
+              [
+                "size",
+                "passthrough",
+                [
+                  "log_market_cap"
+                ]
+              ]
+            ],
+            "verbose": false,
+            "verbose_feature_names_out": true
+          }
+        },
+        "model": {
+          "class": "sklearn.ensemble._hist_gradient_boosting.gradient_boosting.HistGradientBoostingRegressor",
+          "params": {
+            "categorical_features": "from_dtype",
+            "early_stopping": false,
+            "interaction_cst": null,
+            "l2_regularization": 0.2,
+            "learning_rate": 0.065,
+            "loss": "squared_error",
+            "max_bins": 255,
+            "max_depth": null,
+            "max_features": 1.0,
+            "max_iter": 55,
+            "max_leaf_nodes": 17,
+            "min_samples_leaf": 20,
+            "monotonic_cst": null,
+            "n_iter_no_change": 10,
+            "quantile": null,
+            "random_state": 1021,
+            "scoring": "loss",
+            "tol": 1e-07,
+            "validation_fraction": 0.1,
+            "verbose": 0,
+            "warm_start": false
+          }
+        },
+        "preprocessing__n_jobs": null,
+        "preprocessing__remainder": "drop",
+        "preprocessing__sparse_threshold": 0,
+        "preprocessing__transformer_weights": null,
+        "preprocessing__transformers": [
+          [
+            "industry",
+            {
+              "class": "sklearn.preprocessing._encoders.OneHotEncoder",
+              "params": {
+                "categories": "auto",
+                "drop": null,
+                "dtype": "float64",
+                "feature_name_combiner": "concat",
+                "handle_unknown": "error",
+                "max_categories": null,
+                "min_frequency": null,
+                "sparse_output": false
+              }
+            },
+            [
+              "industry"
+            ]
+          ],
+          [
+            "size",
+            "passthrough",
+            [
+              "log_market_cap"
+            ]
+          ]
+        ],
+        "preprocessing__verbose": false,
+        "preprocessing__verbose_feature_names_out": true,
+        "preprocessing__industry": {
+          "class": "sklearn.preprocessing._encoders.OneHotEncoder",
+          "params": {
+            "categories": "auto",
+            "drop": null,
+            "dtype": "float64",
+            "feature_name_combiner": "concat",
+            "handle_unknown": "error",
+            "max_categories": null,
+            "min_frequency": null,
+            "sparse_output": false
+          }
+        },
+        "preprocessing__size": "passthrough",
+        "preprocessing__industry__categories": "auto",
+        "preprocessing__industry__drop": null,
+        "preprocessing__industry__dtype": "float64",
+        "preprocessing__industry__feature_name_combiner": "concat",
+        "preprocessing__industry__handle_unknown": "error",
+        "preprocessing__industry__max_categories": null,
+        "preprocessing__industry__min_frequency": null,
+        "preprocessing__industry__sparse_output": false,
+        "model__categorical_features": "from_dtype",
+        "model__early_stopping": false,
+        "model__interaction_cst": null,
+        "model__l2_regularization": 0.2,
+        "model__learning_rate": 0.065,
+        "model__loss": "squared_error",
+        "model__max_bins": 255,
+        "model__max_depth": null,
+        "model__max_features": 1.0,
+        "model__max_iter": 55,
+        "model__max_leaf_nodes": 17,
+        "model__min_samples_leaf": 20,
+        "model__monotonic_cst": null,
+        "model__n_iter_no_change": 10,
+        "model__quantile": null,
+        "model__random_state": 1021,
+        "model__scoring": "loss",
+        "model__tol": 1e-07,
+        "model__validation_fraction": 0.1,
+        "model__verbose": 0,
+        "model__warm_start": false
+      }
+    },
+    "parameters_sha256": "3d208edf45e46393a9bb433198feb6cdd8ccdaba8a37d5b4dbcafe8bddb36751",
+    "code_sha256": {
+      "industry_size_attribution.py": "00649cb49216c50cb822284e404b9ddfdda2ac59c52174abd1a07eb02c213566",
+      "compare_models.py": "e04f0d1e71c76ea787d356fc3b6877bf2babe2aacbcf3d46a56e585793f9d084",
+      "test_industry_size_attribution.py": "f678de5048b819f3cb5c8bfe3940daa89027a470cdaae36c2b68b9673f3ac091"
+    },
+    "input_paths": {
+      "pit_panel": "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/asset_allocation/outputs/factor_timing/pit_research_panel.csv.gz",
+      "risk": "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/Lab404-CUFEL-E/03-资产配置策略方向/Alpha_Forensics_Candidate_v1/data/risk_exposure.csv.gz",
+      "timing_manifest": "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/asset_allocation/outputs/factor_timing/run_manifest.json",
+      "benchmark_protocol": "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/asset_allocation/outputs/model_benchmark/protocol.json",
+      "benchmark_validation_manifest": "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/asset_allocation/outputs/model_benchmark/validation/run_manifest.json",
+      "benchmark_validation_split_manifest.json": "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/asset_allocation/outputs/model_benchmark/validation/split_manifest.json",
+      "benchmark_validation_Ridge_predictions.csv.gz": "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/asset_allocation/outputs/model_benchmark/validation/Ridge_predictions.csv.gz",
+      "benchmark_validation_Ridge_fit_metadata.json": "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/asset_allocation/outputs/model_benchmark/validation/Ridge_fit_metadata.json",
+      "benchmark_validation_HGB_predictions.csv.gz": "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/asset_allocation/outputs/model_benchmark/validation/HGB_predictions.csv.gz",
+      "benchmark_validation_HGB_fit_metadata.json": "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/asset_allocation/outputs/model_benchmark/validation/HGB_fit_metadata.json",
+      "benchmark_confirmation_manifest": "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/asset_allocation/outputs/model_benchmark/confirmation/run_manifest.json",
+      "benchmark_confirmation_split_manifest.json": "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/asset_allocation/outputs/model_benchmark/confirmation/split_manifest.json",
+      "benchmark_confirmation_Ridge_predictions.csv.gz": "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/asset_allocation/outputs/model_benchmark/confirmation/Ridge_predictions.csv.gz",
+      "benchmark_confirmation_Ridge_fit_metadata.json": "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/asset_allocation/outputs/model_benchmark/confirmation/Ridge_fit_metadata.json",
+      "benchmark_confirmation_HGB_predictions.csv.gz": "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/asset_allocation/outputs/model_benchmark/confirmation/HGB_predictions.csv.gz",
+      "benchmark_confirmation_HGB_fit_metadata.json": "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/asset_allocation/outputs/model_benchmark/confirmation/HGB_fit_metadata.json"
+    },
+    "inputs_sha256": {
+      "pit_panel": "57447e720d1a432eba86be9dba06678dca9c062f3f2ed4def86bc0e6dc82a104",
+      "risk": "82c04f8652953941fb696cfce5a53f6cb8a1454b7be432e3d8847e778e552357",
+      "timing_manifest": "dbaa77a2c22ff2567759234d9383e20d3fd9ead39a2e9240b50b87d771ddb09d",
+      "benchmark_protocol": "e7558489b53c26c2b4fdf918ddc325c4eedc114ff1757988849f11472919f0b9",
+      "benchmark_validation_manifest": "5f15e7e0f5bf8073bd285aac2bf249417bb386e059ffa14dcac104c24c4c92c2",
+      "benchmark_validation_split_manifest.json": "e52a61d32a70e2efc9c555995db2f8b1d72114dc74b53057c76897c9a348d68e",
+      "benchmark_validation_Ridge_predictions.csv.gz": "f32024d7c601563012fa2cac8034ac355401f98cad7b6acc400e551c3967940b",
+      "benchmark_validation_Ridge_fit_metadata.json": "113d6154fcd73be6e4a75724d03e5c8bfaad86d6da315f9754f4aabb6ddca324",
+      "benchmark_validation_HGB_predictions.csv.gz": "9351589ea3d3c93b8faa45e06b73f1759e94f9f830f851d8e7dad44864ca1e38",
+      "benchmark_validation_HGB_fit_metadata.json": "a7a238cb3e45930e6f3d7c3a3058bc58f4d9eac1ec65f7ddd8df636900360c5e",
+      "benchmark_confirmation_manifest": "597ea1dda99dd3d957f01ad3c9b097d6e22237d266d95498e03008dfea36c434",
+      "benchmark_confirmation_split_manifest.json": "6cc37ab56a747d15666335ab4505998089dc2f7ceaaa1fe9b5fa558f41246016",
+      "benchmark_confirmation_Ridge_predictions.csv.gz": "88d6ef8183cbf17e088c47b51bc28ac8b6ff602f30ad5f65ef7e5ef5affbb25b",
+      "benchmark_confirmation_Ridge_fit_metadata.json": "571b1e003d8b9a3772f902e322e80271c254f15940e9d435f608265e1cacd80b",
+      "benchmark_confirmation_HGB_predictions.csv.gz": "7f00e4ef39e60e361df3c201dbeb9913ed25aaa58d84ede18551ab23a3a52807",
+      "benchmark_confirmation_HGB_fit_metadata.json": "aebbf60766972abf5de0f0b8b2e40e471cd65038f139b41f7d3c30669145a0a8"
+    },
+    "benchmark_protocol_sha256": "e44b55540ca16258df890b9291182637a6776a70b872f823c8abc4a19e0f7b99",
+    "versions": {
+      "python": "3.12.13",
+      "numpy": "2.5.4",
+      "pandas": "2.3.3",
+      "scikit-learn": "1.9.1"
+    },
+    "threads_environment": {
+      "OMP_NUM_THREADS": "4",
+      "OPENBLAS_NUM_THREADS": "1",
+      "MKL_NUM_THREADS": "1"
+    },
+    "risk_timing": "Assume risk_exposure dated t is known after close t; independent publication dates are unavailable",
+    "risk_merge": "Exact date/asset_id one-to-one left merge; missing industry or nonpositive/nonfinite market_cap is an error",
+    "risk_fields": [
+      "industry",
+      "market_cap"
+    ],
+    "size_transform": "natural log(market_cap); never use size_z",
+    "splits": "Identical compare_models.temporal_split annual validation 2023 and confirmation 2024; mature training labels only",
+    "all20": "Reuse archived Ridge/HGB predictions after manifest, key and label checks; no retraining or new winner selection",
+    "labels_max_absolute_tolerance": 1e-14,
+    "baseline_fit": "Full training-only industry one-hot encoding (unknown=error) plus log market_cap; Ridge standardizes whole design; HGB unscaled",
+    "exposure": "Daily score-vs-logcap Spearman; score OLS R2 for industry/size/both; exact fractional-tie 10% tails",
+    "partial_rank_ic": "Average-rank score and return once; project each on intercept, reduced industry dummies and/or standardized average rank logcap; Pearson residual correlation without reranking",
+    "projection_scope": "Contemporaneous return projections are ex-post evaluation only, never inputs to fitting or signals",
+    "zero_residual": {
+      "relative_tolerance": 1e-10,
+      "scale": "max(1, norm of centered original average ranks)",
+      "behavior": "Undefined NaN with reason; retain date and valid counts"
+    },
+    "paired_partial": "partial minus raw RankIC, restricted to jointly finite daily observations; show both common-date means",
+    "rmse_comparison": "Pooled RMSE reported for each model; paired interval concerns mean daily cross-sectional RMSE difference",
+    "bootstrap": {
+      "kind": "noncircular moving blocks on full business-day calendar",
+      "block_days": 20,
+      "draws": 2000,
+      "seed": 1021,
+      "interval": "2.5/97.5 percentiles",
+      "paired": "same dates resampled jointly"
+    },
+    "phases": {
+      "origin": "2021-01-01",
+      "assignment": "busday_count(origin, signal_date) % 5"
+    }
+  }
+}

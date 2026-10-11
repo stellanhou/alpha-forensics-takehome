@@ -1,0 +1,71 @@
+{
+  "verified_at_utc": "2026-10-11T12:17:37.055273+00:00",
+  "scope": "Minimal factor_timing core replay; no model training or full-suite run.",
+  "argparse_output_safety": {
+    "finding": "--out is a pathlib.Path passed to run(root, out); run creates the selected directory and writes the three CSV outputs plus run_manifest.json only under that path.",
+    "selected_new_output": "asset_allocation/outputs/report_review_20261011/factor_timing_replay",
+    "preexisting_review_directory_before_run": false
+  },
+  "commands": [
+    {
+      "command": ".venv/bin/python -B -m unittest discover -v -s asset_allocation -p test_factor_timing.py",
+      "exit_status": 0,
+      "log": "asset_allocation/outputs/report_review_20261011/test_factor_timing.log"
+    },
+    {
+      "command": ".venv/bin/python -B asset_allocation/factor_timing.py --out asset_allocation/outputs/report_review_20261011/factor_timing_replay",
+      "exit_status": 0,
+      "log": "asset_allocation/outputs/report_review_20261011/factor_timing_replay.log"
+    }
+  ],
+  "test_result": {
+    "passed": true,
+    "tests_run": 7
+  },
+  "replay_manifest_command": [
+    "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/.venv/bin/python",
+    "asset_allocation/factor_timing.py",
+    "--out",
+    "asset_allocation/outputs/report_review_20261011/factor_timing_replay"
+  ],
+  "replay_manifest_eligible_rows": 394457,
+  "replay_manifest_eligible_dates": 1036,
+  "comparisons": {
+    "timing_summary.csv": {
+      "old_rows": 10,
+      "replay_rows": 10,
+      "old_file_sha256": "390ed1ed7a4c667a957a1229b1731a072917201cb274f366026765b0e35c4542",
+      "replay_file_sha256": "390ed1ed7a4c667a957a1229b1731a072917201cb274f366026765b0e35c4542",
+      "old_decompressed_csv_sha256": "390ed1ed7a4c667a957a1229b1731a072917201cb274f366026765b0e35c4542",
+      "replay_decompressed_csv_sha256": "390ed1ed7a4c667a957a1229b1731a072917201cb274f366026765b0e35c4542",
+      "decompressed_csv_bytes_identical": true,
+      "parsed_dataframe_values_identical": true,
+      "max_absolute_numeric_difference": 0.0
+    },
+    "daily_rank_ic.csv": {
+      "old_rows": 2068,
+      "replay_rows": 2068,
+      "old_file_sha256": "4020bf04c0e575ae6af3511d20b4f3b81b6d90cf10bb3f88f1396e5c02f6b47d",
+      "replay_file_sha256": "4020bf04c0e575ae6af3511d20b4f3b81b6d90cf10bb3f88f1396e5c02f6b47d",
+      "old_decompressed_csv_sha256": "4020bf04c0e575ae6af3511d20b4f3b81b6d90cf10bb3f88f1396e5c02f6b47d",
+      "replay_decompressed_csv_sha256": "4020bf04c0e575ae6af3511d20b4f3b81b6d90cf10bb3f88f1396e5c02f6b47d",
+      "decompressed_csv_bytes_identical": true,
+      "parsed_dataframe_values_identical": true,
+      "max_absolute_numeric_difference": 0.0
+    },
+    "pit_research_panel.csv.gz": {
+      "old_rows": 394457,
+      "replay_rows": 394457,
+      "old_file_sha256": "57447e720d1a432eba86be9dba06678dca9c062f3f2ed4def86bc0e6dc82a104",
+      "replay_file_sha256": "57447e720d1a432eba86be9dba06678dca9c062f3f2ed4def86bc0e6dc82a104",
+      "old_decompressed_csv_sha256": "da304b24e4e18a763c5c34c4886a19ca442b11342b4fdc70ed95c0ed5373a8c0",
+      "replay_decompressed_csv_sha256": "da304b24e4e18a763c5c34c4886a19ca442b11342b4fdc70ed95c0ed5373a8c0",
+      "decompressed_csv_bytes_identical": true,
+      "parsed_dataframe_values_identical": true,
+      "max_absolute_numeric_difference": 0.0
+    }
+  },
+  "all_decompressed_csv_contents_identical": true,
+  "all_parsed_dataframe_values_identical": true,
+  "run_log_contains_summary": true
+}

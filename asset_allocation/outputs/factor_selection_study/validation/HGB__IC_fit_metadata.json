@@ -1,0 +1,97 @@
+{
+  "arm_id": "HGB__IC",
+  "learner": "HGB",
+  "family": "IC",
+  "primary": true,
+  "status": "eligible",
+  "reason": "",
+  "duplicate_of": "",
+  "selector": {
+    "family": "IC",
+    "selector_id": "IC_k15",
+    "k": 15
+  },
+  "selector_metadata": {
+    "status": "eligible",
+    "reason": "",
+    "features": [
+      "factor_01",
+      "factor_02",
+      "factor_03",
+      "factor_04",
+      "factor_05",
+      "factor_07",
+      "factor_08",
+      "factor_11",
+      "factor_12",
+      "factor_13",
+      "factor_14",
+      "factor_15",
+      "factor_16",
+      "factor_17",
+      "factor_19"
+    ],
+    "metadata": {
+      "ranking": [
+        "factor_02",
+        "factor_08",
+        "factor_19",
+        "factor_17",
+        "factor_12",
+        "factor_03",
+        "factor_01",
+        "factor_07",
+        "factor_04",
+        "factor_14",
+        "factor_13",
+        "factor_16",
+        "factor_05",
+        "factor_15",
+        "factor_11",
+        "factor_18",
+        "factor_09",
+        "factor_20",
+        "factor_06",
+        "factor_10"
+      ]
+    }
+  },
+  "fitted_model": {
+    "features": [
+      "factor_01",
+      "factor_02",
+      "factor_03",
+      "factor_04",
+      "factor_05",
+      "factor_07",
+      "factor_08",
+      "factor_11",
+      "factor_12",
+      "factor_13",
+      "factor_14",
+      "factor_15",
+      "factor_16",
+      "factor_17",
+      "factor_19"
+    ],
+    "training_rows": 192806,
+    "imputer_medians": [
+      -0.00289327255,
+      0.00818634965,
+      0.000204702805,
+      -0.0022498760500000003,
+      -0.0014259440000000002,
+      -0.00203002105,
+      0.0073224381,
+      -0.09626507749999999,
+      0.004458519649999999,
+      0.00222235755,
+      -0.00032554835,
+      -0.0025469117,
+      -0.049278507,
+      0.0011350967,
+      -0.00510211175
+    ],
+    "iterations": 55
+  }
+}

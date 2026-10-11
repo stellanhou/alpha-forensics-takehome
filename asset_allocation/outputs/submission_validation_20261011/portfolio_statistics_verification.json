@@ -1,0 +1,288 @@
+{
+  "status": "passed",
+  "checked_at_utc": "2026-10-11T12:38:05.742439+00:00",
+  "command": [
+    "asset_allocation/.venv_models/bin/python",
+    "-B",
+    "submission_tools/verify_portfolio_statistics.py",
+    "--out",
+    "asset_allocation/outputs/portfolio_model_comparison",
+    "--verification-output",
+    "asset_allocation/outputs/submission_validation_20261011/portfolio_statistics_verification.json"
+  ],
+  "daily_runs_checked": 15,
+  "calendar_days_per_run": 522,
+  "statistical_rows_checked": 126,
+  "fields_checked": [
+    "n_dates",
+    "mean",
+    "ci_low",
+    "ci_high"
+  ],
+  "max_absolute_error": 1.041376186672327e-16,
+  "max_absolute_error_by_field": {
+    "n_dates": 0.0,
+    "mean": 1.0126448291014611e-16,
+    "ci_low": 9.98821251402271e-17,
+    "ci_high": 1.041376186672327e-16
+  },
+  "period_rows_checked": 45,
+  "period_fields_checked": [
+    "initial_nav",
+    "final_nav",
+    "n_return_days",
+    "total_return",
+    "annualized_return",
+    "annualized_volatility",
+    "sharpe",
+    "max_drawdown",
+    "mean_daily_turnover",
+    "mean_cash_fraction",
+    "actual_flag_conflict_orders",
+    "total_fee",
+    "total_spread_cost",
+    "total_impact_cost",
+    "total_writeoff",
+    "relative_terminal_wealth_vs_equalweight",
+    "relative_terminal_wealth_vs_matching_controls"
+  ],
+  "period_max_absolute_error_by_field": {
+    "initial_nav": 0.0,
+    "final_nav": 0.0,
+    "n_return_days": 0.0,
+    "total_return": 2.7755575615628914e-16,
+    "annualized_return": 3.3306690738754696e-16,
+    "annualized_volatility": 1.6653345369377348e-16,
+    "sharpe": 3.9968028886505635e-15,
+    "max_drawdown": 1.6653345369377348e-16,
+    "mean_daily_turnover": 1.1102230246251565e-16,
+    "mean_cash_fraction": 7.28583859910259e-17,
+    "actual_flag_conflict_orders": 0.0,
+    "total_fee": 2.6742497105658458e-14,
+    "total_spread_cost": 2.6478819137309983e-14,
+    "total_impact_cost": 2.6756374893466273e-14,
+    "total_writeoff": 5.967448757360216e-16,
+    "relative_terminal_wealth_vs_equalweight": 2.498001805406602e-16,
+    "relative_terminal_wealth_vs_matching_controls": 2.8796409701215e-16
+  },
+  "daily_checks": {
+    "Ridge_ALL20__cost0": {
+      "return_ratio_max_absolute_error": 3.469446951953614e-16,
+      "cash_plus_holdings_max_absolute_error": 8.881784197001252e-16
+    },
+    "HGB_ALL20__cost0": {
+      "return_ratio_max_absolute_error": 4.2327252813834093e-16,
+      "cash_plus_holdings_max_absolute_error": 8.881784197001252e-16
+    },
+    "Ridge_CONTROLS__cost0": {
+      "return_ratio_max_absolute_error": 3.191891195797325e-16,
+      "cash_plus_holdings_max_absolute_error": 1.3322676295501878e-15
+    },
+    "HGB_CONTROLS__cost0": {
+      "return_ratio_max_absolute_error": 4.0939474033052647e-16,
+      "cash_plus_holdings_max_absolute_error": 8.881784197001252e-16
+    },
+    "EqualWeight__cost0": {
+      "return_ratio_max_absolute_error": 5.30825383648903e-16,
+      "cash_plus_holdings_max_absolute_error": 8.881784197001252e-16
+    },
+    "Ridge_ALL20__cost1": {
+      "return_ratio_max_absolute_error": 5.273559366969494e-16,
+      "cash_plus_holdings_max_absolute_error": 6.661338147750939e-16
+    },
+    "HGB_ALL20__cost1": {
+      "return_ratio_max_absolute_error": 4.2804301769727715e-16,
+      "cash_plus_holdings_max_absolute_error": 6.661338147750939e-16
+    },
+    "Ridge_CONTROLS__cost1": {
+      "return_ratio_max_absolute_error": 4.579669976578771e-16,
+      "cash_plus_holdings_max_absolute_error": 6.661338147750939e-16
+    },
+    "HGB_CONTROLS__cost1": {
+      "return_ratio_max_absolute_error": 4.2674197509029455e-16,
+      "cash_plus_holdings_max_absolute_error": 8.881784197001252e-16
+    },
+    "EqualWeight__cost1": {
+      "return_ratio_max_absolute_error": 4.961309141293668e-16,
+      "cash_plus_holdings_max_absolute_error": 6.661338147750939e-16
+    },
+    "Ridge_ALL20__cost2": {
+      "return_ratio_max_absolute_error": 5.030698080332741e-16,
+      "cash_plus_holdings_max_absolute_error": 4.440892098500626e-16
+    },
+    "HGB_ALL20__cost2": {
+      "return_ratio_max_absolute_error": 5.35162192338845e-16,
+      "cash_plus_holdings_max_absolute_error": 4.440892098500626e-16
+    },
+    "Ridge_CONTROLS__cost2": {
+      "return_ratio_max_absolute_error": 4.996003610813204e-16,
+      "cash_plus_holdings_max_absolute_error": 4.440892098500626e-16
+    },
+    "HGB_CONTROLS__cost2": {
+      "return_ratio_max_absolute_error": 3.144186300207963e-16,
+      "cash_plus_holdings_max_absolute_error": 6.661338147750939e-16
+    },
+    "EqualWeight__cost2": {
+      "return_ratio_max_absolute_error": 4.544975507059235e-16,
+      "cash_plus_holdings_max_absolute_error": 4.440892098500626e-16
+    }
+  },
+  "absolute_tolerance": 1e-12,
+  "method": {
+    "source": "Consecutive saved NAV ratios; no research statistics functions imported",
+    "metrics": [
+      "daily_return_difference",
+      "daily_log_relative_growth"
+    ],
+    "periods": [
+      "FULL",
+      "2023",
+      "2024"
+    ],
+    "alignment": "Identical full business-day calendars; initial missing return retained",
+    "bootstrap": "Noncircular moving contiguous blocks, concatenated and truncated to calendar length",
+    "block_days": 20,
+    "draws": 2000,
+    "seed": 1021,
+    "percentiles": [
+      2.5,
+      97.5
+    ],
+    "rng": "numpy.default_rng; restarted per comparison"
+  },
+  "scope": {
+    "prerequisite_account_audit": "Existing passed verification.json bound to this run manifest and audit source",
+    "current_checks": "Frozen input/code/output hashes, daily NAV arithmetic, daily-derived period aggregates and paired intervals",
+    "excluded_period_fields": [
+      "filled_orders"
+    ],
+    "limitations": "Order execution is not re-audited here; daily cost/conflict totals are aggregate checks. Reference intervals do not establish new-sample validity."
+  },
+  "inputs_sha256": {
+    "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/asset_allocation/outputs/portfolio_model_comparison/protocol.json": "da9ede66faaf8514866dd3c827d3d2518a1ab673bea61b16b046f0a1a4759ecb",
+    "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/asset_allocation/outputs/portfolio_model_comparison/run_manifest.json": "5cd2920fb8474e440d540cdcce13a0f86c49947c990d9bf13624ca393ad43f5d",
+    "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/asset_allocation/outputs/portfolio_model_comparison/verification.json": "4ea86b61a7cf162d0a10f85c8bf39bae67698ab64ee469ff5d4ea24493bb7665",
+    "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/Lab404-CUFEL-E/03-资产配置策略方向/Alpha_Forensics_Candidate_v1/data/market_daily.csv.gz": "64e4437e652d81fe7d81fcb5c192b75ec41ec6569bea1357e21a93d4d2fac062",
+    "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/Lab404-CUFEL-E/03-资产配置策略方向/Alpha_Forensics_Candidate_v1/data/factors.csv.gz": "55ee2df0f603dfcaefeb60731929e2a08d6a51e76e34c88f55ff50437c5ac23c",
+    "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/Lab404-CUFEL-E/03-资产配置策略方向/Alpha_Forensics_Candidate_v1/data/universe.csv.gz": "fa0eafdc6989a1a4cf2bbb9a2cc7766a8494f527eeb006609a10e9993c92138a",
+    "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/Lab404-CUFEL-E/03-资产配置策略方向/Alpha_Forensics_Candidate_v1/data/factor_availability.csv.gz": "a39190f3fdd5e718a28345b5aa94e9dc1d3817ce731e9fb2d93bf05f7c4836e5",
+    "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/Lab404-CUFEL-E/03-资产配置策略方向/Alpha_Forensics_Candidate_v1/data/trading_constraints.csv.gz": "830bf73e87cf136bcfec4960fc8ad3d3d6f731177356e7122439270d263e845e",
+    "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/Lab404-CUFEL-E/03-资产配置策略方向/Alpha_Forensics_Candidate_v1/data/risk_exposure.csv.gz": "82c04f8652953941fb696cfce5a53f6cb8a1454b7be432e3d8847e778e552357",
+    "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/Lab404-CUFEL-E/03-资产配置策略方向/Alpha_Forensics_Candidate_v1/data/data_dictionary.md": "8a2e10234f25c0328c02384b60f82e0ee9465842a081541cfedada9cee9bb1f6",
+    "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/asset_allocation/outputs/factor_timing/pit_research_panel.csv.gz": "57447e720d1a432eba86be9dba06678dca9c062f3f2ed4def86bc0e6dc82a104",
+    "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/asset_allocation/outputs/factor_timing/run_manifest.json": "dbaa77a2c22ff2567759234d9383e20d3fd9ead39a2e9240b50b87d771ddb09d",
+    "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/asset_allocation/outputs/model_benchmark/protocol.json": "e7558489b53c26c2b4fdf918ddc325c4eedc114ff1757988849f11472919f0b9",
+    "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/asset_allocation/outputs/model_benchmark/selection.json": "1cc35824aff4043b11f4e50121f153c4f50eb9f9951d8038e74390a627974503",
+    "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/asset_allocation/outputs/industry_size_attribution/protocol.json": "6e28926cee373a9469ac62d71155eccfd0160af53d3bd05159885ab8c5df5640",
+    "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/asset_allocation/outputs/model_benchmark/validation/split_manifest.json": "e52a61d32a70e2efc9c555995db2f8b1d72114dc74b53057c76897c9a348d68e",
+    "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/asset_allocation/outputs/model_benchmark/validation/Ridge_predictions.csv.gz": "f32024d7c601563012fa2cac8034ac355401f98cad7b6acc400e551c3967940b",
+    "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/asset_allocation/outputs/model_benchmark/validation/HGB_predictions.csv.gz": "9351589ea3d3c93b8faa45e06b73f1759e94f9f830f851d8e7dad44864ca1e38",
+    "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/asset_allocation/outputs/model_benchmark/validation/run_manifest.json": "5f15e7e0f5bf8073bd285aac2bf249417bb386e059ffa14dcac104c24c4c92c2",
+    "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/asset_allocation/outputs/industry_size_attribution/validation/split_manifest.json": "e52a61d32a70e2efc9c555995db2f8b1d72114dc74b53057c76897c9a348d68e",
+    "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/asset_allocation/outputs/industry_size_attribution/validation/Ridge_CONTROLS_predictions.csv.gz": "402c6ed4b608d6f02b425818662c4d9d57ec2f219411eb11ffb7cdfe0bc78a8a",
+    "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/asset_allocation/outputs/industry_size_attribution/validation/HGB_CONTROLS_predictions.csv.gz": "598c5978c3a14fd8623401f2cf102ee86a3a4cb285258838771ba59c2bfb75d7",
+    "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/asset_allocation/outputs/industry_size_attribution/validation/run_manifest.json": "aa4b88ed03da7456e032742afdc8d4fa8eb05cd73f7426532e3e7674afe7dfa2",
+    "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/asset_allocation/outputs/model_benchmark/confirmation/split_manifest.json": "6cc37ab56a747d15666335ab4505998089dc2f7ceaaa1fe9b5fa558f41246016",
+    "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/asset_allocation/outputs/model_benchmark/confirmation/Ridge_predictions.csv.gz": "88d6ef8183cbf17e088c47b51bc28ac8b6ff602f30ad5f65ef7e5ef5affbb25b",
+    "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/asset_allocation/outputs/model_benchmark/confirmation/HGB_predictions.csv.gz": "7f00e4ef39e60e361df3c201dbeb9913ed25aaa58d84ede18551ab23a3a52807",
+    "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/asset_allocation/outputs/model_benchmark/confirmation/run_manifest.json": "597ea1dda99dd3d957f01ad3c9b097d6e22237d266d95498e03008dfea36c434",
+    "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/asset_allocation/outputs/industry_size_attribution/confirmation/split_manifest.json": "6cc37ab56a747d15666335ab4505998089dc2f7ceaaa1fe9b5fa558f41246016",
+    "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/asset_allocation/outputs/industry_size_attribution/confirmation/Ridge_CONTROLS_predictions.csv.gz": "0c1b24fd225cd3a4cd68a3665505aac2157055e70e6e7723420ec3312925e73a",
+    "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/asset_allocation/outputs/industry_size_attribution/confirmation/HGB_CONTROLS_predictions.csv.gz": "5099ad3b488d9546214f665c5f548821e6a5a1611d8bbbae81d5009ee628495d",
+    "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/asset_allocation/outputs/industry_size_attribution/confirmation/run_manifest.json": "3b7c84fae2b77eddec5805aeb4defee61e6e9f318ba0fdd294372b2faa8b44ca",
+    "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/asset_allocation/portfolio_model_comparison.py": "8f9abb60bb71da127ab33dee92b60739797df1d60c70172d545ea608b558d4b4",
+    "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/asset_allocation/portfolio_ledger.py": "4354d633d1da552dfb38aad4e5a30654c0cb304814a03e9f98e979cc701accdd",
+    "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/asset_allocation/compare_models.py": "e04f0d1e71c76ea787d356fc3b6877bf2babe2aacbcf3d46a56e585793f9d084",
+    "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/asset_allocation/industry_size_attribution.py": "00649cb49216c50cb822284e404b9ddfdda2ac59c52174abd1a07eb02c213566",
+    "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/asset_allocation/temporal_model.py": "4c794ac998c22899710080562ea23ae0596da4da52cd210052cbe0d155c6c76d",
+    "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/asset_allocation/factor_timing.py": "a26162852a93dea4991fb17f031ab140b4180d44b66e25b0a94ad7074a09430b",
+    "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/asset_allocation/test_portfolio_model_comparison.py": "94c1efbd1a8aa6c359f2cd9e585bc3a742c78626fd7ae839e08ff2a1ea047dd8",
+    "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/asset_allocation/audit_portfolio_model_comparison.py": "7eb75007a07b093ce5c75cd2606397e4b49d8d76800dd9669446b0e37d9868c1",
+    "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/asset_allocation/outputs/portfolio_model_comparison/cost_sensitivity_2024.png": "1c2c0df0734727b9e32207bde4b21a94e994e18b8e611f22fdd55b9ebd463064",
+    "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/asset_allocation/outputs/portfolio_model_comparison/fits.csv": "b5c51e1e8083be6871d859164e67b0cbe4c15c4af18c6320b19449479ac37dd2",
+    "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/asset_allocation/outputs/portfolio_model_comparison/models/2023_HGB_ALL20.joblib": "2ab64d7ece6fd98c78557f3179c602403cdc85bb4ce0dc6cf33f0209c816923a",
+    "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/asset_allocation/outputs/portfolio_model_comparison/models/2023_HGB_CONTROLS.joblib": "36388e8b82224a67e3297a015ac5b3b4e23c8dc4292a6569e7e09da5b9c4a06e",
+    "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/asset_allocation/outputs/portfolio_model_comparison/models/2023_Ridge_ALL20.joblib": "3e57cbee3f2312e655df224722891723acfbf73c45ee8ad1dd8b7ffe3493651f",
+    "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/asset_allocation/outputs/portfolio_model_comparison/models/2023_Ridge_CONTROLS.joblib": "ee5e7ef06a1458ca613fce1b93cdf730bc98c25412c11c363368b309bde07a2c",
+    "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/asset_allocation/outputs/portfolio_model_comparison/models/2024_HGB_ALL20.joblib": "ec390daf4c71010beec829907318c4cb25d6df409ca73f0177aefac9db79a209",
+    "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/asset_allocation/outputs/portfolio_model_comparison/models/2024_HGB_CONTROLS.joblib": "6a92b5932549848081f2b88ed4e24b1cfc8bfd785feac50b1509449bf997a34e",
+    "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/asset_allocation/outputs/portfolio_model_comparison/models/2024_Ridge_ALL20.joblib": "256721d743828d5d66098d0e3b3488949c9d522fa78d64c9f041b9f8e989d148",
+    "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/asset_allocation/outputs/portfolio_model_comparison/models/2024_Ridge_CONTROLS.joblib": "cda6be3292a47f0f6d92ba5edea0b5ffd60b83f5e121c2962a9013e37a44eb5b",
+    "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/asset_allocation/outputs/portfolio_model_comparison/nav_drawdown.png": "9e41ac8eda049339c3c64c48583edbab2bde48dcd95525f48f13cb5a5f3ed0b9",
+    "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/asset_allocation/outputs/portfolio_model_comparison/paired_comparisons.csv": "66f389c681db9e5c809cb0f649952ca04f0bd38e581d3c7e6ffd36a63fe52f16",
+    "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/asset_allocation/outputs/portfolio_model_comparison/period_metrics.csv": "30da0188ec3457a9ab00b9e1c6c58d481eec2de70552b6cfae83a42cb1fe826a",
+    "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/asset_allocation/outputs/portfolio_model_comparison/predictions/HGB_ALL20.csv.gz": "391ddd82fc414fc025f5c9e93e8942305cd9a6731543c39fde91d7665c540a18",
+    "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/asset_allocation/outputs/portfolio_model_comparison/predictions/HGB_CONTROLS.csv.gz": "53e2c73349781ab74d8510588152c64a95cd8211b6d990f25f1bcd11ae8d9fa7",
+    "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/asset_allocation/outputs/portfolio_model_comparison/predictions/Ridge_ALL20.csv.gz": "5e8d2641a2fea544dd6cdeec09e3130b730c909dfd7a296c5724406acd37f767",
+    "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/asset_allocation/outputs/portfolio_model_comparison/predictions/Ridge_CONTROLS.csv.gz": "4e0f67ccdf78507a440f7e835611e63fcb31f025eac7ef0443836e56731af6df",
+    "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/asset_allocation/outputs/portfolio_model_comparison/runs/EqualWeight__cost0/daily.csv": "c9a32e80af048ef2c7c81688f79477a73af20a4b9e53796c930ed79a8975ebca",
+    "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/asset_allocation/outputs/portfolio_model_comparison/runs/EqualWeight__cost0/orders.csv.gz": "7e64b70bd6970a13d1db7543fab21aec5802e80b5589fe7eeac0b865a2415090",
+    "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/asset_allocation/outputs/portfolio_model_comparison/runs/EqualWeight__cost0/positions.csv.gz": "c97548b3393471a4c6cd16e51241360d3188b2b01416bbfed470bae761a93768",
+    "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/asset_allocation/outputs/portfolio_model_comparison/runs/EqualWeight__cost0/summary.json": "c9e2739f552e17e3767823315d41171856f92b65151b85a20e6a3dd47ab04f40",
+    "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/asset_allocation/outputs/portfolio_model_comparison/runs/EqualWeight__cost1/daily.csv": "b93d404da441aa0cb59bfbad357b3b4c30f8fc694b225e68207ebc802579df52",
+    "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/asset_allocation/outputs/portfolio_model_comparison/runs/EqualWeight__cost1/orders.csv.gz": "f74bf6fb9ef2aacc89e9cdfac6b5b81350669dd069cc553bed38550302bcbac3",
+    "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/asset_allocation/outputs/portfolio_model_comparison/runs/EqualWeight__cost1/positions.csv.gz": "1d1d5deb404d8ef0fe7a5efce314c6606f36151138dfad5cf09aad150caeba96",
+    "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/asset_allocation/outputs/portfolio_model_comparison/runs/EqualWeight__cost1/summary.json": "95c0e80c7982fa8fd5c3cb70cd8404abaa3f230aa886fb26bd235b59d5d4cd22",
+    "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/asset_allocation/outputs/portfolio_model_comparison/runs/EqualWeight__cost2/daily.csv": "028e49fe5d331fb8536541c7843e87f8b0e411e4e2bb7ff6941f846077d8b71c",
+    "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/asset_allocation/outputs/portfolio_model_comparison/runs/EqualWeight__cost2/orders.csv.gz": "458a02afcb85005801a413de2f1ed5b2a441ba592de3cf3f9f2266f3e99041ea",
+    "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/asset_allocation/outputs/portfolio_model_comparison/runs/EqualWeight__cost2/positions.csv.gz": "e5257c6339a8e92fc1c3955f8bd53740f6c856fb1b07087c2ca90cf824684433",
+    "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/asset_allocation/outputs/portfolio_model_comparison/runs/EqualWeight__cost2/summary.json": "6beb94127f5fb2bf265bf9ea766761170ff8b0266f1961d2ed5d2f022e46c857",
+    "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/asset_allocation/outputs/portfolio_model_comparison/runs/HGB_ALL20__cost0/daily.csv": "dd7bcb40343b4f9932e70d2499282059e7403d0f45e0a527d70dfd50d6f7f24c",
+    "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/asset_allocation/outputs/portfolio_model_comparison/runs/HGB_ALL20__cost0/orders.csv.gz": "8e47ad04f027731123256d6a380a20b28ccc78d8612b99d688d0d697b3f231d8",
+    "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/asset_allocation/outputs/portfolio_model_comparison/runs/HGB_ALL20__cost0/positions.csv.gz": "8d6943986e9698c4ad75fd09a0be332ace83cbdec90da7fbc031eeebc32d7259",
+    "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/asset_allocation/outputs/portfolio_model_comparison/runs/HGB_ALL20__cost0/summary.json": "af19b098bdaae5680f12f8615aaa275bb2c810880d6725e8c0f347cfac834ff4",
+    "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/asset_allocation/outputs/portfolio_model_comparison/runs/HGB_ALL20__cost1/daily.csv": "bd67922bdb16e59a8b9541986cd3a7c332a21bad14da66417b42ead777c694d1",
+    "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/asset_allocation/outputs/portfolio_model_comparison/runs/HGB_ALL20__cost1/orders.csv.gz": "4b060e14ab01b9264189d4089ae3efd95030771311143dde9503a91b201ffb63",
+    "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/asset_allocation/outputs/portfolio_model_comparison/runs/HGB_ALL20__cost1/positions.csv.gz": "aa59cd90f6e0d8e3bdb64b626b57b776feacebdbe1760fbc66816fb034824b80",
+    "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/asset_allocation/outputs/portfolio_model_comparison/runs/HGB_ALL20__cost1/summary.json": "f096bc2c22b79952bf8b1bee132746f32cfbdb5a7f96caaaba667c6e9cd220bf",
+    "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/asset_allocation/outputs/portfolio_model_comparison/runs/HGB_ALL20__cost2/daily.csv": "71c985e0fdea12eb9623c1f44bd19aa6d7ee19d8c492d2abdda9831ac8e8cbd1",
+    "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/asset_allocation/outputs/portfolio_model_comparison/runs/HGB_ALL20__cost2/orders.csv.gz": "65d6e6f4522d9b692bab764e10def9e190f28e43de98f4d73a49638641e2b95d",
+    "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/asset_allocation/outputs/portfolio_model_comparison/runs/HGB_ALL20__cost2/positions.csv.gz": "c4e2a4d1cb1d991d9ef6ee177aba2028f3fc884e8247d793caf0ba5f6adce9eb",
+    "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/asset_allocation/outputs/portfolio_model_comparison/runs/HGB_ALL20__cost2/summary.json": "613ae85b9bb9e3157da8908cbc579ca9744755dcbf392583acf7e7c243a907e7",
+    "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/asset_allocation/outputs/portfolio_model_comparison/runs/HGB_CONTROLS__cost0/daily.csv": "dad225c1a71868494e981505ef076e964c5298cd726571b616d8995cfc688869",
+    "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/asset_allocation/outputs/portfolio_model_comparison/runs/HGB_CONTROLS__cost0/orders.csv.gz": "cb5610c3f9724f947b9d31915ba66d89a1078abf70c5c92925649fe2680ebfb4",
+    "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/asset_allocation/outputs/portfolio_model_comparison/runs/HGB_CONTROLS__cost0/positions.csv.gz": "1d148d0cdd7dd7738f97db2e175e3a70a87413972503ef5a1c28032529d0700a",
+    "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/asset_allocation/outputs/portfolio_model_comparison/runs/HGB_CONTROLS__cost0/summary.json": "2c6417eb6425667eb0bee62bd3796492b44b38ff85a6d625fcf9e71755542d09",
+    "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/asset_allocation/outputs/portfolio_model_comparison/runs/HGB_CONTROLS__cost1/daily.csv": "f6fd553297a90cb2f4b97e481bca67f3ab833983d36c2e13a2f0f7046b7340f2",
+    "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/asset_allocation/outputs/portfolio_model_comparison/runs/HGB_CONTROLS__cost1/orders.csv.gz": "e407626348f30bb4f8087ea1a7ba5e0fafbf6a54b3c841cb02661862856aac93",
+    "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/asset_allocation/outputs/portfolio_model_comparison/runs/HGB_CONTROLS__cost1/positions.csv.gz": "d4ceb1a849ca4b58621432b1d6a2b68b9d9a225c70dae254d33c9a3cf9ee1f4b",
+    "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/asset_allocation/outputs/portfolio_model_comparison/runs/HGB_CONTROLS__cost1/summary.json": "75d369783b9ab392267ef80df69e1bfd807e3fa6a9063bc9acb9afe761a9e0d9",
+    "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/asset_allocation/outputs/portfolio_model_comparison/runs/HGB_CONTROLS__cost2/daily.csv": "54a0b442dcd1b42970de250a828c59fef70aa2005f6a67cff666fd39979e6383",
+    "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/asset_allocation/outputs/portfolio_model_comparison/runs/HGB_CONTROLS__cost2/orders.csv.gz": "7a91fefac3d918f13027617d52dbb321e5a14e2e79ff44893899b6c15a21b311",
+    "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/asset_allocation/outputs/portfolio_model_comparison/runs/HGB_CONTROLS__cost2/positions.csv.gz": "f099822a7fe8fcf418dbc3826ceceeee86819a5b5f48232fd06e796f8dacc692",
+    "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/asset_allocation/outputs/portfolio_model_comparison/runs/HGB_CONTROLS__cost2/summary.json": "76e0570f4ae080958b256e0cb6573bb7fb337f1e6b452102038238b6c611ff56",
+    "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/asset_allocation/outputs/portfolio_model_comparison/runs/Ridge_ALL20__cost0/daily.csv": "5de820744bb7716f0ae6222e940974f5dfceb8aa97958a5aa0eaf743e8ee6442",
+    "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/asset_allocation/outputs/portfolio_model_comparison/runs/Ridge_ALL20__cost0/orders.csv.gz": "f1de71e388da399ff43cf32a7849f37b5a0fd856b1aed5fc229f7d209608c721",
+    "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/asset_allocation/outputs/portfolio_model_comparison/runs/Ridge_ALL20__cost0/positions.csv.gz": "5d611e6157fabd3e2aa1248bab05c9f598824e55f74b8ccda057ac91484f5e8f",
+    "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/asset_allocation/outputs/portfolio_model_comparison/runs/Ridge_ALL20__cost0/summary.json": "e38acd1d11808766d0ae7882949f91c333c61fa2b1bd9cc42eb70514d44677b8",
+    "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/asset_allocation/outputs/portfolio_model_comparison/runs/Ridge_ALL20__cost1/daily.csv": "ab311273fffcb053fa565efe99b88d971571d29613e63d6347a459282c5ffe26",
+    "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/asset_allocation/outputs/portfolio_model_comparison/runs/Ridge_ALL20__cost1/orders.csv.gz": "c6065b56a9bd301639e04f3976d2305eec4f4e93a76a4bde8d0af77edf51c580",
+    "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/asset_allocation/outputs/portfolio_model_comparison/runs/Ridge_ALL20__cost1/positions.csv.gz": "cfe37e112204f6b75a2ccbf54227883a013b2bff8dcb0643019a7ca1251b9f26",
+    "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/asset_allocation/outputs/portfolio_model_comparison/runs/Ridge_ALL20__cost1/summary.json": "1f366d1aa1ad5e2dc984651bf7940abd6ae2b296ac113255d045930219ea4d1e",
+    "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/asset_allocation/outputs/portfolio_model_comparison/runs/Ridge_ALL20__cost2/daily.csv": "4ce3de9765767a4036c39a475615af290caa9496a2e86183f154b81a82739b6f",
+    "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/asset_allocation/outputs/portfolio_model_comparison/runs/Ridge_ALL20__cost2/orders.csv.gz": "90811e2462f7804c1056986305de07b9c82ee562d0f1aadef50f9899ed7992f2",
+    "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/asset_allocation/outputs/portfolio_model_comparison/runs/Ridge_ALL20__cost2/positions.csv.gz": "60c56a9602615536773014ecf7b9a0146a704df7c6ad66c47c3bc24598ecb5b5",
+    "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/asset_allocation/outputs/portfolio_model_comparison/runs/Ridge_ALL20__cost2/summary.json": "4ea263747bd002ec53526b03000dec29b03a5bcc19adf64e29c3655a540b42b8",
+    "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/asset_allocation/outputs/portfolio_model_comparison/runs/Ridge_CONTROLS__cost0/daily.csv": "36fd074df8129fd12946baa88e5a4b7dad56e566854eea07bb23424248271c01",
+    "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/asset_allocation/outputs/portfolio_model_comparison/runs/Ridge_CONTROLS__cost0/orders.csv.gz": "c34aa8381be74eb80e615d5b1a480b51efd5b83b7d59853c52be9ab746ad0629",
+    "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/asset_allocation/outputs/portfolio_model_comparison/runs/Ridge_CONTROLS__cost0/positions.csv.gz": "e296d1aa7d4dec3c01ca99cc20138eef726ede39fc54996c7fc40d9d710eaf89",
+    "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/asset_allocation/outputs/portfolio_model_comparison/runs/Ridge_CONTROLS__cost0/summary.json": "4e5f065d7d6a3dc6f7abffb9c37b230e6e3b9782c01833a0c8bae19c2b8ccc32",
+    "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/asset_allocation/outputs/portfolio_model_comparison/runs/Ridge_CONTROLS__cost1/daily.csv": "ba82110a4f310ad25e00dac722439b12055b8e8ddb390984d83c365f0cf383b4",
+    "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/asset_allocation/outputs/portfolio_model_comparison/runs/Ridge_CONTROLS__cost1/orders.csv.gz": "9b90ecd11d90d0ec40614fa32fa5d2893d551dfca0625f139ed844029839a462",
+    "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/asset_allocation/outputs/portfolio_model_comparison/runs/Ridge_CONTROLS__cost1/positions.csv.gz": "eb61953c9b17a359723987f9655e14504d1e9c24487b965e93466adfb014a9a4",
+    "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/asset_allocation/outputs/portfolio_model_comparison/runs/Ridge_CONTROLS__cost1/summary.json": "575ccf203bf1847bbef23872e5cf39a5e68f630315d168368943ce4f234e9b4d",
+    "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/asset_allocation/outputs/portfolio_model_comparison/runs/Ridge_CONTROLS__cost2/daily.csv": "fce9cbe66d6d5bfa95f0013c9fec6739fd008dd9ea52adb9efa049de89fdce7f",
+    "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/asset_allocation/outputs/portfolio_model_comparison/runs/Ridge_CONTROLS__cost2/orders.csv.gz": "4ee08740428a361daa06f327911c14ace88706415173dd166715d6c53870de78",
+    "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/asset_allocation/outputs/portfolio_model_comparison/runs/Ridge_CONTROLS__cost2/positions.csv.gz": "ea77b3043bf4b87f2813ae2a9994eeeafd0dc135a0fb74888a6f89a5a00682b3",
+    "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/asset_allocation/outputs/portfolio_model_comparison/runs/Ridge_CONTROLS__cost2/summary.json": "68fa4d95683df03a50c649f80c78f38bd94bb82eb8204983d79c2853b8d03d0a",
+    "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/asset_allocation/outputs/portfolio_model_comparison/selection_diagnostics.csv": "0ea809422f2176e6531aa8dc519e9567f808b29a94289d1306881b500af1327c",
+    "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/asset_allocation/outputs/portfolio_model_comparison/signal_coverage.csv": "ca257d47c964705bc4c91629785c8ae7c968c8978c4963edb6613585fefef175",
+    "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/asset_allocation/outputs/portfolio_model_comparison/summary.csv": "eb14a1851fa58191c239bc63dc1a6075e97282433adde6bd5c545b238b8c2498"
+  },
+  "verification_code_sha256": "bf4ff1a5519f16f6acf78c76ddb5421a2217c02aec26fa43feb41258e4cb4504",
+  "environment": {
+    "python": "3.12.13",
+    "numpy": "2.5.4",
+    "pandas": "2.3.3"
+  }
+}

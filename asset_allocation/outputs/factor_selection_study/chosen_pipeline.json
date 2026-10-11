@@ -1,0 +1,37 @@
+{
+  "frozen_at_utc": "2026-10-11T10:18:58.747343+00:00",
+  "protocol_sha256": "593a54c0a7e92473a51e15804aa4f3df63082f638b97fde58520c0a8f335d9fb",
+  "scope": "Additional historical research designed after inspecting 2024 outcomes; not a new independent blind test. Uses the supplied observed-label member panel. Gross five-day grouping diagnostics are not portfolio returns; no NAV, Sharpe, trading costs or executable strategy claims.",
+  "arm_id": "Ridge__HAC",
+  "learner": "Ridge",
+  "family": "HAC",
+  "selector": {
+    "family": "HAC",
+    "selector_id": "HAC_k15",
+    "k": 15
+  },
+  "validation_features": [
+    "factor_01",
+    "factor_02",
+    "factor_03",
+    "factor_04",
+    "factor_05",
+    "factor_06",
+    "factor_09",
+    "factor_10",
+    "factor_11",
+    "factor_12",
+    "factor_14",
+    "factor_15",
+    "factor_16",
+    "factor_18",
+    "factor_20"
+  ],
+  "validation_mean_daily_rank_ic": 0.07165193427799874,
+  "validation_summary_sha256": "daab6030a00183467d2ae5b599eddb92e4a8ac66e2331a698afba26b4a90db2f",
+  "code_sha256": {
+    "factor_selection_study.py": "48107978dfd892b0c6fd28055b62fab964f75a3f1121e14dd12a5112b51c8e47",
+    "test_factor_selection_study.py": "4797761bd9f6ba3e70f36570424a6619426ef8621f7669ece46cc2f082a1b68c",
+    "compare_models.py": "e04f0d1e71c76ea787d356fc3b6877bf2babe2aacbcf3d46a56e585793f9d084"
+  }
+}

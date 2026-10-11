@@ -1,0 +1,44 @@
+Fitting 2023 Ridge_ALL20: 192806 mature rows -> 101397 full signals
+Fitting 2023 Ridge_CONTROLS: 192806 mature rows -> 101397 full signals
+Fitting 2023 HGB_ALL20: 192806 mature rows -> 101397 full signals
+Fitting 2023 HGB_CONTROLS: 192806 mature rows -> 101397 full signals
+Fitting 2024 Ridge_ALL20: 294192 mature rows -> 100265 full signals
+Fitting 2024 Ridge_CONTROLS: 294192 mature rows -> 100265 full signals
+Fitting 2024 HGB_ALL20: 294192 mature rows -> 100265 full signals
+Fitting 2024 HGB_CONTROLS: 294192 mature rows -> 100265 full signals
+Ledger Ridge_ALL20__cost0
+  final NAV=2.556108
+Ledger HGB_ALL20__cost0
+  final NAV=2.611657
+Ledger Ridge_CONTROLS__cost0
+  final NAV=2.238904
+Ledger HGB_CONTROLS__cost0
+  final NAV=2.009458
+Ledger EqualWeight__cost0
+  final NAV=1.772732
+Ledger Ridge_ALL20__cost1
+  final NAV=1.356347
+Ledger HGB_ALL20__cost1
+  final NAV=1.359753
+Ledger Ridge_CONTROLS__cost1
+  final NAV=1.222995
+Ledger HGB_CONTROLS__cost1
+  final NAV=1.151049
+Ledger EqualWeight__cost1
+  final NAV=1.082605
+Ledger Ridge_ALL20__cost2
+  final NAV=0.720641
+Ledger HGB_ALL20__cost2
+  final NAV=0.708834
+Ledger Ridge_CONTROLS__cost2
+  final NAV=0.668825
+Ledger HGB_CONTROLS__cost2
+  final NAV=0.659955
+Ledger EqualWeight__cost2
+  final NAV=0.661755
+     predictor  total_return    sharpe  max_drawdown  mean_daily_turnover
+   Ridge_ALL20     -0.059421 -0.255940     -0.203804             0.388309
+     HGB_ALL20     -0.054396 -0.227214     -0.196125             0.389212
+Ridge_CONTROLS     -0.047643 -0.196068     -0.169387             0.389421
+  HGB_CONTROLS     -0.105264 -0.519648     -0.211321             0.390493
+   EqualWeight     -0.142628 -0.740384     -0.238799             0.390431

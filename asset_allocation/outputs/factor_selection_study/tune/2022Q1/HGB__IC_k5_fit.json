@@ -1,0 +1,18 @@
+{
+  "features": [
+    "factor_02",
+    "factor_08",
+    "factor_12",
+    "factor_17",
+    "factor_19"
+  ],
+  "training_rows": 94045,
+  "imputer_medians": [
+    0.00017987317,
+    -2.9013722e-06,
+    0.0043613138,
+    -0.0032198853,
+    -0.00077044923
+  ],
+  "iterations": 55
+}

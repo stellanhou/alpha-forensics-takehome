@@ -1,0 +1,50 @@
+{
+  "candidate": {
+    "family": "IC",
+    "selector_id": "IC_k15",
+    "k": 15
+  },
+  "status": "eligible",
+  "reason": "",
+  "features": [
+    "factor_01",
+    "factor_02",
+    "factor_03",
+    "factor_04",
+    "factor_05",
+    "factor_07",
+    "factor_08",
+    "factor_11",
+    "factor_12",
+    "factor_13",
+    "factor_14",
+    "factor_16",
+    "factor_17",
+    "factor_18",
+    "factor_19"
+  ],
+  "metadata": {
+    "ranking": [
+      "factor_02",
+      "factor_08",
+      "factor_19",
+      "factor_17",
+      "factor_12",
+      "factor_03",
+      "factor_07",
+      "factor_01",
+      "factor_04",
+      "factor_14",
+      "factor_13",
+      "factor_16",
+      "factor_05",
+      "factor_11",
+      "factor_18",
+      "factor_15",
+      "factor_20",
+      "factor_10",
+      "factor_06",
+      "factor_09"
+    ]
+  }
+}

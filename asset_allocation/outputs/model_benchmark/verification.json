@@ -1,0 +1,33 @@
+{
+  "verified_at_utc": "2026-10-11T09:53:35.141312+00:00",
+  "checks": {
+    "validation": {
+      "status": "completed",
+      "verified_output_hashes": 24,
+      "protocol_sha256": "e44b55540ca16258df890b9291182637a6776a70b872f823c8abc4a19e0f7b99"
+    },
+    "confirmation": {
+      "status": "completed",
+      "verified_output_hashes": 24,
+      "protocol_sha256": "e44b55540ca16258df890b9291182637a6776a70b872f823c8abc4a19e0f7b99"
+    }
+  },
+  "plot_hashes_verified": true,
+  "independent_review": {
+    "prediction_coverage_rows": {
+      "validation": 99057,
+      "confirmation": 97929
+    },
+    "models_per_stage_including_dummy": 8,
+    "candidate_rank_ic_dates": {
+      "validation": 254,
+      "confirmation": 256
+    },
+    "training_medians_recomputed_and_equal_for_all_models": true,
+    "selection_is_2023_max_rank_ic_and_precedes_confirmation": true,
+    "daily_rank_ic_and_paired_block_bootstrap_recomputed": true,
+    "max_rmse_difference_after_csv_serialization": 5.9e-13,
+    "test_compare_models_tests_passed": 10
+  },
+  "scope": "Historical synthetic panel previously studied; observed-label members; ranking and gross spread diagnostics only."
+}

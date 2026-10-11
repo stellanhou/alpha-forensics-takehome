@@ -1,0 +1,12 @@
+{
+  "panel_rows": 394457,
+  "risk_rows": 406547,
+  "merged_rows": 394457,
+  "panel_ordered_keys_sha256": "b74562e58761b7e1a58e18517278b09062220235c8b5c7359cc6dbcbdfa30824",
+  "merged_ordered_keys_sha256": "b74562e58761b7e1a58e18517278b09062220235c8b5c7359cc6dbcbdfa30824",
+  "missing_risk_rows": 0,
+  "industry_count": 10,
+  "market_cap_min": 402641380.0,
+  "market_cap_max": 147519500000.0,
+  "assumption": "Assume risk_exposure dated t is known after close t; independent publication dates are unavailable"
+}

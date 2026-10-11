@@ -1,0 +1,50 @@
+{
+  "frozen_at_utc": "2026-10-11T10:18:16.124372+00:00",
+  "protocol_sha256": "593a54c0a7e92473a51e15804aa4f3df63082f638b97fde58520c0a8f335d9fb",
+  "selected": {
+    "Ridge": {
+      "ALL": {
+        "family": "ALL",
+        "selector_id": "all20"
+      },
+      "IC": {
+        "family": "IC",
+        "selector_id": "IC_k15",
+        "k": 15
+      },
+      "HAC": {
+        "family": "HAC",
+        "selector_id": "HAC_k15",
+        "k": 15
+      },
+      "EN": {
+        "family": "EN",
+        "selector_id": "EN_alpha0.05",
+        "alpha": 0.05
+      }
+    },
+    "HGB": {
+      "ALL": {
+        "family": "ALL",
+        "selector_id": "all20"
+      },
+      "IC": {
+        "family": "IC",
+        "selector_id": "IC_k15",
+        "k": 15
+      },
+      "HAC": {
+        "family": "HAC",
+        "selector_id": "HAC_k15",
+        "k": 15
+      },
+      "EN": {
+        "family": "EN",
+        "selector_id": "EN_alpha0.05",
+        "alpha": 0.05
+      }
+    }
+  },
+  "inner_scores_sha256": "41fa1e919b21903134bccc543c12e88cf59eca2106dfe3fd239a791029630676",
+  "ineligible_candidates": []
+}

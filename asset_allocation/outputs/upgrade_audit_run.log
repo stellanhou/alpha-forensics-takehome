@@ -1,0 +1,119 @@
+Independent ledger audit: original_random_net
+Independent ledger audit: pit_random_net
+Independent ledger audit: temporal_oos_gross
+Independent ledger audit: temporal_oos_costs
+Independent ledger audit: temporal_oos_net
+Independent ledger audit: benchmark_gross
+Independent ledger audit: benchmark_costs
+Independent ledger audit: benchmark_net
+{
+  "checked_at_utc": "2026-10-11T09:49:23.326563+00:00",
+  "original_package_unchanged": true,
+  "prior_results_unchanged": true,
+  "temporal_fold_boundaries_passed": true,
+  "temporal_predictions_include_unlabelled_signals": 2340,
+  "audited_runs": [
+    {
+      "run": "original_random_net",
+      "dates": 522,
+      "order_attempts": 40114,
+      "filled_orders": 39793,
+      "writeoff_events": 4,
+      "max_cash_reconciliation_error": 2.9620750296999176e-13,
+      "max_nav_reconciliation_error": 9.467981954003335e-13,
+      "costs_dates_prices_permissions_metrics_checked": true
+    },
+    {
+      "run": "pit_random_net",
+      "dates": 522,
+      "order_attempts": 39893,
+      "filled_orders": 39355,
+      "writeoff_events": 6,
+      "max_cash_reconciliation_error": 2.020605904817785e-14,
+      "max_nav_reconciliation_error": 3.377298440909726e-13,
+      "costs_dates_prices_permissions_metrics_checked": true
+    },
+    {
+      "run": "temporal_oos_gross",
+      "dates": 522,
+      "order_attempts": 40129,
+      "filled_orders": 40123,
+      "writeoff_events": 5,
+      "max_cash_reconciliation_error": 3.9073941564965464e-14,
+      "max_nav_reconciliation_error": 5.595524044110789e-13,
+      "costs_dates_prices_permissions_metrics_checked": true
+    },
+    {
+      "run": "temporal_oos_costs",
+      "dates": 522,
+      "order_attempts": 40129,
+      "filled_orders": 40123,
+      "writeoff_events": 5,
+      "max_cash_reconciliation_error": 2.7533531010703882e-14,
+      "max_nav_reconciliation_error": 2.646771690706373e-13,
+      "costs_dates_prices_permissions_metrics_checked": true
+    },
+    {
+      "run": "temporal_oos_net",
+      "dates": 522,
+      "order_attempts": 40017,
+      "filled_orders": 39609,
+      "writeoff_events": 5,
+      "max_cash_reconciliation_error": 1.4654943925052066e-14,
+      "max_nav_reconciliation_error": 2.5490720645393594e-13,
+      "costs_dates_prices_permissions_metrics_checked": true
+    },
+    {
+      "run": "benchmark_gross",
+      "dates": 522,
+      "order_attempts": 398776,
+      "filled_orders": 398704,
+      "writeoff_events": 60,
+      "max_cash_reconciliation_error": 2.0698416938746966e-13,
+      "max_nav_reconciliation_error": 2.0183854587685346e-13,
+      "costs_dates_prices_permissions_metrics_checked": true
+    },
+    {
+      "run": "benchmark_costs",
+      "dates": 522,
+      "order_attempts": 398776,
+      "filled_orders": 398704,
+      "writeoff_events": 60,
+      "max_cash_reconciliation_error": 2.90878432451791e-13,
+      "max_nav_reconciliation_error": 2.90878432451791e-13,
+      "costs_dates_prices_permissions_metrics_checked": true
+    },
+    {
+      "run": "benchmark_net",
+      "dates": 522,
+      "order_attempts": 397955,
+      "filled_orders": 394327,
+      "writeoff_events": 60,
+      "max_cash_reconciliation_error": 1.1081240092192246e-13,
+      "max_nav_reconciliation_error": 1.0869083411080283e-13,
+      "costs_dates_prices_permissions_metrics_checked": true
+    }
+  ],
+  "temporal_manifest_sha256": "b34e39bc55e8745e1d2bf241f3d13632af9f189029b0b113b0a4e197262bd377",
+  "portfolio_manifest_sha256": "b1b79dbc440a67e8417dd9c30248f9d03859ac85bd3d66b8262c01a8a46a70b4",
+  "audit_code_sha256": "74681ce6216d977d6b0fc18e68a6667f6a35755f333a02004b1c3a5e1cb50fbc",
+  "portfolio_protocol": {
+    "start_signal": "2023-01-02",
+    "end_date": "2024-12-31",
+    "last_entry_signal": "2024-12-23",
+    "strategy": "Long-only prediction >= same-day 90th percentile; equal-weight within selected group",
+    "benchmark": "All signal-date listed members, equal-weight; same five-sleeve accounting and execution",
+    "capital": "Initial NAV 1; five initially equal independent cash sleeves; no borrowing or shorting; fractional shares",
+    "orders": "Signal-close names and fee-inclusive sleeve-value budget; next open sell before buy; cash shortfall scales the budget down",
+    "holding": "Each new basket holds five business-day open-to-open intervals; blocked exits retry daily; do not add a new lot of an asset still held in that sleeve",
+    "costs": "Previous-business-day fee_bps_one_way + half spread_bps + impact_bps_proxy on each actual buy/sell",
+    "constraints": "Previous-business-day can_buy/can_sell are execution proxies; same-day final flags only audit hypothetical fills",
+    "unfilled_buys": "Keep allocated cash; no replacement or redistribution among other names",
+    "missing_quote": "First missing quote on an existing position: zero recovery write-off, separately identified valuation assumption",
+    "terminal": "Predefined final entry date permits normal five-day exits; blocked terminal positions marked at actual final close, not fictitiously liquidated",
+    "capacity": "Fixed supplied standard-order impact proxy; no inference of scalable capacity; no volume-based opening filter",
+    "netting": "Sleeves accounted separately; cross-sleeve opposite trades are not netted, including their costs",
+    "annualization": "252 synthetic trading days; zero cash interest and zero risk-free rate",
+    "comparison": "Identical signal-date members and dates across predictors; old random-split models remain contaminated historical controls"
+  }
+}

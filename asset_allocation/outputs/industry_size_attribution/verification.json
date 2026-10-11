@@ -1,0 +1,65 @@
+{
+  "status": "passed",
+  "started_at_utc": "2026-10-11T10:44:18.564596+00:00",
+  "verified_at_utc": "2026-10-11T10:44:24.123758+00:00",
+  "audit_source_sha256": "9d514e5f4ad74b0f124c18ed593383084aa00a9dbbb83edaa91a2b2f0887c237",
+  "study_run_manifest_sha256": "e3e454c8dc6869d004cdc87250fd65b46dae0526743187906f9ace2d6f1ab592",
+  "protocol_sha256": "f5b715f8065db64430ae4380e67a1208b63eff5ff8a0e9f60924cee6fa34e963",
+  "command": [
+    "asset_allocation/.venv_models/bin/python",
+    "-B",
+    "asset_allocation/audit_industry_size_attribution.py",
+    "--out",
+    "asset_allocation/outputs/industry_size_attribution"
+  ],
+  "stages": {
+    "validation": {
+      "training_rows": 192806,
+      "evaluation_rows": 99057,
+      "dates": 254,
+      "partial_daily_rows": 1524,
+      "baseline_daily_rows": 1016,
+      "all20_days_with_tied_scores": 0,
+      "controls_models_independently_refitted": 2
+    },
+    "confirmation": {
+      "training_rows": 294192,
+      "evaluation_rows": 97929,
+      "dates": 256,
+      "partial_daily_rows": 1536,
+      "baseline_daily_rows": 1024,
+      "all20_days_with_tied_scores": 0,
+      "controls_models_independently_refitted": 2
+    }
+  },
+  "verified_input_files": 16,
+  "verified_study_source_files": 3,
+  "checks": {
+    "output_hash_records": 188
+  },
+  "max_absolute_errors": {
+    "training_mean": 0.0,
+    "preprocessing": 9.734435479913373e-13,
+    "independent_controls_refit": 6.529932844445696e-15,
+    "canonical_labels": 0.0,
+    "prediction_summary": 3.5800355735471356e-16,
+    "tail_weight_conservation": 2.220446049250313e-16,
+    "daily_prediction_metrics": 1.3877787807814457e-16,
+    "independent_partial_daily": 5.360295540768334e-16,
+    "daily_exposure": 1.0658141036401503e-14,
+    "industry_tail_allocation": 3.469446951953614e-16,
+    "industry_weight_conservation": 3.3306690738754696e-16,
+    "bootstrap_intervals": 1.0581813203458523e-16,
+    "partial_counts": 0.0,
+    "partial_summary": 1.249000902703301e-16,
+    "baseline_pairing": 7.632783294297951e-17
+  },
+  "independent_methods": {
+    "partial_rank_ic": "Average ranks, industry group demeaning and Frisch-Waugh scalar size projection; no study statistics imported",
+    "controls_baseline": "pandas full dummy design and direct sklearn Ridge/HGB refits, four models",
+    "tails": "Sequential score-level allocation with equal sharing of cutoff ties",
+    "intervals": "Independent full-calendar 20-day 2000-draw moving-block reproduction for annual prediction, partial and paired comparisons",
+    "quarterly": "Partial means, common-date counts, undefined statuses and projection R-squared checked; quarterly confidence intervals not independently recomputed"
+  },
+  "scope": "Historical observed-label member panel; conditional rank diagnostics, not causal attribution or executable net returns"
+}

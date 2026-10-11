@@ -1,0 +1,20 @@
+PTY: new /bin/zsh -f (tty=true, session_id=6217)
+Working directory: /Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/提交文件/.validation/26秋实习生招募–资产配置策略–陈星宇
+Command: .venv/bin/python -B asset_allocation/factor_timing.py --out asset_allocation/outputs/factor_timing_submission_replay
+Started: 2026-10-11 12:41:14 UTC
+
+Program summary (all 10 annual/ALL rows printed):
+factor_03 ALL: common_rows=393287, common_dates=1033, raw_eligible_rows=394457, raw_eligible_valid_ic_dates=1036
+factor_03 2021: common_rows=95161, dates=257
+factor_03 2022: common_rows=98809, dates=260
+factor_03 2023: common_rows=101388, dates=260
+factor_03 2024: common_rows=97929, dates=256
+factor_12 ALL: common_rows=394067, common_dates=1035, raw_eligible_rows=394457, raw_eligible_valid_ic_dates=1036
+factor_12 2021: common_rows=95906, dates=259
+factor_12 2022: common_rows=98840, dates=260
+factor_12 2023: common_rows=101392, dates=260
+factor_12 2024: common_rows=97929, dates=256
+
+The command returned to the PTY prompt by 2026-10-11 12:41:25 UTC.
+Status probe at 2026-10-11 12:41:29 UTC: print -r -- LAST_STATUS=$?
+Observed: LAST_STATUS=0

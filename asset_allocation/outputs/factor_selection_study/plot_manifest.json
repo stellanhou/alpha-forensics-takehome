@@ -1,0 +1,17 @@
+{
+  "inputs_sha256": {
+    "validation/summary.csv": "daab6030a00183467d2ae5b599eddb92e4a8ac66e2331a698afba26b4a90db2f",
+    "confirmation/summary.csv": "2b83123a78ed0821c7ba6c44622befff90facc38e7e05770e531a7f33684dd4e",
+    "validation/common_statistics/mean_daily_corr.csv": "da598904ba3994e77c8fa6ea26881c64c22ab94033d34be16e19d3b453f60bd2",
+    "validation/common_statistics/linkage.csv": "afd2d38300ad5363a36c001f9c0cc760cbae5396f719429e76113fea802cb5bb"
+  },
+  "script_sha256": "790ea05ae0a561415c9b801d0f3d516fb32af5f133fa6ab3583bb45881862289",
+  "outputs_sha256": {
+    "selection_comparison.png": "35d618e27906b4457edff859cbe592981535b2d05b94a420f4bdb3999b8ec277",
+    "selection_comparison.pdf": "75a3ff24edcfbe447d8405d7173f688c80e5b3e40ffe478279ebe8a1d4a5a6b2",
+    "hac_structure.png": "c32589b21c81d1b2f84da7e3721e786fb1211bef446a11a64f9ef92f2cb5e022",
+    "hac_structure.pdf": "86ce8ae25527072c0a781d03aef30bba08562ef14370575a8342b6ed9ac0265f",
+    "selected_factor_map.png": "9d1c737fd2a153cf96717a627fc4feb9c7699f0eac09aeca8af72ee55d365803",
+    "selected_factor_map.pdf": "23c811b7666b1768b1dc11c52167fb2ece3cccf27484a378693f74ba46ae6b1c"
+  }
+}

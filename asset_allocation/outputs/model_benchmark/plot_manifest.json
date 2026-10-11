@@ -1,0 +1,13 @@
+{
+  "inputs_sha256": {
+    "validation/summary.csv": "e560158dffed37d195063afbbda1e610f2c4a8f2655467c48ac02a314e8229e5",
+    "confirmation/summary.csv": "56f7fa5c5d83d2965e87c212445790f827b45ee107f9ad7f804b83072b4bdaf4",
+    "selection.json": "1cc35824aff4043b11f4e50121f153c4f50eb9f9951d8038e74390a627974503",
+    "protocol.json": "e7558489b53c26c2b4fdf918ddc325c4eedc114ff1757988849f11472919f0b9"
+  },
+  "script_sha256": "9d279a3aaa0d18b1271d62f8367866d1f6e08c3d97b01b5ed166aae25375ac21",
+  "outputs_sha256": {
+    "model_comparison.png": "04f6ad88ecbd3e44d6ebf53404163a98b3ec1a1493eb624218328631881f8fa9",
+    "model_comparison.pdf": "bbf076cfc0a2a18b4789750e264c778a226a211d8ece2a1f22633e7ed28cc7a5"
+  }
+}

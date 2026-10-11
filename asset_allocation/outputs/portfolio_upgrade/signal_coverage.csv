@@ -1,0 +1,4 @@
+variant,rows,dates,rows_without_future_label,is_temporal_oos
+original_random,201662,522,2340,False
+pit_random,201662,522,2340,False
+temporal_oos,201662,522,2340,True

@@ -1,0 +1,776 @@
+{
+  "frozen_at_utc": "2026-10-11T11:24:38.072552+00:00",
+  "scope": "Additional fixed-policy research on previously inspected synthetic history; no independent new sample or selection of a winning policy.",
+  "source": "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/asset_allocation/outputs/portfolio_model_comparison",
+  "root": "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/Lab404-CUFEL-E/03-资产配置策略方向/Alpha_Forensics_Candidate_v1",
+  "policies": [
+    "NET",
+    "RANK",
+    "WEIGHT",
+    "BOTH",
+    "EMA50",
+    "TAPER",
+    "SCORE",
+    "DAILY_NET"
+  ],
+  "predictors": [
+    "Ridge_ALL20",
+    "HGB_ALL20",
+    "Ridge_CONTROLS",
+    "HGB_CONTROLS",
+    "EqualWeight"
+  ],
+  "cost_multipliers": [
+    0,
+    1,
+    2
+  ],
+  "runs": [
+    {
+      "run": "NET__Ridge_ALL20__cost0",
+      "policy": "NET",
+      "predictor": "Ridge_ALL20",
+      "cost_multiplier": 0
+    },
+    {
+      "run": "NET__Ridge_ALL20__cost1",
+      "policy": "NET",
+      "predictor": "Ridge_ALL20",
+      "cost_multiplier": 1
+    },
+    {
+      "run": "NET__Ridge_ALL20__cost2",
+      "policy": "NET",
+      "predictor": "Ridge_ALL20",
+      "cost_multiplier": 2
+    },
+    {
+      "run": "NET__HGB_ALL20__cost0",
+      "policy": "NET",
+      "predictor": "HGB_ALL20",
+      "cost_multiplier": 0
+    },
+    {
+      "run": "NET__HGB_ALL20__cost1",
+      "policy": "NET",
+      "predictor": "HGB_ALL20",
+      "cost_multiplier": 1
+    },
+    {
+      "run": "NET__HGB_ALL20__cost2",
+      "policy": "NET",
+      "predictor": "HGB_ALL20",
+      "cost_multiplier": 2
+    },
+    {
+      "run": "NET__Ridge_CONTROLS__cost0",
+      "policy": "NET",
+      "predictor": "Ridge_CONTROLS",
+      "cost_multiplier": 0
+    },
+    {
+      "run": "NET__Ridge_CONTROLS__cost1",
+      "policy": "NET",
+      "predictor": "Ridge_CONTROLS",
+      "cost_multiplier": 1
+    },
+    {
+      "run": "NET__Ridge_CONTROLS__cost2",
+      "policy": "NET",
+      "predictor": "Ridge_CONTROLS",
+      "cost_multiplier": 2
+    },
+    {
+      "run": "NET__HGB_CONTROLS__cost0",
+      "policy": "NET",
+      "predictor": "HGB_CONTROLS",
+      "cost_multiplier": 0
+    },
+    {
+      "run": "NET__HGB_CONTROLS__cost1",
+      "policy": "NET",
+      "predictor": "HGB_CONTROLS",
+      "cost_multiplier": 1
+    },
+    {
+      "run": "NET__HGB_CONTROLS__cost2",
+      "policy": "NET",
+      "predictor": "HGB_CONTROLS",
+      "cost_multiplier": 2
+    },
+    {
+      "run": "NET__EqualWeight__cost0",
+      "policy": "NET",
+      "predictor": "EqualWeight",
+      "cost_multiplier": 0
+    },
+    {
+      "run": "NET__EqualWeight__cost1",
+      "policy": "NET",
+      "predictor": "EqualWeight",
+      "cost_multiplier": 1
+    },
+    {
+      "run": "NET__EqualWeight__cost2",
+      "policy": "NET",
+      "predictor": "EqualWeight",
+      "cost_multiplier": 2
+    },
+    {
+      "run": "RANK__Ridge_ALL20__cost0",
+      "policy": "RANK",
+      "predictor": "Ridge_ALL20",
+      "cost_multiplier": 0
+    },
+    {
+      "run": "RANK__Ridge_ALL20__cost1",
+      "policy": "RANK",
+      "predictor": "Ridge_ALL20",
+      "cost_multiplier": 1
+    },
+    {
+      "run": "RANK__Ridge_ALL20__cost2",
+      "policy": "RANK",
+      "predictor": "Ridge_ALL20",
+      "cost_multiplier": 2
+    },
+    {
+      "run": "RANK__HGB_ALL20__cost0",
+      "policy": "RANK",
+      "predictor": "HGB_ALL20",
+      "cost_multiplier": 0
+    },
+    {
+      "run": "RANK__HGB_ALL20__cost1",
+      "policy": "RANK",
+      "predictor": "HGB_ALL20",
+      "cost_multiplier": 1
+    },
+    {
+      "run": "RANK__HGB_ALL20__cost2",
+      "policy": "RANK",
+      "predictor": "HGB_ALL20",
+      "cost_multiplier": 2
+    },
+    {
+      "run": "RANK__Ridge_CONTROLS__cost0",
+      "policy": "RANK",
+      "predictor": "Ridge_CONTROLS",
+      "cost_multiplier": 0
+    },
+    {
+      "run": "RANK__Ridge_CONTROLS__cost1",
+      "policy": "RANK",
+      "predictor": "Ridge_CONTROLS",
+      "cost_multiplier": 1
+    },
+    {
+      "run": "RANK__Ridge_CONTROLS__cost2",
+      "policy": "RANK",
+      "predictor": "Ridge_CONTROLS",
+      "cost_multiplier": 2
+    },
+    {
+      "run": "RANK__HGB_CONTROLS__cost0",
+      "policy": "RANK",
+      "predictor": "HGB_CONTROLS",
+      "cost_multiplier": 0
+    },
+    {
+      "run": "RANK__HGB_CONTROLS__cost1",
+      "policy": "RANK",
+      "predictor": "HGB_CONTROLS",
+      "cost_multiplier": 1
+    },
+    {
+      "run": "RANK__HGB_CONTROLS__cost2",
+      "policy": "RANK",
+      "predictor": "HGB_CONTROLS",
+      "cost_multiplier": 2
+    },
+    {
+      "run": "WEIGHT__Ridge_ALL20__cost0",
+      "policy": "WEIGHT",
+      "predictor": "Ridge_ALL20",
+      "cost_multiplier": 0
+    },
+    {
+      "run": "WEIGHT__Ridge_ALL20__cost1",
+      "policy": "WEIGHT",
+      "predictor": "Ridge_ALL20",
+      "cost_multiplier": 1
+    },
+    {
+      "run": "WEIGHT__Ridge_ALL20__cost2",
+      "policy": "WEIGHT",
+      "predictor": "Ridge_ALL20",
+      "cost_multiplier": 2
+    },
+    {
+      "run": "WEIGHT__HGB_ALL20__cost0",
+      "policy": "WEIGHT",
+      "predictor": "HGB_ALL20",
+      "cost_multiplier": 0
+    },
+    {
+      "run": "WEIGHT__HGB_ALL20__cost1",
+      "policy": "WEIGHT",
+      "predictor": "HGB_ALL20",
+      "cost_multiplier": 1
+    },
+    {
+      "run": "WEIGHT__HGB_ALL20__cost2",
+      "policy": "WEIGHT",
+      "predictor": "HGB_ALL20",
+      "cost_multiplier": 2
+    },
+    {
+      "run": "WEIGHT__Ridge_CONTROLS__cost0",
+      "policy": "WEIGHT",
+      "predictor": "Ridge_CONTROLS",
+      "cost_multiplier": 0
+    },
+    {
+      "run": "WEIGHT__Ridge_CONTROLS__cost1",
+      "policy": "WEIGHT",
+      "predictor": "Ridge_CONTROLS",
+      "cost_multiplier": 1
+    },
+    {
+      "run": "WEIGHT__Ridge_CONTROLS__cost2",
+      "policy": "WEIGHT",
+      "predictor": "Ridge_CONTROLS",
+      "cost_multiplier": 2
+    },
+    {
+      "run": "WEIGHT__HGB_CONTROLS__cost0",
+      "policy": "WEIGHT",
+      "predictor": "HGB_CONTROLS",
+      "cost_multiplier": 0
+    },
+    {
+      "run": "WEIGHT__HGB_CONTROLS__cost1",
+      "policy": "WEIGHT",
+      "predictor": "HGB_CONTROLS",
+      "cost_multiplier": 1
+    },
+    {
+      "run": "WEIGHT__HGB_CONTROLS__cost2",
+      "policy": "WEIGHT",
+      "predictor": "HGB_CONTROLS",
+      "cost_multiplier": 2
+    },
+    {
+      "run": "WEIGHT__EqualWeight__cost0",
+      "policy": "WEIGHT",
+      "predictor": "EqualWeight",
+      "cost_multiplier": 0
+    },
+    {
+      "run": "WEIGHT__EqualWeight__cost1",
+      "policy": "WEIGHT",
+      "predictor": "EqualWeight",
+      "cost_multiplier": 1
+    },
+    {
+      "run": "WEIGHT__EqualWeight__cost2",
+      "policy": "WEIGHT",
+      "predictor": "EqualWeight",
+      "cost_multiplier": 2
+    },
+    {
+      "run": "BOTH__Ridge_ALL20__cost0",
+      "policy": "BOTH",
+      "predictor": "Ridge_ALL20",
+      "cost_multiplier": 0
+    },
+    {
+      "run": "BOTH__Ridge_ALL20__cost1",
+      "policy": "BOTH",
+      "predictor": "Ridge_ALL20",
+      "cost_multiplier": 1
+    },
+    {
+      "run": "BOTH__Ridge_ALL20__cost2",
+      "policy": "BOTH",
+      "predictor": "Ridge_ALL20",
+      "cost_multiplier": 2
+    },
+    {
+      "run": "BOTH__HGB_ALL20__cost0",
+      "policy": "BOTH",
+      "predictor": "HGB_ALL20",
+      "cost_multiplier": 0
+    },
+    {
+      "run": "BOTH__HGB_ALL20__cost1",
+      "policy": "BOTH",
+      "predictor": "HGB_ALL20",
+      "cost_multiplier": 1
+    },
+    {
+      "run": "BOTH__HGB_ALL20__cost2",
+      "policy": "BOTH",
+      "predictor": "HGB_ALL20",
+      "cost_multiplier": 2
+    },
+    {
+      "run": "BOTH__Ridge_CONTROLS__cost0",
+      "policy": "BOTH",
+      "predictor": "Ridge_CONTROLS",
+      "cost_multiplier": 0
+    },
+    {
+      "run": "BOTH__Ridge_CONTROLS__cost1",
+      "policy": "BOTH",
+      "predictor": "Ridge_CONTROLS",
+      "cost_multiplier": 1
+    },
+    {
+      "run": "BOTH__Ridge_CONTROLS__cost2",
+      "policy": "BOTH",
+      "predictor": "Ridge_CONTROLS",
+      "cost_multiplier": 2
+    },
+    {
+      "run": "BOTH__HGB_CONTROLS__cost0",
+      "policy": "BOTH",
+      "predictor": "HGB_CONTROLS",
+      "cost_multiplier": 0
+    },
+    {
+      "run": "BOTH__HGB_CONTROLS__cost1",
+      "policy": "BOTH",
+      "predictor": "HGB_CONTROLS",
+      "cost_multiplier": 1
+    },
+    {
+      "run": "BOTH__HGB_CONTROLS__cost2",
+      "policy": "BOTH",
+      "predictor": "HGB_CONTROLS",
+      "cost_multiplier": 2
+    },
+    {
+      "run": "EMA50__Ridge_ALL20__cost0",
+      "policy": "EMA50",
+      "predictor": "Ridge_ALL20",
+      "cost_multiplier": 0
+    },
+    {
+      "run": "EMA50__Ridge_ALL20__cost1",
+      "policy": "EMA50",
+      "predictor": "Ridge_ALL20",
+      "cost_multiplier": 1
+    },
+    {
+      "run": "EMA50__Ridge_ALL20__cost2",
+      "policy": "EMA50",
+      "predictor": "Ridge_ALL20",
+      "cost_multiplier": 2
+    },
+    {
+      "run": "EMA50__HGB_ALL20__cost0",
+      "policy": "EMA50",
+      "predictor": "HGB_ALL20",
+      "cost_multiplier": 0
+    },
+    {
+      "run": "EMA50__HGB_ALL20__cost1",
+      "policy": "EMA50",
+      "predictor": "HGB_ALL20",
+      "cost_multiplier": 1
+    },
+    {
+      "run": "EMA50__HGB_ALL20__cost2",
+      "policy": "EMA50",
+      "predictor": "HGB_ALL20",
+      "cost_multiplier": 2
+    },
+    {
+      "run": "EMA50__Ridge_CONTROLS__cost0",
+      "policy": "EMA50",
+      "predictor": "Ridge_CONTROLS",
+      "cost_multiplier": 0
+    },
+    {
+      "run": "EMA50__Ridge_CONTROLS__cost1",
+      "policy": "EMA50",
+      "predictor": "Ridge_CONTROLS",
+      "cost_multiplier": 1
+    },
+    {
+      "run": "EMA50__Ridge_CONTROLS__cost2",
+      "policy": "EMA50",
+      "predictor": "Ridge_CONTROLS",
+      "cost_multiplier": 2
+    },
+    {
+      "run": "EMA50__HGB_CONTROLS__cost0",
+      "policy": "EMA50",
+      "predictor": "HGB_CONTROLS",
+      "cost_multiplier": 0
+    },
+    {
+      "run": "EMA50__HGB_CONTROLS__cost1",
+      "policy": "EMA50",
+      "predictor": "HGB_CONTROLS",
+      "cost_multiplier": 1
+    },
+    {
+      "run": "EMA50__HGB_CONTROLS__cost2",
+      "policy": "EMA50",
+      "predictor": "HGB_CONTROLS",
+      "cost_multiplier": 2
+    },
+    {
+      "run": "EMA50__EqualWeight__cost0",
+      "policy": "EMA50",
+      "predictor": "EqualWeight",
+      "cost_multiplier": 0
+    },
+    {
+      "run": "EMA50__EqualWeight__cost1",
+      "policy": "EMA50",
+      "predictor": "EqualWeight",
+      "cost_multiplier": 1
+    },
+    {
+      "run": "EMA50__EqualWeight__cost2",
+      "policy": "EMA50",
+      "predictor": "EqualWeight",
+      "cost_multiplier": 2
+    },
+    {
+      "run": "TAPER__Ridge_ALL20__cost0",
+      "policy": "TAPER",
+      "predictor": "Ridge_ALL20",
+      "cost_multiplier": 0
+    },
+    {
+      "run": "TAPER__Ridge_ALL20__cost1",
+      "policy": "TAPER",
+      "predictor": "Ridge_ALL20",
+      "cost_multiplier": 1
+    },
+    {
+      "run": "TAPER__Ridge_ALL20__cost2",
+      "policy": "TAPER",
+      "predictor": "Ridge_ALL20",
+      "cost_multiplier": 2
+    },
+    {
+      "run": "TAPER__HGB_ALL20__cost0",
+      "policy": "TAPER",
+      "predictor": "HGB_ALL20",
+      "cost_multiplier": 0
+    },
+    {
+      "run": "TAPER__HGB_ALL20__cost1",
+      "policy": "TAPER",
+      "predictor": "HGB_ALL20",
+      "cost_multiplier": 1
+    },
+    {
+      "run": "TAPER__HGB_ALL20__cost2",
+      "policy": "TAPER",
+      "predictor": "HGB_ALL20",
+      "cost_multiplier": 2
+    },
+    {
+      "run": "TAPER__Ridge_CONTROLS__cost0",
+      "policy": "TAPER",
+      "predictor": "Ridge_CONTROLS",
+      "cost_multiplier": 0
+    },
+    {
+      "run": "TAPER__Ridge_CONTROLS__cost1",
+      "policy": "TAPER",
+      "predictor": "Ridge_CONTROLS",
+      "cost_multiplier": 1
+    },
+    {
+      "run": "TAPER__Ridge_CONTROLS__cost2",
+      "policy": "TAPER",
+      "predictor": "Ridge_CONTROLS",
+      "cost_multiplier": 2
+    },
+    {
+      "run": "TAPER__HGB_CONTROLS__cost0",
+      "policy": "TAPER",
+      "predictor": "HGB_CONTROLS",
+      "cost_multiplier": 0
+    },
+    {
+      "run": "TAPER__HGB_CONTROLS__cost1",
+      "policy": "TAPER",
+      "predictor": "HGB_CONTROLS",
+      "cost_multiplier": 1
+    },
+    {
+      "run": "TAPER__HGB_CONTROLS__cost2",
+      "policy": "TAPER",
+      "predictor": "HGB_CONTROLS",
+      "cost_multiplier": 2
+    },
+    {
+      "run": "SCORE__Ridge_ALL20__cost0",
+      "policy": "SCORE",
+      "predictor": "Ridge_ALL20",
+      "cost_multiplier": 0
+    },
+    {
+      "run": "SCORE__Ridge_ALL20__cost1",
+      "policy": "SCORE",
+      "predictor": "Ridge_ALL20",
+      "cost_multiplier": 1
+    },
+    {
+      "run": "SCORE__Ridge_ALL20__cost2",
+      "policy": "SCORE",
+      "predictor": "Ridge_ALL20",
+      "cost_multiplier": 2
+    },
+    {
+      "run": "SCORE__HGB_ALL20__cost0",
+      "policy": "SCORE",
+      "predictor": "HGB_ALL20",
+      "cost_multiplier": 0
+    },
+    {
+      "run": "SCORE__HGB_ALL20__cost1",
+      "policy": "SCORE",
+      "predictor": "HGB_ALL20",
+      "cost_multiplier": 1
+    },
+    {
+      "run": "SCORE__HGB_ALL20__cost2",
+      "policy": "SCORE",
+      "predictor": "HGB_ALL20",
+      "cost_multiplier": 2
+    },
+    {
+      "run": "SCORE__Ridge_CONTROLS__cost0",
+      "policy": "SCORE",
+      "predictor": "Ridge_CONTROLS",
+      "cost_multiplier": 0
+    },
+    {
+      "run": "SCORE__Ridge_CONTROLS__cost1",
+      "policy": "SCORE",
+      "predictor": "Ridge_CONTROLS",
+      "cost_multiplier": 1
+    },
+    {
+      "run": "SCORE__Ridge_CONTROLS__cost2",
+      "policy": "SCORE",
+      "predictor": "Ridge_CONTROLS",
+      "cost_multiplier": 2
+    },
+    {
+      "run": "SCORE__HGB_CONTROLS__cost0",
+      "policy": "SCORE",
+      "predictor": "HGB_CONTROLS",
+      "cost_multiplier": 0
+    },
+    {
+      "run": "SCORE__HGB_CONTROLS__cost1",
+      "policy": "SCORE",
+      "predictor": "HGB_CONTROLS",
+      "cost_multiplier": 1
+    },
+    {
+      "run": "SCORE__HGB_CONTROLS__cost2",
+      "policy": "SCORE",
+      "predictor": "HGB_CONTROLS",
+      "cost_multiplier": 2
+    },
+    {
+      "run": "DAILY_NET__Ridge_ALL20__cost0",
+      "policy": "DAILY_NET",
+      "predictor": "Ridge_ALL20",
+      "cost_multiplier": 0
+    },
+    {
+      "run": "DAILY_NET__Ridge_ALL20__cost1",
+      "policy": "DAILY_NET",
+      "predictor": "Ridge_ALL20",
+      "cost_multiplier": 1
+    },
+    {
+      "run": "DAILY_NET__Ridge_ALL20__cost2",
+      "policy": "DAILY_NET",
+      "predictor": "Ridge_ALL20",
+      "cost_multiplier": 2
+    },
+    {
+      "run": "DAILY_NET__HGB_ALL20__cost0",
+      "policy": "DAILY_NET",
+      "predictor": "HGB_ALL20",
+      "cost_multiplier": 0
+    },
+    {
+      "run": "DAILY_NET__HGB_ALL20__cost1",
+      "policy": "DAILY_NET",
+      "predictor": "HGB_ALL20",
+      "cost_multiplier": 1
+    },
+    {
+      "run": "DAILY_NET__HGB_ALL20__cost2",
+      "policy": "DAILY_NET",
+      "predictor": "HGB_ALL20",
+      "cost_multiplier": 2
+    },
+    {
+      "run": "DAILY_NET__Ridge_CONTROLS__cost0",
+      "policy": "DAILY_NET",
+      "predictor": "Ridge_CONTROLS",
+      "cost_multiplier": 0
+    },
+    {
+      "run": "DAILY_NET__Ridge_CONTROLS__cost1",
+      "policy": "DAILY_NET",
+      "predictor": "Ridge_CONTROLS",
+      "cost_multiplier": 1
+    },
+    {
+      "run": "DAILY_NET__Ridge_CONTROLS__cost2",
+      "policy": "DAILY_NET",
+      "predictor": "Ridge_CONTROLS",
+      "cost_multiplier": 2
+    },
+    {
+      "run": "DAILY_NET__HGB_CONTROLS__cost0",
+      "policy": "DAILY_NET",
+      "predictor": "HGB_CONTROLS",
+      "cost_multiplier": 0
+    },
+    {
+      "run": "DAILY_NET__HGB_CONTROLS__cost1",
+      "policy": "DAILY_NET",
+      "predictor": "HGB_CONTROLS",
+      "cost_multiplier": 1
+    },
+    {
+      "run": "DAILY_NET__HGB_CONTROLS__cost2",
+      "policy": "DAILY_NET",
+      "predictor": "HGB_CONTROLS",
+      "cost_multiplier": 2
+    },
+    {
+      "run": "DAILY_NET__EqualWeight__cost0",
+      "policy": "DAILY_NET",
+      "predictor": "EqualWeight",
+      "cost_multiplier": 0
+    },
+    {
+      "run": "DAILY_NET__EqualWeight__cost1",
+      "policy": "DAILY_NET",
+      "predictor": "EqualWeight",
+      "cost_multiplier": 1
+    },
+    {
+      "run": "DAILY_NET__EqualWeight__cost2",
+      "policy": "DAILY_NET",
+      "predictor": "EqualWeight",
+      "cost_multiplier": 2
+    }
+  ],
+  "aliases": [
+    {
+      "predictor": "EqualWeight",
+      "policy": "RANK",
+      "actual_policy": "NET",
+      "reason": "Equal-weight benchmark has no forecast rank or score"
+    },
+    {
+      "predictor": "EqualWeight",
+      "policy": "BOTH",
+      "actual_policy": "WEIGHT",
+      "reason": "Equal-weight benchmark has no forecast rank or score"
+    },
+    {
+      "predictor": "EqualWeight",
+      "policy": "TAPER",
+      "actual_policy": "NET",
+      "reason": "Equal-weight benchmark has no forecast rank or score"
+    },
+    {
+      "predictor": "EqualWeight",
+      "policy": "SCORE",
+      "actual_policy": "NET",
+      "reason": "Equal-weight benchmark has no forecast rank or score"
+    }
+  ],
+  "primary_period": "2024",
+  "primary_cost_multiplier": 1,
+  "descriptive_periods": [
+    "2023",
+    "FULL"
+  ],
+  "fixed_predictions": "Reuse complete annual 2023/2024 member predictions; no refit, score adjustment, factor selection, or model selection",
+  "start_signal": "2023-01-02",
+  "end_date": "2024-12-31",
+  "last_entry_signal": "2024-12-23",
+  "netting": "Within each cash sleeve only; keep eligible holdings and trade target minus actual shares; no transfers or cross-sleeve netting",
+  "timing": "Signal close freezes names, weights and close-NAV budget; next open uses execution budget min(signal close NAV, actual open NAV)",
+  "quantities": "Normal target shares = execution budget * effective weight / open; within-band quantities stay frozen at signal-close actual shares",
+  "sell_intentions": "A new plan supersedes old targets before any sell retry; blocked reductions keep a share target and retry with next day's prior-day proxies",
+  "buy_budget": "Sell first; scale all intended fee-inclusive buys together to available sleeve cash, retaining blocked/missing-quote demand slots; no redistribution; failed buys expire",
+  "permissions_costs": "Prior business-day permission and fee + half spread + standard-order impact; current-day flags audit only; each cost multiplier follows its own holdings",
+  "missing_quote": "Existing position written off at zero recovery on first missing quote; intended missing-quote buy budget remains cash",
+  "terminal": "Five-sleeve methods issue zero targets at each sleeve's first scheduled review after last entry; DAILY_NET freezes after last entry and issues zero target on end-1 business day; blocked final sells remain marked holdings",
+  "rules": {
+    "NET": "Five initially equal cash sleeves; index%5 sleeve reviews; score>=q90, all boundary ties, equal weights",
+    "RANK": "Entry q90, retention q80 based on actual held shares; K=ceil(0.1*N); retain eligible old holdings first, fill by descending whole score-tie groups; no new entry if retained count>=K",
+    "WEIGHT": "NET membership; signal-close relative +/-10% target band; hold actual shares in band, nearest boundary out of band, new positions at target, zero target exits override band",
+    "BOTH": "RANK membership plus WEIGHT sizing, same fixed parameters",
+    "EMA50": "Each sleeve mixes 0.5 fresh NET target with 0.5 its prior smoothed target; starts in cash; ineligible assets zeroed at review; no rescaling to full exposure; terminal zero overrides smoothing",
+    "TAPER": "NET selected set; weights proportional to M+1-average descending rank, normalized to one, equal scores equal weights",
+    "SCORE": "NET selected set; positive part of score minus all-member mean, proportional with cap 2/M and capped surplus redistributed; insufficient positive capacity leaves cash; flat cross-section cash",
+    "DAILY_NET": "One full account, new NET target every day; changes both review frequency and initial capital deployment relative to five staggered sleeves"
+  },
+  "method_origin": "Adapted ideas from the user's multifactor RebalancePolicy, target-weight EMA, tapered and centered-score portfolios; this study uses the supplied daily long-only cash market, not the prior perpetual account or prior performance evidence",
+  "metrics": "Continuous close NAV; 252-day annualization; prior year-end opening NAV included in annual return/drawdown; per-asset holdings aggregated across sleeves for concentration and breadth",
+  "primary_uncertainty": "2024 cost1 only: paired daily arithmetic return and log relative growth; moving 20-business-day blocks, 2000 draws, seed1021; unadjusted reference intervals, no multiple-search winner claim",
+  "inputs_sha256": {
+    "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/asset_allocation/outputs/portfolio_model_comparison/run_manifest.json": "5cd2920fb8474e440d540cdcce13a0f86c49947c990d9bf13624ca393ad43f5d",
+    "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/asset_allocation/outputs/portfolio_model_comparison/verification.json": "4ea86b61a7cf162d0a10f85c8bf39bae67698ab64ee469ff5d4ea24493bb7665",
+    "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/asset_allocation/outputs/portfolio_model_comparison/statistical_verification.json": "72a67617951ea258342c6ebe6f66b5f2eb8c21b9c17d10764e3225701e6e0dab",
+    "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/asset_allocation/outputs/portfolio_model_comparison/protocol.json": "da9ede66faaf8514866dd3c827d3d2518a1ab673bea61b16b046f0a1a4759ecb",
+    "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/asset_allocation/outputs/portfolio_model_comparison/period_metrics.csv": "30da0188ec3457a9ab00b9e1c6c58d481eec2de70552b6cfae83a42cb1fe826a",
+    "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/asset_allocation/outputs/portfolio_model_comparison/summary.csv": "eb14a1851fa58191c239bc63dc1a6075e97282433adde6bd5c545b238b8c2498",
+    "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/asset_allocation/outputs/portfolio_model_comparison/predictions/Ridge_ALL20.csv.gz": "5e8d2641a2fea544dd6cdeec09e3130b730c909dfd7a296c5724406acd37f767",
+    "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/asset_allocation/outputs/portfolio_model_comparison/predictions/HGB_ALL20.csv.gz": "391ddd82fc414fc025f5c9e93e8942305cd9a6731543c39fde91d7665c540a18",
+    "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/asset_allocation/outputs/portfolio_model_comparison/predictions/Ridge_CONTROLS.csv.gz": "4e0f67ccdf78507a440f7e835611e63fcb31f025eac7ef0443836e56731af6df",
+    "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/asset_allocation/outputs/portfolio_model_comparison/predictions/HGB_CONTROLS.csv.gz": "53e2c73349781ab74d8510588152c64a95cd8211b6d990f25f1bcd11ae8d9fa7",
+    "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/asset_allocation/outputs/portfolio_model_comparison/runs/Ridge_ALL20__cost0/daily.csv": "5de820744bb7716f0ae6222e940974f5dfceb8aa97958a5aa0eaf743e8ee6442",
+    "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/asset_allocation/outputs/portfolio_model_comparison/runs/Ridge_ALL20__cost1/daily.csv": "ab311273fffcb053fa565efe99b88d971571d29613e63d6347a459282c5ffe26",
+    "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/asset_allocation/outputs/portfolio_model_comparison/runs/Ridge_ALL20__cost2/daily.csv": "4ce3de9765767a4036c39a475615af290caa9496a2e86183f154b81a82739b6f",
+    "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/asset_allocation/outputs/portfolio_model_comparison/runs/HGB_ALL20__cost0/daily.csv": "dd7bcb40343b4f9932e70d2499282059e7403d0f45e0a527d70dfd50d6f7f24c",
+    "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/asset_allocation/outputs/portfolio_model_comparison/runs/HGB_ALL20__cost1/daily.csv": "bd67922bdb16e59a8b9541986cd3a7c332a21bad14da66417b42ead777c694d1",
+    "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/asset_allocation/outputs/portfolio_model_comparison/runs/HGB_ALL20__cost2/daily.csv": "71c985e0fdea12eb9623c1f44bd19aa6d7ee19d8c492d2abdda9831ac8e8cbd1",
+    "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/asset_allocation/outputs/portfolio_model_comparison/runs/Ridge_CONTROLS__cost0/daily.csv": "36fd074df8129fd12946baa88e5a4b7dad56e566854eea07bb23424248271c01",
+    "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/asset_allocation/outputs/portfolio_model_comparison/runs/Ridge_CONTROLS__cost1/daily.csv": "ba82110a4f310ad25e00dac722439b12055b8e8ddb390984d83c365f0cf383b4",
+    "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/asset_allocation/outputs/portfolio_model_comparison/runs/Ridge_CONTROLS__cost2/daily.csv": "fce9cbe66d6d5bfa95f0013c9fec6739fd008dd9ea52adb9efa049de89fdce7f",
+    "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/asset_allocation/outputs/portfolio_model_comparison/runs/HGB_CONTROLS__cost0/daily.csv": "dad225c1a71868494e981505ef076e964c5298cd726571b616d8995cfc688869",
+    "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/asset_allocation/outputs/portfolio_model_comparison/runs/HGB_CONTROLS__cost1/daily.csv": "f6fd553297a90cb2f4b97e481bca67f3ab833983d36c2e13a2f0f7046b7340f2",
+    "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/asset_allocation/outputs/portfolio_model_comparison/runs/HGB_CONTROLS__cost2/daily.csv": "54a0b442dcd1b42970de250a828c59fef70aa2005f6a67cff666fd39979e6383",
+    "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/asset_allocation/outputs/portfolio_model_comparison/runs/EqualWeight__cost0/daily.csv": "c9a32e80af048ef2c7c81688f79477a73af20a4b9e53796c930ed79a8975ebca",
+    "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/asset_allocation/outputs/portfolio_model_comparison/runs/EqualWeight__cost1/daily.csv": "b93d404da441aa0cb59bfbad357b3b4c30f8fc694b225e68207ebc802579df52",
+    "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/asset_allocation/outputs/portfolio_model_comparison/runs/EqualWeight__cost2/daily.csv": "028e49fe5d331fb8536541c7843e87f8b0e411e4e2bb7ff6941f846077d8b71c",
+    "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/Lab404-CUFEL-E/03-资产配置策略方向/Alpha_Forensics_Candidate_v1/data/market_daily.csv.gz": "64e4437e652d81fe7d81fcb5c192b75ec41ec6569bea1357e21a93d4d2fac062",
+    "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/Lab404-CUFEL-E/03-资产配置策略方向/Alpha_Forensics_Candidate_v1/data/trading_constraints.csv.gz": "830bf73e87cf136bcfec4960fc8ad3d3d6f731177356e7122439270d263e845e",
+    "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/Lab404-CUFEL-E/03-资产配置策略方向/Alpha_Forensics_Candidate_v1/data/universe.csv.gz": "fa0eafdc6989a1a4cf2bbb9a2cc7766a8494f527eeb006609a10e9993c92138a",
+    "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/Lab404-CUFEL-E/03-资产配置策略方向/Alpha_Forensics_Candidate_v1/data/data_dictionary.md": "8a2e10234f25c0328c02384b60f82e0ee9465842a081541cfedada9cee9bb1f6"
+  },
+  "code_sha256": {
+    "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/asset_allocation/rebalance_study.py": "c17b28bd0a39060866ece44dcf0d75a8676f69a3dd22257e906114a2a8fecf3f",
+    "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/asset_allocation/rebalance_ledger.py": "963ab14e0c294aa431887478165feff486f12a4bd601fb74c6cde0c4c8d5e5a0",
+    "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/asset_allocation/test_rebalance_ledger.py": "4ea5cc1d83ec506a86e8665ade2fc5ed9937de4bc31c2e104e4b174b740011ac",
+    "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/asset_allocation/audit_rebalance_study.py": "1f4a1945a81c479cc7099c387fc3c198228ceeed7d85d244598f4100bb63f4cf",
+    "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/asset_allocation/portfolio_ledger.py": "4354d633d1da552dfb38aad4e5a30654c0cb304814a03e9f98e979cc701accdd",
+    "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/asset_allocation/portfolio_model_comparison.py": "8f9abb60bb71da127ab33dee92b60739797df1d60c70172d545ea608b558d4b4",
+    "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/asset_allocation/compare_models.py": "e04f0d1e71c76ea787d356fc3b6877bf2babe2aacbcf3d46a56e585793f9d084",
+    "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/asset_allocation/factor_timing.py": "a26162852a93dea4991fb17f031ab140b4180d44b66e25b0a94ad7074a09430b"
+  }
+}

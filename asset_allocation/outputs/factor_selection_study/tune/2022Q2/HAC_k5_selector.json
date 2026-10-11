@@ -1,0 +1,140 @@
+{
+  "candidate": {
+    "family": "HAC",
+    "selector_id": "HAC_k5",
+    "k": 5
+  },
+  "status": "eligible",
+  "reason": "",
+  "features": [
+    "factor_02",
+    "factor_05",
+    "factor_10",
+    "factor_18",
+    "factor_20"
+  ],
+  "metadata": {
+    "clusters": [
+      {
+        "factor": "factor_01",
+        "cluster": 0,
+        "representative": "factor_02",
+        "selected": false
+      },
+      {
+        "factor": "factor_02",
+        "cluster": 0,
+        "representative": "factor_02",
+        "selected": true
+      },
+      {
+        "factor": "factor_03",
+        "cluster": 0,
+        "representative": "factor_02",
+        "selected": false
+      },
+      {
+        "factor": "factor_04",
+        "cluster": 0,
+        "representative": "factor_02",
+        "selected": false
+      },
+      {
+        "factor": "factor_05",
+        "cluster": 1,
+        "representative": "factor_05",
+        "selected": true
+      },
+      {
+        "factor": "factor_06",
+        "cluster": 0,
+        "representative": "factor_02",
+        "selected": false
+      },
+      {
+        "factor": "factor_07",
+        "cluster": 0,
+        "representative": "factor_02",
+        "selected": false
+      },
+      {
+        "factor": "factor_08",
+        "cluster": 0,
+        "representative": "factor_02",
+        "selected": false
+      },
+      {
+        "factor": "factor_09",
+        "cluster": 0,
+        "representative": "factor_02",
+        "selected": false
+      },
+      {
+        "factor": "factor_10",
+        "cluster": 2,
+        "representative": "factor_10",
+        "selected": true
+      },
+      {
+        "factor": "factor_11",
+        "cluster": 0,
+        "representative": "factor_02",
+        "selected": false
+      },
+      {
+        "factor": "factor_12",
+        "cluster": 0,
+        "representative": "factor_02",
+        "selected": false
+      },
+      {
+        "factor": "factor_13",
+        "cluster": 0,
+        "representative": "factor_02",
+        "selected": false
+      },
+      {
+        "factor": "factor_14",
+        "cluster": 0,
+        "representative": "factor_02",
+        "selected": false
+      },
+      {
+        "factor": "factor_15",
+        "cluster": 0,
+        "representative": "factor_02",
+        "selected": false
+      },
+      {
+        "factor": "factor_16",
+        "cluster": 0,
+        "representative": "factor_02",
+        "selected": false
+      },
+      {
+        "factor": "factor_17",
+        "cluster": 0,
+        "representative": "factor_02",
+        "selected": false
+      },
+      {
+        "factor": "factor_18",
+        "cluster": 3,
+        "representative": "factor_18",
+        "selected": true
+      },
+      {
+        "factor": "factor_19",
+        "cluster": 0,
+        "representative": "factor_02",
+        "selected": false
+      },
+      {
+        "factor": "factor_20",
+        "cluster": 4,
+        "representative": "factor_20",
+        "selected": true
+      }
+    ]
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "checked_relative_links": 29,
+  "missing_links": [],
+  "latest_experiment_source_checks": [
+    {
+      "file": "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/asset_allocation/joint_factor_increment.py",
+      "matches_frozen_source": true
+    },
+    {
+      "file": "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/asset_allocation/test_joint_factor_increment.py",
+      "matches_frozen_source": true
+    },
+    {
+      "file": "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/asset_allocation/joint_factor_model.py",
+      "matches_frozen_source": true
+    },
+    {
+      "file": "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/asset_allocation/test_joint_factor_model.py",
+      "matches_frozen_source": true
+    },
+    {
+      "file": "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/asset_allocation/audit_joint_factor_increment.py",
+      "matches_frozen_source": true
+    },
+    {
+      "file": "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/asset_allocation/rebalance_ledger.py",
+      "matches_frozen_source": true
+    },
+    {
+      "file": "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/asset_allocation/test_rebalance_ledger.py",
+      "matches_frozen_source": true
+    },
+    {
+      "file": "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/asset_allocation/audit_rebalance_study.py",
+      "matches_frozen_source": true
+    },
+    {
+      "file": "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/asset_allocation/audit_industry_size_attribution.py",
+      "matches_frozen_source": true
+    },
+    {
+      "file": "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/asset_allocation/rebalance_study.py",
+      "matches_frozen_source": true
+    },
+    {
+      "file": "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/asset_allocation/portfolio_ledger.py",
+      "matches_frozen_source": true
+    },
+    {
+      "file": "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/asset_allocation/portfolio_model_comparison.py",
+      "matches_frozen_source": true
+    },
+    {
+      "file": "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/asset_allocation/industry_size_attribution.py",
+      "matches_frozen_source": true
+    },
+    {
+      "file": "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/asset_allocation/compare_models.py",
+      "matches_frozen_source": true
+    },
+    {
+      "file": "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/asset_allocation/factor_timing.py",
+      "matches_frozen_source": true
+    },
+    {
+      "file": "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/asset_allocation/temporal_model.py",
+      "matches_frozen_source": true
+    }
+  ],
+  "explicit_report_pages": 6,
+  "deliverables": {
+    "asset_allocation/research_report.md": "1134b3f13cb31ca620a70cbfbaba38948d995c6f0b05fadff51b72c17bc44e1c",
+    "asset_allocation/experiment_inventory_20261011.md": "5817d0e7d307f42ebc8030a28bc713d61a2146607d1c7148d430b1a438cadd42",
+    "asset_allocation/README.md": "c2d0c310bd87438b57cde4bce6a0116502f5d7a6fed3eeb09b8b5badb7c89428"
+  },
+  "pdf_visual_review": "All six rendered pages inspected; no clipping, overlap or missing glyphs observed."
+}

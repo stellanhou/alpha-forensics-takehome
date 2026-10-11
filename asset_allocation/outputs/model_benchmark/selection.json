@@ -1,0 +1,120 @@
+{
+  "frozen_at_utc": "2026-10-11T09:50:24.933712+00:00",
+  "selected_model": "Ridge",
+  "selection_stage": "2023 validation only",
+  "validation_mean_daily_rank_ic": {
+    "HGB": 0.06882586664823463,
+    "Ridge": 0.07150419864425843,
+    "ElasticNet": 0.07143063386088165,
+    "ExtraTrees": 0.059260563994877946,
+    "LightGBM": 0.07031747470253902,
+    "XGBoost": 0.0701830865562696,
+    "CatBoost": 0.07022939305539538
+  },
+  "ineligible_candidates": {},
+  "protocol_sha256": "e44b55540ca16258df890b9291182637a6776a70b872f823c8abc4a19e0f7b99",
+  "parameters_sha256": "55445a387c884bbe5a03ae3aa378053fc443ae3bb590c661f901069b7cefba94",
+  "code_sha256": {
+    "compare_models.py": "e04f0d1e71c76ea787d356fc3b6877bf2babe2aacbcf3d46a56e585793f9d084",
+    "test_compare_models.py": "ccc3d55323c9c394d9d7b5916517cfdcf99615304145e965f8ff59eb53a1388c"
+  },
+  "selected_parameters": {
+    "memory": null,
+    "steps": [
+      [
+        "imputer",
+        {
+          "class": "sklearn.impute._base.SimpleImputer",
+          "params": {
+            "add_indicator": false,
+            "copy": true,
+            "fill_value": null,
+            "keep_empty_features": false,
+            "missing_values": "nan",
+            "strategy": "median"
+          }
+        }
+      ],
+      [
+        "scaler",
+        {
+          "class": "sklearn.preprocessing._data.StandardScaler",
+          "params": {
+            "copy": true,
+            "with_mean": true,
+            "with_std": true
+          }
+        }
+      ],
+      [
+        "model",
+        {
+          "class": "sklearn.linear_model._ridge.Ridge",
+          "params": {
+            "alpha": 100,
+            "copy_X": true,
+            "fit_intercept": true,
+            "max_iter": null,
+            "positive": false,
+            "random_state": null,
+            "solver": "auto",
+            "tol": 0.0001
+          }
+        }
+      ]
+    ],
+    "transform_input": null,
+    "verbose": false,
+    "imputer": {
+      "class": "sklearn.impute._base.SimpleImputer",
+      "params": {
+        "add_indicator": false,
+        "copy": true,
+        "fill_value": null,
+        "keep_empty_features": false,
+        "missing_values": "nan",
+        "strategy": "median"
+      }
+    },
+    "scaler": {
+      "class": "sklearn.preprocessing._data.StandardScaler",
+      "params": {
+        "copy": true,
+        "with_mean": true,
+        "with_std": true
+      }
+    },
+    "model": {
+      "class": "sklearn.linear_model._ridge.Ridge",
+      "params": {
+        "alpha": 100,
+        "copy_X": true,
+        "fit_intercept": true,
+        "max_iter": null,
+        "positive": false,
+        "random_state": null,
+        "solver": "auto",
+        "tol": 0.0001
+      }
+    },
+    "imputer__add_indicator": false,
+    "imputer__copy": true,
+    "imputer__fill_value": null,
+    "imputer__keep_empty_features": false,
+    "imputer__missing_values": "nan",
+    "imputer__strategy": "median",
+    "scaler__copy": true,
+    "scaler__with_mean": true,
+    "scaler__with_std": true,
+    "model__alpha": 100,
+    "model__copy_X": true,
+    "model__fit_intercept": true,
+    "model__max_iter": null,
+    "model__positive": false,
+    "model__random_state": null,
+    "model__solver": "auto",
+    "model__tol": 0.0001
+  },
+  "validation_summary_sha256": "e560158dffed37d195063afbbda1e610f2c4a8f2655467c48ac02a314e8229e5",
+  "scope": "Historical temporal holdout on a previously inspected full-period dataset; 2024 is not an untouched new sample. The 2023-selected model is the sole prespecified confirmation candidate; other 2024 models are descriptive. Five-day decile spreads are gross grouping diagnostics, not executable portfolio returns; no fees, NAV or Sharpe are inferred."
+}

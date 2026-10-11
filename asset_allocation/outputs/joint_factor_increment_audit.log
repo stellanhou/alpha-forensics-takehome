@@ -1,0 +1,41 @@
+Independent refit: 2023 Ridge_JOINT
+Independent refit: 2023 HGB_JOINT
+Independent refit: 2024 Ridge_JOINT
+Independent refit: 2024 HGB_JOINT
+Independent increment audit 1/36: BOTH__HGB_CONTROLS__cost0
+Independent increment audit 2/36: BOTH__HGB_CONTROLS__cost1
+Independent increment audit 3/36: BOTH__HGB_CONTROLS__cost2
+Independent increment audit 4/36: BOTH__HGB_JOINT__cost0
+Independent increment audit 5/36: BOTH__HGB_JOINT__cost1
+Independent increment audit 6/36: BOTH__HGB_JOINT__cost2
+Independent increment audit 7/36: BOTH__Ridge_CONTROLS__cost0
+Independent increment audit 8/36: BOTH__Ridge_CONTROLS__cost1
+Independent increment audit 9/36: BOTH__Ridge_CONTROLS__cost2
+Independent increment audit 10/36: BOTH__Ridge_JOINT__cost0
+Independent increment audit 11/36: BOTH__Ridge_JOINT__cost1
+Independent increment audit 12/36: BOTH__Ridge_JOINT__cost2
+Independent increment audit 13/36: BUDGET20__HGB_CONTROLS__cost0
+Independent increment audit 14/36: BUDGET20__HGB_CONTROLS__cost1
+Independent increment audit 15/36: BUDGET20__HGB_CONTROLS__cost2
+Independent increment audit 16/36: BUDGET20__HGB_JOINT__cost0
+Independent increment audit 17/36: BUDGET20__HGB_JOINT__cost1
+Independent increment audit 18/36: BUDGET20__Ridge_CONTROLS__cost0
+Independent increment audit 19/36: BUDGET20__Ridge_CONTROLS__cost1
+Independent increment audit 20/36: BUDGET20__Ridge_CONTROLS__cost2
+Independent increment audit 21/36: BUDGET20__HGB_JOINT__cost2
+Independent increment audit 22/36: BUDGET20__Ridge_JOINT__cost0
+Independent increment audit 23/36: BUDGET20__Ridge_JOINT__cost1
+Independent increment audit 24/36: NET__HGB_CONTROLS__cost0
+Independent increment audit 25/36: NET__HGB_CONTROLS__cost1
+Independent increment audit 26/36: NET__HGB_CONTROLS__cost2
+Independent increment audit 27/36: NET__HGB_JOINT__cost0
+Independent increment audit 28/36: BUDGET20__Ridge_JOINT__cost2
+Independent increment audit 29/36: NET__HGB_JOINT__cost1
+Independent increment audit 30/36: NET__Ridge_CONTROLS__cost0
+Independent increment audit 31/36: NET__HGB_JOINT__cost2
+Independent increment audit 32/36: NET__Ridge_CONTROLS__cost1
+Independent increment audit 33/36: NET__Ridge_CONTROLS__cost2
+Independent increment audit 34/36: NET__Ridge_JOINT__cost0
+Independent increment audit 35/36: NET__Ridge_JOINT__cost1
+Independent increment audit 36/36: NET__Ridge_JOINT__cost2
+Verified 36 accounts and model/statistical increment checks; saved asset_allocation/outputs/joint_factor_increment/verification.json

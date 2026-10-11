@@ -1,0 +1,193 @@
+{
+  "started_at_utc": "2026-10-11T09:46:04.107310+00:00",
+  "finished_at_utc": "2026-10-11T09:47:09.017196+00:00",
+  "command": [
+    ".venv/bin/python",
+    "-B",
+    "asset_allocation/evaluate_portfolios.py"
+  ],
+  "protocol": {
+    "start_signal": "2023-01-02",
+    "end_date": "2024-12-31",
+    "last_entry_signal": "2024-12-23",
+    "strategy": "Long-only prediction >= same-day 90th percentile; equal-weight within selected group",
+    "benchmark": "All signal-date listed members, equal-weight; same five-sleeve accounting and execution",
+    "capital": "Initial NAV 1; five initially equal independent cash sleeves; no borrowing or shorting; fractional shares",
+    "orders": "Signal-close names and fee-inclusive sleeve-value budget; next open sell before buy; cash shortfall scales the budget down",
+    "holding": "Each new basket holds five business-day open-to-open intervals; blocked exits retry daily; do not add a new lot of an asset still held in that sleeve",
+    "costs": "Previous-business-day fee_bps_one_way + half spread_bps + impact_bps_proxy on each actual buy/sell",
+    "constraints": "Previous-business-day can_buy/can_sell are execution proxies; same-day final flags only audit hypothetical fills",
+    "unfilled_buys": "Keep allocated cash; no replacement or redistribution among other names",
+    "missing_quote": "First missing quote on an existing position: zero recovery write-off, separately identified valuation assumption",
+    "terminal": "Predefined final entry date permits normal five-day exits; blocked terminal positions marked at actual final close, not fictitiously liquidated",
+    "capacity": "Fixed supplied standard-order impact proxy; no inference of scalable capacity; no volume-based opening filter",
+    "netting": "Sleeves accounted separately; cross-sleeve opposite trades are not netted, including their costs",
+    "annualization": "252 synthetic trading days; zero cash interest and zero risk-free rate",
+    "comparison": "Identical signal-date members and dates across predictors; old random-split models remain contaminated historical controls"
+  },
+  "runs": [
+    [
+      "original_random_net",
+      "original_random",
+      "top_decile",
+      "base",
+      "lagged"
+    ],
+    [
+      "pit_random_net",
+      "pit_random",
+      "top_decile",
+      "base",
+      "lagged"
+    ],
+    [
+      "temporal_oos_gross",
+      "temporal_oos",
+      "top_decile",
+      "zero",
+      "none"
+    ],
+    [
+      "temporal_oos_costs",
+      "temporal_oos",
+      "top_decile",
+      "base",
+      "none"
+    ],
+    [
+      "temporal_oos_net",
+      "temporal_oos",
+      "top_decile",
+      "base",
+      "lagged"
+    ],
+    [
+      "benchmark_gross",
+      "temporal_oos",
+      "equal_weight",
+      "zero",
+      "none"
+    ],
+    [
+      "benchmark_costs",
+      "temporal_oos",
+      "equal_weight",
+      "base",
+      "none"
+    ],
+    [
+      "benchmark_net",
+      "temporal_oos",
+      "equal_weight",
+      "base",
+      "lagged"
+    ]
+  ],
+  "output_root": "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/asset_allocation/outputs/portfolio_upgrade",
+  "environment": {
+    "python": "3.12.13",
+    "numpy": "2.5.4",
+    "pandas": "2.3.3",
+    "scikit_learn": "1.9.1",
+    "joblib": "1.6.0",
+    "matplotlib": "3.11.2",
+    "threads": {
+      "OMP_NUM_THREADS": "4",
+      "OPENBLAS_NUM_THREADS": "1"
+    }
+  },
+  "original_control_reproduced_at_float32": true,
+  "signal_universe_identical_across_predictors": true,
+  "coverage": [
+    {
+      "variant": "original_random",
+      "rows": 201662,
+      "dates": 522,
+      "rows_without_future_label": 2340,
+      "is_temporal_oos": false
+    },
+    {
+      "variant": "pit_random",
+      "rows": 201662,
+      "dates": 522,
+      "rows_without_future_label": 2340,
+      "is_temporal_oos": false
+    },
+    {
+      "variant": "temporal_oos",
+      "rows": 201662,
+      "dates": 522,
+      "rows_without_future_label": 2340,
+      "is_temporal_oos": true
+    }
+  ],
+  "limitations": [
+    "Historical model OOS replay, not a never-observed new-data blind test",
+    "Old original/PIT random models remain historical controls, not valid time-OOS strategies",
+    "Lagged trading states are proxies; conflicting same-day final flags are separately audited",
+    "Zero recovery on disappeared quotes is an explicit conservative valuation assumption",
+    "Standard-order linear impact costs do not establish execution capacity"
+  ],
+  "inputs_sha256": {
+    "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/Lab404-CUFEL-E/03-资产配置策略方向/Alpha_Forensics_Candidate_v1/data/market_daily.csv.gz": "64e4437e652d81fe7d81fcb5c192b75ec41ec6569bea1357e21a93d4d2fac062",
+    "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/Lab404-CUFEL-E/03-资产配置策略方向/Alpha_Forensics_Candidate_v1/data/factors.csv.gz": "55ee2df0f603dfcaefeb60731929e2a08d6a51e76e34c88f55ff50437c5ac23c",
+    "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/Lab404-CUFEL-E/03-资产配置策略方向/Alpha_Forensics_Candidate_v1/data/universe.csv.gz": "fa0eafdc6989a1a4cf2bbb9a2cc7766a8494f527eeb006609a10e9993c92138a",
+    "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/Lab404-CUFEL-E/03-资产配置策略方向/Alpha_Forensics_Candidate_v1/data/factor_availability.csv.gz": "a39190f3fdd5e718a28345b5aa94e9dc1d3817ce731e9fb2d93bf05f7c4836e5",
+    "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/Lab404-CUFEL-E/03-资产配置策略方向/Alpha_Forensics_Candidate_v1/data/trading_constraints.csv.gz": "830bf73e87cf136bcfec4960fc8ad3d3d6f731177356e7122439270d263e845e",
+    "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/Lab404-CUFEL-E/03-资产配置策略方向/Alpha_Forensics_Candidate_v1/data/data_dictionary.md": "8a2e10234f25c0328c02384b60f82e0ee9465842a081541cfedada9cee9bb1f6",
+    "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/asset_allocation/outputs/temporal_oos/predictions.csv.gz": "7f31c498506145bd6b1a06976a21d247c1c92815c04314e18a698cadb9cb0631",
+    "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/asset_allocation/outputs/temporal_oos/run_manifest.json": "b34e39bc55e8745e1d2bf241f3d13632af9f189029b0b113b0a4e197262bd377",
+    "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/asset_allocation/outputs/model_rerun/original/baseline_predictions.csv.gz": "b860bd21a122d26e088de48751a4c89d86f8f24ada10e1c4fc34ed91687ec3e1",
+    "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/asset_allocation/outputs/model_rerun/pit/model.joblib": "2630f6fd31e341f896e5e0ac83ab8c5787b37de67f8d69e7f6ced21671a267f1"
+  },
+  "code_sha256": {
+    "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/asset_allocation/evaluate_portfolios.py": "42d01728e5748647cc7e2f966df2583325a6bb9b774f8813aa5d023d41afc49b",
+    "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/asset_allocation/portfolio_ledger.py": "4354d633d1da552dfb38aad4e5a30654c0cb304814a03e9f98e979cc701accdd",
+    "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/asset_allocation/test_portfolio_ledger.py": "979bafa54b45eb46c97e3cf6d751e4acc6e0c3d5a8c31658392d80cd53e6aa09",
+    "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/asset_allocation/temporal_model.py": "4c794ac998c22899710080562ea23ae0596da4da52cd210052cbe0d155c6c76d",
+    "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/asset_allocation/factor_timing.py": "a26162852a93dea4991fb17f031ab140b4180d44b66e25b0a94ad7074a09430b",
+    "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/asset_allocation/retrain_pit_model.py": "3eaf36e292f87fd94f4197ac8f217b161bf378c5265c94564f4818fcdaa4eb92"
+  },
+  "outputs_sha256": {
+    "benchmark_costs/daily.csv": "b488ce33edce4512de82bac79c3eed3607f0c21f670fcb3daad9ce37421a23fe",
+    "benchmark_costs/orders.csv.gz": "9c654d97d6a65fcdcfb4e8cb5cc7b58b02d543d947186e5896cb2152682bdc27",
+    "benchmark_costs/positions.csv.gz": "f80a84cea8cc093bb980de95433cb8c9e921da11b4b427fb36cced7ed84c9d74",
+    "benchmark_costs/summary.json": "6cf5a51f465df52ffbe8daf3149687deb1fed9f24f83ca600a030c0f9a4f9ec8",
+    "benchmark_gross/daily.csv": "719a6859341a568ea1030248d8f07699589e7e236558040efae924ab08f51aed",
+    "benchmark_gross/orders.csv.gz": "3ea0e84211f55a911cab036d29eb47febeabe00a30fb371710aea659f9d0c37c",
+    "benchmark_gross/positions.csv.gz": "c61aa6eeec344674b96c78e87f1a5212b1669d9e9725c90856bcd1fd0b6a3a28",
+    "benchmark_gross/summary.json": "31af651ef9b4f46bbecfed780d45bc7c801b46a833329c21de837ea556074411",
+    "benchmark_net/daily.csv": "b93d404da441aa0cb59bfbad357b3b4c30f8fc694b225e68207ebc802579df52",
+    "benchmark_net/orders.csv.gz": "f74bf6fb9ef2aacc89e9cdfac6b5b81350669dd069cc553bed38550302bcbac3",
+    "benchmark_net/positions.csv.gz": "1d1d5deb404d8ef0fe7a5efce314c6606f36151138dfad5cf09aad150caeba96",
+    "benchmark_net/summary.json": "c742b2b6e80e64453663879702e2320865a8998d9982fa8d10b494969bcf6aa0",
+    "models/restored_original.joblib": "18e8bd31cd21be2c398bf29df2031dfb2f1c5a9b6687f311b6d79cd704c58be0",
+    "oos_nav_drawdown.png": "1f22338744765e74a1c31396af7e4265a46b240a4f348dee0120218c4c914111",
+    "original_random_complete_signals.csv.gz": "ad4346f5bcb9d70fbea609030ece9b89429b5792c4ff4bac33975ad432476508",
+    "original_random_net/daily.csv": "ead5304dded2b45fc471361003a4ab4d97aff88aa5dedcaadc454a00d3449a68",
+    "original_random_net/orders.csv.gz": "e0d9c4ef22758e56bd172a128c15ce310305f12307e581b08e54ca2fbc703aef",
+    "original_random_net/positions.csv.gz": "a7827955319682b50ab71d682397e572740ee77f795d9a3321da935fc38576d0",
+    "original_random_net/summary.json": "40c2eb771369eb01e292f955627ecbe2ca08615bc2a955addb22c936ad90c4d9",
+    "pit_random_complete_signals.csv.gz": "2cc77468e2009ce70c1d9ad1e9d20584a00bcb015d0913a23f1b2b383ffd9b7e",
+    "pit_random_net/daily.csv": "902f046d0771c64b7354c684b9bc4127571e2a6e841b9badebab664cd8ad1034",
+    "pit_random_net/orders.csv.gz": "d48ea8656fe6ae1ce5ebc186bd55bfe3bbeb3ebf4f40861ccfb8cbcae88047c7",
+    "pit_random_net/positions.csv.gz": "9709939962f2bae6272d650c031fba4caaa5c6afee04af895703618918d66076",
+    "pit_random_net/summary.json": "6198086a64bb496dd72a9521f01ea1fc8bdbe6d035d878e4f8f5fbac145bf018",
+    "portfolio_comparison.csv": "f715088119d30db32618725d5743f1b07d77db3857515c7cfea011a89bba4da9",
+    "protocol.json": "efc0ac61777d4a74370a20da6ea3eea62feafeba3746573cff964e3d0b29bc50",
+    "signal_coverage.csv": "d760759f3c717e902fde975eafb164588be6dff74ef2e8beea272235afeb90b1",
+    "temporal_oos_complete_signals.csv.gz": "039b8a7f94f984c4154d7bf67d174c7533cf50b031b56665f20ae360b5ba2a62",
+    "temporal_oos_costs/daily.csv": "98e4b0d5ce8fc742255b1975809cd735ed683d6db12414c9500d1e9a2f243e32",
+    "temporal_oos_costs/orders.csv.gz": "b51bd46ec93d12f8dd855b8ac507b4965253e343aec1d5fab1a4d83cd054979f",
+    "temporal_oos_costs/positions.csv.gz": "24754fb054c71c29718c9fe3e267d7c21e8cd05cde18c265e2dfe4f6b7c4aa95",
+    "temporal_oos_costs/summary.json": "50f8680f368d5b991ce5e102cb0259151328ca671919237e2ff1664fc5e58eb6",
+    "temporal_oos_gross/daily.csv": "b8e8f51556d890bfc42a759986095279ce102569484602eed73215d6346be55c",
+    "temporal_oos_gross/orders.csv.gz": "d49c7469eac711aef69982c0607733a6aee607586df3a0b7ad2f5acf64aa26c4",
+    "temporal_oos_gross/positions.csv.gz": "0d6ae41c3ab9dfc9e48ed9cedda0da3111115831ac853c2d01b5d5be733583e3",
+    "temporal_oos_gross/summary.json": "4b8baa57d09e9972152acbec1bca4dc16700c53180f6be47daa3baf1df40e0a1",
+    "temporal_oos_net/daily.csv": "3b8f37499ab00a42bc7fffc3758160cf92a4d341bd2a4dd99f9cb13be17eea3e",
+    "temporal_oos_net/orders.csv.gz": "078012bbb7fb38a1cd6551be4e5f1264a9e0ca301f8e25158fcd85f6847935d9",
+    "temporal_oos_net/positions.csv.gz": "48a0de991b9d873b066ea6ac45ee36a0be34a5654b1b8b9b9c0c4dedf0db0920",
+    "temporal_oos_net/summary.json": "1c806497349b509248d978face0079fea06401334908b021824644edd7713938"
+  }
+}

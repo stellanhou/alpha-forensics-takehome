@@ -1,0 +1,9 @@
+year,predictor,training_rows,training_keys_sha256,max_training_label_exit,fit_predict_seconds,action
+2023,Ridge_CONTROLS,192806,62b9fb34f5b75ca7807cd0fb2033685fadf31de5d4c2f87f5f37fdb37be3f6a0,2022-12-30,0.09295833299984224,verified archived control; no refit
+2023,Ridge_JOINT,192806,62b9fb34f5b75ca7807cd0fb2033685fadf31de5d4c2f87f5f37fdb37be3f6a0,2022-12-30,0.44509104199823923,annual joint fit; no tuning
+2023,HGB_CONTROLS,192806,62b9fb34f5b75ca7807cd0fb2033685fadf31de5d4c2f87f5f37fdb37be3f6a0,2022-12-30,0.14415095798904076,verified archived control; no refit
+2023,HGB_JOINT,192806,62b9fb34f5b75ca7807cd0fb2033685fadf31de5d4c2f87f5f37fdb37be3f6a0,2022-12-30,2.1375403340207413,annual joint fit; no tuning
+2024,Ridge_CONTROLS,294192,bb2fe9578e332df3ef9d0dd32e4497666ad220cf411d60dcde7d3b5035ec4517,2023-12-29,0.1185617910232395,verified archived control; no refit
+2024,Ridge_JOINT,294192,bb2fe9578e332df3ef9d0dd32e4497666ad220cf411d60dcde7d3b5035ec4517,2023-12-29,0.6625385829829611,annual joint fit; no tuning
+2024,HGB_CONTROLS,294192,bb2fe9578e332df3ef9d0dd32e4497666ad220cf411d60dcde7d3b5035ec4517,2023-12-29,0.1773659170139581,verified archived control; no refit
+2024,HGB_JOINT,294192,bb2fe9578e332df3ef9d0dd32e4497666ad220cf411d60dcde7d3b5035ec4517,2023-12-29,2.867129666992696,annual joint fit; no tuning

@@ -1,0 +1,7 @@
+start_time=2026-10-11 16:50:18 CST
+OMP_NUM_THREADS=4
+OPENBLAS_NUM_THREADS=1
+command: .venv/bin/python -B "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/Lab404-CUFEL-E/03-资产配置策略方向/Alpha_Forensics_Candidate_v1/baseline/baseline_code/train_model.py" --root "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/Lab404-CUFEL-E/03-资产配置策略方向/Alpha_Forensics_Candidate_v1" --out "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/asset_allocation/outputs/model_rerun/original"
+Training complete {'n_features': 20, 'factor_columns': ['factor_01', 'factor_02', 'factor_03', 'factor_04', 'factor_05', 'factor_06', 'factor_07', 'factor_08', 'factor_09', 'factor_10', 'factor_11', 'factor_12', 'factor_13', 'factor_14', 'factor_15', 'factor_16', 'factor_17', 'factor_18', 'factor_19', 'factor_20'], 'train_test_split': 'random 80/20 at row-level', 'sampled_rows': 110000, 'trained_model': 'HistGradientBoostingRegressor', 'label': 'open(t+1) to open(t+6) simple return', 'full_prediction_count': 394457, 'random_seed': 1021} valid_corr 0.3364861079784955
+end_time=2026-10-11 16:50:21 CST
+exit_code=0

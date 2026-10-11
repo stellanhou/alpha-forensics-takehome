@@ -1,0 +1,46 @@
+{
+  "arm_id": "HGB__IC_match_EN",
+  "learner": "HGB",
+  "family": "IC_match_EN",
+  "primary": false,
+  "status": "eligible",
+  "reason": "",
+  "duplicate_of": "",
+  "selector": {
+    "family": "IC",
+    "k": 10,
+    "matched_to": "HGB__EN"
+  },
+  "selector_metadata": {
+    "matched_count": 10,
+    "matched_to": "HGB__EN"
+  },
+  "fitted_model": {
+    "features": [
+      "factor_01",
+      "factor_02",
+      "factor_03",
+      "factor_04",
+      "factor_07",
+      "factor_08",
+      "factor_12",
+      "factor_14",
+      "factor_17",
+      "factor_19"
+    ],
+    "training_rows": 294192,
+    "imputer_medians": [
+      -0.0034414159500000003,
+      0.00628473075,
+      0.000151278225,
+      -0.00591566135,
+      -0.0041658762,
+      0.0057175972000000005,
+      0.0034172832,
+      -0.00147768035,
+      0.0012749829,
+      -0.0037196577
+    ],
+    "iterations": 55
+  }
+}

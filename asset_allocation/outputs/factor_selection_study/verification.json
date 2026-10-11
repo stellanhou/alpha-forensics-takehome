@@ -1,0 +1,38 @@
+{
+  "verified_at_utc": "2026-10-11T10:23:54.747589+00:00",
+  "stages": {
+    "tune": {
+      "status": "completed",
+      "output_hash_records": 175,
+      "protocol_sha256": "593a54c0a7e92473a51e15804aa4f3df63082f638b97fde58520c0a8f335d9fb"
+    },
+    "validation": {
+      "status": "completed",
+      "output_hash_records": 46,
+      "protocol_sha256": "593a54c0a7e92473a51e15804aa4f3df63082f638b97fde58520c0a8f335d9fb"
+    },
+    "confirmation": {
+      "status": "completed",
+      "output_hash_records": 46,
+      "protocol_sha256": "593a54c0a7e92473a51e15804aa4f3df63082f638b97fde58520c0a8f335d9fb"
+    }
+  },
+  "new_contract_tests_passed": 16,
+  "independent_audit": {
+    "inner_folds": 4,
+    "inner_downstream_fits": 80,
+    "outer_arms_per_stage": 12,
+    "outer_downstream_fits": 24,
+    "all_candidate_inner_folds_valid": true,
+    "training_only_ic_correlations_hac_and_en_support_verified": true,
+    "inner_selection_valid_day_weighting_reproduced": true,
+    "auxiliary_arms_excluded_from_primary_selection": true,
+    "same_count_controls_verified": true,
+    "all20_predictions_exactly_match_previous_benchmark": true,
+    "outer_predictions_common_key_coverage_verified": true,
+    "daily_ic_spread_quarters_phases_and_paired_bootstrap_recomputed": true,
+    "frozen_stage_sequence_verified": true
+  },
+  "plots_verified": 6,
+  "scope": "Additional historical research on previously examined synthetic data; no untouched sample or executable net returns."
+}

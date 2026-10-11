@@ -1,0 +1,402 @@
+{
+  "verified_at_utc": "2026-10-11T12:41:29Z",
+  "scope": "Executed the two README core commands in the fully extracted validation copy; no installs, model retraining, or full suite.",
+  "extracted_package": "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/提交文件/.validation/26秋实习生招募–资产配置策略–陈星宇",
+  "terminal": {
+    "process": "/bin/zsh -f",
+    "session_id": 6217,
+    "tty": true,
+    "working_directory_confirmed_by_pwd": "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/提交文件/.validation/26秋实习生招募–资产配置策略–陈星宇",
+    "prompt_observed_before_and_after": true
+  },
+  "environment_and_inputs": {
+    "python_environment_reused": true,
+    "environment_symlink": "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/提交文件/.validation/26秋实习生招募–资产配置策略–陈星宇/.venv",
+    "environment_target": "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/.venv",
+    "python_version": "3.12.13",
+    "dependencies_installed": false,
+    "six_original_data_tables_linked_from_outside_package": {
+      "factor_availability.csv.gz": {
+        "symlink_target": "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/Lab404-CUFEL-E/03-资产配置策略方向/Alpha_Forensics_Candidate_v1/data/factor_availability.csv.gz",
+        "resolved_path": "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/Lab404-CUFEL-E/03-资产配置策略方向/Alpha_Forensics_Candidate_v1/data/factor_availability.csv.gz",
+        "sha256": "a39190f3fdd5e718a28345b5aa94e9dc1d3817ce731e9fb2d93bf05f7c4836e5"
+      },
+      "factors.csv.gz": {
+        "symlink_target": "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/Lab404-CUFEL-E/03-资产配置策略方向/Alpha_Forensics_Candidate_v1/data/factors.csv.gz",
+        "resolved_path": "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/Lab404-CUFEL-E/03-资产配置策略方向/Alpha_Forensics_Candidate_v1/data/factors.csv.gz",
+        "sha256": "55ee2df0f603dfcaefeb60731929e2a08d6a51e76e34c88f55ff50437c5ac23c"
+      },
+      "market_daily.csv.gz": {
+        "symlink_target": "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/Lab404-CUFEL-E/03-资产配置策略方向/Alpha_Forensics_Candidate_v1/data/market_daily.csv.gz",
+        "resolved_path": "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/Lab404-CUFEL-E/03-资产配置策略方向/Alpha_Forensics_Candidate_v1/data/market_daily.csv.gz",
+        "sha256": "64e4437e652d81fe7d81fcb5c192b75ec41ec6569bea1357e21a93d4d2fac062"
+      },
+      "risk_exposure.csv.gz": {
+        "symlink_target": "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/Lab404-CUFEL-E/03-资产配置策略方向/Alpha_Forensics_Candidate_v1/data/risk_exposure.csv.gz",
+        "resolved_path": "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/Lab404-CUFEL-E/03-资产配置策略方向/Alpha_Forensics_Candidate_v1/data/risk_exposure.csv.gz",
+        "sha256": "82c04f8652953941fb696cfce5a53f6cb8a1454b7be432e3d8847e778e552357"
+      },
+      "trading_constraints.csv.gz": {
+        "symlink_target": "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/Lab404-CUFEL-E/03-资产配置策略方向/Alpha_Forensics_Candidate_v1/data/trading_constraints.csv.gz",
+        "resolved_path": "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/Lab404-CUFEL-E/03-资产配置策略方向/Alpha_Forensics_Candidate_v1/data/trading_constraints.csv.gz",
+        "sha256": "830bf73e87cf136bcfec4960fc8ad3d3d6f731177356e7122439270d263e845e"
+      },
+      "universe.csv.gz": {
+        "symlink_target": "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/Lab404-CUFEL-E/03-资产配置策略方向/Alpha_Forensics_Candidate_v1/data/universe.csv.gz",
+        "resolved_path": "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/Lab404-CUFEL-E/03-资产配置策略方向/Alpha_Forensics_Candidate_v1/data/universe.csv.gz",
+        "sha256": "fa0eafdc6989a1a4cf2bbb9a2cc7766a8494f527eeb006609a10e9993c92138a"
+      }
+    },
+    "package_data_dictionary_preserved": true
+  },
+  "commands": [
+    {
+      "command": ".venv/bin/python -B -m unittest discover -v -s asset_allocation -p test_factor_timing.py",
+      "started_at_utc": "2026-10-11T12:41:09Z",
+      "finished_by_utc": "2026-10-11T12:41:10Z",
+      "exit_status": 0,
+      "exit_status_basis": "The first run printed OK; the same command was repeated in the same PTY and its immediately probed shell status was 0.",
+      "log": "asset_allocation/outputs/submission_validation_20261011/unpacked_test.log",
+      "status_confirmation": {
+        "same_readme_command_repeated_in_same_pty": true,
+        "started_at_utc": "2026-10-11T12:43:20Z",
+        "finished_by_utc": "2026-10-11T12:43:21Z",
+        "probe_at_utc": "2026-10-11T12:43:23Z",
+        "probe_command": "print -r -- LAST_STATUS=$?",
+        "observed": "LAST_STATUS=0"
+      }
+    },
+    {
+      "command": ".venv/bin/python -B asset_allocation/factor_timing.py --out asset_allocation/outputs/factor_timing_submission_replay",
+      "started_at_utc": "2026-10-11T12:41:14Z",
+      "finished_by_utc": "2026-10-11T12:41:25Z",
+      "exit_status": 0,
+      "status_probe_at_utc": "2026-10-11T12:41:29Z",
+      "log": "asset_allocation/outputs/submission_validation_20261011/unpacked_core.log"
+    }
+  ],
+  "test_result": {
+    "passed": true,
+    "tests_run": 7
+  },
+  "code_consistency": {
+    "package_python_files": 49,
+    "corresponding_source_files_equal_by_sha256": 49,
+    "all_packaged_python_files_match_corresponding_source": true,
+    "core_file_hashes": {
+      "factor_timing.py": {
+        "sha256": "a26162852a93dea4991fb17f031ab140b4180d44b66e25b0a94ad7074a09430b",
+        "source_sha256": "a26162852a93dea4991fb17f031ab140b4180d44b66e25b0a94ad7074a09430b",
+        "equal": true
+      },
+      "test_factor_timing.py": {
+        "sha256": "a4a9b9737f3314883a960034a16d8f18932a1c9427f733cc3c05ec2a022288bc",
+        "source_sha256": "a4a9b9737f3314883a960034a16d8f18932a1c9427f733cc3c05ec2a022288bc",
+        "equal": true
+      }
+    },
+    "packaged_asset_allocation_readme_sha256": "0560b7ef4af303eeab8e4e9606bab21e5d4c9c571e35c5653383a1a84db425f3",
+    "source_asset_allocation_readme_sha256": "17f41ebfc1b4c2bbc0d77fbd71344c5a19ede72cd8ed2d5fa8c59b7918384f7b",
+    "readme_core_commands_present_in_both": true,
+    "readme_difference": "The extracted README adds a two-line submission note at the top; the two core command lines are unchanged."
+  },
+  "replay_manifest": {
+    "created_at_utc": "2026-10-11T12:41:21.040565+00:00",
+    "python": "3.12.13",
+    "eligible_rows": 394457,
+    "eligible_dates": 1036,
+    "code_sha256": {
+      "factor_timing.py": "a26162852a93dea4991fb17f031ab140b4180d44b66e25b0a94ad7074a09430b",
+      "test_factor_timing.py": "a4a9b9737f3314883a960034a16d8f18932a1c9427f733cc3c05ec2a022288bc"
+    },
+    "outputs_sha256": {
+      "daily_rank_ic.csv": "4020bf04c0e575ae6af3511d20b4f3b81b6d90cf10bb3f88f1396e5c02f6b47d",
+      "timing_summary.csv": "390ed1ed7a4c667a957a1229b1731a072917201cb274f366026765b0e35c4542",
+      "pit_research_panel.csv.gz": "57447e720d1a432eba86be9dba06678dca9c062f3f2ed4def86bc0e6dc82a104"
+    }
+  },
+  "comparison_reference": "asset_allocation/outputs/factor_timing",
+  "output_comparisons": {
+    "timing_summary.csv": {
+      "reference_sha256": "390ed1ed7a4c667a957a1229b1731a072917201cb274f366026765b0e35c4542",
+      "unpacked_sha256": "390ed1ed7a4c667a957a1229b1731a072917201cb274f366026765b0e35c4542",
+      "raw_sha256_equal": true,
+      "reference_decompressed_sha256": "390ed1ed7a4c667a957a1229b1731a072917201cb274f366026765b0e35c4542",
+      "unpacked_decompressed_sha256": "390ed1ed7a4c667a957a1229b1731a072917201cb274f366026765b0e35c4542",
+      "decompressed_sha256_equal": true,
+      "reference_rows": 10,
+      "unpacked_rows": 10,
+      "rows_equal": true
+    },
+    "daily_rank_ic.csv": {
+      "reference_sha256": "4020bf04c0e575ae6af3511d20b4f3b81b6d90cf10bb3f88f1396e5c02f6b47d",
+      "unpacked_sha256": "4020bf04c0e575ae6af3511d20b4f3b81b6d90cf10bb3f88f1396e5c02f6b47d",
+      "raw_sha256_equal": true,
+      "reference_decompressed_sha256": "4020bf04c0e575ae6af3511d20b4f3b81b6d90cf10bb3f88f1396e5c02f6b47d",
+      "unpacked_decompressed_sha256": "4020bf04c0e575ae6af3511d20b4f3b81b6d90cf10bb3f88f1396e5c02f6b47d",
+      "decompressed_sha256_equal": true,
+      "reference_rows": 2068,
+      "unpacked_rows": 2068,
+      "rows_equal": true
+    },
+    "pit_research_panel.csv.gz": {
+      "reference_sha256": "57447e720d1a432eba86be9dba06678dca9c062f3f2ed4def86bc0e6dc82a104",
+      "unpacked_sha256": "57447e720d1a432eba86be9dba06678dca9c062f3f2ed4def86bc0e6dc82a104",
+      "raw_sha256_equal": true,
+      "reference_decompressed_sha256": "da304b24e4e18a763c5c34c4886a19ca442b11342b4fdc70ed95c0ed5373a8c0",
+      "unpacked_decompressed_sha256": "da304b24e4e18a763c5c34c4886a19ca442b11342b4fdc70ed95c0ed5373a8c0",
+      "decompressed_sha256_equal": true,
+      "reference_rows": 394457,
+      "unpacked_rows": 394457,
+      "rows_equal": true
+    }
+  },
+  "all_three_raw_and_decompressed_hashes_and_rows_match": true,
+  "python_file_hashes": {
+    "audit_industry_size_attribution.py": {
+      "package_sha256": "9d514e5f4ad74b0f124c18ed593383084aa00a9dbbb83edaa91a2b2f0887c237",
+      "source_sha256": "9d514e5f4ad74b0f124c18ed593383084aa00a9dbbb83edaa91a2b2f0887c237",
+      "equal": true
+    },
+    "audit_joint_factor_increment.py": {
+      "package_sha256": "6f694cbac54dcd119e4da42f17cd1d8484c006fc1f53e40ad5b400eb437ff197",
+      "source_sha256": "6f694cbac54dcd119e4da42f17cd1d8484c006fc1f53e40ad5b400eb437ff197",
+      "equal": true
+    },
+    "audit_portfolio_model_comparison.py": {
+      "package_sha256": "7eb75007a07b093ce5c75cd2606397e4b49d8d76800dd9669446b0e37d9868c1",
+      "source_sha256": "7eb75007a07b093ce5c75cd2606397e4b49d8d76800dd9669446b0e37d9868c1",
+      "equal": true
+    },
+    "audit_rebalance_study.py": {
+      "package_sha256": "ad0e19192b9e4229b57f738db4245faa6da01ee11ab9f7b9c982f0d8d7626eff",
+      "source_sha256": "ad0e19192b9e4229b57f738db4245faa6da01ee11ab9f7b9c982f0d8d7626eff",
+      "equal": true
+    },
+    "audit_upgrade.py": {
+      "package_sha256": "74681ce6216d977d6b0fc18e68a6667f6a35755f333a02004b1c3a5e1cb50fbc",
+      "source_sha256": "74681ce6216d977d6b0fc18e68a6667f6a35755f333a02004b1c3a5e1cb50fbc",
+      "equal": true
+    },
+    "compare_models.py": {
+      "package_sha256": "e04f0d1e71c76ea787d356fc3b6877bf2babe2aacbcf3d46a56e585793f9d084",
+      "source_sha256": "e04f0d1e71c76ea787d356fc3b6877bf2babe2aacbcf3d46a56e585793f9d084",
+      "equal": true
+    },
+    "evaluate_portfolios.py": {
+      "package_sha256": "42d01728e5748647cc7e2f966df2583325a6bb9b774f8813aa5d023d41afc49b",
+      "source_sha256": "42d01728e5748647cc7e2f966df2583325a6bb9b774f8813aa5d023d41afc49b",
+      "equal": true
+    },
+    "factor_selection_study.py": {
+      "package_sha256": "48107978dfd892b0c6fd28055b62fab964f75a3f1121e14dd12a5112b51c8e47",
+      "source_sha256": "48107978dfd892b0c6fd28055b62fab964f75a3f1121e14dd12a5112b51c8e47",
+      "equal": true
+    },
+    "factor_timing.py": {
+      "package_sha256": "a26162852a93dea4991fb17f031ab140b4180d44b66e25b0a94ad7074a09430b",
+      "source_sha256": "a26162852a93dea4991fb17f031ab140b4180d44b66e25b0a94ad7074a09430b",
+      "equal": true
+    },
+    "industry_size_attribution.py": {
+      "package_sha256": "00649cb49216c50cb822284e404b9ddfdda2ac59c52174abd1a07eb02c213566",
+      "source_sha256": "00649cb49216c50cb822284e404b9ddfdda2ac59c52174abd1a07eb02c213566",
+      "equal": true
+    },
+    "joint_factor_increment.py": {
+      "package_sha256": "3ada3f62409efc2c0220000ae47f91b29627ade9a7b83b7a151c8a05404f21d0",
+      "source_sha256": "3ada3f62409efc2c0220000ae47f91b29627ade9a7b83b7a151c8a05404f21d0",
+      "equal": true
+    },
+    "joint_factor_model.py": {
+      "package_sha256": "63e2362697c4009b3a46028a96c433d77adc9d5baf97ca289de7fc5c2729108a",
+      "source_sha256": "63e2362697c4009b3a46028a96c433d77adc9d5baf97ca289de7fc5c2729108a",
+      "equal": true
+    },
+    "outputs/joint_factor_increment/source_snapshot/audit_industry_size_attribution.py": {
+      "package_sha256": "9d514e5f4ad74b0f124c18ed593383084aa00a9dbbb83edaa91a2b2f0887c237",
+      "source_sha256": "9d514e5f4ad74b0f124c18ed593383084aa00a9dbbb83edaa91a2b2f0887c237",
+      "equal": true
+    },
+    "outputs/joint_factor_increment/source_snapshot/audit_joint_factor_increment.py": {
+      "package_sha256": "6f694cbac54dcd119e4da42f17cd1d8484c006fc1f53e40ad5b400eb437ff197",
+      "source_sha256": "6f694cbac54dcd119e4da42f17cd1d8484c006fc1f53e40ad5b400eb437ff197",
+      "equal": true
+    },
+    "outputs/joint_factor_increment/source_snapshot/audit_rebalance_study.py": {
+      "package_sha256": "ad0e19192b9e4229b57f738db4245faa6da01ee11ab9f7b9c982f0d8d7626eff",
+      "source_sha256": "ad0e19192b9e4229b57f738db4245faa6da01ee11ab9f7b9c982f0d8d7626eff",
+      "equal": true
+    },
+    "outputs/joint_factor_increment/source_snapshot/compare_models.py": {
+      "package_sha256": "e04f0d1e71c76ea787d356fc3b6877bf2babe2aacbcf3d46a56e585793f9d084",
+      "source_sha256": "e04f0d1e71c76ea787d356fc3b6877bf2babe2aacbcf3d46a56e585793f9d084",
+      "equal": true
+    },
+    "outputs/joint_factor_increment/source_snapshot/factor_timing.py": {
+      "package_sha256": "a26162852a93dea4991fb17f031ab140b4180d44b66e25b0a94ad7074a09430b",
+      "source_sha256": "a26162852a93dea4991fb17f031ab140b4180d44b66e25b0a94ad7074a09430b",
+      "equal": true
+    },
+    "outputs/joint_factor_increment/source_snapshot/industry_size_attribution.py": {
+      "package_sha256": "00649cb49216c50cb822284e404b9ddfdda2ac59c52174abd1a07eb02c213566",
+      "source_sha256": "00649cb49216c50cb822284e404b9ddfdda2ac59c52174abd1a07eb02c213566",
+      "equal": true
+    },
+    "outputs/joint_factor_increment/source_snapshot/joint_factor_increment.py": {
+      "package_sha256": "3ada3f62409efc2c0220000ae47f91b29627ade9a7b83b7a151c8a05404f21d0",
+      "source_sha256": "3ada3f62409efc2c0220000ae47f91b29627ade9a7b83b7a151c8a05404f21d0",
+      "equal": true
+    },
+    "outputs/joint_factor_increment/source_snapshot/joint_factor_model.py": {
+      "package_sha256": "63e2362697c4009b3a46028a96c433d77adc9d5baf97ca289de7fc5c2729108a",
+      "source_sha256": "63e2362697c4009b3a46028a96c433d77adc9d5baf97ca289de7fc5c2729108a",
+      "equal": true
+    },
+    "outputs/joint_factor_increment/source_snapshot/portfolio_ledger.py": {
+      "package_sha256": "4354d633d1da552dfb38aad4e5a30654c0cb304814a03e9f98e979cc701accdd",
+      "source_sha256": "4354d633d1da552dfb38aad4e5a30654c0cb304814a03e9f98e979cc701accdd",
+      "equal": true
+    },
+    "outputs/joint_factor_increment/source_snapshot/portfolio_model_comparison.py": {
+      "package_sha256": "8f9abb60bb71da127ab33dee92b60739797df1d60c70172d545ea608b558d4b4",
+      "source_sha256": "8f9abb60bb71da127ab33dee92b60739797df1d60c70172d545ea608b558d4b4",
+      "equal": true
+    },
+    "outputs/joint_factor_increment/source_snapshot/rebalance_ledger.py": {
+      "package_sha256": "fac441e1b47ed25058976bce00d6fa2e21a8a21c84ac68b203cf2df4e15fd8f7",
+      "source_sha256": "fac441e1b47ed25058976bce00d6fa2e21a8a21c84ac68b203cf2df4e15fd8f7",
+      "equal": true
+    },
+    "outputs/joint_factor_increment/source_snapshot/rebalance_study.py": {
+      "package_sha256": "c17b28bd0a39060866ece44dcf0d75a8676f69a3dd22257e906114a2a8fecf3f",
+      "source_sha256": "c17b28bd0a39060866ece44dcf0d75a8676f69a3dd22257e906114a2a8fecf3f",
+      "equal": true
+    },
+    "outputs/joint_factor_increment/source_snapshot/temporal_model.py": {
+      "package_sha256": "4c794ac998c22899710080562ea23ae0596da4da52cd210052cbe0d155c6c76d",
+      "source_sha256": "4c794ac998c22899710080562ea23ae0596da4da52cd210052cbe0d155c6c76d",
+      "equal": true
+    },
+    "outputs/joint_factor_increment/source_snapshot/test_joint_factor_increment.py": {
+      "package_sha256": "3a2f4ccb6031667e49c9bbd46769f46d151a21e2e13e171301e165a532b0f837",
+      "source_sha256": "3a2f4ccb6031667e49c9bbd46769f46d151a21e2e13e171301e165a532b0f837",
+      "equal": true
+    },
+    "outputs/joint_factor_increment/source_snapshot/test_joint_factor_model.py": {
+      "package_sha256": "5c2287f333efac0561c73d03b125acb8e96afd88d6fd50af6dfc21a60433ea0e",
+      "source_sha256": "5c2287f333efac0561c73d03b125acb8e96afd88d6fd50af6dfc21a60433ea0e",
+      "equal": true
+    },
+    "outputs/joint_factor_increment/source_snapshot/test_rebalance_ledger.py": {
+      "package_sha256": "2e733e103aa5d09b3e3294a58dab873924764f5aebf3d705379142205eb1ca3d",
+      "source_sha256": "2e733e103aa5d09b3e3294a58dab873924764f5aebf3d705379142205eb1ca3d",
+      "equal": true
+    },
+    "outputs/joint_increment_legacy_sources/audit_rebalance_study.py": {
+      "package_sha256": "1f4a1945a81c479cc7099c387fc3c198228ceeed7d85d244598f4100bb63f4cf",
+      "source_sha256": "1f4a1945a81c479cc7099c387fc3c198228ceeed7d85d244598f4100bb63f4cf",
+      "equal": true
+    },
+    "outputs/joint_increment_legacy_sources/rebalance_ledger.py": {
+      "package_sha256": "963ab14e0c294aa431887478165feff486f12a4bd601fb74c6cde0c4c8d5e5a0",
+      "source_sha256": "963ab14e0c294aa431887478165feff486f12a4bd601fb74c6cde0c4c8d5e5a0",
+      "equal": true
+    },
+    "plot_factor_selection.py": {
+      "package_sha256": "790ea05ae0a561415c9b801d0f3d516fb32af5f133fa6ab3583bb45881862289",
+      "source_sha256": "790ea05ae0a561415c9b801d0f3d516fb32af5f133fa6ab3583bb45881862289",
+      "equal": true
+    },
+    "plot_model_comparison.py": {
+      "package_sha256": "9d279a3aaa0d18b1271d62f8367866d1f6e08c3d97b01b5ed166aae25375ac21",
+      "source_sha256": "9d279a3aaa0d18b1271d62f8367866d1f6e08c3d97b01b5ed166aae25375ac21",
+      "equal": true
+    },
+    "portfolio_ledger.py": {
+      "package_sha256": "4354d633d1da552dfb38aad4e5a30654c0cb304814a03e9f98e979cc701accdd",
+      "source_sha256": "4354d633d1da552dfb38aad4e5a30654c0cb304814a03e9f98e979cc701accdd",
+      "equal": true
+    },
+    "portfolio_model_comparison.py": {
+      "package_sha256": "8f9abb60bb71da127ab33dee92b60739797df1d60c70172d545ea608b558d4b4",
+      "source_sha256": "8f9abb60bb71da127ab33dee92b60739797df1d60c70172d545ea608b558d4b4",
+      "equal": true
+    },
+    "rebalance_ledger.py": {
+      "package_sha256": "fac441e1b47ed25058976bce00d6fa2e21a8a21c84ac68b203cf2df4e15fd8f7",
+      "source_sha256": "fac441e1b47ed25058976bce00d6fa2e21a8a21c84ac68b203cf2df4e15fd8f7",
+      "equal": true
+    },
+    "rebalance_study.py": {
+      "package_sha256": "c17b28bd0a39060866ece44dcf0d75a8676f69a3dd22257e906114a2a8fecf3f",
+      "source_sha256": "c17b28bd0a39060866ece44dcf0d75a8676f69a3dd22257e906114a2a8fecf3f",
+      "equal": true
+    },
+    "retrain_pit_model.py": {
+      "package_sha256": "3eaf36e292f87fd94f4197ac8f217b161bf378c5265c94564f4818fcdaa4eb92",
+      "source_sha256": "3eaf36e292f87fd94f4197ac8f217b161bf378c5265c94564f4818fcdaa4eb92",
+      "equal": true
+    },
+    "temporal_model.py": {
+      "package_sha256": "4c794ac998c22899710080562ea23ae0596da4da52cd210052cbe0d155c6c76d",
+      "source_sha256": "4c794ac998c22899710080562ea23ae0596da4da52cd210052cbe0d155c6c76d",
+      "equal": true
+    },
+    "test_compare_models.py": {
+      "package_sha256": "ccc3d55323c9c394d9d7b5916517cfdcf99615304145e965f8ff59eb53a1388c",
+      "source_sha256": "ccc3d55323c9c394d9d7b5916517cfdcf99615304145e965f8ff59eb53a1388c",
+      "equal": true
+    },
+    "test_factor_selection_study.py": {
+      "package_sha256": "4797761bd9f6ba3e70f36570424a6619426ef8621f7669ece46cc2f082a1b68c",
+      "source_sha256": "4797761bd9f6ba3e70f36570424a6619426ef8621f7669ece46cc2f082a1b68c",
+      "equal": true
+    },
+    "test_factor_timing.py": {
+      "package_sha256": "a4a9b9737f3314883a960034a16d8f18932a1c9427f733cc3c05ec2a022288bc",
+      "source_sha256": "a4a9b9737f3314883a960034a16d8f18932a1c9427f733cc3c05ec2a022288bc",
+      "equal": true
+    },
+    "test_industry_size_attribution.py": {
+      "package_sha256": "f678de5048b819f3cb5c8bfe3940daa89027a470cdaae36c2b68b9673f3ac091",
+      "source_sha256": "f678de5048b819f3cb5c8bfe3940daa89027a470cdaae36c2b68b9673f3ac091",
+      "equal": true
+    },
+    "test_joint_factor_increment.py": {
+      "package_sha256": "3a2f4ccb6031667e49c9bbd46769f46d151a21e2e13e171301e165a532b0f837",
+      "source_sha256": "3a2f4ccb6031667e49c9bbd46769f46d151a21e2e13e171301e165a532b0f837",
+      "equal": true
+    },
+    "test_joint_factor_model.py": {
+      "package_sha256": "5c2287f333efac0561c73d03b125acb8e96afd88d6fd50af6dfc21a60433ea0e",
+      "source_sha256": "5c2287f333efac0561c73d03b125acb8e96afd88d6fd50af6dfc21a60433ea0e",
+      "equal": true
+    },
+    "test_model_rerun.py": {
+      "package_sha256": "1092a516313d459a30ac8eb7d5a632374d662184d45cb7b340d4688f56e95227",
+      "source_sha256": "1092a516313d459a30ac8eb7d5a632374d662184d45cb7b340d4688f56e95227",
+      "equal": true
+    },
+    "test_portfolio_ledger.py": {
+      "package_sha256": "979bafa54b45eb46c97e3cf6d751e4acc6e0c3d5a8c31658392d80cd53e6aa09",
+      "source_sha256": "979bafa54b45eb46c97e3cf6d751e4acc6e0c3d5a8c31658392d80cd53e6aa09",
+      "equal": true
+    },
+    "test_portfolio_model_comparison.py": {
+      "package_sha256": "94c1efbd1a8aa6c359f2cd9e585bc3a742c78626fd7ae839e08ff2a1ea047dd8",
+      "source_sha256": "94c1efbd1a8aa6c359f2cd9e585bc3a742c78626fd7ae839e08ff2a1ea047dd8",
+      "equal": true
+    },
+    "test_rebalance_ledger.py": {
+      "package_sha256": "2e733e103aa5d09b3e3294a58dab873924764f5aebf3d705379142205eb1ca3d",
+      "source_sha256": "2e733e103aa5d09b3e3294a58dab873924764f5aebf3d705379142205eb1ca3d",
+      "equal": true
+    },
+    "test_temporal_model.py": {
+      "package_sha256": "6b9c6c937d1b7d54b554263da5693757ca73ab11f79df28664389d1ed89d0750",
+      "source_sha256": "6b9c6c937d1b7d54b554263da5693757ca73ab11f79df28664389d1ed89d0750",
+      "equal": true
+    }
+  }
+}

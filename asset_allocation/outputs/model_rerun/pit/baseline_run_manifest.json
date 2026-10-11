@@ -1,0 +1,149 @@
+{
+  "started_at_utc": "2026-10-11T08:52:38.214987+00:00",
+  "finished_at_utc": "2026-10-11T08:52:45.479238+00:00",
+  "command": [
+    ".venv/bin/python",
+    "-B",
+    "asset_allocation/retrain_pit_model.py"
+  ],
+  "backtest_command": [
+    "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/.venv/bin/python",
+    "-B",
+    "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/Lab404-CUFEL-E/03-资产配置策略方向/Alpha_Forensics_Candidate_v1/baseline/baseline_code/backtest.py",
+    "--root",
+    "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/Lab404-CUFEL-E/03-资产配置策略方向/Alpha_Forensics_Candidate_v1",
+    "--out",
+    "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/asset_allocation/outputs/model_rerun/pit"
+  ],
+  "data_package": "Alpha Forensics v1.0",
+  "data_root": "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/Lab404-CUFEL-E/03-资产配置策略方向/Alpha_Forensics_Candidate_v1",
+  "python": "3.12.13",
+  "numpy": "2.5.4",
+  "pandas": "2.3.3",
+  "scikit_learn": "1.9.1",
+  "threads": {
+    "OMP_NUM_THREADS": "4",
+    "OPENBLAS_NUM_THREADS": "1"
+  },
+  "n_features": 20,
+  "factor_columns": [
+    "factor_01",
+    "factor_02",
+    "factor_03",
+    "factor_04",
+    "factor_05",
+    "factor_06",
+    "factor_07",
+    "factor_08",
+    "factor_09",
+    "factor_10",
+    "factor_11",
+    "factor_12",
+    "factor_13",
+    "factor_14",
+    "factor_15",
+    "factor_16",
+    "factor_17",
+    "factor_18",
+    "factor_19",
+    "factor_20"
+  ],
+  "model_parameters": {
+    "categorical_features": "from_dtype",
+    "early_stopping": "auto",
+    "interaction_cst": null,
+    "l2_regularization": 0.2,
+    "learning_rate": 0.065,
+    "loss": "squared_error",
+    "max_bins": 255,
+    "max_depth": null,
+    "max_features": 1.0,
+    "max_iter": 55,
+    "max_leaf_nodes": 17,
+    "min_samples_leaf": 20,
+    "monotonic_cst": null,
+    "n_iter_no_change": 10,
+    "quantile": null,
+    "random_state": 1021,
+    "scoring": "loss",
+    "tol": 1e-07,
+    "validation_fraction": 0.1,
+    "verbose": 0,
+    "warm_start": false
+  },
+  "fitted_iterations": 55,
+  "train_test_split": "original random 80/20 at row-level; same ordered train/valid keys",
+  "sampled_rows": 110000,
+  "random_seed": 1021,
+  "matched_split_proof": {
+    "train": {
+      "rows": 88000,
+      "original_ordered_keys_sha256": "ca43a5a7f116dc6e3a5a1c798ffa83c388c84c4299f23a113ee8a83e8541b289",
+      "pit_ordered_keys_sha256": "ca43a5a7f116dc6e3a5a1c798ffa83c388c84c4299f23a113ee8a83e8541b289"
+    },
+    "valid": {
+      "rows": 22000,
+      "original_ordered_keys_sha256": "531fbf9d6228806cbe834f0cfa76d10f22c523340db5dad0222ddfa58dd6ba33",
+      "pit_ordered_keys_sha256": "531fbf9d6228806cbe834f0cfa76d10f22c523340db5dad0222ddfa58dd6ba33"
+    }
+  },
+  "full_prediction_count": 394457,
+  "full_ordered_keys_sha256": "709dc062a823d1850ac77ec1e02c2bcae5b093714e1ec476f1fa22eb2335017e",
+  "label": "open(t+1) to open(t+6) simple return; float32 labels identical to control",
+  "changed_inputs": [
+    "factor_03",
+    "factor_12"
+  ],
+  "other_18_inputs_identical_at_float32": true,
+  "pit_missing_rows": {
+    "factor_01": 0,
+    "factor_02": 0,
+    "factor_03": 1170,
+    "factor_04": 0,
+    "factor_05": 0,
+    "factor_06": 0,
+    "factor_07": 0,
+    "factor_08": 0,
+    "factor_09": 0,
+    "factor_10": 0,
+    "factor_11": 0,
+    "factor_12": 390,
+    "factor_13": 0,
+    "factor_14": 0,
+    "factor_15": 0,
+    "factor_16": 0,
+    "factor_17": 0,
+    "factor_18": 0,
+    "factor_19": 0,
+    "factor_20": 0
+  },
+  "missing_value_handling": "unmodified HistGradientBoostingRegressor native missing-value handling",
+  "backtest_dates_identical": true,
+  "scope": "Timing-only intervention; random holdout and full-panel overlapping five-day gross spread retained",
+  "limitations": "Not temporal OOS; includes training predictions; no position ledger, costs, or execution constraints",
+  "inputs_sha256": {
+    "pit_panel": "57447e720d1a432eba86be9dba06678dca9c062f3f2ed4def86bc0e6dc82a104",
+    "timing_manifest": "dbaa77a2c22ff2567759234d9383e20d3fd9ead39a2e9240b50b87d771ddb09d",
+    "original/baseline_predictions.csv.gz": "b860bd21a122d26e088de48751a4c89d86f8f24ada10e1c4fc34ed91687ec3e1",
+    "original/baseline_results.csv": "624496c9b4ad5a958cd391eeb67c49f012669348018d0c0fd0a5e00cf0939fe5",
+    "original/baseline_backtest.csv": "c767d0da6827e4072ba306f2f27d3bebf9dc92182c272a0fbdee67e230c2eb0d",
+    "original/baseline_run_manifest.json": "595fecfb3951b96d35c59296b26560cda9a44b14af3e39fb42725dfea2d156be"
+  },
+  "code_sha256": {
+    "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/asset_allocation/retrain_pit_model.py": "3eaf36e292f87fd94f4197ac8f217b161bf378c5265c94564f4818fcdaa4eb92",
+    "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/asset_allocation/factor_timing.py": "a26162852a93dea4991fb17f031ab140b4180d44b66e25b0a94ad7074a09430b",
+    "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/asset_allocation/test_model_rerun.py": "1092a516313d459a30ac8eb7d5a632374d662184d45cb7b340d4688f56e95227",
+    "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/Lab404-CUFEL-E/03-资产配置策略方向/Alpha_Forensics_Candidate_v1/baseline/baseline_code/build_factor.py": "6aa72b40da3e2679559569a030b89948cdc16b2446770bded563abbda412d6ef",
+    "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/Lab404-CUFEL-E/03-资产配置策略方向/Alpha_Forensics_Candidate_v1/baseline/baseline_code/train_model.py": "0a65d8c9658dbb8de2697246c9d45e206e0895afff893d224763b8e5d2c03c17",
+    "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/Lab404-CUFEL-E/03-资产配置策略方向/Alpha_Forensics_Candidate_v1/baseline/baseline_code/backtest.py": "cd00f11fd3020b932479d587be28dd39e077428bbc4d2c34a88bdd0b981f1edb"
+  },
+  "output_root": "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/asset_allocation/outputs/model_rerun",
+  "outputs_sha256": {
+    "pit/baseline_predictions.csv.gz": "a37021b389d8d27429a303d79c20cbe5da2ee820f6851150fb05b841894eea4c",
+    "pit/baseline_results.csv": "7ba085bfa2a7dad09ee2ad1d10a40b13c25d2f85511eb2d1462b5ff7807f4664",
+    "pit/baseline_backtest.csv": "04d5eb3f4d771f5ce1664ff6c07edeac161fc835ae676c4c83d9857bcc1a7170",
+    "pit/sample_assignments.csv.gz": "02104b5bd2301b523a33a5bb47359c5df9c2f2f67fbee875924d1682c31111bc",
+    "pit/model.joblib": "2630f6fd31e341f896e5e0ac83ab8c5787b37de67f8d69e7f6ced21671a267f1",
+    "model_comparison.csv": "58e043406a7b758aa66db4b77a1aa00f55532b4d51eb3f8e32f371b766de8c7b"
+  }
+}

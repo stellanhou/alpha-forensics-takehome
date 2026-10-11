@@ -1,0 +1,1482 @@
+{
+  "frozen_at_utc": "2026-10-11T12:03:46.619863+00:00",
+  "scope": "Direct nested feature comparison on previously inspected 2023/2024 synthetic history; no parameter selection or independent new sample.",
+  "root": "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/Lab404-CUFEL-E/03-资产配置策略方向/Alpha_Forensics_Candidate_v1",
+  "panel_path": "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/asset_allocation/outputs/factor_timing/pit_research_panel.csv.gz",
+  "portfolio_source": "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/asset_allocation/outputs/portfolio_model_comparison",
+  "rebalance_source": "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/asset_allocation/outputs/rebalance_study",
+  "runs": [
+    {
+      "run": "NET__Ridge_CONTROLS__cost0",
+      "rule": "NET",
+      "policy": "NET",
+      "predictor": "Ridge_CONTROLS",
+      "cost_multiplier": 0,
+      "max_review_turnover": null
+    },
+    {
+      "run": "NET__Ridge_CONTROLS__cost1",
+      "rule": "NET",
+      "policy": "NET",
+      "predictor": "Ridge_CONTROLS",
+      "cost_multiplier": 1,
+      "max_review_turnover": null
+    },
+    {
+      "run": "NET__Ridge_CONTROLS__cost2",
+      "rule": "NET",
+      "policy": "NET",
+      "predictor": "Ridge_CONTROLS",
+      "cost_multiplier": 2,
+      "max_review_turnover": null
+    },
+    {
+      "run": "NET__Ridge_JOINT__cost0",
+      "rule": "NET",
+      "policy": "NET",
+      "predictor": "Ridge_JOINT",
+      "cost_multiplier": 0,
+      "max_review_turnover": null
+    },
+    {
+      "run": "NET__Ridge_JOINT__cost1",
+      "rule": "NET",
+      "policy": "NET",
+      "predictor": "Ridge_JOINT",
+      "cost_multiplier": 1,
+      "max_review_turnover": null
+    },
+    {
+      "run": "NET__Ridge_JOINT__cost2",
+      "rule": "NET",
+      "policy": "NET",
+      "predictor": "Ridge_JOINT",
+      "cost_multiplier": 2,
+      "max_review_turnover": null
+    },
+    {
+      "run": "NET__HGB_CONTROLS__cost0",
+      "rule": "NET",
+      "policy": "NET",
+      "predictor": "HGB_CONTROLS",
+      "cost_multiplier": 0,
+      "max_review_turnover": null
+    },
+    {
+      "run": "NET__HGB_CONTROLS__cost1",
+      "rule": "NET",
+      "policy": "NET",
+      "predictor": "HGB_CONTROLS",
+      "cost_multiplier": 1,
+      "max_review_turnover": null
+    },
+    {
+      "run": "NET__HGB_CONTROLS__cost2",
+      "rule": "NET",
+      "policy": "NET",
+      "predictor": "HGB_CONTROLS",
+      "cost_multiplier": 2,
+      "max_review_turnover": null
+    },
+    {
+      "run": "NET__HGB_JOINT__cost0",
+      "rule": "NET",
+      "policy": "NET",
+      "predictor": "HGB_JOINT",
+      "cost_multiplier": 0,
+      "max_review_turnover": null
+    },
+    {
+      "run": "NET__HGB_JOINT__cost1",
+      "rule": "NET",
+      "policy": "NET",
+      "predictor": "HGB_JOINT",
+      "cost_multiplier": 1,
+      "max_review_turnover": null
+    },
+    {
+      "run": "NET__HGB_JOINT__cost2",
+      "rule": "NET",
+      "policy": "NET",
+      "predictor": "HGB_JOINT",
+      "cost_multiplier": 2,
+      "max_review_turnover": null
+    },
+    {
+      "run": "BOTH__Ridge_CONTROLS__cost0",
+      "rule": "BOTH",
+      "policy": "BOTH",
+      "predictor": "Ridge_CONTROLS",
+      "cost_multiplier": 0,
+      "max_review_turnover": null
+    },
+    {
+      "run": "BOTH__Ridge_CONTROLS__cost1",
+      "rule": "BOTH",
+      "policy": "BOTH",
+      "predictor": "Ridge_CONTROLS",
+      "cost_multiplier": 1,
+      "max_review_turnover": null
+    },
+    {
+      "run": "BOTH__Ridge_CONTROLS__cost2",
+      "rule": "BOTH",
+      "policy": "BOTH",
+      "predictor": "Ridge_CONTROLS",
+      "cost_multiplier": 2,
+      "max_review_turnover": null
+    },
+    {
+      "run": "BOTH__Ridge_JOINT__cost0",
+      "rule": "BOTH",
+      "policy": "BOTH",
+      "predictor": "Ridge_JOINT",
+      "cost_multiplier": 0,
+      "max_review_turnover": null
+    },
+    {
+      "run": "BOTH__Ridge_JOINT__cost1",
+      "rule": "BOTH",
+      "policy": "BOTH",
+      "predictor": "Ridge_JOINT",
+      "cost_multiplier": 1,
+      "max_review_turnover": null
+    },
+    {
+      "run": "BOTH__Ridge_JOINT__cost2",
+      "rule": "BOTH",
+      "policy": "BOTH",
+      "predictor": "Ridge_JOINT",
+      "cost_multiplier": 2,
+      "max_review_turnover": null
+    },
+    {
+      "run": "BOTH__HGB_CONTROLS__cost0",
+      "rule": "BOTH",
+      "policy": "BOTH",
+      "predictor": "HGB_CONTROLS",
+      "cost_multiplier": 0,
+      "max_review_turnover": null
+    },
+    {
+      "run": "BOTH__HGB_CONTROLS__cost1",
+      "rule": "BOTH",
+      "policy": "BOTH",
+      "predictor": "HGB_CONTROLS",
+      "cost_multiplier": 1,
+      "max_review_turnover": null
+    },
+    {
+      "run": "BOTH__HGB_CONTROLS__cost2",
+      "rule": "BOTH",
+      "policy": "BOTH",
+      "predictor": "HGB_CONTROLS",
+      "cost_multiplier": 2,
+      "max_review_turnover": null
+    },
+    {
+      "run": "BOTH__HGB_JOINT__cost0",
+      "rule": "BOTH",
+      "policy": "BOTH",
+      "predictor": "HGB_JOINT",
+      "cost_multiplier": 0,
+      "max_review_turnover": null
+    },
+    {
+      "run": "BOTH__HGB_JOINT__cost1",
+      "rule": "BOTH",
+      "policy": "BOTH",
+      "predictor": "HGB_JOINT",
+      "cost_multiplier": 1,
+      "max_review_turnover": null
+    },
+    {
+      "run": "BOTH__HGB_JOINT__cost2",
+      "rule": "BOTH",
+      "policy": "BOTH",
+      "predictor": "HGB_JOINT",
+      "cost_multiplier": 2,
+      "max_review_turnover": null
+    },
+    {
+      "run": "BUDGET20__Ridge_CONTROLS__cost0",
+      "rule": "BUDGET20",
+      "policy": "NET",
+      "predictor": "Ridge_CONTROLS",
+      "cost_multiplier": 0,
+      "max_review_turnover": 0.2
+    },
+    {
+      "run": "BUDGET20__Ridge_CONTROLS__cost1",
+      "rule": "BUDGET20",
+      "policy": "NET",
+      "predictor": "Ridge_CONTROLS",
+      "cost_multiplier": 1,
+      "max_review_turnover": 0.2
+    },
+    {
+      "run": "BUDGET20__Ridge_CONTROLS__cost2",
+      "rule": "BUDGET20",
+      "policy": "NET",
+      "predictor": "Ridge_CONTROLS",
+      "cost_multiplier": 2,
+      "max_review_turnover": 0.2
+    },
+    {
+      "run": "BUDGET20__Ridge_JOINT__cost0",
+      "rule": "BUDGET20",
+      "policy": "NET",
+      "predictor": "Ridge_JOINT",
+      "cost_multiplier": 0,
+      "max_review_turnover": 0.2
+    },
+    {
+      "run": "BUDGET20__Ridge_JOINT__cost1",
+      "rule": "BUDGET20",
+      "policy": "NET",
+      "predictor": "Ridge_JOINT",
+      "cost_multiplier": 1,
+      "max_review_turnover": 0.2
+    },
+    {
+      "run": "BUDGET20__Ridge_JOINT__cost2",
+      "rule": "BUDGET20",
+      "policy": "NET",
+      "predictor": "Ridge_JOINT",
+      "cost_multiplier": 2,
+      "max_review_turnover": 0.2
+    },
+    {
+      "run": "BUDGET20__HGB_CONTROLS__cost0",
+      "rule": "BUDGET20",
+      "policy": "NET",
+      "predictor": "HGB_CONTROLS",
+      "cost_multiplier": 0,
+      "max_review_turnover": 0.2
+    },
+    {
+      "run": "BUDGET20__HGB_CONTROLS__cost1",
+      "rule": "BUDGET20",
+      "policy": "NET",
+      "predictor": "HGB_CONTROLS",
+      "cost_multiplier": 1,
+      "max_review_turnover": 0.2
+    },
+    {
+      "run": "BUDGET20__HGB_CONTROLS__cost2",
+      "rule": "BUDGET20",
+      "policy": "NET",
+      "predictor": "HGB_CONTROLS",
+      "cost_multiplier": 2,
+      "max_review_turnover": 0.2
+    },
+    {
+      "run": "BUDGET20__HGB_JOINT__cost0",
+      "rule": "BUDGET20",
+      "policy": "NET",
+      "predictor": "HGB_JOINT",
+      "cost_multiplier": 0,
+      "max_review_turnover": 0.2
+    },
+    {
+      "run": "BUDGET20__HGB_JOINT__cost1",
+      "rule": "BUDGET20",
+      "policy": "NET",
+      "predictor": "HGB_JOINT",
+      "cost_multiplier": 1,
+      "max_review_turnover": 0.2
+    },
+    {
+      "run": "BUDGET20__HGB_JOINT__cost2",
+      "rule": "BUDGET20",
+      "policy": "NET",
+      "predictor": "HGB_JOINT",
+      "cost_multiplier": 2,
+      "max_review_turnover": 0.2
+    }
+  ],
+  "primary_predictor": "Ridge",
+  "secondary_predictor": "HGB",
+  "primary_period": "2024",
+  "primary_cost_multiplier": 1,
+  "descriptive_periods": [
+    "2023",
+    "FULL"
+  ],
+  "primary_prediction_metric": "paired mean daily RankIC of JOINT minus CONTROLS",
+  "primary_portfolio_comparison": "BUDGET20 Ridge_JOINT minus Ridge_CONTROLS at cost1 in 2024",
+  "secondary_portfolio_rules": [
+    "NET",
+    "BOTH"
+  ],
+  "inputs": "CONTROLS = industry dummies + natural log market_cap; JOINT appends all 20 PIT factors",
+  "training": "Same mature annual training keys as archived controls: 2021-2022 for 2023; 2021-2023 for 2024; no tuning, factor selection, or outcome-dependent signal exclusion",
+  "preprocessing": "Industry vocabulary from training; JOINT factor missing values filled with training medians; Ridge scales the full design using training statistics; labels never imputed",
+  "model_parameters": {
+    "Ridge_CONTROLS": {
+      "memory": null,
+      "steps": [
+        [
+          "preprocessing",
+          {
+            "class": "sklearn.compose._column_transformer.ColumnTransformer",
+            "params": {
+              "n_jobs": null,
+              "remainder": "drop",
+              "sparse_threshold": 0,
+              "transformer_weights": null,
+              "transformers": [
+                [
+                  "industry",
+                  {
+                    "class": "sklearn.preprocessing._encoders.OneHotEncoder",
+                    "params": {
+                      "categories": "auto",
+                      "drop": null,
+                      "dtype": "float64",
+                      "feature_name_combiner": "concat",
+                      "handle_unknown": "error",
+                      "max_categories": null,
+                      "min_frequency": null,
+                      "sparse_output": false
+                    }
+                  },
+                  [
+                    "industry"
+                  ]
+                ],
+                [
+                  "size",
+                  "passthrough",
+                  [
+                    "log_market_cap"
+                  ]
+                ]
+              ],
+              "verbose": false,
+              "verbose_feature_names_out": true
+            }
+          }
+        ],
+        [
+          "scaler",
+          {
+            "class": "sklearn.preprocessing._data.StandardScaler",
+            "params": {
+              "copy": true,
+              "with_mean": true,
+              "with_std": true
+            }
+          }
+        ],
+        [
+          "model",
+          {
+            "class": "sklearn.linear_model._ridge.Ridge",
+            "params": {
+              "alpha": 100,
+              "copy_X": true,
+              "fit_intercept": true,
+              "max_iter": null,
+              "positive": false,
+              "random_state": null,
+              "solver": "auto",
+              "tol": 0.0001
+            }
+          }
+        ]
+      ],
+      "transform_input": null,
+      "verbose": false,
+      "preprocessing": {
+        "class": "sklearn.compose._column_transformer.ColumnTransformer",
+        "params": {
+          "n_jobs": null,
+          "remainder": "drop",
+          "sparse_threshold": 0,
+          "transformer_weights": null,
+          "transformers": [
+            [
+              "industry",
+              {
+                "class": "sklearn.preprocessing._encoders.OneHotEncoder",
+                "params": {
+                  "categories": "auto",
+                  "drop": null,
+                  "dtype": "float64",
+                  "feature_name_combiner": "concat",
+                  "handle_unknown": "error",
+                  "max_categories": null,
+                  "min_frequency": null,
+                  "sparse_output": false
+                }
+              },
+              [
+                "industry"
+              ]
+            ],
+            [
+              "size",
+              "passthrough",
+              [
+                "log_market_cap"
+              ]
+            ]
+          ],
+          "verbose": false,
+          "verbose_feature_names_out": true
+        }
+      },
+      "scaler": {
+        "class": "sklearn.preprocessing._data.StandardScaler",
+        "params": {
+          "copy": true,
+          "with_mean": true,
+          "with_std": true
+        }
+      },
+      "model": {
+        "class": "sklearn.linear_model._ridge.Ridge",
+        "params": {
+          "alpha": 100,
+          "copy_X": true,
+          "fit_intercept": true,
+          "max_iter": null,
+          "positive": false,
+          "random_state": null,
+          "solver": "auto",
+          "tol": 0.0001
+        }
+      },
+      "preprocessing__n_jobs": null,
+      "preprocessing__remainder": "drop",
+      "preprocessing__sparse_threshold": 0,
+      "preprocessing__transformer_weights": null,
+      "preprocessing__transformers": [
+        [
+          "industry",
+          {
+            "class": "sklearn.preprocessing._encoders.OneHotEncoder",
+            "params": {
+              "categories": "auto",
+              "drop": null,
+              "dtype": "float64",
+              "feature_name_combiner": "concat",
+              "handle_unknown": "error",
+              "max_categories": null,
+              "min_frequency": null,
+              "sparse_output": false
+            }
+          },
+          [
+            "industry"
+          ]
+        ],
+        [
+          "size",
+          "passthrough",
+          [
+            "log_market_cap"
+          ]
+        ]
+      ],
+      "preprocessing__verbose": false,
+      "preprocessing__verbose_feature_names_out": true,
+      "preprocessing__industry": {
+        "class": "sklearn.preprocessing._encoders.OneHotEncoder",
+        "params": {
+          "categories": "auto",
+          "drop": null,
+          "dtype": "float64",
+          "feature_name_combiner": "concat",
+          "handle_unknown": "error",
+          "max_categories": null,
+          "min_frequency": null,
+          "sparse_output": false
+        }
+      },
+      "preprocessing__size": "passthrough",
+      "preprocessing__industry__categories": "auto",
+      "preprocessing__industry__drop": null,
+      "preprocessing__industry__dtype": "float64",
+      "preprocessing__industry__feature_name_combiner": "concat",
+      "preprocessing__industry__handle_unknown": "error",
+      "preprocessing__industry__max_categories": null,
+      "preprocessing__industry__min_frequency": null,
+      "preprocessing__industry__sparse_output": false,
+      "scaler__copy": true,
+      "scaler__with_mean": true,
+      "scaler__with_std": true,
+      "model__alpha": 100,
+      "model__copy_X": true,
+      "model__fit_intercept": true,
+      "model__max_iter": null,
+      "model__positive": false,
+      "model__random_state": null,
+      "model__solver": "auto",
+      "model__tol": 0.0001
+    },
+    "Ridge_JOINT": {
+      "memory": null,
+      "steps": [
+        [
+          "preprocessing",
+          {
+            "class": "sklearn.compose._column_transformer.ColumnTransformer",
+            "params": {
+              "n_jobs": null,
+              "remainder": "drop",
+              "sparse_threshold": 0,
+              "transformer_weights": null,
+              "transformers": [
+                [
+                  "industry",
+                  {
+                    "class": "sklearn.preprocessing._encoders.OneHotEncoder",
+                    "params": {
+                      "categories": "auto",
+                      "drop": null,
+                      "dtype": "float64",
+                      "feature_name_combiner": "concat",
+                      "handle_unknown": "error",
+                      "max_categories": null,
+                      "min_frequency": null,
+                      "sparse_output": false
+                    }
+                  },
+                  [
+                    "industry"
+                  ]
+                ],
+                [
+                  "size",
+                  "passthrough",
+                  [
+                    "log_market_cap"
+                  ]
+                ],
+                [
+                  "factors",
+                  {
+                    "class": "sklearn.impute._base.SimpleImputer",
+                    "params": {
+                      "add_indicator": false,
+                      "copy": true,
+                      "fill_value": null,
+                      "keep_empty_features": false,
+                      "missing_values": "nan",
+                      "strategy": "median"
+                    }
+                  },
+                  [
+                    "factor_01",
+                    "factor_02",
+                    "factor_03",
+                    "factor_04",
+                    "factor_05",
+                    "factor_06",
+                    "factor_07",
+                    "factor_08",
+                    "factor_09",
+                    "factor_10",
+                    "factor_11",
+                    "factor_12",
+                    "factor_13",
+                    "factor_14",
+                    "factor_15",
+                    "factor_16",
+                    "factor_17",
+                    "factor_18",
+                    "factor_19",
+                    "factor_20"
+                  ]
+                ]
+              ],
+              "verbose": false,
+              "verbose_feature_names_out": true
+            }
+          }
+        ],
+        [
+          "scaler",
+          {
+            "class": "sklearn.preprocessing._data.StandardScaler",
+            "params": {
+              "copy": true,
+              "with_mean": true,
+              "with_std": true
+            }
+          }
+        ],
+        [
+          "model",
+          {
+            "class": "sklearn.linear_model._ridge.Ridge",
+            "params": {
+              "alpha": 100,
+              "copy_X": true,
+              "fit_intercept": true,
+              "max_iter": null,
+              "positive": false,
+              "random_state": null,
+              "solver": "auto",
+              "tol": 0.0001
+            }
+          }
+        ]
+      ],
+      "transform_input": null,
+      "verbose": false,
+      "preprocessing": {
+        "class": "sklearn.compose._column_transformer.ColumnTransformer",
+        "params": {
+          "n_jobs": null,
+          "remainder": "drop",
+          "sparse_threshold": 0,
+          "transformer_weights": null,
+          "transformers": [
+            [
+              "industry",
+              {
+                "class": "sklearn.preprocessing._encoders.OneHotEncoder",
+                "params": {
+                  "categories": "auto",
+                  "drop": null,
+                  "dtype": "float64",
+                  "feature_name_combiner": "concat",
+                  "handle_unknown": "error",
+                  "max_categories": null,
+                  "min_frequency": null,
+                  "sparse_output": false
+                }
+              },
+              [
+                "industry"
+              ]
+            ],
+            [
+              "size",
+              "passthrough",
+              [
+                "log_market_cap"
+              ]
+            ],
+            [
+              "factors",
+              {
+                "class": "sklearn.impute._base.SimpleImputer",
+                "params": {
+                  "add_indicator": false,
+                  "copy": true,
+                  "fill_value": null,
+                  "keep_empty_features": false,
+                  "missing_values": "nan",
+                  "strategy": "median"
+                }
+              },
+              [
+                "factor_01",
+                "factor_02",
+                "factor_03",
+                "factor_04",
+                "factor_05",
+                "factor_06",
+                "factor_07",
+                "factor_08",
+                "factor_09",
+                "factor_10",
+                "factor_11",
+                "factor_12",
+                "factor_13",
+                "factor_14",
+                "factor_15",
+                "factor_16",
+                "factor_17",
+                "factor_18",
+                "factor_19",
+                "factor_20"
+              ]
+            ]
+          ],
+          "verbose": false,
+          "verbose_feature_names_out": true
+        }
+      },
+      "scaler": {
+        "class": "sklearn.preprocessing._data.StandardScaler",
+        "params": {
+          "copy": true,
+          "with_mean": true,
+          "with_std": true
+        }
+      },
+      "model": {
+        "class": "sklearn.linear_model._ridge.Ridge",
+        "params": {
+          "alpha": 100,
+          "copy_X": true,
+          "fit_intercept": true,
+          "max_iter": null,
+          "positive": false,
+          "random_state": null,
+          "solver": "auto",
+          "tol": 0.0001
+        }
+      },
+      "preprocessing__n_jobs": null,
+      "preprocessing__remainder": "drop",
+      "preprocessing__sparse_threshold": 0,
+      "preprocessing__transformer_weights": null,
+      "preprocessing__transformers": [
+        [
+          "industry",
+          {
+            "class": "sklearn.preprocessing._encoders.OneHotEncoder",
+            "params": {
+              "categories": "auto",
+              "drop": null,
+              "dtype": "float64",
+              "feature_name_combiner": "concat",
+              "handle_unknown": "error",
+              "max_categories": null,
+              "min_frequency": null,
+              "sparse_output": false
+            }
+          },
+          [
+            "industry"
+          ]
+        ],
+        [
+          "size",
+          "passthrough",
+          [
+            "log_market_cap"
+          ]
+        ],
+        [
+          "factors",
+          {
+            "class": "sklearn.impute._base.SimpleImputer",
+            "params": {
+              "add_indicator": false,
+              "copy": true,
+              "fill_value": null,
+              "keep_empty_features": false,
+              "missing_values": "nan",
+              "strategy": "median"
+            }
+          },
+          [
+            "factor_01",
+            "factor_02",
+            "factor_03",
+            "factor_04",
+            "factor_05",
+            "factor_06",
+            "factor_07",
+            "factor_08",
+            "factor_09",
+            "factor_10",
+            "factor_11",
+            "factor_12",
+            "factor_13",
+            "factor_14",
+            "factor_15",
+            "factor_16",
+            "factor_17",
+            "factor_18",
+            "factor_19",
+            "factor_20"
+          ]
+        ]
+      ],
+      "preprocessing__verbose": false,
+      "preprocessing__verbose_feature_names_out": true,
+      "preprocessing__industry": {
+        "class": "sklearn.preprocessing._encoders.OneHotEncoder",
+        "params": {
+          "categories": "auto",
+          "drop": null,
+          "dtype": "float64",
+          "feature_name_combiner": "concat",
+          "handle_unknown": "error",
+          "max_categories": null,
+          "min_frequency": null,
+          "sparse_output": false
+        }
+      },
+      "preprocessing__size": "passthrough",
+      "preprocessing__factors": {
+        "class": "sklearn.impute._base.SimpleImputer",
+        "params": {
+          "add_indicator": false,
+          "copy": true,
+          "fill_value": null,
+          "keep_empty_features": false,
+          "missing_values": "nan",
+          "strategy": "median"
+        }
+      },
+      "preprocessing__industry__categories": "auto",
+      "preprocessing__industry__drop": null,
+      "preprocessing__industry__dtype": "float64",
+      "preprocessing__industry__feature_name_combiner": "concat",
+      "preprocessing__industry__handle_unknown": "error",
+      "preprocessing__industry__max_categories": null,
+      "preprocessing__industry__min_frequency": null,
+      "preprocessing__industry__sparse_output": false,
+      "preprocessing__factors__add_indicator": false,
+      "preprocessing__factors__copy": true,
+      "preprocessing__factors__fill_value": null,
+      "preprocessing__factors__keep_empty_features": false,
+      "preprocessing__factors__missing_values": "nan",
+      "preprocessing__factors__strategy": "median",
+      "scaler__copy": true,
+      "scaler__with_mean": true,
+      "scaler__with_std": true,
+      "model__alpha": 100,
+      "model__copy_X": true,
+      "model__fit_intercept": true,
+      "model__max_iter": null,
+      "model__positive": false,
+      "model__random_state": null,
+      "model__solver": "auto",
+      "model__tol": 0.0001
+    },
+    "HGB_CONTROLS": {
+      "memory": null,
+      "steps": [
+        [
+          "preprocessing",
+          {
+            "class": "sklearn.compose._column_transformer.ColumnTransformer",
+            "params": {
+              "n_jobs": null,
+              "remainder": "drop",
+              "sparse_threshold": 0,
+              "transformer_weights": null,
+              "transformers": [
+                [
+                  "industry",
+                  {
+                    "class": "sklearn.preprocessing._encoders.OneHotEncoder",
+                    "params": {
+                      "categories": "auto",
+                      "drop": null,
+                      "dtype": "float64",
+                      "feature_name_combiner": "concat",
+                      "handle_unknown": "error",
+                      "max_categories": null,
+                      "min_frequency": null,
+                      "sparse_output": false
+                    }
+                  },
+                  [
+                    "industry"
+                  ]
+                ],
+                [
+                  "size",
+                  "passthrough",
+                  [
+                    "log_market_cap"
+                  ]
+                ]
+              ],
+              "verbose": false,
+              "verbose_feature_names_out": true
+            }
+          }
+        ],
+        [
+          "model",
+          {
+            "class": "sklearn.ensemble._hist_gradient_boosting.gradient_boosting.HistGradientBoostingRegressor",
+            "params": {
+              "categorical_features": "from_dtype",
+              "early_stopping": false,
+              "interaction_cst": null,
+              "l2_regularization": 0.2,
+              "learning_rate": 0.065,
+              "loss": "squared_error",
+              "max_bins": 255,
+              "max_depth": null,
+              "max_features": 1.0,
+              "max_iter": 55,
+              "max_leaf_nodes": 17,
+              "min_samples_leaf": 20,
+              "monotonic_cst": null,
+              "n_iter_no_change": 10,
+              "quantile": null,
+              "random_state": 1021,
+              "scoring": "loss",
+              "tol": 1e-07,
+              "validation_fraction": 0.1,
+              "verbose": 0,
+              "warm_start": false
+            }
+          }
+        ]
+      ],
+      "transform_input": null,
+      "verbose": false,
+      "preprocessing": {
+        "class": "sklearn.compose._column_transformer.ColumnTransformer",
+        "params": {
+          "n_jobs": null,
+          "remainder": "drop",
+          "sparse_threshold": 0,
+          "transformer_weights": null,
+          "transformers": [
+            [
+              "industry",
+              {
+                "class": "sklearn.preprocessing._encoders.OneHotEncoder",
+                "params": {
+                  "categories": "auto",
+                  "drop": null,
+                  "dtype": "float64",
+                  "feature_name_combiner": "concat",
+                  "handle_unknown": "error",
+                  "max_categories": null,
+                  "min_frequency": null,
+                  "sparse_output": false
+                }
+              },
+              [
+                "industry"
+              ]
+            ],
+            [
+              "size",
+              "passthrough",
+              [
+                "log_market_cap"
+              ]
+            ]
+          ],
+          "verbose": false,
+          "verbose_feature_names_out": true
+        }
+      },
+      "model": {
+        "class": "sklearn.ensemble._hist_gradient_boosting.gradient_boosting.HistGradientBoostingRegressor",
+        "params": {
+          "categorical_features": "from_dtype",
+          "early_stopping": false,
+          "interaction_cst": null,
+          "l2_regularization": 0.2,
+          "learning_rate": 0.065,
+          "loss": "squared_error",
+          "max_bins": 255,
+          "max_depth": null,
+          "max_features": 1.0,
+          "max_iter": 55,
+          "max_leaf_nodes": 17,
+          "min_samples_leaf": 20,
+          "monotonic_cst": null,
+          "n_iter_no_change": 10,
+          "quantile": null,
+          "random_state": 1021,
+          "scoring": "loss",
+          "tol": 1e-07,
+          "validation_fraction": 0.1,
+          "verbose": 0,
+          "warm_start": false
+        }
+      },
+      "preprocessing__n_jobs": null,
+      "preprocessing__remainder": "drop",
+      "preprocessing__sparse_threshold": 0,
+      "preprocessing__transformer_weights": null,
+      "preprocessing__transformers": [
+        [
+          "industry",
+          {
+            "class": "sklearn.preprocessing._encoders.OneHotEncoder",
+            "params": {
+              "categories": "auto",
+              "drop": null,
+              "dtype": "float64",
+              "feature_name_combiner": "concat",
+              "handle_unknown": "error",
+              "max_categories": null,
+              "min_frequency": null,
+              "sparse_output": false
+            }
+          },
+          [
+            "industry"
+          ]
+        ],
+        [
+          "size",
+          "passthrough",
+          [
+            "log_market_cap"
+          ]
+        ]
+      ],
+      "preprocessing__verbose": false,
+      "preprocessing__verbose_feature_names_out": true,
+      "preprocessing__industry": {
+        "class": "sklearn.preprocessing._encoders.OneHotEncoder",
+        "params": {
+          "categories": "auto",
+          "drop": null,
+          "dtype": "float64",
+          "feature_name_combiner": "concat",
+          "handle_unknown": "error",
+          "max_categories": null,
+          "min_frequency": null,
+          "sparse_output": false
+        }
+      },
+      "preprocessing__size": "passthrough",
+      "preprocessing__industry__categories": "auto",
+      "preprocessing__industry__drop": null,
+      "preprocessing__industry__dtype": "float64",
+      "preprocessing__industry__feature_name_combiner": "concat",
+      "preprocessing__industry__handle_unknown": "error",
+      "preprocessing__industry__max_categories": null,
+      "preprocessing__industry__min_frequency": null,
+      "preprocessing__industry__sparse_output": false,
+      "model__categorical_features": "from_dtype",
+      "model__early_stopping": false,
+      "model__interaction_cst": null,
+      "model__l2_regularization": 0.2,
+      "model__learning_rate": 0.065,
+      "model__loss": "squared_error",
+      "model__max_bins": 255,
+      "model__max_depth": null,
+      "model__max_features": 1.0,
+      "model__max_iter": 55,
+      "model__max_leaf_nodes": 17,
+      "model__min_samples_leaf": 20,
+      "model__monotonic_cst": null,
+      "model__n_iter_no_change": 10,
+      "model__quantile": null,
+      "model__random_state": 1021,
+      "model__scoring": "loss",
+      "model__tol": 1e-07,
+      "model__validation_fraction": 0.1,
+      "model__verbose": 0,
+      "model__warm_start": false
+    },
+    "HGB_JOINT": {
+      "memory": null,
+      "steps": [
+        [
+          "preprocessing",
+          {
+            "class": "sklearn.compose._column_transformer.ColumnTransformer",
+            "params": {
+              "n_jobs": null,
+              "remainder": "drop",
+              "sparse_threshold": 0,
+              "transformer_weights": null,
+              "transformers": [
+                [
+                  "industry",
+                  {
+                    "class": "sklearn.preprocessing._encoders.OneHotEncoder",
+                    "params": {
+                      "categories": "auto",
+                      "drop": null,
+                      "dtype": "float64",
+                      "feature_name_combiner": "concat",
+                      "handle_unknown": "error",
+                      "max_categories": null,
+                      "min_frequency": null,
+                      "sparse_output": false
+                    }
+                  },
+                  [
+                    "industry"
+                  ]
+                ],
+                [
+                  "size",
+                  "passthrough",
+                  [
+                    "log_market_cap"
+                  ]
+                ],
+                [
+                  "factors",
+                  {
+                    "class": "sklearn.impute._base.SimpleImputer",
+                    "params": {
+                      "add_indicator": false,
+                      "copy": true,
+                      "fill_value": null,
+                      "keep_empty_features": false,
+                      "missing_values": "nan",
+                      "strategy": "median"
+                    }
+                  },
+                  [
+                    "factor_01",
+                    "factor_02",
+                    "factor_03",
+                    "factor_04",
+                    "factor_05",
+                    "factor_06",
+                    "factor_07",
+                    "factor_08",
+                    "factor_09",
+                    "factor_10",
+                    "factor_11",
+                    "factor_12",
+                    "factor_13",
+                    "factor_14",
+                    "factor_15",
+                    "factor_16",
+                    "factor_17",
+                    "factor_18",
+                    "factor_19",
+                    "factor_20"
+                  ]
+                ]
+              ],
+              "verbose": false,
+              "verbose_feature_names_out": true
+            }
+          }
+        ],
+        [
+          "model",
+          {
+            "class": "sklearn.ensemble._hist_gradient_boosting.gradient_boosting.HistGradientBoostingRegressor",
+            "params": {
+              "categorical_features": "from_dtype",
+              "early_stopping": false,
+              "interaction_cst": null,
+              "l2_regularization": 0.2,
+              "learning_rate": 0.065,
+              "loss": "squared_error",
+              "max_bins": 255,
+              "max_depth": null,
+              "max_features": 1.0,
+              "max_iter": 55,
+              "max_leaf_nodes": 17,
+              "min_samples_leaf": 20,
+              "monotonic_cst": null,
+              "n_iter_no_change": 10,
+              "quantile": null,
+              "random_state": 1021,
+              "scoring": "loss",
+              "tol": 1e-07,
+              "validation_fraction": 0.1,
+              "verbose": 0,
+              "warm_start": false
+            }
+          }
+        ]
+      ],
+      "transform_input": null,
+      "verbose": false,
+      "preprocessing": {
+        "class": "sklearn.compose._column_transformer.ColumnTransformer",
+        "params": {
+          "n_jobs": null,
+          "remainder": "drop",
+          "sparse_threshold": 0,
+          "transformer_weights": null,
+          "transformers": [
+            [
+              "industry",
+              {
+                "class": "sklearn.preprocessing._encoders.OneHotEncoder",
+                "params": {
+                  "categories": "auto",
+                  "drop": null,
+                  "dtype": "float64",
+                  "feature_name_combiner": "concat",
+                  "handle_unknown": "error",
+                  "max_categories": null,
+                  "min_frequency": null,
+                  "sparse_output": false
+                }
+              },
+              [
+                "industry"
+              ]
+            ],
+            [
+              "size",
+              "passthrough",
+              [
+                "log_market_cap"
+              ]
+            ],
+            [
+              "factors",
+              {
+                "class": "sklearn.impute._base.SimpleImputer",
+                "params": {
+                  "add_indicator": false,
+                  "copy": true,
+                  "fill_value": null,
+                  "keep_empty_features": false,
+                  "missing_values": "nan",
+                  "strategy": "median"
+                }
+              },
+              [
+                "factor_01",
+                "factor_02",
+                "factor_03",
+                "factor_04",
+                "factor_05",
+                "factor_06",
+                "factor_07",
+                "factor_08",
+                "factor_09",
+                "factor_10",
+                "factor_11",
+                "factor_12",
+                "factor_13",
+                "factor_14",
+                "factor_15",
+                "factor_16",
+                "factor_17",
+                "factor_18",
+                "factor_19",
+                "factor_20"
+              ]
+            ]
+          ],
+          "verbose": false,
+          "verbose_feature_names_out": true
+        }
+      },
+      "model": {
+        "class": "sklearn.ensemble._hist_gradient_boosting.gradient_boosting.HistGradientBoostingRegressor",
+        "params": {
+          "categorical_features": "from_dtype",
+          "early_stopping": false,
+          "interaction_cst": null,
+          "l2_regularization": 0.2,
+          "learning_rate": 0.065,
+          "loss": "squared_error",
+          "max_bins": 255,
+          "max_depth": null,
+          "max_features": 1.0,
+          "max_iter": 55,
+          "max_leaf_nodes": 17,
+          "min_samples_leaf": 20,
+          "monotonic_cst": null,
+          "n_iter_no_change": 10,
+          "quantile": null,
+          "random_state": 1021,
+          "scoring": "loss",
+          "tol": 1e-07,
+          "validation_fraction": 0.1,
+          "verbose": 0,
+          "warm_start": false
+        }
+      },
+      "preprocessing__n_jobs": null,
+      "preprocessing__remainder": "drop",
+      "preprocessing__sparse_threshold": 0,
+      "preprocessing__transformer_weights": null,
+      "preprocessing__transformers": [
+        [
+          "industry",
+          {
+            "class": "sklearn.preprocessing._encoders.OneHotEncoder",
+            "params": {
+              "categories": "auto",
+              "drop": null,
+              "dtype": "float64",
+              "feature_name_combiner": "concat",
+              "handle_unknown": "error",
+              "max_categories": null,
+              "min_frequency": null,
+              "sparse_output": false
+            }
+          },
+          [
+            "industry"
+          ]
+        ],
+        [
+          "size",
+          "passthrough",
+          [
+            "log_market_cap"
+          ]
+        ],
+        [
+          "factors",
+          {
+            "class": "sklearn.impute._base.SimpleImputer",
+            "params": {
+              "add_indicator": false,
+              "copy": true,
+              "fill_value": null,
+              "keep_empty_features": false,
+              "missing_values": "nan",
+              "strategy": "median"
+            }
+          },
+          [
+            "factor_01",
+            "factor_02",
+            "factor_03",
+            "factor_04",
+            "factor_05",
+            "factor_06",
+            "factor_07",
+            "factor_08",
+            "factor_09",
+            "factor_10",
+            "factor_11",
+            "factor_12",
+            "factor_13",
+            "factor_14",
+            "factor_15",
+            "factor_16",
+            "factor_17",
+            "factor_18",
+            "factor_19",
+            "factor_20"
+          ]
+        ]
+      ],
+      "preprocessing__verbose": false,
+      "preprocessing__verbose_feature_names_out": true,
+      "preprocessing__industry": {
+        "class": "sklearn.preprocessing._encoders.OneHotEncoder",
+        "params": {
+          "categories": "auto",
+          "drop": null,
+          "dtype": "float64",
+          "feature_name_combiner": "concat",
+          "handle_unknown": "error",
+          "max_categories": null,
+          "min_frequency": null,
+          "sparse_output": false
+        }
+      },
+      "preprocessing__size": "passthrough",
+      "preprocessing__factors": {
+        "class": "sklearn.impute._base.SimpleImputer",
+        "params": {
+          "add_indicator": false,
+          "copy": true,
+          "fill_value": null,
+          "keep_empty_features": false,
+          "missing_values": "nan",
+          "strategy": "median"
+        }
+      },
+      "preprocessing__industry__categories": "auto",
+      "preprocessing__industry__drop": null,
+      "preprocessing__industry__dtype": "float64",
+      "preprocessing__industry__feature_name_combiner": "concat",
+      "preprocessing__industry__handle_unknown": "error",
+      "preprocessing__industry__max_categories": null,
+      "preprocessing__industry__min_frequency": null,
+      "preprocessing__industry__sparse_output": false,
+      "preprocessing__factors__add_indicator": false,
+      "preprocessing__factors__copy": true,
+      "preprocessing__factors__fill_value": null,
+      "preprocessing__factors__keep_empty_features": false,
+      "preprocessing__factors__missing_values": "nan",
+      "preprocessing__factors__strategy": "median",
+      "model__categorical_features": "from_dtype",
+      "model__early_stopping": false,
+      "model__interaction_cst": null,
+      "model__l2_regularization": 0.2,
+      "model__learning_rate": 0.065,
+      "model__loss": "squared_error",
+      "model__max_bins": 255,
+      "model__max_depth": null,
+      "model__max_features": 1.0,
+      "model__max_iter": 55,
+      "model__max_leaf_nodes": 17,
+      "model__min_samples_leaf": 20,
+      "model__monotonic_cst": null,
+      "model__n_iter_no_change": 10,
+      "model__quantile": null,
+      "model__random_state": 1021,
+      "model__scoring": "loss",
+      "model__tol": 1e-07,
+      "model__validation_fraction": 0.1,
+      "model__verbose": 0,
+      "model__warm_start": false
+    }
+  },
+  "signal_universe": "All listed members on the signal date, including unobservable future labels",
+  "evaluation_universe": "Canonical common labelled temporal holdout; 2023 label exits precede 2024; trading does not use this filter",
+  "risk_availability": "Same-date industry and cap assumed known after signal close; no independent publication timestamps supplied",
+  "risk_constraints": "Common long-only unlevered cash accounts, five independent sleeves, top-decile equal-weight ideals, symmetric cutoff ties, no borrowing; no imposed industry/size neutrality or equal realized risk",
+  "rules": {
+    "NET": "Unchanged top-decile equal-weight targets; target minus actual shares",
+    "BOTH": "Unchanged top10% entry/top20% actual-holding retention; +/-10% relative weight bands",
+    "BUDGET20": "NET ideal; at each sleeve review interpolate from actual close weights toward ideal so sum(abs(effective - actual)) <= 0.20 of sleeve close NAV; one fixed budget, no search"
+  },
+  "budget_scope": "Close-planned two-sided turnover per five-day sleeve review; initialization is capped; terminal zero-target liquidation is exempt. Opening gaps, cost-inclusive buy scaling and blocked-order retries can change realized turnover; realized turnover is reported, not asserted equal or capped.",
+  "execution": "Freeze signal-close weights and NAV; next open min(signal NAV, opening NAV) budget; sells first, common fee-inclusive buy scale, blocked slots retained as cash, no borrowing or cross-sleeve netting",
+  "costs_permissions": "Previous-business-day fee + half spread + standard-order impact; previous-day can_buy/can_sell; actual flags audit only; costs 0/1/2 each follow their own holdings",
+  "missing_quote_terminal": "Preserve existing zero-recovery writeoff on first missing quote; stop entries six business days before 2024-12-31; normal sleeve terminal reviews attempt liquidation; blocked positions marked at close",
+  "risk_diagnostics": "Daily cash, concentration, breadth, industry allocation versus member equal weight, and weighted log cap; same rules/budget do not imply equal realized exposures",
+  "uncertainty": "Daily paired arithmetic return and log relative growth, 20 consecutive business-day blocks, 2000 draws, seed1021; 2023/2024 separate; reference intervals without multiple-comparison adjustment",
+  "inputs_sha256": {
+    "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/Lab404-CUFEL-E/03-资产配置策略方向/Alpha_Forensics_Candidate_v1/data/market_daily.csv.gz": "64e4437e652d81fe7d81fcb5c192b75ec41ec6569bea1357e21a93d4d2fac062",
+    "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/Lab404-CUFEL-E/03-资产配置策略方向/Alpha_Forensics_Candidate_v1/data/factors.csv.gz": "55ee2df0f603dfcaefeb60731929e2a08d6a51e76e34c88f55ff50437c5ac23c",
+    "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/Lab404-CUFEL-E/03-资产配置策略方向/Alpha_Forensics_Candidate_v1/data/universe.csv.gz": "fa0eafdc6989a1a4cf2bbb9a2cc7766a8494f527eeb006609a10e9993c92138a",
+    "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/Lab404-CUFEL-E/03-资产配置策略方向/Alpha_Forensics_Candidate_v1/data/factor_availability.csv.gz": "a39190f3fdd5e718a28345b5aa94e9dc1d3817ce731e9fb2d93bf05f7c4836e5",
+    "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/Lab404-CUFEL-E/03-资产配置策略方向/Alpha_Forensics_Candidate_v1/data/trading_constraints.csv.gz": "830bf73e87cf136bcfec4960fc8ad3d3d6f731177356e7122439270d263e845e",
+    "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/Lab404-CUFEL-E/03-资产配置策略方向/Alpha_Forensics_Candidate_v1/data/risk_exposure.csv.gz": "82c04f8652953941fb696cfce5a53f6cb8a1454b7be432e3d8847e778e552357",
+    "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/Lab404-CUFEL-E/03-资产配置策略方向/Alpha_Forensics_Candidate_v1/data/data_dictionary.md": "8a2e10234f25c0328c02384b60f82e0ee9465842a081541cfedada9cee9bb1f6",
+    "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/asset_allocation/outputs/factor_timing/pit_research_panel.csv.gz": "57447e720d1a432eba86be9dba06678dca9c062f3f2ed4def86bc0e6dc82a104",
+    "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/asset_allocation/outputs/factor_timing/run_manifest.json": "dbaa77a2c22ff2567759234d9383e20d3fd9ead39a2e9240b50b87d771ddb09d",
+    "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/asset_allocation/outputs/portfolio_model_comparison/protocol.json": "da9ede66faaf8514866dd3c827d3d2518a1ab673bea61b16b046f0a1a4759ecb",
+    "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/asset_allocation/outputs/portfolio_model_comparison/fits.csv": "b5c51e1e8083be6871d859164e67b0cbe4c15c4af18c6320b19449479ac37dd2",
+    "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/asset_allocation/outputs/portfolio_model_comparison/models/2023_Ridge_CONTROLS.joblib": "ee5e7ef06a1458ca613fce1b93cdf730bc98c25412c11c363368b309bde07a2c",
+    "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/asset_allocation/outputs/portfolio_model_comparison/models/2023_HGB_CONTROLS.joblib": "36388e8b82224a67e3297a015ac5b3b4e23c8dc4292a6569e7e09da5b9c4a06e",
+    "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/asset_allocation/outputs/portfolio_model_comparison/models/2024_Ridge_CONTROLS.joblib": "cda6be3292a47f0f6d92ba5edea0b5ffd60b83f5e121c2962a9013e37a44eb5b",
+    "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/asset_allocation/outputs/portfolio_model_comparison/models/2024_HGB_CONTROLS.joblib": "6a92b5932549848081f2b88ed4e24b1cfc8bfd785feac50b1509449bf997a34e",
+    "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/asset_allocation/outputs/portfolio_model_comparison/predictions/Ridge_CONTROLS.csv.gz": "4e0f67ccdf78507a440f7e835611e63fcb31f025eac7ef0443836e56731af6df",
+    "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/asset_allocation/outputs/portfolio_model_comparison/predictions/HGB_CONTROLS.csv.gz": "53e2c73349781ab74d8510588152c64a95cd8211b6d990f25f1bcd11ae8d9fa7",
+    "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/asset_allocation/outputs/portfolio_model_comparison/run_manifest.json": "5cd2920fb8474e440d540cdcce13a0f86c49947c990d9bf13624ca393ad43f5d",
+    "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/asset_allocation/outputs/portfolio_model_comparison/verification.json": "4ea86b61a7cf162d0a10f85c8bf39bae67698ab64ee469ff5d4ea24493bb7665",
+    "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/asset_allocation/outputs/rebalance_study/protocol.json": "2d5399623a4df361cd26414eecb14cbb78794e7aa10ad9531a857d985cab3760",
+    "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/asset_allocation/outputs/rebalance_study/runs/NET__Ridge_CONTROLS__cost0/daily.csv": "6c7174d58370253ee3ed78d298a2560ba04cbe42a0d91f5474a834387770880b",
+    "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/asset_allocation/outputs/rebalance_study/runs/NET__Ridge_CONTROLS__cost1/daily.csv": "816de8191550113e32b334ec64d66d5b122e3bf971acbcbb10755c5567debcca",
+    "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/asset_allocation/outputs/rebalance_study/runs/NET__Ridge_CONTROLS__cost2/daily.csv": "58e49c322619fbea2e83de2c234bb3b3d9c41516cacdcf13d98ae3302d93a5a2",
+    "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/asset_allocation/outputs/rebalance_study/runs/NET__HGB_CONTROLS__cost0/daily.csv": "cc6e2052ebec5ee7003c2c645cf9c9f246d4829857dc96e6ec71c4fe0a7abe34",
+    "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/asset_allocation/outputs/rebalance_study/runs/NET__HGB_CONTROLS__cost1/daily.csv": "230e6e9d0d6685de5e1e197ca884c4a7241787f9012e9e0fd802bb7695d1db73",
+    "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/asset_allocation/outputs/rebalance_study/runs/NET__HGB_CONTROLS__cost2/daily.csv": "617ee40717db99c2d44e1079b94433d2034910ce75bbd7813723adef587c25ec",
+    "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/asset_allocation/outputs/rebalance_study/runs/BOTH__Ridge_CONTROLS__cost0/daily.csv": "ac8ed20856dbe65ed27c02a36faed9ee2f92abdce96f53558c06066277fc83ba",
+    "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/asset_allocation/outputs/rebalance_study/runs/BOTH__Ridge_CONTROLS__cost1/daily.csv": "527f164b3e87048b7dd8278042dd5db3a1aa99ab3dcbdfaa96c06df8681c365b",
+    "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/asset_allocation/outputs/rebalance_study/runs/BOTH__Ridge_CONTROLS__cost2/daily.csv": "4ffe7263280ac146e778e1995d15115cd2a41f9cb57155a1d62e47327f9c17ca",
+    "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/asset_allocation/outputs/rebalance_study/runs/BOTH__HGB_CONTROLS__cost0/daily.csv": "aec21c803df1d7f70f974b79525528f18c5a30502b9e32a9f4916e170f568e00",
+    "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/asset_allocation/outputs/rebalance_study/runs/BOTH__HGB_CONTROLS__cost1/daily.csv": "ab31f329e62c30b4d658867622800a5cc4686f1767ce4e7ba4d97aa134232427",
+    "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/asset_allocation/outputs/rebalance_study/runs/BOTH__HGB_CONTROLS__cost2/daily.csv": "e385510eb5fef12dafa5a6a006bfe5df415cc5e00b8b3a8d6e86e7902a9992d6",
+    "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/asset_allocation/outputs/rebalance_study/run_manifest.json": "43c3ae142ea3499ea86f5f908b963c109d4c41392b13e806f67482add1611c82",
+    "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/asset_allocation/outputs/rebalance_study/verification.json": "0c012acbb9d0f6bd2b0b5230341da3b7ac69fa1edf4564cb362874481eb93b6a"
+  },
+  "code_sha256": {
+    "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/asset_allocation/joint_factor_increment.py": "3ada3f62409efc2c0220000ae47f91b29627ade9a7b83b7a151c8a05404f21d0",
+    "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/asset_allocation/test_joint_factor_increment.py": "3a2f4ccb6031667e49c9bbd46769f46d151a21e2e13e171301e165a532b0f837",
+    "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/asset_allocation/joint_factor_model.py": "63e2362697c4009b3a46028a96c433d77adc9d5baf97ca289de7fc5c2729108a",
+    "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/asset_allocation/test_joint_factor_model.py": "5c2287f333efac0561c73d03b125acb8e96afd88d6fd50af6dfc21a60433ea0e",
+    "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/asset_allocation/audit_joint_factor_increment.py": "6f694cbac54dcd119e4da42f17cd1d8484c006fc1f53e40ad5b400eb437ff197",
+    "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/asset_allocation/rebalance_ledger.py": "fac441e1b47ed25058976bce00d6fa2e21a8a21c84ac68b203cf2df4e15fd8f7",
+    "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/asset_allocation/test_rebalance_ledger.py": "2e733e103aa5d09b3e3294a58dab873924764f5aebf3d705379142205eb1ca3d",
+    "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/asset_allocation/audit_rebalance_study.py": "ad0e19192b9e4229b57f738db4245faa6da01ee11ab9f7b9c982f0d8d7626eff",
+    "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/asset_allocation/audit_industry_size_attribution.py": "9d514e5f4ad74b0f124c18ed593383084aa00a9dbbb83edaa91a2b2f0887c237",
+    "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/asset_allocation/rebalance_study.py": "c17b28bd0a39060866ece44dcf0d75a8676f69a3dd22257e906114a2a8fecf3f",
+    "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/asset_allocation/portfolio_ledger.py": "4354d633d1da552dfb38aad4e5a30654c0cb304814a03e9f98e979cc701accdd",
+    "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/asset_allocation/portfolio_model_comparison.py": "8f9abb60bb71da127ab33dee92b60739797df1d60c70172d545ea608b558d4b4",
+    "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/asset_allocation/industry_size_attribution.py": "00649cb49216c50cb822284e404b9ddfdda2ac59c52174abd1a07eb02c213566",
+    "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/asset_allocation/compare_models.py": "e04f0d1e71c76ea787d356fc3b6877bf2babe2aacbcf3d46a56e585793f9d084",
+    "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/asset_allocation/factor_timing.py": "a26162852a93dea4991fb17f031ab140b4180d44b66e25b0a94ad7074a09430b",
+    "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/asset_allocation/temporal_model.py": "4c794ac998c22899710080562ea23ae0596da4da52cd210052cbe0d155c6c76d"
+  }
+}

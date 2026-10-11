@@ -1,0 +1,18 @@
+{
+  "pages": 6,
+  "pages_2_to_6_text_unchanged": true,
+  "definitions_precede_conclusion": true,
+  "deleted_requested_sentence": true,
+  "future_work_label_present": true,
+  "repository_links": [
+    "https://github.com/stellanhou/alpha-forensics-takehome"
+  ],
+  "pdf_sha256": "5d7eba1b0d69a8caf56e1ab581015a909f733af3f09b58df28ba8fb06040064f",
+  "pages_2_to_6_pixels_identical": true,
+  "page_1_visual_review": "passed",
+  "checked_latin_digit_characters": 2133,
+  "latin_fonts": [
+    "AAAAAA+TimesNewRomanPS-BoldMT",
+    "AAAAAA+TimesNewRomanPSMT"
+  ]
+}

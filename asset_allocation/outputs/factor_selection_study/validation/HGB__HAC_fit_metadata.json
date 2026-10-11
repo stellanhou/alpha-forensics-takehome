@@ -1,0 +1,197 @@
+{
+  "arm_id": "HGB__HAC",
+  "learner": "HGB",
+  "family": "HAC",
+  "primary": true,
+  "status": "eligible",
+  "reason": "",
+  "duplicate_of": "",
+  "selector": {
+    "family": "HAC",
+    "selector_id": "HAC_k15",
+    "k": 15
+  },
+  "selector_metadata": {
+    "status": "eligible",
+    "reason": "",
+    "features": [
+      "factor_01",
+      "factor_02",
+      "factor_03",
+      "factor_04",
+      "factor_05",
+      "factor_06",
+      "factor_09",
+      "factor_10",
+      "factor_11",
+      "factor_12",
+      "factor_14",
+      "factor_15",
+      "factor_16",
+      "factor_18",
+      "factor_20"
+    ],
+    "metadata": {
+      "clusters": [
+        {
+          "factor": "factor_01",
+          "cluster": 0,
+          "representative": "factor_01",
+          "selected": true
+        },
+        {
+          "factor": "factor_02",
+          "cluster": 1,
+          "representative": "factor_02",
+          "selected": true
+        },
+        {
+          "factor": "factor_03",
+          "cluster": 2,
+          "representative": "factor_03",
+          "selected": true
+        },
+        {
+          "factor": "factor_04",
+          "cluster": 3,
+          "representative": "factor_04",
+          "selected": true
+        },
+        {
+          "factor": "factor_05",
+          "cluster": 4,
+          "representative": "factor_05",
+          "selected": true
+        },
+        {
+          "factor": "factor_06",
+          "cluster": 5,
+          "representative": "factor_06",
+          "selected": true
+        },
+        {
+          "factor": "factor_07",
+          "cluster": 0,
+          "representative": "factor_01",
+          "selected": false
+        },
+        {
+          "factor": "factor_08",
+          "cluster": 1,
+          "representative": "factor_02",
+          "selected": false
+        },
+        {
+          "factor": "factor_09",
+          "cluster": 6,
+          "representative": "factor_09",
+          "selected": true
+        },
+        {
+          "factor": "factor_10",
+          "cluster": 7,
+          "representative": "factor_10",
+          "selected": true
+        },
+        {
+          "factor": "factor_11",
+          "cluster": 8,
+          "representative": "factor_11",
+          "selected": true
+        },
+        {
+          "factor": "factor_12",
+          "cluster": 9,
+          "representative": "factor_12",
+          "selected": true
+        },
+        {
+          "factor": "factor_13",
+          "cluster": 10,
+          "representative": "factor_14",
+          "selected": false
+        },
+        {
+          "factor": "factor_14",
+          "cluster": 10,
+          "representative": "factor_14",
+          "selected": true
+        },
+        {
+          "factor": "factor_15",
+          "cluster": 11,
+          "representative": "factor_15",
+          "selected": true
+        },
+        {
+          "factor": "factor_16",
+          "cluster": 12,
+          "representative": "factor_16",
+          "selected": true
+        },
+        {
+          "factor": "factor_17",
+          "cluster": 1,
+          "representative": "factor_02",
+          "selected": false
+        },
+        {
+          "factor": "factor_18",
+          "cluster": 13,
+          "representative": "factor_18",
+          "selected": true
+        },
+        {
+          "factor": "factor_19",
+          "cluster": 1,
+          "representative": "factor_02",
+          "selected": false
+        },
+        {
+          "factor": "factor_20",
+          "cluster": 14,
+          "representative": "factor_20",
+          "selected": true
+        }
+      ]
+    }
+  },
+  "fitted_model": {
+    "features": [
+      "factor_01",
+      "factor_02",
+      "factor_03",
+      "factor_04",
+      "factor_05",
+      "factor_06",
+      "factor_09",
+      "factor_10",
+      "factor_11",
+      "factor_12",
+      "factor_14",
+      "factor_15",
+      "factor_16",
+      "factor_18",
+      "factor_20"
+    ],
+    "training_rows": 192806,
+    "imputer_medians": [
+      -0.00289327255,
+      0.00818634965,
+      0.000204702805,
+      -0.0022498760500000003,
+      -0.0014259440000000002,
+      -0.151781935,
+      -0.0018046415999999998,
+      -0.00219048175,
+      -0.09626507749999999,
+      0.004458519649999999,
+      -0.00032554835,
+      -0.0025469117,
+      -0.049278507,
+      -0.0033817255,
+      0.0580314975
+    ],
+    "iterations": 55
+  }
+}

@@ -1,0 +1,449 @@
+{
+  "year": 2024,
+  "predictor": "HGB_JOINT",
+  "training_rows": 294192,
+  "training_keys_sha256": "bb2fe9578e332df3ef9d0dd32e4497666ad220cf411d60dcde7d3b5035ec4517",
+  "max_training_label_exit": "2023-12-29",
+  "training_mean": 0.0019337457963872835,
+  "input_features": [
+    "industry",
+    "log_market_cap",
+    "factor_01",
+    "factor_02",
+    "factor_03",
+    "factor_04",
+    "factor_05",
+    "factor_06",
+    "factor_07",
+    "factor_08",
+    "factor_09",
+    "factor_10",
+    "factor_11",
+    "factor_12",
+    "factor_13",
+    "factor_14",
+    "factor_15",
+    "factor_16",
+    "factor_17",
+    "factor_18",
+    "factor_19",
+    "factor_20"
+  ],
+  "feature_names": [
+    "industry__industry_IND00",
+    "industry__industry_IND01",
+    "industry__industry_IND02",
+    "industry__industry_IND03",
+    "industry__industry_IND04",
+    "industry__industry_IND05",
+    "industry__industry_IND06",
+    "industry__industry_IND07",
+    "industry__industry_IND08",
+    "industry__industry_IND09",
+    "size__log_market_cap",
+    "factors__factor_01",
+    "factors__factor_02",
+    "factors__factor_03",
+    "factors__factor_04",
+    "factors__factor_05",
+    "factors__factor_06",
+    "factors__factor_07",
+    "factors__factor_08",
+    "factors__factor_09",
+    "factors__factor_10",
+    "factors__factor_11",
+    "factors__factor_12",
+    "factors__factor_13",
+    "factors__factor_14",
+    "factors__factor_15",
+    "factors__factor_16",
+    "factors__factor_17",
+    "factors__factor_18",
+    "factors__factor_19",
+    "factors__factor_20"
+  ],
+  "industry_categories": [
+    "IND00",
+    "IND01",
+    "IND02",
+    "IND03",
+    "IND04",
+    "IND05",
+    "IND06",
+    "IND07",
+    "IND08",
+    "IND09"
+  ],
+  "parameters": {
+    "memory": null,
+    "steps": [
+      [
+        "preprocessing",
+        {
+          "class": "sklearn.compose._column_transformer.ColumnTransformer",
+          "params": {
+            "n_jobs": null,
+            "remainder": "drop",
+            "sparse_threshold": 0,
+            "transformer_weights": null,
+            "transformers": [
+              [
+                "industry",
+                {
+                  "class": "sklearn.preprocessing._encoders.OneHotEncoder",
+                  "params": {
+                    "categories": "auto",
+                    "drop": null,
+                    "dtype": "float64",
+                    "feature_name_combiner": "concat",
+                    "handle_unknown": "error",
+                    "max_categories": null,
+                    "min_frequency": null,
+                    "sparse_output": false
+                  }
+                },
+                [
+                  "industry"
+                ]
+              ],
+              [
+                "size",
+                "passthrough",
+                [
+                  "log_market_cap"
+                ]
+              ],
+              [
+                "factors",
+                {
+                  "class": "sklearn.impute._base.SimpleImputer",
+                  "params": {
+                    "add_indicator": false,
+                    "copy": true,
+                    "fill_value": null,
+                    "keep_empty_features": false,
+                    "missing_values": "nan",
+                    "strategy": "median"
+                  }
+                },
+                [
+                  "factor_01",
+                  "factor_02",
+                  "factor_03",
+                  "factor_04",
+                  "factor_05",
+                  "factor_06",
+                  "factor_07",
+                  "factor_08",
+                  "factor_09",
+                  "factor_10",
+                  "factor_11",
+                  "factor_12",
+                  "factor_13",
+                  "factor_14",
+                  "factor_15",
+                  "factor_16",
+                  "factor_17",
+                  "factor_18",
+                  "factor_19",
+                  "factor_20"
+                ]
+              ]
+            ],
+            "verbose": false,
+            "verbose_feature_names_out": true
+          }
+        }
+      ],
+      [
+        "model",
+        {
+          "class": "sklearn.ensemble._hist_gradient_boosting.gradient_boosting.HistGradientBoostingRegressor",
+          "params": {
+            "categorical_features": "from_dtype",
+            "early_stopping": false,
+            "interaction_cst": null,
+            "l2_regularization": 0.2,
+            "learning_rate": 0.065,
+            "loss": "squared_error",
+            "max_bins": 255,
+            "max_depth": null,
+            "max_features": 1.0,
+            "max_iter": 55,
+            "max_leaf_nodes": 17,
+            "min_samples_leaf": 20,
+            "monotonic_cst": null,
+            "n_iter_no_change": 10,
+            "quantile": null,
+            "random_state": 1021,
+            "scoring": "loss",
+            "tol": 1e-07,
+            "validation_fraction": 0.1,
+            "verbose": 0,
+            "warm_start": false
+          }
+        }
+      ]
+    ],
+    "transform_input": null,
+    "verbose": false,
+    "preprocessing": {
+      "class": "sklearn.compose._column_transformer.ColumnTransformer",
+      "params": {
+        "n_jobs": null,
+        "remainder": "drop",
+        "sparse_threshold": 0,
+        "transformer_weights": null,
+        "transformers": [
+          [
+            "industry",
+            {
+              "class": "sklearn.preprocessing._encoders.OneHotEncoder",
+              "params": {
+                "categories": "auto",
+                "drop": null,
+                "dtype": "float64",
+                "feature_name_combiner": "concat",
+                "handle_unknown": "error",
+                "max_categories": null,
+                "min_frequency": null,
+                "sparse_output": false
+              }
+            },
+            [
+              "industry"
+            ]
+          ],
+          [
+            "size",
+            "passthrough",
+            [
+              "log_market_cap"
+            ]
+          ],
+          [
+            "factors",
+            {
+              "class": "sklearn.impute._base.SimpleImputer",
+              "params": {
+                "add_indicator": false,
+                "copy": true,
+                "fill_value": null,
+                "keep_empty_features": false,
+                "missing_values": "nan",
+                "strategy": "median"
+              }
+            },
+            [
+              "factor_01",
+              "factor_02",
+              "factor_03",
+              "factor_04",
+              "factor_05",
+              "factor_06",
+              "factor_07",
+              "factor_08",
+              "factor_09",
+              "factor_10",
+              "factor_11",
+              "factor_12",
+              "factor_13",
+              "factor_14",
+              "factor_15",
+              "factor_16",
+              "factor_17",
+              "factor_18",
+              "factor_19",
+              "factor_20"
+            ]
+          ]
+        ],
+        "verbose": false,
+        "verbose_feature_names_out": true
+      }
+    },
+    "model": {
+      "class": "sklearn.ensemble._hist_gradient_boosting.gradient_boosting.HistGradientBoostingRegressor",
+      "params": {
+        "categorical_features": "from_dtype",
+        "early_stopping": false,
+        "interaction_cst": null,
+        "l2_regularization": 0.2,
+        "learning_rate": 0.065,
+        "loss": "squared_error",
+        "max_bins": 255,
+        "max_depth": null,
+        "max_features": 1.0,
+        "max_iter": 55,
+        "max_leaf_nodes": 17,
+        "min_samples_leaf": 20,
+        "monotonic_cst": null,
+        "n_iter_no_change": 10,
+        "quantile": null,
+        "random_state": 1021,
+        "scoring": "loss",
+        "tol": 1e-07,
+        "validation_fraction": 0.1,
+        "verbose": 0,
+        "warm_start": false
+      }
+    },
+    "preprocessing__n_jobs": null,
+    "preprocessing__remainder": "drop",
+    "preprocessing__sparse_threshold": 0,
+    "preprocessing__transformer_weights": null,
+    "preprocessing__transformers": [
+      [
+        "industry",
+        {
+          "class": "sklearn.preprocessing._encoders.OneHotEncoder",
+          "params": {
+            "categories": "auto",
+            "drop": null,
+            "dtype": "float64",
+            "feature_name_combiner": "concat",
+            "handle_unknown": "error",
+            "max_categories": null,
+            "min_frequency": null,
+            "sparse_output": false
+          }
+        },
+        [
+          "industry"
+        ]
+      ],
+      [
+        "size",
+        "passthrough",
+        [
+          "log_market_cap"
+        ]
+      ],
+      [
+        "factors",
+        {
+          "class": "sklearn.impute._base.SimpleImputer",
+          "params": {
+            "add_indicator": false,
+            "copy": true,
+            "fill_value": null,
+            "keep_empty_features": false,
+            "missing_values": "nan",
+            "strategy": "median"
+          }
+        },
+        [
+          "factor_01",
+          "factor_02",
+          "factor_03",
+          "factor_04",
+          "factor_05",
+          "factor_06",
+          "factor_07",
+          "factor_08",
+          "factor_09",
+          "factor_10",
+          "factor_11",
+          "factor_12",
+          "factor_13",
+          "factor_14",
+          "factor_15",
+          "factor_16",
+          "factor_17",
+          "factor_18",
+          "factor_19",
+          "factor_20"
+        ]
+      ]
+    ],
+    "preprocessing__verbose": false,
+    "preprocessing__verbose_feature_names_out": true,
+    "preprocessing__industry": {
+      "class": "sklearn.preprocessing._encoders.OneHotEncoder",
+      "params": {
+        "categories": "auto",
+        "drop": null,
+        "dtype": "float64",
+        "feature_name_combiner": "concat",
+        "handle_unknown": "error",
+        "max_categories": null,
+        "min_frequency": null,
+        "sparse_output": false
+      }
+    },
+    "preprocessing__size": "passthrough",
+    "preprocessing__factors": {
+      "class": "sklearn.impute._base.SimpleImputer",
+      "params": {
+        "add_indicator": false,
+        "copy": true,
+        "fill_value": null,
+        "keep_empty_features": false,
+        "missing_values": "nan",
+        "strategy": "median"
+      }
+    },
+    "preprocessing__industry__categories": "auto",
+    "preprocessing__industry__drop": null,
+    "preprocessing__industry__dtype": "float64",
+    "preprocessing__industry__feature_name_combiner": "concat",
+    "preprocessing__industry__handle_unknown": "error",
+    "preprocessing__industry__max_categories": null,
+    "preprocessing__industry__min_frequency": null,
+    "preprocessing__industry__sparse_output": false,
+    "preprocessing__factors__add_indicator": false,
+    "preprocessing__factors__copy": true,
+    "preprocessing__factors__fill_value": null,
+    "preprocessing__factors__keep_empty_features": false,
+    "preprocessing__factors__missing_values": "nan",
+    "preprocessing__factors__strategy": "median",
+    "model__categorical_features": "from_dtype",
+    "model__early_stopping": false,
+    "model__interaction_cst": null,
+    "model__l2_regularization": 0.2,
+    "model__learning_rate": 0.065,
+    "model__loss": "squared_error",
+    "model__max_bins": 255,
+    "model__max_depth": null,
+    "model__max_features": 1.0,
+    "model__max_iter": 55,
+    "model__max_leaf_nodes": 17,
+    "model__min_samples_leaf": 20,
+    "model__monotonic_cst": null,
+    "model__n_iter_no_change": 10,
+    "model__quantile": null,
+    "model__random_state": 1021,
+    "model__scoring": "loss",
+    "model__tol": 1e-07,
+    "model__validation_fraction": 0.1,
+    "model__verbose": 0,
+    "model__warm_start": false
+  },
+  "preprocessing_fit_scope": "training only; full industry dummies and natural log market_cap; JOINT adds all 20 PIT factors with training-median imputation",
+  "factor_imputation_medians": {
+    "factor_01": -0.0034414159500000003,
+    "factor_02": 0.00628473075,
+    "factor_03": 0.000151278225,
+    "factor_04": -0.00591566135,
+    "factor_05": -0.0018572625500000001,
+    "factor_06": -0.14236658000000002,
+    "factor_07": -0.0041658762,
+    "factor_08": 0.0057175972000000005,
+    "factor_09": -0.00295204015,
+    "factor_10": -0.0018932995,
+    "factor_11": -0.07705652700000001,
+    "factor_12": 0.0034172832,
+    "factor_13": 0.004025037150000001,
+    "factor_14": -0.00147768035,
+    "factor_15": -0.000324207475,
+    "factor_16": -0.050209321,
+    "factor_17": 0.0012749829,
+    "factor_18": 0.00226996515,
+    "factor_19": -0.0037196577,
+    "factor_20": 0.046093458000000004
+  },
+  "fitted_iterations": 55,
+  "early_stopping_used": false,
+  "fit_predict_seconds": 2.867129666992696,
+  "action": "annual joint fit; no tuning"
+}

@@ -1,0 +1,17 @@
+start_time=2026-10-11 16:52:36 CST
+OMP_NUM_THREADS=4
+OPENBLAS_NUM_THREADS=1
+command: OMP_NUM_THREADS=4 OPENBLAS_NUM_THREADS=1 .venv/bin/python -B asset_allocation/retrain_pit_model.py
+                                   supplied_original  rerun_original      rerun_pit  delta_pit_minus_rerun_original
+metric                                                                                                             
+sampled_rows                           110000.000000   110000.000000  110000.000000                        0.000000
+sampled_train_rows                      88000.000000    88000.000000   88000.000000                        0.000000
+sampled_valid_rows                      22000.000000    22000.000000   22000.000000                        0.000000
+random_valid_pearson                        0.337179        0.336486       0.092549                       -0.243937
+random_valid_rmse                           0.044845        0.044856       0.047422                        0.002565
+full_panel_gross_proxy_sharpe              99.773918      100.588072      24.136734                      -76.451338
+full_panel_mean_forward_5d_spread           0.056198        0.056203       0.015858                       -0.040345
+backtest_n_dates                         1036.000000     1036.000000    1036.000000                        0.000000
+Matched samples: train=88000, valid=22000; iterations=55
+end_time=2026-10-11 16:52:45 CST
+exit_code=0

@@ -1,0 +1,1069 @@
+{
+  "frozen_at_utc": "2026-10-11T10:19:35.599966+00:00",
+  "arms": [
+    {
+      "arm_id": "Ridge__ALL",
+      "learner": "Ridge",
+      "family": "ALL",
+      "primary": true,
+      "selector": {
+        "family": "ALL",
+        "selector_id": "all20"
+      },
+      "status": "eligible",
+      "reason": "",
+      "features": [
+        "factor_01",
+        "factor_02",
+        "factor_03",
+        "factor_04",
+        "factor_05",
+        "factor_06",
+        "factor_07",
+        "factor_08",
+        "factor_09",
+        "factor_10",
+        "factor_11",
+        "factor_12",
+        "factor_13",
+        "factor_14",
+        "factor_15",
+        "factor_16",
+        "factor_17",
+        "factor_18",
+        "factor_19",
+        "factor_20"
+      ],
+      "metadata": {
+        "status": "eligible",
+        "reason": "",
+        "features": [
+          "factor_01",
+          "factor_02",
+          "factor_03",
+          "factor_04",
+          "factor_05",
+          "factor_06",
+          "factor_07",
+          "factor_08",
+          "factor_09",
+          "factor_10",
+          "factor_11",
+          "factor_12",
+          "factor_13",
+          "factor_14",
+          "factor_15",
+          "factor_16",
+          "factor_17",
+          "factor_18",
+          "factor_19",
+          "factor_20"
+        ],
+        "metadata": {}
+      },
+      "duplicate_of": ""
+    },
+    {
+      "arm_id": "Ridge__IC",
+      "learner": "Ridge",
+      "family": "IC",
+      "primary": true,
+      "selector": {
+        "family": "IC",
+        "selector_id": "IC_k15",
+        "k": 15
+      },
+      "status": "eligible",
+      "reason": "",
+      "features": [
+        "factor_01",
+        "factor_02",
+        "factor_03",
+        "factor_04",
+        "factor_05",
+        "factor_07",
+        "factor_08",
+        "factor_09",
+        "factor_12",
+        "factor_13",
+        "factor_14",
+        "factor_15",
+        "factor_16",
+        "factor_17",
+        "factor_19"
+      ],
+      "metadata": {
+        "status": "eligible",
+        "reason": "",
+        "features": [
+          "factor_01",
+          "factor_02",
+          "factor_03",
+          "factor_04",
+          "factor_05",
+          "factor_07",
+          "factor_08",
+          "factor_09",
+          "factor_12",
+          "factor_13",
+          "factor_14",
+          "factor_15",
+          "factor_16",
+          "factor_17",
+          "factor_19"
+        ],
+        "metadata": {
+          "ranking": [
+            "factor_02",
+            "factor_08",
+            "factor_19",
+            "factor_17",
+            "factor_01",
+            "factor_07",
+            "factor_03",
+            "factor_12",
+            "factor_14",
+            "factor_04",
+            "factor_13",
+            "factor_05",
+            "factor_16",
+            "factor_15",
+            "factor_09",
+            "factor_11",
+            "factor_20",
+            "factor_18",
+            "factor_10",
+            "factor_06"
+          ]
+        }
+      },
+      "duplicate_of": ""
+    },
+    {
+      "arm_id": "Ridge__HAC",
+      "learner": "Ridge",
+      "family": "HAC",
+      "primary": true,
+      "selector": {
+        "family": "HAC",
+        "selector_id": "HAC_k15",
+        "k": 15
+      },
+      "status": "eligible",
+      "reason": "",
+      "features": [
+        "factor_01",
+        "factor_02",
+        "factor_03",
+        "factor_04",
+        "factor_05",
+        "factor_06",
+        "factor_09",
+        "factor_10",
+        "factor_11",
+        "factor_12",
+        "factor_14",
+        "factor_15",
+        "factor_16",
+        "factor_18",
+        "factor_20"
+      ],
+      "metadata": {
+        "status": "eligible",
+        "reason": "",
+        "features": [
+          "factor_01",
+          "factor_02",
+          "factor_03",
+          "factor_04",
+          "factor_05",
+          "factor_06",
+          "factor_09",
+          "factor_10",
+          "factor_11",
+          "factor_12",
+          "factor_14",
+          "factor_15",
+          "factor_16",
+          "factor_18",
+          "factor_20"
+        ],
+        "metadata": {
+          "clusters": [
+            {
+              "factor": "factor_01",
+              "cluster": 0,
+              "representative": "factor_01",
+              "selected": true
+            },
+            {
+              "factor": "factor_02",
+              "cluster": 1,
+              "representative": "factor_02",
+              "selected": true
+            },
+            {
+              "factor": "factor_03",
+              "cluster": 2,
+              "representative": "factor_03",
+              "selected": true
+            },
+            {
+              "factor": "factor_04",
+              "cluster": 3,
+              "representative": "factor_04",
+              "selected": true
+            },
+            {
+              "factor": "factor_05",
+              "cluster": 4,
+              "representative": "factor_05",
+              "selected": true
+            },
+            {
+              "factor": "factor_06",
+              "cluster": 5,
+              "representative": "factor_06",
+              "selected": true
+            },
+            {
+              "factor": "factor_07",
+              "cluster": 0,
+              "representative": "factor_01",
+              "selected": false
+            },
+            {
+              "factor": "factor_08",
+              "cluster": 1,
+              "representative": "factor_02",
+              "selected": false
+            },
+            {
+              "factor": "factor_09",
+              "cluster": 6,
+              "representative": "factor_09",
+              "selected": true
+            },
+            {
+              "factor": "factor_10",
+              "cluster": 7,
+              "representative": "factor_10",
+              "selected": true
+            },
+            {
+              "factor": "factor_11",
+              "cluster": 8,
+              "representative": "factor_11",
+              "selected": true
+            },
+            {
+              "factor": "factor_12",
+              "cluster": 9,
+              "representative": "factor_12",
+              "selected": true
+            },
+            {
+              "factor": "factor_13",
+              "cluster": 10,
+              "representative": "factor_14",
+              "selected": false
+            },
+            {
+              "factor": "factor_14",
+              "cluster": 10,
+              "representative": "factor_14",
+              "selected": true
+            },
+            {
+              "factor": "factor_15",
+              "cluster": 11,
+              "representative": "factor_15",
+              "selected": true
+            },
+            {
+              "factor": "factor_16",
+              "cluster": 12,
+              "representative": "factor_16",
+              "selected": true
+            },
+            {
+              "factor": "factor_17",
+              "cluster": 1,
+              "representative": "factor_02",
+              "selected": false
+            },
+            {
+              "factor": "factor_18",
+              "cluster": 13,
+              "representative": "factor_18",
+              "selected": true
+            },
+            {
+              "factor": "factor_19",
+              "cluster": 1,
+              "representative": "factor_02",
+              "selected": false
+            },
+            {
+              "factor": "factor_20",
+              "cluster": 14,
+              "representative": "factor_20",
+              "selected": true
+            }
+          ]
+        }
+      },
+      "duplicate_of": ""
+    },
+    {
+      "arm_id": "Ridge__EN",
+      "learner": "Ridge",
+      "family": "EN",
+      "primary": true,
+      "selector": {
+        "family": "EN",
+        "selector_id": "EN_alpha0.05",
+        "alpha": 0.05
+      },
+      "status": "eligible",
+      "reason": "",
+      "features": [
+        "factor_01",
+        "factor_02",
+        "factor_03",
+        "factor_04",
+        "factor_05",
+        "factor_07",
+        "factor_08",
+        "factor_13",
+        "factor_14",
+        "factor_17"
+      ],
+      "metadata": {
+        "status": "eligible",
+        "reason": "",
+        "features": [
+          "factor_01",
+          "factor_02",
+          "factor_03",
+          "factor_04",
+          "factor_05",
+          "factor_07",
+          "factor_08",
+          "factor_13",
+          "factor_14",
+          "factor_17"
+        ],
+        "nonzero_count": 10,
+        "coefficients": {
+          "factor_01": 0.015577832885610276,
+          "factor_02": 0.03934390286290236,
+          "factor_03": 0.005432769909059179,
+          "factor_04": 0.009322743299268767,
+          "factor_05": 0.001538305665042292,
+          "factor_06": 0.0,
+          "factor_07": 0.0019073890045151385,
+          "factor_08": 0.0030473197014063216,
+          "factor_09": 0.0,
+          "factor_10": -0.0,
+          "factor_11": 0.0,
+          "factor_12": 0.0,
+          "factor_13": -0.0019119754521962583,
+          "factor_14": 0.0037552563085089235,
+          "factor_15": 0.0,
+          "factor_16": 0.0,
+          "factor_17": 0.01077104342937738,
+          "factor_18": 0.0,
+          "factor_19": -0.0,
+          "factor_20": -0.0
+        },
+        "n_iter": 67,
+        "dual_gap": 2.1075466726506708e-08,
+        "convergence_warnings": [],
+        "parameters": {
+          "alpha": 0.05,
+          "copy_X": true,
+          "fit_intercept": true,
+          "l1_ratio": 0.5,
+          "max_iter": 5000,
+          "positive": false,
+          "precompute": false,
+          "random_state": 1021,
+          "selection": "cyclic",
+          "tol": 1e-05,
+          "warm_start": false
+        },
+        "imputer_medians": {
+          "factor_01": -0.0034414159500000003,
+          "factor_02": 0.00628473075,
+          "factor_03": 0.000151278225,
+          "factor_04": -0.00591566135,
+          "factor_05": -0.0018572625500000001,
+          "factor_06": -0.14236658000000002,
+          "factor_07": -0.0041658762,
+          "factor_08": 0.0057175972000000005,
+          "factor_09": -0.00295204015,
+          "factor_10": -0.0018932995,
+          "factor_11": -0.07705652700000001,
+          "factor_12": 0.0034172832,
+          "factor_13": 0.004025037150000001,
+          "factor_14": -0.00147768035,
+          "factor_15": -0.000324207475,
+          "factor_16": -0.050209321,
+          "factor_17": 0.0012749829,
+          "factor_18": 0.00226996515,
+          "factor_19": -0.0037196577,
+          "factor_20": 0.046093458000000004
+        },
+        "x_scaler_mean": [
+          0.0006779626001449695,
+          0.0031022506565936345,
+          0.0006782560185742381,
+          -0.027602453799217837,
+          0.00047825964212726594,
+          -0.004409732708049203,
+          0.001524578051786964,
+          0.0031598495874693685,
+          -0.0027390085421788936,
+          -0.003768420853680073,
+          -0.012033302512095332,
+          0.0026725720942450118,
+          -0.00016030034678081147,
+          -0.0021173809029359546,
+          -0.0014819384193009513,
+          -0.05718708940540408,
+          0.0009598448983793029,
+          0.0033601239471713496,
+          -0.001792911054165191,
+          0.043422755953734384
+        ],
+        "x_scaler_scale": [
+          1.13538106739189,
+          1.076208399593821,
+          1.0218913644135497,
+          1.0080660386297808,
+          1.030547678570125,
+          1.1265490829446305,
+          1.0820849616972643,
+          1.0077264112481856,
+          1.0996943979917257,
+          0.999140204290445,
+          1.0235371036833008,
+          1.0112028438660658,
+          1.2250994988044406,
+          1.2140054423970703,
+          1.1013129751340547,
+          1.0234151726608407,
+          1.1399069905822363,
+          0.9159157042148446,
+          0.9952739253009817,
+          1.0039025561013557
+        ],
+        "y_scaler_mean": [
+          0.0019337457963872835
+        ],
+        "y_scaler_scale": [
+          0.048391228081108274
+        ]
+      },
+      "duplicate_of": ""
+    },
+    {
+      "arm_id": "Ridge__IC_match_HAC",
+      "learner": "Ridge",
+      "family": "IC_match_HAC",
+      "primary": false,
+      "selector": {
+        "family": "IC",
+        "k": 15,
+        "matched_to": "Ridge__HAC"
+      },
+      "status": "eligible",
+      "reason": "",
+      "features": [
+        "factor_01",
+        "factor_02",
+        "factor_03",
+        "factor_04",
+        "factor_05",
+        "factor_07",
+        "factor_08",
+        "factor_09",
+        "factor_12",
+        "factor_13",
+        "factor_14",
+        "factor_15",
+        "factor_16",
+        "factor_17",
+        "factor_19"
+      ],
+      "metadata": {
+        "matched_count": 15,
+        "matched_to": "Ridge__HAC"
+      },
+      "duplicate_of": "Ridge__IC"
+    },
+    {
+      "arm_id": "Ridge__IC_match_EN",
+      "learner": "Ridge",
+      "family": "IC_match_EN",
+      "primary": false,
+      "selector": {
+        "family": "IC",
+        "k": 10,
+        "matched_to": "Ridge__EN"
+      },
+      "status": "eligible",
+      "reason": "",
+      "features": [
+        "factor_01",
+        "factor_02",
+        "factor_03",
+        "factor_04",
+        "factor_07",
+        "factor_08",
+        "factor_12",
+        "factor_14",
+        "factor_17",
+        "factor_19"
+      ],
+      "metadata": {
+        "matched_count": 10,
+        "matched_to": "Ridge__EN"
+      },
+      "duplicate_of": ""
+    },
+    {
+      "arm_id": "HGB__ALL",
+      "learner": "HGB",
+      "family": "ALL",
+      "primary": true,
+      "selector": {
+        "family": "ALL",
+        "selector_id": "all20"
+      },
+      "status": "eligible",
+      "reason": "",
+      "features": [
+        "factor_01",
+        "factor_02",
+        "factor_03",
+        "factor_04",
+        "factor_05",
+        "factor_06",
+        "factor_07",
+        "factor_08",
+        "factor_09",
+        "factor_10",
+        "factor_11",
+        "factor_12",
+        "factor_13",
+        "factor_14",
+        "factor_15",
+        "factor_16",
+        "factor_17",
+        "factor_18",
+        "factor_19",
+        "factor_20"
+      ],
+      "metadata": {
+        "status": "eligible",
+        "reason": "",
+        "features": [
+          "factor_01",
+          "factor_02",
+          "factor_03",
+          "factor_04",
+          "factor_05",
+          "factor_06",
+          "factor_07",
+          "factor_08",
+          "factor_09",
+          "factor_10",
+          "factor_11",
+          "factor_12",
+          "factor_13",
+          "factor_14",
+          "factor_15",
+          "factor_16",
+          "factor_17",
+          "factor_18",
+          "factor_19",
+          "factor_20"
+        ],
+        "metadata": {}
+      },
+      "duplicate_of": ""
+    },
+    {
+      "arm_id": "HGB__IC",
+      "learner": "HGB",
+      "family": "IC",
+      "primary": true,
+      "selector": {
+        "family": "IC",
+        "selector_id": "IC_k15",
+        "k": 15
+      },
+      "status": "eligible",
+      "reason": "",
+      "features": [
+        "factor_01",
+        "factor_02",
+        "factor_03",
+        "factor_04",
+        "factor_05",
+        "factor_07",
+        "factor_08",
+        "factor_09",
+        "factor_12",
+        "factor_13",
+        "factor_14",
+        "factor_15",
+        "factor_16",
+        "factor_17",
+        "factor_19"
+      ],
+      "metadata": {
+        "status": "eligible",
+        "reason": "",
+        "features": [
+          "factor_01",
+          "factor_02",
+          "factor_03",
+          "factor_04",
+          "factor_05",
+          "factor_07",
+          "factor_08",
+          "factor_09",
+          "factor_12",
+          "factor_13",
+          "factor_14",
+          "factor_15",
+          "factor_16",
+          "factor_17",
+          "factor_19"
+        ],
+        "metadata": {
+          "ranking": [
+            "factor_02",
+            "factor_08",
+            "factor_19",
+            "factor_17",
+            "factor_01",
+            "factor_07",
+            "factor_03",
+            "factor_12",
+            "factor_14",
+            "factor_04",
+            "factor_13",
+            "factor_05",
+            "factor_16",
+            "factor_15",
+            "factor_09",
+            "factor_11",
+            "factor_20",
+            "factor_18",
+            "factor_10",
+            "factor_06"
+          ]
+        }
+      },
+      "duplicate_of": ""
+    },
+    {
+      "arm_id": "HGB__HAC",
+      "learner": "HGB",
+      "family": "HAC",
+      "primary": true,
+      "selector": {
+        "family": "HAC",
+        "selector_id": "HAC_k15",
+        "k": 15
+      },
+      "status": "eligible",
+      "reason": "",
+      "features": [
+        "factor_01",
+        "factor_02",
+        "factor_03",
+        "factor_04",
+        "factor_05",
+        "factor_06",
+        "factor_09",
+        "factor_10",
+        "factor_11",
+        "factor_12",
+        "factor_14",
+        "factor_15",
+        "factor_16",
+        "factor_18",
+        "factor_20"
+      ],
+      "metadata": {
+        "status": "eligible",
+        "reason": "",
+        "features": [
+          "factor_01",
+          "factor_02",
+          "factor_03",
+          "factor_04",
+          "factor_05",
+          "factor_06",
+          "factor_09",
+          "factor_10",
+          "factor_11",
+          "factor_12",
+          "factor_14",
+          "factor_15",
+          "factor_16",
+          "factor_18",
+          "factor_20"
+        ],
+        "metadata": {
+          "clusters": [
+            {
+              "factor": "factor_01",
+              "cluster": 0,
+              "representative": "factor_01",
+              "selected": true
+            },
+            {
+              "factor": "factor_02",
+              "cluster": 1,
+              "representative": "factor_02",
+              "selected": true
+            },
+            {
+              "factor": "factor_03",
+              "cluster": 2,
+              "representative": "factor_03",
+              "selected": true
+            },
+            {
+              "factor": "factor_04",
+              "cluster": 3,
+              "representative": "factor_04",
+              "selected": true
+            },
+            {
+              "factor": "factor_05",
+              "cluster": 4,
+              "representative": "factor_05",
+              "selected": true
+            },
+            {
+              "factor": "factor_06",
+              "cluster": 5,
+              "representative": "factor_06",
+              "selected": true
+            },
+            {
+              "factor": "factor_07",
+              "cluster": 0,
+              "representative": "factor_01",
+              "selected": false
+            },
+            {
+              "factor": "factor_08",
+              "cluster": 1,
+              "representative": "factor_02",
+              "selected": false
+            },
+            {
+              "factor": "factor_09",
+              "cluster": 6,
+              "representative": "factor_09",
+              "selected": true
+            },
+            {
+              "factor": "factor_10",
+              "cluster": 7,
+              "representative": "factor_10",
+              "selected": true
+            },
+            {
+              "factor": "factor_11",
+              "cluster": 8,
+              "representative": "factor_11",
+              "selected": true
+            },
+            {
+              "factor": "factor_12",
+              "cluster": 9,
+              "representative": "factor_12",
+              "selected": true
+            },
+            {
+              "factor": "factor_13",
+              "cluster": 10,
+              "representative": "factor_14",
+              "selected": false
+            },
+            {
+              "factor": "factor_14",
+              "cluster": 10,
+              "representative": "factor_14",
+              "selected": true
+            },
+            {
+              "factor": "factor_15",
+              "cluster": 11,
+              "representative": "factor_15",
+              "selected": true
+            },
+            {
+              "factor": "factor_16",
+              "cluster": 12,
+              "representative": "factor_16",
+              "selected": true
+            },
+            {
+              "factor": "factor_17",
+              "cluster": 1,
+              "representative": "factor_02",
+              "selected": false
+            },
+            {
+              "factor": "factor_18",
+              "cluster": 13,
+              "representative": "factor_18",
+              "selected": true
+            },
+            {
+              "factor": "factor_19",
+              "cluster": 1,
+              "representative": "factor_02",
+              "selected": false
+            },
+            {
+              "factor": "factor_20",
+              "cluster": 14,
+              "representative": "factor_20",
+              "selected": true
+            }
+          ]
+        }
+      },
+      "duplicate_of": ""
+    },
+    {
+      "arm_id": "HGB__EN",
+      "learner": "HGB",
+      "family": "EN",
+      "primary": true,
+      "selector": {
+        "family": "EN",
+        "selector_id": "EN_alpha0.05",
+        "alpha": 0.05
+      },
+      "status": "eligible",
+      "reason": "",
+      "features": [
+        "factor_01",
+        "factor_02",
+        "factor_03",
+        "factor_04",
+        "factor_05",
+        "factor_07",
+        "factor_08",
+        "factor_13",
+        "factor_14",
+        "factor_17"
+      ],
+      "metadata": {
+        "status": "eligible",
+        "reason": "",
+        "features": [
+          "factor_01",
+          "factor_02",
+          "factor_03",
+          "factor_04",
+          "factor_05",
+          "factor_07",
+          "factor_08",
+          "factor_13",
+          "factor_14",
+          "factor_17"
+        ],
+        "nonzero_count": 10,
+        "coefficients": {
+          "factor_01": 0.015577832885610276,
+          "factor_02": 0.03934390286290236,
+          "factor_03": 0.005432769909059179,
+          "factor_04": 0.009322743299268767,
+          "factor_05": 0.001538305665042292,
+          "factor_06": 0.0,
+          "factor_07": 0.0019073890045151385,
+          "factor_08": 0.0030473197014063216,
+          "factor_09": 0.0,
+          "factor_10": -0.0,
+          "factor_11": 0.0,
+          "factor_12": 0.0,
+          "factor_13": -0.0019119754521962583,
+          "factor_14": 0.0037552563085089235,
+          "factor_15": 0.0,
+          "factor_16": 0.0,
+          "factor_17": 0.01077104342937738,
+          "factor_18": 0.0,
+          "factor_19": -0.0,
+          "factor_20": -0.0
+        },
+        "n_iter": 67,
+        "dual_gap": 2.1075466726506708e-08,
+        "convergence_warnings": [],
+        "parameters": {
+          "alpha": 0.05,
+          "copy_X": true,
+          "fit_intercept": true,
+          "l1_ratio": 0.5,
+          "max_iter": 5000,
+          "positive": false,
+          "precompute": false,
+          "random_state": 1021,
+          "selection": "cyclic",
+          "tol": 1e-05,
+          "warm_start": false
+        },
+        "imputer_medians": {
+          "factor_01": -0.0034414159500000003,
+          "factor_02": 0.00628473075,
+          "factor_03": 0.000151278225,
+          "factor_04": -0.00591566135,
+          "factor_05": -0.0018572625500000001,
+          "factor_06": -0.14236658000000002,
+          "factor_07": -0.0041658762,
+          "factor_08": 0.0057175972000000005,
+          "factor_09": -0.00295204015,
+          "factor_10": -0.0018932995,
+          "factor_11": -0.07705652700000001,
+          "factor_12": 0.0034172832,
+          "factor_13": 0.004025037150000001,
+          "factor_14": -0.00147768035,
+          "factor_15": -0.000324207475,
+          "factor_16": -0.050209321,
+          "factor_17": 0.0012749829,
+          "factor_18": 0.00226996515,
+          "factor_19": -0.0037196577,
+          "factor_20": 0.046093458000000004
+        },
+        "x_scaler_mean": [
+          0.0006779626001449695,
+          0.0031022506565936345,
+          0.0006782560185742381,
+          -0.027602453799217837,
+          0.00047825964212726594,
+          -0.004409732708049203,
+          0.001524578051786964,
+          0.0031598495874693685,
+          -0.0027390085421788936,
+          -0.003768420853680073,
+          -0.012033302512095332,
+          0.0026725720942450118,
+          -0.00016030034678081147,
+          -0.0021173809029359546,
+          -0.0014819384193009513,
+          -0.05718708940540408,
+          0.0009598448983793029,
+          0.0033601239471713496,
+          -0.001792911054165191,
+          0.043422755953734384
+        ],
+        "x_scaler_scale": [
+          1.13538106739189,
+          1.076208399593821,
+          1.0218913644135497,
+          1.0080660386297808,
+          1.030547678570125,
+          1.1265490829446305,
+          1.0820849616972643,
+          1.0077264112481856,
+          1.0996943979917257,
+          0.999140204290445,
+          1.0235371036833008,
+          1.0112028438660658,
+          1.2250994988044406,
+          1.2140054423970703,
+          1.1013129751340547,
+          1.0234151726608407,
+          1.1399069905822363,
+          0.9159157042148446,
+          0.9952739253009817,
+          1.0039025561013557
+        ],
+        "y_scaler_mean": [
+          0.0019337457963872835
+        ],
+        "y_scaler_scale": [
+          0.048391228081108274
+        ]
+      },
+      "duplicate_of": ""
+    },
+    {
+      "arm_id": "HGB__IC_match_HAC",
+      "learner": "HGB",
+      "family": "IC_match_HAC",
+      "primary": false,
+      "selector": {
+        "family": "IC",
+        "k": 15,
+        "matched_to": "HGB__HAC"
+      },
+      "status": "eligible",
+      "reason": "",
+      "features": [
+        "factor_01",
+        "factor_02",
+        "factor_03",
+        "factor_04",
+        "factor_05",
+        "factor_07",
+        "factor_08",
+        "factor_09",
+        "factor_12",
+        "factor_13",
+        "factor_14",
+        "factor_15",
+        "factor_16",
+        "factor_17",
+        "factor_19"
+      ],
+      "metadata": {
+        "matched_count": 15,
+        "matched_to": "HGB__HAC"
+      },
+      "duplicate_of": "HGB__IC"
+    },
+    {
+      "arm_id": "HGB__IC_match_EN",
+      "learner": "HGB",
+      "family": "IC_match_EN",
+      "primary": false,
+      "selector": {
+        "family": "IC",
+        "k": 10,
+        "matched_to": "HGB__EN"
+      },
+      "status": "eligible",
+      "reason": "",
+      "features": [
+        "factor_01",
+        "factor_02",
+        "factor_03",
+        "factor_04",
+        "factor_07",
+        "factor_08",
+        "factor_12",
+        "factor_14",
+        "factor_17",
+        "factor_19"
+      ],
+      "metadata": {
+        "matched_count": 10,
+        "matched_to": "HGB__EN"
+      },
+      "duplicate_of": ""
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+PTY: /bin/zsh -f (new /bin/zsh process, tty=true, session_id=30210)
+Working directory: /Users/stellan/Desktop/北京市金融人工智能重点实验室笔试
+Started: 2026-10-11 12:34:57 UTC
+Command: .venv/bin/python -B asset_allocation/factor_timing.py --out asset_allocation/outputs/factor_timing_submission_replay
+
+Replay summary printed by the program:
+factor_03 ALL: common_rows=393287, common_dates=1033, paired_valid_ic_dates=1033, raw_eligible_rows=394457, raw_eligible_valid_ic_dates=1036
+factor_03 2021: common_rows=95161, common_dates=257, paired_valid_ic_dates=257
+factor_03 2022: common_rows=98809, common_dates=260, paired_valid_ic_dates=260
+factor_03 2023: common_rows=101388, common_dates=260, paired_valid_ic_dates=260
+factor_03 2024: common_rows=97929, common_dates=256, paired_valid_ic_dates=256
+factor_12 ALL: common_rows=394067, common_dates=1035, paired_valid_ic_dates=1035, raw_eligible_rows=394457, raw_eligible_valid_ic_dates=1036
+factor_12 2021: common_rows=95906, common_dates=259, paired_valid_ic_dates=259
+factor_12 2022: common_rows=98840, common_dates=260, paired_valid_ic_dates=260
+factor_12 2023: common_rows=101392, common_dates=260, paired_valid_ic_dates=260
+factor_12 2024: common_rows=97929, common_dates=256, paired_valid_ic_dates=256
+
+Finished by: 2026-10-11 12:35:08 UTC (program output and prompt observed within the 10-second PTY read)
+Exit status: 0 (confirmed in the same PTY with: print -r -- LAST_STATUS=$?)

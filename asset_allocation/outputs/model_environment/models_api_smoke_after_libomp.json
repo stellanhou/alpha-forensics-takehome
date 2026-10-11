@@ -1,0 +1,65 @@
+{
+  "status": "passed",
+  "python_executable": "/Users/stellan/.local/share/uv/python/cpython-3.12.13-macos-aarch64-none/bin/python3.12",
+  "python_version": "3.12.13",
+  "platform": "macOS-26.5-arm64-arm-64bit",
+  "thread_environment": {
+    "OMP_NUM_THREADS": "4",
+    "OPENBLAS_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1"
+  },
+  "package_versions": {
+    "numpy": "2.5.4",
+    "pandas": "2.3.3",
+    "scipy": "1.18.1",
+    "scikit-learn": "1.9.1",
+    "joblib": "1.6.0",
+    "matplotlib": "3.11.2",
+    "lightgbm": "4.7.0",
+    "xgboost": "3.4.1",
+    "catboost": "1.2.10"
+  },
+  "model_count": 8,
+  "models": {
+    "HGB": {
+      "estimator": "sklearn.pipeline.Pipeline",
+      "parameter_count": 33,
+      "json_characters": 2467
+    },
+    "Ridge": {
+      "estimator": "sklearn.pipeline.Pipeline",
+      "parameter_count": 24,
+      "json_characters": 1643
+    },
+    "ElasticNet": {
+      "estimator": "sklearn.pipeline.Pipeline",
+      "parameter_count": 35,
+      "json_characters": 3225
+    },
+    "ExtraTrees": {
+      "estimator": "sklearn.pipeline.Pipeline",
+      "parameter_count": 30,
+      "json_characters": 2148
+    },
+    "LightGBM": {
+      "estimator": "sklearn.pipeline.Pipeline",
+      "parameter_count": 35,
+      "json_characters": 2464
+    },
+    "XGBoost": {
+      "estimator": "sklearn.pipeline.Pipeline",
+      "parameter_count": 52,
+      "json_characters": 3839
+    },
+    "CatBoost": {
+      "estimator": "sklearn.pipeline.Pipeline",
+      "parameter_count": 22,
+      "json_characters": 1496
+    },
+    "Dummy": {
+      "estimator": "sklearn.pipeline.Pipeline",
+      "parameter_count": 15,
+      "json_characters": 994
+    }
+  }
+}

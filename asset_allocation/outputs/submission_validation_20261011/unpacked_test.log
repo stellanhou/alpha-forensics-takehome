@@ -1,0 +1,25 @@
+PTY: new /bin/zsh -f (tty=true, session_id=6217)
+Working directory: /Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/提交文件/.validation/26秋实习生招募–资产配置策略–陈星宇
+Command: .venv/bin/python -B -m unittest discover -v -s asset_allocation -p test_factor_timing.py
+Started: 2026-10-11 12:41:09 UTC
+
+test_align_before_membership_and_preserve_other_factors (test_factor_timing.FactorTimingTests) ... ok
+test_labels_use_business_dates_and_require_actual_endpoints (test_factor_timing.FactorTimingTests) ... ok
+test_latest_missing_snapshot_is_not_replaced_by_old_value (test_factor_timing.FactorTimingTests) ... ok
+test_latest_reference_wins_when_releases_share_a_date (test_factor_timing.FactorTimingTests) ... ok
+test_paired_ic_uses_same_assets_and_reranks (test_factor_timing.FactorTimingTests) ... ok
+test_release_close_boundary_and_asset_isolation (test_factor_timing.FactorTimingTests) ... ok
+test_reordered_release_dates_fail_explicitly (test_factor_timing.FactorTimingTests) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.056s
+
+OK
+Exit status: 0 (all seven tests reported ok; prompt returned before the second command)
+Finished by: 2026-10-11 12:41:10 UTC
+
+Direct exit-status confirmation in the same PTY:
+Command repeated: .venv/bin/python -B -m unittest discover -v -s asset_allocation -p test_factor_timing.py
+Started: 2026-10-11 12:43:20 UTC; Ran 7 tests in 0.047s; OK
+Immediately queried: print -r -- LAST_STATUS=$? at 2026-10-11 12:43:23 UTC
+Observed: LAST_STATUS=0

@@ -1,0 +1,247 @@
+{
+  "arm_id": "Ridge__HAC",
+  "learner": "Ridge",
+  "family": "HAC",
+  "primary": true,
+  "status": "eligible",
+  "reason": "",
+  "duplicate_of": "",
+  "selector": {
+    "family": "HAC",
+    "selector_id": "HAC_k15",
+    "k": 15
+  },
+  "selector_metadata": {
+    "status": "eligible",
+    "reason": "",
+    "features": [
+      "factor_01",
+      "factor_02",
+      "factor_03",
+      "factor_04",
+      "factor_05",
+      "factor_06",
+      "factor_09",
+      "factor_10",
+      "factor_11",
+      "factor_12",
+      "factor_14",
+      "factor_15",
+      "factor_16",
+      "factor_18",
+      "factor_20"
+    ],
+    "metadata": {
+      "clusters": [
+        {
+          "factor": "factor_01",
+          "cluster": 0,
+          "representative": "factor_01",
+          "selected": true
+        },
+        {
+          "factor": "factor_02",
+          "cluster": 1,
+          "representative": "factor_02",
+          "selected": true
+        },
+        {
+          "factor": "factor_03",
+          "cluster": 2,
+          "representative": "factor_03",
+          "selected": true
+        },
+        {
+          "factor": "factor_04",
+          "cluster": 3,
+          "representative": "factor_04",
+          "selected": true
+        },
+        {
+          "factor": "factor_05",
+          "cluster": 4,
+          "representative": "factor_05",
+          "selected": true
+        },
+        {
+          "factor": "factor_06",
+          "cluster": 5,
+          "representative": "factor_06",
+          "selected": true
+        },
+        {
+          "factor": "factor_07",
+          "cluster": 0,
+          "representative": "factor_01",
+          "selected": false
+        },
+        {
+          "factor": "factor_08",
+          "cluster": 1,
+          "representative": "factor_02",
+          "selected": false
+        },
+        {
+          "factor": "factor_09",
+          "cluster": 6,
+          "representative": "factor_09",
+          "selected": true
+        },
+        {
+          "factor": "factor_10",
+          "cluster": 7,
+          "representative": "factor_10",
+          "selected": true
+        },
+        {
+          "factor": "factor_11",
+          "cluster": 8,
+          "representative": "factor_11",
+          "selected": true
+        },
+        {
+          "factor": "factor_12",
+          "cluster": 9,
+          "representative": "factor_12",
+          "selected": true
+        },
+        {
+          "factor": "factor_13",
+          "cluster": 10,
+          "representative": "factor_14",
+          "selected": false
+        },
+        {
+          "factor": "factor_14",
+          "cluster": 10,
+          "representative": "factor_14",
+          "selected": true
+        },
+        {
+          "factor": "factor_15",
+          "cluster": 11,
+          "representative": "factor_15",
+          "selected": true
+        },
+        {
+          "factor": "factor_16",
+          "cluster": 12,
+          "representative": "factor_16",
+          "selected": true
+        },
+        {
+          "factor": "factor_17",
+          "cluster": 1,
+          "representative": "factor_02",
+          "selected": false
+        },
+        {
+          "factor": "factor_18",
+          "cluster": 13,
+          "representative": "factor_18",
+          "selected": true
+        },
+        {
+          "factor": "factor_19",
+          "cluster": 1,
+          "representative": "factor_02",
+          "selected": false
+        },
+        {
+          "factor": "factor_20",
+          "cluster": 14,
+          "representative": "factor_20",
+          "selected": true
+        }
+      ]
+    }
+  },
+  "fitted_model": {
+    "features": [
+      "factor_01",
+      "factor_02",
+      "factor_03",
+      "factor_04",
+      "factor_05",
+      "factor_06",
+      "factor_09",
+      "factor_10",
+      "factor_11",
+      "factor_12",
+      "factor_14",
+      "factor_15",
+      "factor_16",
+      "factor_18",
+      "factor_20"
+    ],
+    "training_rows": 192806,
+    "imputer_medians": [
+      -0.00289327255,
+      0.00818634965,
+      0.000204702805,
+      -0.0022498760500000003,
+      -0.0014259440000000002,
+      -0.151781935,
+      -0.0018046415999999998,
+      -0.00219048175,
+      -0.09626507749999999,
+      0.004458519649999999,
+      -0.00032554835,
+      -0.0025469117,
+      -0.049278507,
+      -0.0033817255,
+      0.0580314975
+    ],
+    "x_scaler_mean": [
+      0.0009860231213927424,
+      0.0048739906973896355,
+      0.00048367764898235674,
+      -0.024053469514024574,
+      0.000651876754796375,
+      -0.005893213195731244,
+      -0.003022494332503253,
+      -0.004745761898952801,
+      -0.01597701629506203,
+      0.0031610335949237463,
+      -0.001917860369890808,
+      -0.003351049296235187,
+      -0.057045295915867475,
+      -0.002576038001649822,
+      0.0556585924484007
+    ],
+    "x_scaler_scale": [
+      1.1360716134525464,
+      1.075441934584885,
+      1.0247349723901553,
+      1.0090898122661245,
+      1.0310895625214849,
+      1.1244267386054934,
+      1.1016447106626623,
+      0.9972671009820507,
+      1.0219368923698828,
+      1.0117578090362287,
+      1.2131022401837597,
+      1.101369663522052,
+      1.0232119243149351,
+      0.9154265903577393,
+      1.0018573665279524
+    ],
+    "coefficients": [
+      0.001293554940520219,
+      0.004381074870744486,
+      0.0010811702946779864,
+      0.0019059875524780419,
+      0.0012842444650561179,
+      4.24302510946567e-05,
+      0.00023153895414038635,
+      -4.004597134132435e-05,
+      -0.00029086068625103824,
+      0.0005581352419573622,
+      0.0011492369776187595,
+      9.076962039859421e-06,
+      0.0003490927101502005,
+      9.073632257185041e-05,
+      0.0001221004432053865
+    ]
+  }
+}

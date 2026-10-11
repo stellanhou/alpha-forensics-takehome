@@ -1,0 +1,1 @@
+Paper spread proxy [{'metric': 'full_panel_gross_proxy_sharpe', 'value': 24.13673390493941}, {'metric': 'full_panel_mean_forward_5d_spread', 'value': 0.01585781136754439}, {'metric': 'backtest_n_dates', 'value': 1036}]

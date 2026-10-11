@@ -1,0 +1,86 @@
+{
+  "verified_at_utc": "2026-10-11T12:36:02Z",
+  "scope": "README minimal factor_timing core validation in a fresh PTY; no model retraining or full test suite.",
+  "pty": {
+    "new_process": "/bin/zsh -f",
+    "parent_shell": "/bin/zsh",
+    "login": false,
+    "tty": true,
+    "session_id": 30210,
+    "working_directory": "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试",
+    "initial_prompt_observed": true,
+    "status_probe": "print -r -- LAST_STATUS=$?",
+    "status_probe_output": "LAST_STATUS=0",
+    "python_environment_created_or_modified": false,
+    "dependencies_installed": false
+  },
+  "output_safety": {
+    "replay_output_path": "asset_allocation/outputs/factor_timing_submission_replay",
+    "replay_path_existed_before_run": false,
+    "validation_path_existed_before_run": false,
+    "created_path": "asset_allocation/outputs/submission_validation_20261011"
+  },
+  "commands": [
+    {
+      "command": ".venv/bin/python -B -m unittest discover -v -s asset_allocation -p test_factor_timing.py",
+      "started_at_utc": "2026-10-11T12:34:54Z",
+      "finished_by_utc": "2026-10-11T12:34:55Z",
+      "exit_status": 0,
+      "log": "asset_allocation/outputs/submission_validation_20261011/test_factor_timing.log"
+    },
+    {
+      "command": ".venv/bin/python -B asset_allocation/factor_timing.py --out asset_allocation/outputs/factor_timing_submission_replay",
+      "started_at_utc": "2026-10-11T12:34:57Z",
+      "finished_by_utc": "2026-10-11T12:35:08Z",
+      "exit_status": 0,
+      "status_probe_at_utc": "2026-10-11T12:35:16Z",
+      "log": "asset_allocation/outputs/submission_validation_20261011/factor_timing_replay.log"
+    }
+  ],
+  "test_result": {
+    "passed": true,
+    "tests_run": 7
+  },
+  "comparisons_against": "asset_allocation/outputs/factor_timing",
+  "comparisons": {
+    "timing_summary.csv": {
+      "reference_raw_sha256": "390ed1ed7a4c667a957a1229b1731a072917201cb274f366026765b0e35c4542",
+      "replay_raw_sha256": "390ed1ed7a4c667a957a1229b1731a072917201cb274f366026765b0e35c4542",
+      "reference_decompressed_sha256": "390ed1ed7a4c667a957a1229b1731a072917201cb274f366026765b0e35c4542",
+      "replay_decompressed_sha256": "390ed1ed7a4c667a957a1229b1731a072917201cb274f366026765b0e35c4542",
+      "reference_rows": 10,
+      "replay_rows": 10,
+      "raw_sha256_equal": true,
+      "decompressed_sha256_equal": true,
+      "decompressed_bytes_equal": true,
+      "rows_equal": true
+    },
+    "daily_rank_ic.csv": {
+      "reference_raw_sha256": "4020bf04c0e575ae6af3511d20b4f3b81b6d90cf10bb3f88f1396e5c02f6b47d",
+      "replay_raw_sha256": "4020bf04c0e575ae6af3511d20b4f3b81b6d90cf10bb3f88f1396e5c02f6b47d",
+      "reference_decompressed_sha256": "4020bf04c0e575ae6af3511d20b4f3b81b6d90cf10bb3f88f1396e5c02f6b47d",
+      "replay_decompressed_sha256": "4020bf04c0e575ae6af3511d20b4f3b81b6d90cf10bb3f88f1396e5c02f6b47d",
+      "reference_rows": 2068,
+      "replay_rows": 2068,
+      "raw_sha256_equal": true,
+      "decompressed_sha256_equal": true,
+      "decompressed_bytes_equal": true,
+      "rows_equal": true
+    },
+    "pit_research_panel.csv.gz": {
+      "reference_raw_sha256": "57447e720d1a432eba86be9dba06678dca9c062f3f2ed4def86bc0e6dc82a104",
+      "replay_raw_sha256": "57447e720d1a432eba86be9dba06678dca9c062f3f2ed4def86bc0e6dc82a104",
+      "reference_decompressed_sha256": "da304b24e4e18a763c5c34c4886a19ca442b11342b4fdc70ed95c0ed5373a8c0",
+      "replay_decompressed_sha256": "da304b24e4e18a763c5c34c4886a19ca442b11342b4fdc70ed95c0ed5373a8c0",
+      "reference_rows": 394457,
+      "replay_rows": 394457,
+      "raw_sha256_equal": true,
+      "decompressed_sha256_equal": true,
+      "decompressed_bytes_equal": true,
+      "rows_equal": true
+    }
+  },
+  "all_three_outputs_byte_identical_after_decompression": true,
+  "all_three_raw_sha256_equal": true,
+  "all_three_row_counts_equal": true
+}

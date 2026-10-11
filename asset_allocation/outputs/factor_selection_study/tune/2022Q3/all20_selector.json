@@ -1,0 +1,31 @@
+{
+  "candidate": {
+    "family": "ALL",
+    "selector_id": "all20"
+  },
+  "status": "eligible",
+  "reason": "",
+  "features": [
+    "factor_01",
+    "factor_02",
+    "factor_03",
+    "factor_04",
+    "factor_05",
+    "factor_06",
+    "factor_07",
+    "factor_08",
+    "factor_09",
+    "factor_10",
+    "factor_11",
+    "factor_12",
+    "factor_13",
+    "factor_14",
+    "factor_15",
+    "factor_16",
+    "factor_17",
+    "factor_18",
+    "factor_19",
+    "factor_20"
+  ],
+  "metadata": {}
+}

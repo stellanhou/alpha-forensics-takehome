@@ -1,0 +1,11 @@
+validation: train=192806, evaluation=99057
+2026-10-11T10:41:53.298414+00:00 fitting Ridge industry/size baseline
+2026-10-11T10:41:54.681335+00:00 fitting HGB industry/size baseline
+validation completed
+confirmation: train=294192, evaluation=97929
+2026-10-11T10:41:57.874119+00:00 fitting Ridge industry/size baseline
+2026-10-11T10:41:59.207508+00:00 fitting HGB industry/size baseline
+confirmation completed
+Completed industry/size attribution: asset_allocation/outputs/industry_size_attribution
+
+EXIT_CODE=0

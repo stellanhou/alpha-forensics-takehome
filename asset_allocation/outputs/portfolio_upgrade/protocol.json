@@ -1,0 +1,19 @@
+{
+  "start_signal": "2023-01-02",
+  "end_date": "2024-12-31",
+  "last_entry_signal": "2024-12-23",
+  "strategy": "Long-only prediction >= same-day 90th percentile; equal-weight within selected group",
+  "benchmark": "All signal-date listed members, equal-weight; same five-sleeve accounting and execution",
+  "capital": "Initial NAV 1; five initially equal independent cash sleeves; no borrowing or shorting; fractional shares",
+  "orders": "Signal-close names and fee-inclusive sleeve-value budget; next open sell before buy; cash shortfall scales the budget down",
+  "holding": "Each new basket holds five business-day open-to-open intervals; blocked exits retry daily; do not add a new lot of an asset still held in that sleeve",
+  "costs": "Previous-business-day fee_bps_one_way + half spread_bps + impact_bps_proxy on each actual buy/sell",
+  "constraints": "Previous-business-day can_buy/can_sell are execution proxies; same-day final flags only audit hypothetical fills",
+  "unfilled_buys": "Keep allocated cash; no replacement or redistribution among other names",
+  "missing_quote": "First missing quote on an existing position: zero recovery write-off, separately identified valuation assumption",
+  "terminal": "Predefined final entry date permits normal five-day exits; blocked terminal positions marked at actual final close, not fictitiously liquidated",
+  "capacity": "Fixed supplied standard-order impact proxy; no inference of scalable capacity; no volume-based opening filter",
+  "netting": "Sleeves accounted separately; cross-sleeve opposite trades are not netted, including their costs",
+  "annualization": "252 synthetic trading days; zero cash interest and zero risk-free rate",
+  "comparison": "Identical signal-date members and dates across predictors; old random-split models remain contaminated historical controls"
+}

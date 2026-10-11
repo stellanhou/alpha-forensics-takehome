@@ -1,0 +1,399 @@
+{
+  "frozen_at_utc": "2026-10-11T10:17:52.392151+00:00",
+  "protocol_sha256": "593a54c0a7e92473a51e15804aa4f3df63082f638b97fde58520c0a8f335d9fb",
+  "protocol": {
+    "format_version": 1,
+    "scope": "Additional historical research designed after inspecting 2024 outcomes; not a new independent blind test. Uses the supplied observed-label member panel. Gross five-day grouping diagnostics are not portfolio returns; no NAV, Sharpe, trading costs or executable strategy claims.",
+    "seed": 1021,
+    "factor_columns": [
+      "factor_01",
+      "factor_02",
+      "factor_03",
+      "factor_04",
+      "factor_05",
+      "factor_06",
+      "factor_07",
+      "factor_08",
+      "factor_09",
+      "factor_10",
+      "factor_11",
+      "factor_12",
+      "factor_13",
+      "factor_14",
+      "factor_15",
+      "factor_16",
+      "factor_17",
+      "factor_18",
+      "factor_19",
+      "factor_20"
+    ],
+    "learners": [
+      "Ridge",
+      "HGB"
+    ],
+    "primary_family_order": [
+      "ALL",
+      "IC",
+      "HAC",
+      "EN"
+    ],
+    "selector_candidates": [
+      {
+        "family": "ALL",
+        "selector_id": "all20"
+      },
+      {
+        "family": "IC",
+        "selector_id": "IC_k5",
+        "k": 5
+      },
+      {
+        "family": "IC",
+        "selector_id": "IC_k10",
+        "k": 10
+      },
+      {
+        "family": "IC",
+        "selector_id": "IC_k15",
+        "k": 15
+      },
+      {
+        "family": "HAC",
+        "selector_id": "HAC_k5",
+        "k": 5
+      },
+      {
+        "family": "HAC",
+        "selector_id": "HAC_k10",
+        "k": 10
+      },
+      {
+        "family": "HAC",
+        "selector_id": "HAC_k15",
+        "k": 15
+      },
+      {
+        "family": "EN",
+        "selector_id": "EN_alpha0.001",
+        "alpha": 0.001
+      },
+      {
+        "family": "EN",
+        "selector_id": "EN_alpha0.01",
+        "alpha": 0.01
+      },
+      {
+        "family": "EN",
+        "selector_id": "EN_alpha0.05",
+        "alpha": 0.05
+      }
+    ],
+    "model_parameters": {
+      "Ridge": {
+        "memory": null,
+        "steps": [
+          [
+            "imputer",
+            {
+              "class": "sklearn.impute._base.SimpleImputer",
+              "params": {
+                "add_indicator": false,
+                "copy": true,
+                "fill_value": null,
+                "keep_empty_features": false,
+                "missing_values": "nan",
+                "strategy": "median"
+              }
+            }
+          ],
+          [
+            "scaler",
+            {
+              "class": "sklearn.preprocessing._data.StandardScaler",
+              "params": {
+                "copy": true,
+                "with_mean": true,
+                "with_std": true
+              }
+            }
+          ],
+          [
+            "model",
+            {
+              "class": "sklearn.linear_model._ridge.Ridge",
+              "params": {
+                "alpha": 100,
+                "copy_X": true,
+                "fit_intercept": true,
+                "max_iter": null,
+                "positive": false,
+                "random_state": null,
+                "solver": "auto",
+                "tol": 0.0001
+              }
+            }
+          ]
+        ],
+        "transform_input": null,
+        "verbose": false,
+        "imputer": {
+          "class": "sklearn.impute._base.SimpleImputer",
+          "params": {
+            "add_indicator": false,
+            "copy": true,
+            "fill_value": null,
+            "keep_empty_features": false,
+            "missing_values": "nan",
+            "strategy": "median"
+          }
+        },
+        "scaler": {
+          "class": "sklearn.preprocessing._data.StandardScaler",
+          "params": {
+            "copy": true,
+            "with_mean": true,
+            "with_std": true
+          }
+        },
+        "model": {
+          "class": "sklearn.linear_model._ridge.Ridge",
+          "params": {
+            "alpha": 100,
+            "copy_X": true,
+            "fit_intercept": true,
+            "max_iter": null,
+            "positive": false,
+            "random_state": null,
+            "solver": "auto",
+            "tol": 0.0001
+          }
+        },
+        "imputer__add_indicator": false,
+        "imputer__copy": true,
+        "imputer__fill_value": null,
+        "imputer__keep_empty_features": false,
+        "imputer__missing_values": "nan",
+        "imputer__strategy": "median",
+        "scaler__copy": true,
+        "scaler__with_mean": true,
+        "scaler__with_std": true,
+        "model__alpha": 100,
+        "model__copy_X": true,
+        "model__fit_intercept": true,
+        "model__max_iter": null,
+        "model__positive": false,
+        "model__random_state": null,
+        "model__solver": "auto",
+        "model__tol": 0.0001
+      },
+      "HGB": {
+        "memory": null,
+        "steps": [
+          [
+            "imputer",
+            {
+              "class": "sklearn.impute._base.SimpleImputer",
+              "params": {
+                "add_indicator": false,
+                "copy": true,
+                "fill_value": null,
+                "keep_empty_features": false,
+                "missing_values": "nan",
+                "strategy": "median"
+              }
+            }
+          ],
+          [
+            "model",
+            {
+              "class": "sklearn.ensemble._hist_gradient_boosting.gradient_boosting.HistGradientBoostingRegressor",
+              "params": {
+                "categorical_features": "from_dtype",
+                "early_stopping": false,
+                "interaction_cst": null,
+                "l2_regularization": 0.2,
+                "learning_rate": 0.065,
+                "loss": "squared_error",
+                "max_bins": 255,
+                "max_depth": null,
+                "max_features": 1.0,
+                "max_iter": 55,
+                "max_leaf_nodes": 17,
+                "min_samples_leaf": 20,
+                "monotonic_cst": null,
+                "n_iter_no_change": 10,
+                "quantile": null,
+                "random_state": 1021,
+                "scoring": "loss",
+                "tol": 1e-07,
+                "validation_fraction": 0.1,
+                "verbose": 0,
+                "warm_start": false
+              }
+            }
+          ]
+        ],
+        "transform_input": null,
+        "verbose": false,
+        "imputer": {
+          "class": "sklearn.impute._base.SimpleImputer",
+          "params": {
+            "add_indicator": false,
+            "copy": true,
+            "fill_value": null,
+            "keep_empty_features": false,
+            "missing_values": "nan",
+            "strategy": "median"
+          }
+        },
+        "model": {
+          "class": "sklearn.ensemble._hist_gradient_boosting.gradient_boosting.HistGradientBoostingRegressor",
+          "params": {
+            "categorical_features": "from_dtype",
+            "early_stopping": false,
+            "interaction_cst": null,
+            "l2_regularization": 0.2,
+            "learning_rate": 0.065,
+            "loss": "squared_error",
+            "max_bins": 255,
+            "max_depth": null,
+            "max_features": 1.0,
+            "max_iter": 55,
+            "max_leaf_nodes": 17,
+            "min_samples_leaf": 20,
+            "monotonic_cst": null,
+            "n_iter_no_change": 10,
+            "quantile": null,
+            "random_state": 1021,
+            "scoring": "loss",
+            "tol": 1e-07,
+            "validation_fraction": 0.1,
+            "verbose": 0,
+            "warm_start": false
+          }
+        },
+        "imputer__add_indicator": false,
+        "imputer__copy": true,
+        "imputer__fill_value": null,
+        "imputer__keep_empty_features": false,
+        "imputer__missing_values": "nan",
+        "imputer__strategy": "median",
+        "model__categorical_features": "from_dtype",
+        "model__early_stopping": false,
+        "model__interaction_cst": null,
+        "model__l2_regularization": 0.2,
+        "model__learning_rate": 0.065,
+        "model__loss": "squared_error",
+        "model__max_bins": 255,
+        "model__max_depth": null,
+        "model__max_features": 1.0,
+        "model__max_iter": 55,
+        "model__max_leaf_nodes": 17,
+        "model__min_samples_leaf": 20,
+        "model__monotonic_cst": null,
+        "model__n_iter_no_change": 10,
+        "model__quantile": null,
+        "model__random_state": 1021,
+        "model__scoring": "loss",
+        "model__tol": 1e-07,
+        "model__validation_fraction": 0.1,
+        "model__verbose": 0,
+        "model__warm_start": false
+      }
+    },
+    "elastic_parameters": {
+      "0.001": {
+        "alpha": 0.001,
+        "copy_X": true,
+        "fit_intercept": true,
+        "l1_ratio": 0.5,
+        "max_iter": 5000,
+        "positive": false,
+        "precompute": false,
+        "random_state": 1021,
+        "selection": "cyclic",
+        "tol": 1e-05,
+        "warm_start": false
+      },
+      "0.01": {
+        "alpha": 0.01,
+        "copy_X": true,
+        "fit_intercept": true,
+        "l1_ratio": 0.5,
+        "max_iter": 5000,
+        "positive": false,
+        "precompute": false,
+        "random_state": 1021,
+        "selection": "cyclic",
+        "tol": 1e-05,
+        "warm_start": false
+      },
+      "0.05": {
+        "alpha": 0.05,
+        "copy_X": true,
+        "fit_intercept": true,
+        "l1_ratio": 0.5,
+        "max_iter": 5000,
+        "positive": false,
+        "precompute": false,
+        "random_state": 1021,
+        "selection": "cyclic",
+        "tol": 1e-05,
+        "warm_start": false
+      }
+    },
+    "preprocessing": "Fit median imputation, X scaling and EN y scaling on each applicable training segment only",
+    "inner_folds": [
+      "2022Q1",
+      "2022Q2",
+      "2022Q3",
+      "2022Q4"
+    ],
+    "inner_training": "Expanding; signal and exit before quarter first business day",
+    "inner_evaluation": "Signal in quarter; exit before following quarter first business day; Q4 excludes 2023 prices",
+    "outer_split": "Exact compare_models.temporal_split; 2023 validation labels exit before 2024-01-01",
+    "ic_statistics": "Imputed common 20-factor sample; average-rank daily Spearman; equal-weight daily mean",
+    "representative_order": "abs(mean daily IC) descending, quarterly sign stability descending, factor ID ascending",
+    "quarter_sign_stability": "Share of defined training quarterly mean ICs whose sign equals full-training mean IC sign",
+    "hac": "D=1-abs(mean daily correlation), symmetric and diagonal zero; condensed squareform; average linkage; cut_tree exact k",
+    "undefined_correlations": "Keep daily NaN and average over valid dates; save pair counts; fail if any pair wholly undefined",
+    "elastic_selection": "Nonzero coefficients select original factors; empty set or ConvergenceWarning is explicitly ineligible",
+    "inner_selection": "Per learner and selector family; all four folds eligible; maximize pooled valid-day mean signed prediction RankIC; declaration-order tie break",
+    "auxiliary_controls": "IC_match_HAC and IC_match_EN use current training selected count; excluded from winner selection; duplicates retain identity",
+    "validation_selection": "Highest 2023 mean RankIC among eligible primary arms; exact ties ALL,IC,HAC,EN then Ridge,HGB",
+    "confirmation": "Frozen chosen pipeline and selector hyperparameters; refit selector on 2021-23; IDs/EN count may update; no retuning",
+    "bootstrap": {
+      "block_days": 20,
+      "draws": 2000,
+      "seed": 1021,
+      "main_reference": "Same learner ALL20",
+      "matched_comparisons": [
+        "HAC-IC_match_HAC",
+        "EN-IC_match_EN"
+      ]
+    },
+    "phase_origin": "2021-01-01",
+    "panel_path": "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/asset_allocation/outputs/factor_timing/pit_research_panel.csv.gz",
+    "inputs_sha256": {
+      "pit_panel": "57447e720d1a432eba86be9dba06678dca9c062f3f2ed4def86bc0e6dc82a104",
+      "timing_manifest": "dbaa77a2c22ff2567759234d9383e20d3fd9ead39a2e9240b50b87d771ddb09d"
+    },
+    "code_sha256": {
+      "factor_selection_study.py": "48107978dfd892b0c6fd28055b62fab964f75a3f1121e14dd12a5112b51c8e47",
+      "test_factor_selection_study.py": "4797761bd9f6ba3e70f36570424a6619426ef8621f7669ece46cc2f082a1b68c",
+      "compare_models.py": "e04f0d1e71c76ea787d356fc3b6877bf2babe2aacbcf3d46a56e585793f9d084"
+    },
+    "versions": {
+      "python": "3.12.13",
+      "numpy": "2.5.4",
+      "pandas": "2.3.3",
+      "scipy": "1.18.1",
+      "scikit-learn": "1.9.1"
+    },
+    "threads_environment": {
+      "OMP_NUM_THREADS": "4",
+      "OPENBLAS_NUM_THREADS": "1",
+      "MKL_NUM_THREADS": "1"
+    }
+  }
+}

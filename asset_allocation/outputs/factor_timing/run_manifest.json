@@ -1,0 +1,83 @@
+{
+  "created_at_utc": "2026-10-11T08:37:34.392568+00:00",
+  "command": [
+    "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/.venv/bin/python",
+    "asset_allocation/factor_timing.py"
+  ],
+  "data_package": "Alpha Forensics v1.0",
+  "data_root": "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/Lab404-CUFEL-E/03-资产配置策略方向/Alpha_Forensics_Candidate_v1",
+  "python": "3.12.13",
+  "pandas": "2.3.3",
+  "numpy": "2.5.4",
+  "inputs_sha256": {
+    "data/market_daily.csv.gz": "64e4437e652d81fe7d81fcb5c192b75ec41ec6569bea1357e21a93d4d2fac062",
+    "data/factors.csv.gz": "55ee2df0f603dfcaefeb60731929e2a08d6a51e76e34c88f55ff50437c5ac23c",
+    "data/universe.csv.gz": "fa0eafdc6989a1a4cf2bbb9a2cc7766a8494f527eeb006609a10e9993c92138a",
+    "data/factor_availability.csv.gz": "a39190f3fdd5e718a28345b5aa94e9dc1d3817ce731e9fb2d93bf05f7c4836e5",
+    "baseline/baseline_factor_analysis.csv": "b620cf0d3217f0598d8dec06d3a33b9d64add110e32c01fda445c0b8e672b826",
+    "data/data_dictionary.md": "8a2e10234f25c0328c02384b60f82e0ee9465842a081541cfedada9cee9bb1f6",
+    "版本说明.md": "07474fbf41fba3926a845983c0dd4ccdcffd5eac99757b28424ef716ba75bd4e"
+  },
+  "code_sha256": {
+    "factor_timing.py": "a26162852a93dea4991fb17f031ab140b4180d44b66e25b0a94ad7074a09430b",
+    "test_factor_timing.py": "a4a9b9737f3314883a960034a16d8f18932a1c9427f733cc3c05ec2a022288bc"
+  },
+  "signal_time": "t after close; available_on <= t; latest available reference date",
+  "label": "open(t+6 business days) / open(t+1 business day) - 1; actual endpoints only",
+  "membership": "is_listed and is_member on signal date; align before filtering",
+  "missing_values": "retain unreleased/missing snapshots; no backward fill or price fill",
+  "comparison": "same date/asset pairs per factor; rerank inside the common cross-section",
+  "scope": "Historical factor timing diagnostic; no OOS model validation or trading performance",
+  "eligible_rows": 394457,
+  "eligible_dates": 1036,
+  "eligible_assets": 390,
+  "availability_audit": [
+    {
+      "factor": "factor_03",
+      "snapshot_rows": 406547,
+      "unavailable_on_reference_date_rows": 406547,
+      "release_lag_business_days": {
+        "3": 406547
+      },
+      "signals_before_first_release": 1200,
+      "selected_future_release_rows": 0
+    },
+    {
+      "factor": "factor_12",
+      "snapshot_rows": 406547,
+      "unavailable_on_reference_date_rows": 406547,
+      "release_lag_business_days": {
+        "1": 406547
+      },
+      "signals_before_first_release": 400,
+      "selected_future_release_rows": 0
+    }
+  ],
+  "baseline_ic_reconciliation": [
+    {
+      "factor": "factor_03",
+      "scope": "all assets with labels; no is_member filter",
+      "rows": 404147,
+      "valid_ic_dates": 1036,
+      "recomputed_mean_daily_rank_ic": 0.39628081284616545,
+      "supplied_mean_daily_rank_ic": 0.3962808128461655,
+      "recomputed_minus_supplied": -5.551115123125783e-17
+    },
+    {
+      "factor": "factor_12",
+      "scope": "all assets with labels; no is_member filter",
+      "rows": 404147,
+      "valid_ic_dates": 1036,
+      "recomputed_mean_daily_rank_ic": 0.04431647302818085,
+      "supplied_mean_daily_rank_ic": 0.0443164730281808,
+      "recomputed_minus_supplied": 4.85722573273506e-17
+    }
+  ],
+  "baseline_raw_ic_reproduced": true,
+  "other_18_factors_unchanged": true,
+  "outputs_sha256": {
+    "daily_rank_ic.csv": "4020bf04c0e575ae6af3511d20b4f3b81b6d90cf10bb3f88f1396e5c02f6b47d",
+    "timing_summary.csv": "390ed1ed7a4c667a957a1229b1731a072917201cb274f366026765b0e35c4542",
+    "pit_research_panel.csv.gz": "57447e720d1a432eba86be9dba06678dca9c062f3f2ed4def86bc0e6dc82a104"
+  }
+}

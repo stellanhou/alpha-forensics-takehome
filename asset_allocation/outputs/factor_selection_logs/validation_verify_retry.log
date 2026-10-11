@@ -1,0 +1,10 @@
+{
+  "stage_status": "completed",
+  "stage": "validation",
+  "protocol_sha256": "593a54c0a7e92473a51e15804aa4f3df63082f638b97fde58520c0a8f335d9fb",
+  "frozen_protocol_sha256": "593a54c0a7e92473a51e15804aa4f3df63082f638b97fde58520c0a8f335d9fb",
+  "output_hash_count": 46,
+  "output_hash_mismatches": [],
+  "tune_manifest_match": true,
+  "status": "passed"
+}

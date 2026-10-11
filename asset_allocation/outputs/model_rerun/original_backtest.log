@@ -1,0 +1,7 @@
+start_time=2026-10-11 16:50:25 CST
+OMP_NUM_THREADS=4
+OPENBLAS_NUM_THREADS=1
+command: .venv/bin/python -B "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/Lab404-CUFEL-E/03-资产配置策略方向/Alpha_Forensics_Candidate_v1/baseline/baseline_code/backtest.py" --root "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/Lab404-CUFEL-E/03-资产配置策略方向/Alpha_Forensics_Candidate_v1" --out "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/asset_allocation/outputs/model_rerun/original"
+Paper spread proxy [{'metric': 'full_panel_gross_proxy_sharpe', 'value': 100.58807215540465}, {'metric': 'full_panel_mean_forward_5d_spread', 'value': 0.05620277586718324}, {'metric': 'backtest_n_dates', 'value': 1036}]
+end_time=2026-10-11 16:50:28 CST
+exit_code=0

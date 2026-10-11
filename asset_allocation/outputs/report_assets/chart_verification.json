@@ -1,0 +1,390 @@
+{
+  "status": "passed",
+  "source_plot_code": "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/asset_allocation/joint_factor_increment.py",
+  "source_plot_code_sha256": "3ada3f62409efc2c0220000ae47f91b29627ade9a7b83b7a151c8a05404f21d0",
+  "font": "/System/Library/Fonts/Supplemental/Times New Roman.ttf",
+  "font_sha256": "f3b4ffff71c2a0c7227d37497683b2498fb2d0a4e8beae26f022e3ccfcaabfa3",
+  "output": "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/asset_allocation/outputs/report_review_20261011/times_new_roman_revision/budget_nav_2024.png",
+  "output_sha256": "afe9da1a738b0c103d4687c962daa468677e1eadd351f378b3e36ee5cbf48eb3",
+  "figure_inches": [
+    11,
+    4.2
+  ],
+  "dpi": 170,
+  "series": [
+    {
+      "model": "Ridge",
+      "variant": "CONTROLS",
+      "source": "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/asset_allocation/outputs/joint_factor_increment/runs/BUDGET20__Ridge_CONTROLS__cost1/daily.csv",
+      "source_sha256": "045a2e5743b5ad410275d6078977082562de2aec5126a19454ec35494510b799",
+      "point_count": 262,
+      "opening_nav": 1.8491874005147677,
+      "source_final_nav": 2.320599575984009,
+      "normalized_final_nav": 1.254929368077033,
+      "plotted_final_nav": 1.254929368077033,
+      "exact_series_match": true
+    },
+    {
+      "model": "Ridge",
+      "variant": "JOINT",
+      "source": "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/asset_allocation/outputs/joint_factor_increment/runs/BUDGET20__Ridge_JOINT__cost1/daily.csv",
+      "source_sha256": "d3cabc7d4cf20d15acaa72fd676dd6e57d8a1355e978725fffddebc46f41251e",
+      "point_count": 262,
+      "opening_nav": 1.799065852723055,
+      "source_final_nav": 2.104405599906092,
+      "normalized_final_nav": 1.1697212732490458,
+      "plotted_final_nav": 1.1697212732490458,
+      "exact_series_match": true
+    },
+    {
+      "model": "HGB",
+      "variant": "CONTROLS",
+      "source": "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/asset_allocation/outputs/joint_factor_increment/runs/BUDGET20__HGB_CONTROLS__cost1/daily.csv",
+      "source_sha256": "c838dd2bc972acd220f3a71447452f4155b713e78a6b36269af14a383a3d5938",
+      "point_count": 262,
+      "opening_nav": 1.809800761314619,
+      "source_final_nav": 2.110944407387148,
+      "normalized_final_nav": 1.1663960213243483,
+      "plotted_final_nav": 1.1663960213243483,
+      "exact_series_match": true
+    },
+    {
+      "model": "HGB",
+      "variant": "JOINT",
+      "source": "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/asset_allocation/outputs/joint_factor_increment/runs/BUDGET20__HGB_JOINT__cost1/daily.csv",
+      "source_sha256": "9d5dc99ed65bbf6589180d119efe800a79c95c356de53ac23ee3231b78b96688",
+      "point_count": 262,
+      "opening_nav": 1.7819870383541718,
+      "source_final_nav": 2.080784730114333,
+      "normalized_final_nav": 1.1676766919899306,
+      "plotted_final_nav": 1.1676766919899306,
+      "exact_series_match": true
+    }
+  ],
+  "text_font_checks": [
+    {
+      "text": "",
+      "resolved_font": "/System/Library/Fonts/Supplemental/Times New Roman.ttf"
+    },
+    {
+      "text": "",
+      "resolved_font": "/System/Library/Fonts/Supplemental/Times New Roman.ttf"
+    },
+    {
+      "text": "2024-01",
+      "resolved_font": "/System/Library/Fonts/Supplemental/Times New Roman.ttf"
+    },
+    {
+      "text": "2024-01",
+      "resolved_font": "/System/Library/Fonts/Supplemental/Times New Roman.ttf"
+    },
+    {
+      "text": "2024-03",
+      "resolved_font": "/System/Library/Fonts/Supplemental/Times New Roman.ttf"
+    },
+    {
+      "text": "2024-03",
+      "resolved_font": "/System/Library/Fonts/Supplemental/Times New Roman.ttf"
+    },
+    {
+      "text": "2024-05",
+      "resolved_font": "/System/Library/Fonts/Supplemental/Times New Roman.ttf"
+    },
+    {
+      "text": "2024-05",
+      "resolved_font": "/System/Library/Fonts/Supplemental/Times New Roman.ttf"
+    },
+    {
+      "text": "2024-07",
+      "resolved_font": "/System/Library/Fonts/Supplemental/Times New Roman.ttf"
+    },
+    {
+      "text": "2024-07",
+      "resolved_font": "/System/Library/Fonts/Supplemental/Times New Roman.ttf"
+    },
+    {
+      "text": "2024-09",
+      "resolved_font": "/System/Library/Fonts/Supplemental/Times New Roman.ttf"
+    },
+    {
+      "text": "2024-09",
+      "resolved_font": "/System/Library/Fonts/Supplemental/Times New Roman.ttf"
+    },
+    {
+      "text": "2024-11",
+      "resolved_font": "/System/Library/Fonts/Supplemental/Times New Roman.ttf"
+    },
+    {
+      "text": "2024-11",
+      "resolved_font": "/System/Library/Fonts/Supplemental/Times New Roman.ttf"
+    },
+    {
+      "text": "2025-01",
+      "resolved_font": "/System/Library/Fonts/Supplemental/Times New Roman.ttf"
+    },
+    {
+      "text": "2025-01",
+      "resolved_font": "/System/Library/Fonts/Supplemental/Times New Roman.ttf"
+    },
+    {
+      "text": "NAV / 2023 year-end NAV",
+      "resolved_font": "/System/Library/Fonts/Supplemental/Times New Roman.ttf"
+    },
+    {
+      "text": "",
+      "resolved_font": "/System/Library/Fonts/Supplemental/Times New Roman.ttf"
+    },
+    {
+      "text": "0.95",
+      "resolved_font": "/System/Library/Fonts/Supplemental/Times New Roman.ttf"
+    },
+    {
+      "text": "0.95",
+      "resolved_font": "/System/Library/Fonts/Supplemental/Times New Roman.ttf"
+    },
+    {
+      "text": "1.00",
+      "resolved_font": "/System/Library/Fonts/Supplemental/Times New Roman.ttf"
+    },
+    {
+      "text": "1.00",
+      "resolved_font": "/System/Library/Fonts/Supplemental/Times New Roman.ttf"
+    },
+    {
+      "text": "1.05",
+      "resolved_font": "/System/Library/Fonts/Supplemental/Times New Roman.ttf"
+    },
+    {
+      "text": "1.05",
+      "resolved_font": "/System/Library/Fonts/Supplemental/Times New Roman.ttf"
+    },
+    {
+      "text": "1.10",
+      "resolved_font": "/System/Library/Fonts/Supplemental/Times New Roman.ttf"
+    },
+    {
+      "text": "1.10",
+      "resolved_font": "/System/Library/Fonts/Supplemental/Times New Roman.ttf"
+    },
+    {
+      "text": "1.15",
+      "resolved_font": "/System/Library/Fonts/Supplemental/Times New Roman.ttf"
+    },
+    {
+      "text": "1.15",
+      "resolved_font": "/System/Library/Fonts/Supplemental/Times New Roman.ttf"
+    },
+    {
+      "text": "1.20",
+      "resolved_font": "/System/Library/Fonts/Supplemental/Times New Roman.ttf"
+    },
+    {
+      "text": "1.20",
+      "resolved_font": "/System/Library/Fonts/Supplemental/Times New Roman.ttf"
+    },
+    {
+      "text": "1.25",
+      "resolved_font": "/System/Library/Fonts/Supplemental/Times New Roman.ttf"
+    },
+    {
+      "text": "1.25",
+      "resolved_font": "/System/Library/Fonts/Supplemental/Times New Roman.ttf"
+    },
+    {
+      "text": "1.30",
+      "resolved_font": "/System/Library/Fonts/Supplemental/Times New Roman.ttf"
+    },
+    {
+      "text": "1.30",
+      "resolved_font": "/System/Library/Fonts/Supplemental/Times New Roman.ttf"
+    },
+    {
+      "text": "1.35",
+      "resolved_font": "/System/Library/Fonts/Supplemental/Times New Roman.ttf"
+    },
+    {
+      "text": "1.35",
+      "resolved_font": "/System/Library/Fonts/Supplemental/Times New Roman.ttf"
+    },
+    {
+      "text": "1.40",
+      "resolved_font": "/System/Library/Fonts/Supplemental/Times New Roman.ttf"
+    },
+    {
+      "text": "1.40",
+      "resolved_font": "/System/Library/Fonts/Supplemental/Times New Roman.ttf"
+    },
+    {
+      "text": "Ridge | fixed close-plan budget",
+      "resolved_font": "/System/Library/Fonts/Supplemental/Times New Roman.ttf"
+    },
+    {
+      "text": "",
+      "resolved_font": "/System/Library/Fonts/Supplemental/Times New Roman.ttf"
+    },
+    {
+      "text": "",
+      "resolved_font": "/System/Library/Fonts/Supplemental/Times New Roman.ttf"
+    },
+    {
+      "text": "",
+      "resolved_font": "/System/Library/Fonts/Supplemental/Times New Roman.ttf"
+    },
+    {
+      "text": "",
+      "resolved_font": "/System/Library/Fonts/Supplemental/Times New Roman.ttf"
+    },
+    {
+      "text": "2024-01",
+      "resolved_font": "/System/Library/Fonts/Supplemental/Times New Roman.ttf"
+    },
+    {
+      "text": "2024-01",
+      "resolved_font": "/System/Library/Fonts/Supplemental/Times New Roman.ttf"
+    },
+    {
+      "text": "2024-03",
+      "resolved_font": "/System/Library/Fonts/Supplemental/Times New Roman.ttf"
+    },
+    {
+      "text": "2024-03",
+      "resolved_font": "/System/Library/Fonts/Supplemental/Times New Roman.ttf"
+    },
+    {
+      "text": "2024-05",
+      "resolved_font": "/System/Library/Fonts/Supplemental/Times New Roman.ttf"
+    },
+    {
+      "text": "2024-05",
+      "resolved_font": "/System/Library/Fonts/Supplemental/Times New Roman.ttf"
+    },
+    {
+      "text": "2024-07",
+      "resolved_font": "/System/Library/Fonts/Supplemental/Times New Roman.ttf"
+    },
+    {
+      "text": "2024-07",
+      "resolved_font": "/System/Library/Fonts/Supplemental/Times New Roman.ttf"
+    },
+    {
+      "text": "2024-09",
+      "resolved_font": "/System/Library/Fonts/Supplemental/Times New Roman.ttf"
+    },
+    {
+      "text": "2024-09",
+      "resolved_font": "/System/Library/Fonts/Supplemental/Times New Roman.ttf"
+    },
+    {
+      "text": "2024-11",
+      "resolved_font": "/System/Library/Fonts/Supplemental/Times New Roman.ttf"
+    },
+    {
+      "text": "2024-11",
+      "resolved_font": "/System/Library/Fonts/Supplemental/Times New Roman.ttf"
+    },
+    {
+      "text": "2025-01",
+      "resolved_font": "/System/Library/Fonts/Supplemental/Times New Roman.ttf"
+    },
+    {
+      "text": "2025-01",
+      "resolved_font": "/System/Library/Fonts/Supplemental/Times New Roman.ttf"
+    },
+    {
+      "text": "",
+      "resolved_font": "/System/Library/Fonts/Supplemental/Times New Roman.ttf"
+    },
+    {
+      "text": "",
+      "resolved_font": "/System/Library/Fonts/Supplemental/Times New Roman.ttf"
+    },
+    {
+      "text": "0.95",
+      "resolved_font": "/System/Library/Fonts/Supplemental/Times New Roman.ttf"
+    },
+    {
+      "text": "0.95",
+      "resolved_font": "/System/Library/Fonts/Supplemental/Times New Roman.ttf"
+    },
+    {
+      "text": "1.00",
+      "resolved_font": "/System/Library/Fonts/Supplemental/Times New Roman.ttf"
+    },
+    {
+      "text": "1.00",
+      "resolved_font": "/System/Library/Fonts/Supplemental/Times New Roman.ttf"
+    },
+    {
+      "text": "1.05",
+      "resolved_font": "/System/Library/Fonts/Supplemental/Times New Roman.ttf"
+    },
+    {
+      "text": "1.05",
+      "resolved_font": "/System/Library/Fonts/Supplemental/Times New Roman.ttf"
+    },
+    {
+      "text": "1.10",
+      "resolved_font": "/System/Library/Fonts/Supplemental/Times New Roman.ttf"
+    },
+    {
+      "text": "1.10",
+      "resolved_font": "/System/Library/Fonts/Supplemental/Times New Roman.ttf"
+    },
+    {
+      "text": "1.15",
+      "resolved_font": "/System/Library/Fonts/Supplemental/Times New Roman.ttf"
+    },
+    {
+      "text": "1.15",
+      "resolved_font": "/System/Library/Fonts/Supplemental/Times New Roman.ttf"
+    },
+    {
+      "text": "1.20",
+      "resolved_font": "/System/Library/Fonts/Supplemental/Times New Roman.ttf"
+    },
+    {
+      "text": "1.20",
+      "resolved_font": "/System/Library/Fonts/Supplemental/Times New Roman.ttf"
+    },
+    {
+      "text": "1.25",
+      "resolved_font": "/System/Library/Fonts/Supplemental/Times New Roman.ttf"
+    },
+    {
+      "text": "1.25",
+      "resolved_font": "/System/Library/Fonts/Supplemental/Times New Roman.ttf"
+    },
+    {
+      "text": "1.30",
+      "resolved_font": "/System/Library/Fonts/Supplemental/Times New Roman.ttf"
+    },
+    {
+      "text": "1.30",
+      "resolved_font": "/System/Library/Fonts/Supplemental/Times New Roman.ttf"
+    },
+    {
+      "text": "HGB | fixed close-plan budget",
+      "resolved_font": "/System/Library/Fonts/Supplemental/Times New Roman.ttf"
+    },
+    {
+      "text": "",
+      "resolved_font": "/System/Library/Fonts/Supplemental/Times New Roman.ttf"
+    },
+    {
+      "text": "",
+      "resolved_font": "/System/Library/Fonts/Supplemental/Times New Roman.ttf"
+    },
+    {
+      "text": "",
+      "resolved_font": "/System/Library/Fonts/Supplemental/Times New Roman.ttf"
+    },
+    {
+      "text": "Industry + size",
+      "resolved_font": "/System/Library/Fonts/Supplemental/Times New Roman.ttf"
+    },
+    {
+      "text": "+ 20 PIT factors",
+      "resolved_font": "/System/Library/Fonts/Supplemental/Times New Roman.ttf"
+    }
+  ]
+}

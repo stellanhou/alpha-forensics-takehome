@@ -1,0 +1,259 @@
+{
+  "created_at_utc": "2026-10-11T09:52:43.216245+00:00",
+  "environment": {
+    "venv_root": "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/asset_allocation/.venv_models",
+    "python_invocation_path": "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/asset_allocation/.venv_models/bin/python",
+    "python_sys_executable": "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/asset_allocation/.venv_models/bin/python",
+    "python_base_prefix": "/Users/stellan/.local/share/uv/python/cpython-3.12.13-macos-aarch64-none",
+    "python_version": "3.12.13",
+    "platform": "macOS-26.5-arm64-arm-64bit",
+    "machine": "arm64",
+    "package_count_excluding_pip": 25,
+    "requirements_file": "requirements-models.txt",
+    "requirements_file_sha256": "c0631e2b891d9ab6019abc2abefc994cce6f8075c8e31ea35890f30960686e32",
+    "installed_packages": {
+      "narwhals": "2.27.1",
+      "scikit-learn": "1.9.1",
+      "cloudpickle": "3.1.2",
+      "kiwisolver": "1.5.1",
+      "fonttools": "4.66.1",
+      "packaging": "26.3",
+      "joblib": "1.6.0",
+      "pytz": "2026.5",
+      "plotly": "7.1.0",
+      "numpy": "2.5.4",
+      "tzdata": "2026.5",
+      "contourpy": "1.4.0",
+      "python-dateutil": "2.9.0.post0",
+      "matplotlib": "3.11.2",
+      "cycler": "0.12.1",
+      "pandas": "2.3.3",
+      "lightgbm": "4.7.0",
+      "threadpoolctl": "3.7.0",
+      "graphviz": "0.21",
+      "pillow": "12.3.0",
+      "catboost": "1.2.10",
+      "pyparsing": "3.3.3",
+      "six": "1.17.0",
+      "scipy": "1.18.1",
+      "xgboost": "3.4.1"
+    },
+    "core_dependency_pin_check": {
+      "numpy": {
+        "required_from_root": "2.5.4",
+        "installed": "2.5.4",
+        "matches": true
+      },
+      "pandas": {
+        "required_from_root": "2.3.3",
+        "installed": "2.3.3",
+        "matches": true
+      },
+      "scipy": {
+        "required_from_root": "1.18.1",
+        "installed": "1.18.1",
+        "matches": true
+      },
+      "scikit-learn": {
+        "required_from_root": "1.9.1",
+        "installed": "1.9.1",
+        "matches": true
+      },
+      "joblib": {
+        "required_from_root": "1.6.0",
+        "installed": "1.6.0",
+        "matches": true
+      },
+      "matplotlib": {
+        "required_from_root": "3.11.2",
+        "installed": "3.11.2",
+        "matches": true
+      }
+    },
+    "model_versions": {
+      "lightgbm": "4.7.0",
+      "xgboost": "3.4.1",
+      "catboost": "1.2.10"
+    },
+    "cpu_thread_limit": 4,
+    "smoke_thread_environment": {
+      "OMP_NUM_THREADS": "4",
+      "OPENBLAS_NUM_THREADS": "1",
+      "MKL_NUM_THREADS": "1"
+    }
+  },
+  "package_source": {
+    "index_url": "https://pypi.org/simple",
+    "wheel_download_command_record": "pip download --no-deps --only-binary=:all:",
+    "wheel_download_log": "outputs/model_environment/model_wheel_download.log",
+    "install_log": "outputs/model_environment/model_install.log",
+    "pip_check": "No broken requirements found.",
+    "wheels": [
+      {
+        "package": "lightgbm",
+        "version": "4.7.0",
+        "filename": "lightgbm-4.7.0-py3-none-macosx_12_0_arm64.whl",
+        "pypi_project": "https://pypi.org/project/lightgbm/4.7.0/",
+        "pypi_json_api": "https://pypi.org/pypi/lightgbm/4.7.0/json",
+        "download_url": "https://files.pythonhosted.org/packages/b2/86/f4fe714f2e0bf3941705a20d7f6849dc476276d71236e82ea6b0d6539b86/lightgbm-4.7.0-py3-none-macosx_12_0_arm64.whl",
+        "uploaded_at_utc": "2026-07-18T21:00:36.549947Z",
+        "sha256_local": "129535462686f274df179133643118c5c5c5667167fe6c3a28d955f0b3c8e868",
+        "sha256_pypi": "129535462686f274df179133643118c5c5c5667167fe6c3a28d955f0b3c8e868",
+        "sha256_matches_pypi": true,
+        "wheel_license_member": "lightgbm-4.7.0.dist-info/licenses/LICENSE",
+        "local_path": "vendor/wheels/lightgbm-4.7.0-py3-none-macosx_12_0_arm64.whl"
+      },
+      {
+        "package": "xgboost",
+        "version": "3.4.1",
+        "filename": "xgboost-3.4.1-py3-none-macosx_12_0_arm64.whl",
+        "pypi_project": "https://pypi.org/project/xgboost/3.4.1/",
+        "pypi_json_api": "https://pypi.org/pypi/xgboost/3.4.1/json",
+        "download_url": "https://files.pythonhosted.org/packages/f7/94/e5c37a8972ad780edc1d8459d1931356344ca133f7f99ba9cfda516b5bba/xgboost-3.4.1-py3-none-macosx_12_0_arm64.whl",
+        "uploaded_at_utc": "2026-08-15T08:38:52.366647Z",
+        "sha256_local": "a7afd7dbace0951c93aa85ffe046e54bc40893f5b51cd3e7991eb157bf9c7c7c",
+        "sha256_pypi": "a7afd7dbace0951c93aa85ffe046e54bc40893f5b51cd3e7991eb157bf9c7c7c",
+        "sha256_matches_pypi": true,
+        "wheel_license_member": "xgboost-3.4.1.dist-info/licenses/LICENSE",
+        "local_path": "vendor/wheels/xgboost-3.4.1-py3-none-macosx_12_0_arm64.whl"
+      },
+      {
+        "package": "catboost",
+        "version": "1.2.10",
+        "filename": "catboost-1.2.10-cp312-cp312-macosx_11_0_universal2.whl",
+        "pypi_project": "https://pypi.org/project/catboost/1.2.10/",
+        "pypi_json_api": "https://pypi.org/pypi/catboost/1.2.10/json",
+        "download_url": "https://files.pythonhosted.org/packages/bb/52/f5cd568800c87576012d715481730da93bcc34e609c5c204550a9ad0c067/catboost-1.2.10-cp312-cp312-macosx_11_0_universal2.whl",
+        "uploaded_at_utc": "2026-02-18T16:12:07.659211Z",
+        "sha256_local": "b27115d5b443048f710001c8ac666892dfe03498492310b00466203c91cc30a5",
+        "sha256_pypi": "b27115d5b443048f710001c8ac666892dfe03498492310b00466203c91cc30a5",
+        "sha256_matches_pypi": true,
+        "wheel_license_member": null,
+        "local_path": "vendor/wheels/catboost-1.2.10-cp312-cp312-macosx_11_0_universal2.whl"
+      }
+    ]
+  },
+  "native_runtime": {
+    "name": "libomp",
+    "purpose": "OpenMP runtime required by LightGBM and XGBoost macOS wheels",
+    "source": "Homebrew/homebrew-core formula libomp; bottle libomp--23.1.0.arm64_tahoe.bottle.tar.gz",
+    "homepage": "https://openmp.llvm.org/",
+    "version": "23.1.0",
+    "architecture": "arm64",
+    "bottle_poured": true,
+    "installed_by_request": true,
+    "brew_tap": "homebrew/core",
+    "dylib": "/opt/homebrew/opt/libomp/lib/libomp.dylib",
+    "dylib_sha256": "0d18bd3a84eae020733be930e1e6fa47925597cfdc4afd9210644836bc4a1b54",
+    "install_command": "HOMEBREW_NO_AUTO_UPDATE=1 HOMEBREW_NO_INSTALL_CLEANUP=1 /opt/homebrew/bin/brew install libomp",
+    "install_log": "outputs/model_environment/libomp_install.log",
+    "license_file": "outputs/model_environment/licenses/LIBOMP-LICENSE",
+    "license_source_path": "/opt/homebrew/Cellar/libomp/23.1.0/LICENSE.TXT",
+    "license_source_sha256": "8d85c1057d742e597985c7d4e6320b015a9139385cff4cbae06ffc0ebe89afee",
+    "homebrew_formula_metadata_license": "MIT",
+    "license_text_declares": "Apache-2.0 WITH LLVM-exception; LICENSE.TXT also includes a legacy University of Illinois/NCSA section. Both the formula metadata and exact installed license text are recorded."
+  },
+  "licenses": [
+    {
+      "file": "outputs/model_environment/licenses/LIGHTGBM-LICENSE",
+      "spdx": "MIT",
+      "source": "extracted from lightgbm-4.7.0.dist-info/licenses/LICENSE in the PyPI wheel",
+      "source_path_or_url": "vendor/wheels/lightgbm-4.7.0-py3-none-macosx_12_0_arm64.whl",
+      "sha256": "ca70f15d841f7e76c8bbd284d25300cd4ae2ef1035e7e5252b13b73449464305"
+    },
+    {
+      "file": "outputs/model_environment/licenses/XGBOOST-LICENSE",
+      "spdx": "Apache-2.0",
+      "source": "extracted from xgboost-3.4.1.dist-info/licenses/LICENSE in the PyPI wheel",
+      "source_path_or_url": "vendor/wheels/xgboost-3.4.1-py3-none-macosx_12_0_arm64.whl",
+      "sha256": "b96f9cead5f4ea4c0a217bd9d879427443a353598fb72694f2d8c4428b53a6af"
+    },
+    {
+      "file": "outputs/model_environment/licenses/CATBOOST-LICENSE",
+      "spdx": "Apache-2.0",
+      "source": "wheel lacks the package LICENSE; fetched from the official v1.2.10 release tag",
+      "source_path_or_url": "https://raw.githubusercontent.com/catboost/catboost/v1.2.10/LICENSE",
+      "sha256": "a2574dd20dd0af8e0bd25b34b38c1bb11912ff319ee4f41436395df0b1d19309"
+    },
+    {
+      "file": "outputs/model_environment/licenses/SCIKIT-LEARN-COPYING",
+      "spdx": "BSD-3-Clause",
+      "source": "copied from installed scikit_learn-1.9.1.dist-info/licenses/COPYING",
+      "source_path_or_url": ".venv_models/lib/python3.12/site-packages/scikit_learn-1.9.1.dist-info/licenses/COPYING",
+      "sha256": "fc8dc597df0e3f51da65e2a71021e7f92e0b481998ec572a53c03ac0441db040"
+    },
+    {
+      "file": "outputs/model_environment/licenses/LIBOMP-LICENSE",
+      "spdx": "Apache-2.0 WITH LLVM-exception",
+      "source": "copied from the installed Homebrew formula license",
+      "source_path_or_url": "/opt/homebrew/Cellar/libomp/23.1.0/LICENSE.TXT",
+      "sha256": "8d85c1057d742e597985c7d4e6320b015a9139385cff4cbae06ffc0ebe89afee",
+      "homebrew_formula_metadata_license": "MIT",
+      "license_text_declares": "Apache-2.0 WITH LLVM-exception; LICENSE.TXT also includes a legacy University of Illinois/NCSA section. Both the formula metadata and exact installed license text are recorded."
+    }
+  ],
+  "verification": {
+    "initial_api_smoke": {
+      "status": "failed_before_libomp_install",
+      "log": "outputs/model_environment/models_api_smoke.log",
+      "cause": "LightGBM macOS wheel could not load @rpath/libomp.dylib"
+    },
+    "package_import_smoke": {
+      "status": "failed_before_libomp_install",
+      "log": "outputs/model_environment/package_import_smoke.log",
+      "cause": "XGBoost macOS wheel could not load @rpath/libomp.dylib; CatBoost import succeeded"
+    },
+    "api_smoke_after_libomp": {
+      "status": "passed",
+      "log": "outputs/model_environment/models_api_smoke_after_libomp.log",
+      "details": "make_models created 7 candidate pipelines plus Dummy; deep get_params and strict JSON serialization passed"
+    },
+    "protocol_smoke": {
+      "status": "passed",
+      "log": "outputs/model_environment/protocol_smoke.log",
+      "protocol_sha256": "e44b55540ca16258df890b9291182637a6776a70b872f823c8abc4a19e0f7b99"
+    },
+    "test_compare_models": {
+      "status": "passed",
+      "tests": 10,
+      "log": "outputs/model_environment/test_compare_models.log"
+    },
+    "validation": {
+      "status": "completed",
+      "log": "outputs/model_environment/validation_run.log",
+      "run_manifest": "outputs/model_benchmark/validation/run_manifest.json",
+      "run_manifest_sha256": "5f15e7e0f5bf8073bd285aac2bf249417bb386e059ffa14dcac104c24c4c92c2",
+      "summary_sha256": "e560158dffed37d195063afbbda1e610f2c4a8f2655467c48ac02a314e8229e5",
+      "protocol_sha256": "e44b55540ca16258df890b9291182637a6776a70b872f823c8abc4a19e0f7b99",
+      "duration_seconds": 9.927506
+    },
+    "confirmation": {
+      "status": "completed",
+      "log": "outputs/model_environment/confirmation_run.log",
+      "run_manifest": "outputs/model_benchmark/confirmation/run_manifest.json",
+      "run_manifest_sha256": "597ea1dda99dd3d957f01ad3c9b097d6e22237d266d95498e03008dfea36c434",
+      "summary_sha256": "56f7fa5c5d83d2965e87c212445790f827b45ee107f9ad7f804b83072b4bdaf4",
+      "protocol_sha256": "e44b55540ca16258df890b9291182637a6776a70b872f823c8abc4a19e0f7b99",
+      "duration_seconds": 13.439097
+    },
+    "plot": {
+      "status": "generated",
+      "log": "outputs/model_environment/plot_model_comparison.log",
+      "png": "outputs/model_benchmark/model_comparison.png",
+      "pdf": "outputs/model_benchmark/model_comparison.pdf",
+      "plot_manifest": "outputs/model_benchmark/plot_manifest.json",
+      "plot_manifest_sha256": "2cf42b4561020d3eae82c31ff901a9f4ed4f4331c54e20137ef758612df69853",
+      "script_sha256": "9d279a3aaa0d18b1271d62f8367866d1f6e08c3d97b01b5ed166aae25375ac21",
+      "outputs_sha256": {
+        "model_comparison.png": "04f6ad88ecbd3e44d6ebf53404163a98b3ec1a1493eb624218328631881f8fa9",
+        "model_comparison.pdf": "bbf076cfc0a2a18b4789750e264c778a226a211d8ece2a1f22633e7ed28cc7a5"
+      },
+      "inputs_sha256": {
+        "validation/summary.csv": "e560158dffed37d195063afbbda1e610f2c4a8f2655467c48ac02a314e8229e5",
+        "confirmation/summary.csv": "56f7fa5c5d83d2965e87c212445790f827b45ee107f9ad7f804b83072b4bdaf4",
+        "selection.json": "1cc35824aff4043b11f4e50121f153c4f50eb9f9951d8038e74390a627974503",
+        "protocol.json": "e7558489b53c26c2b4fdf918ddc325c4eedc114ff1757988849f11472919f0b9"
+      }
+    }
+  }
+}

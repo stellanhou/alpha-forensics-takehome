@@ -1,0 +1,15 @@
+test_broken_panel_contracts_fail_explicitly (test_compare_models.ModelComparisonTests.test_broken_panel_contracts_fail_explicitly) ... ok
+test_confirmation_rejects_changed_code_or_validation_evidence (test_compare_models.ModelComparisonTests.test_confirmation_rejects_changed_code_or_validation_evidence) ... ok
+test_constant_candidate_is_reported_ineligible_without_hiding_other_results (test_compare_models.ModelComparisonTests.test_constant_candidate_is_reported_ineligible_without_hiding_other_results) ... ok
+test_constant_scores_have_no_rank_ic_or_decile_spread (test_compare_models.ModelComparisonTests.test_constant_scores_have_no_rank_ic_or_decile_spread) ... ok
+test_fixed_bootstrap_is_reproducible_and_never_shortens_blocks (test_compare_models.ModelComparisonTests.test_fixed_bootstrap_is_reproducible_and_never_shortens_blocks) ... ok
+test_paired_bootstrap_uses_same_dates_and_jointly_defined_values (test_compare_models.ModelComparisonTests.test_paired_bootstrap_uses_same_dates_and_jointly_defined_values) ... ok
+test_phase_uses_business_calendar_and_survives_missing_dates (test_compare_models.ModelComparisonTests.test_phase_uses_business_calendar_and_survives_missing_dates) ... ok
+test_preprocessors_are_fit_only_on_training_rows (test_compare_models.ModelComparisonTests.test_preprocessors_are_fit_only_on_training_rows) ... ok
+test_real_five_day_label_boundaries_are_purged_in_both_stages (test_compare_models.ModelComparisonTests.test_real_five_day_label_boundaries_are_purged_in_both_stages) ... ok
+test_tied_cutoffs_share_weight_and_ignore_asset_order (test_compare_models.ModelComparisonTests.test_tied_cutoffs_share_weight_and_ignore_asset_order) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 0.040s
+
+OK

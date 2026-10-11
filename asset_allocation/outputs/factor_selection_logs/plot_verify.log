@@ -1,0 +1,9 @@
+{
+  "status": "passed",
+  "outputs_checked": 6,
+  "output_mismatches": {},
+  "inputs_checked": 4,
+  "input_mismatches": {},
+  "script_sha256_matches": true,
+  "script_sha256": "790ea05ae0a561415c9b801d0f3d516fb32af5f133fa6ab3583bb45881862289"
+}

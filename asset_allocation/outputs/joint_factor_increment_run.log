@@ -1,0 +1,53 @@
+Fitting 2023 Ridge_JOINT: 192806 mature rows -> 101397 full signals
+Fitting 2023 HGB_JOINT: 192806 mature rows -> 101397 full signals
+Fitting 2024 Ridge_JOINT: 294192 mature rows -> 100265 full signals
+Fitting 2024 HGB_JOINT: 294192 mature rows -> 100265 full signals
+Completed NET__Ridge_CONTROLS__cost0: final NAV=2.252832
+Completed NET__Ridge_CONTROLS__cost1: final NAV=2.166221
+Completed NET__Ridge_CONTROLS__cost2: final NAV=2.083246
+Completed NET__Ridge_JOINT__cost0: final NAV=2.605830
+Completed NET__Ridge_JOINT__cost1: final NAV=1.781121
+Completed NET__Ridge_JOINT__cost2: final NAV=1.218183
+Completed NET__HGB_CONTROLS__cost0: final NAV=2.021446
+Completed NET__HGB_CONTROLS__cost1: final NAV=1.751754
+Completed NET__HGB_CONTROLS__cost2: final NAV=1.518855
+Completed NET__HGB_JOINT__cost0: final NAV=2.478376
+Completed NET__HGB_JOINT__cost1: final NAV=1.671728
+Completed NET__HGB_JOINT__cost2: final NAV=1.128448
+Completed BOTH__Ridge_CONTROLS__cost0: final NAV=2.515730
+Completed BOTH__Ridge_CONTROLS__cost1: final NAV=2.489438
+Completed BOTH__Ridge_CONTROLS__cost2: final NAV=2.463426
+Completed BOTH__Ridge_JOINT__cost0: final NAV=2.481674
+Completed BOTH__Ridge_JOINT__cost1: final NAV=1.924119
+Completed BOTH__Ridge_JOINT__cost2: final NAV=1.492016
+Completed BOTH__HGB_CONTROLS__cost0: final NAV=2.173326
+Completed BOTH__HGB_CONTROLS__cost1: final NAV=2.039319
+Completed BOTH__HGB_CONTROLS__cost2: final NAV=1.913647
+Completed BOTH__HGB_JOINT__cost0: final NAV=2.474816
+Completed BOTH__HGB_JOINT__cost1: final NAV=1.898943
+Completed BOTH__HGB_JOINT__cost2: final NAV=1.457969
+Completed BUDGET20__Ridge_CONTROLS__cost0: final NAV=2.409879
+Completed BUDGET20__Ridge_CONTROLS__cost1: final NAV=2.320600
+Completed BUDGET20__Ridge_CONTROLS__cost2: final NAV=2.234884
+Completed BUDGET20__Ridge_JOINT__cost0: final NAV=2.235738
+Completed BUDGET20__Ridge_JOINT__cost1: final NAV=2.104406
+Completed BUDGET20__HGB_CONTROLS__cost0: final NAV=2.236633
+Completed BUDGET20__Ridge_JOINT__cost2: final NAV=1.980491
+Completed BUDGET20__HGB_CONTROLS__cost1: final NAV=2.110944
+Completed BUDGET20__HGB_CONTROLS__cost2: final NAV=1.991782
+Completed BUDGET20__HGB_JOINT__cost0: final NAV=2.217230
+Completed BUDGET20__HGB_JOINT__cost1: final NAV=2.080785
+Completed BUDGET20__HGB_JOINT__cost2: final NAV=1.951773
+    rule      predictor  total_return  mean_daily_turnover  mean_cash_fraction
+    BOTH   HGB_CONTROLS      0.230232             0.031578            0.028442
+    BOTH      HGB_JOINT      0.148373             0.166687            0.018330
+    BOTH Ridge_CONTROLS      0.353001             0.006416            0.022722
+    BOTH    Ridge_JOINT      0.118576             0.177234            0.022652
+BUDGET20   HGB_CONTROLS      0.166396             0.042819            0.012992
+BUDGET20      HGB_JOINT      0.167677             0.042814            0.015937
+BUDGET20 Ridge_CONTROLS      0.254929             0.022125            0.012275
+BUDGET20    Ridge_JOINT      0.169721             0.042766            0.018402
+     NET   HGB_CONTROLS      0.120797             0.080006            0.013107
+     NET      HGB_JOINT      0.048749             0.251670            0.020725
+     NET Ridge_CONTROLS      0.256072             0.022653            0.012189
+     NET    Ridge_JOINT      0.079425             0.258079            0.024506

@@ -1,0 +1,1017 @@
+{
+  "frozen_at_utc": "2026-10-11T09:50:15.111190+00:00",
+  "protocol_sha256": "e44b55540ca16258df890b9291182637a6776a70b872f823c8abc4a19e0f7b99",
+  "protocol": {
+    "format_version": 1,
+    "scope": "Historical temporal holdout on a previously inspected full-period dataset; 2024 is not an untouched new sample. The 2023-selected model is the sole prespecified confirmation candidate; other 2024 models are descriptive. Five-day decile spreads are gross grouping diagnostics, not executable portfolio returns; no fees, NAV or Sharpe are inferred.",
+    "seed": 1021,
+    "cpu_threads": 4,
+    "factor_columns": [
+      "factor_01",
+      "factor_02",
+      "factor_03",
+      "factor_04",
+      "factor_05",
+      "factor_06",
+      "factor_07",
+      "factor_08",
+      "factor_09",
+      "factor_10",
+      "factor_11",
+      "factor_12",
+      "factor_13",
+      "factor_14",
+      "factor_15",
+      "factor_16",
+      "factor_17",
+      "factor_18",
+      "factor_19",
+      "factor_20"
+    ],
+    "candidate_order": [
+      "HGB",
+      "Ridge",
+      "ElasticNet",
+      "ExtraTrees",
+      "LightGBM",
+      "XGBoost",
+      "CatBoost"
+    ],
+    "model_parameters": {
+      "HGB": {
+        "memory": null,
+        "steps": [
+          [
+            "imputer",
+            {
+              "class": "sklearn.impute._base.SimpleImputer",
+              "params": {
+                "add_indicator": false,
+                "copy": true,
+                "fill_value": null,
+                "keep_empty_features": false,
+                "missing_values": "nan",
+                "strategy": "median"
+              }
+            }
+          ],
+          [
+            "model",
+            {
+              "class": "sklearn.ensemble._hist_gradient_boosting.gradient_boosting.HistGradientBoostingRegressor",
+              "params": {
+                "categorical_features": "from_dtype",
+                "early_stopping": false,
+                "interaction_cst": null,
+                "l2_regularization": 0.2,
+                "learning_rate": 0.065,
+                "loss": "squared_error",
+                "max_bins": 255,
+                "max_depth": null,
+                "max_features": 1.0,
+                "max_iter": 55,
+                "max_leaf_nodes": 17,
+                "min_samples_leaf": 20,
+                "monotonic_cst": null,
+                "n_iter_no_change": 10,
+                "quantile": null,
+                "random_state": 1021,
+                "scoring": "loss",
+                "tol": 1e-07,
+                "validation_fraction": 0.1,
+                "verbose": 0,
+                "warm_start": false
+              }
+            }
+          ]
+        ],
+        "transform_input": null,
+        "verbose": false,
+        "imputer": {
+          "class": "sklearn.impute._base.SimpleImputer",
+          "params": {
+            "add_indicator": false,
+            "copy": true,
+            "fill_value": null,
+            "keep_empty_features": false,
+            "missing_values": "nan",
+            "strategy": "median"
+          }
+        },
+        "model": {
+          "class": "sklearn.ensemble._hist_gradient_boosting.gradient_boosting.HistGradientBoostingRegressor",
+          "params": {
+            "categorical_features": "from_dtype",
+            "early_stopping": false,
+            "interaction_cst": null,
+            "l2_regularization": 0.2,
+            "learning_rate": 0.065,
+            "loss": "squared_error",
+            "max_bins": 255,
+            "max_depth": null,
+            "max_features": 1.0,
+            "max_iter": 55,
+            "max_leaf_nodes": 17,
+            "min_samples_leaf": 20,
+            "monotonic_cst": null,
+            "n_iter_no_change": 10,
+            "quantile": null,
+            "random_state": 1021,
+            "scoring": "loss",
+            "tol": 1e-07,
+            "validation_fraction": 0.1,
+            "verbose": 0,
+            "warm_start": false
+          }
+        },
+        "imputer__add_indicator": false,
+        "imputer__copy": true,
+        "imputer__fill_value": null,
+        "imputer__keep_empty_features": false,
+        "imputer__missing_values": "nan",
+        "imputer__strategy": "median",
+        "model__categorical_features": "from_dtype",
+        "model__early_stopping": false,
+        "model__interaction_cst": null,
+        "model__l2_regularization": 0.2,
+        "model__learning_rate": 0.065,
+        "model__loss": "squared_error",
+        "model__max_bins": 255,
+        "model__max_depth": null,
+        "model__max_features": 1.0,
+        "model__max_iter": 55,
+        "model__max_leaf_nodes": 17,
+        "model__min_samples_leaf": 20,
+        "model__monotonic_cst": null,
+        "model__n_iter_no_change": 10,
+        "model__quantile": null,
+        "model__random_state": 1021,
+        "model__scoring": "loss",
+        "model__tol": 1e-07,
+        "model__validation_fraction": 0.1,
+        "model__verbose": 0,
+        "model__warm_start": false
+      },
+      "Ridge": {
+        "memory": null,
+        "steps": [
+          [
+            "imputer",
+            {
+              "class": "sklearn.impute._base.SimpleImputer",
+              "params": {
+                "add_indicator": false,
+                "copy": true,
+                "fill_value": null,
+                "keep_empty_features": false,
+                "missing_values": "nan",
+                "strategy": "median"
+              }
+            }
+          ],
+          [
+            "scaler",
+            {
+              "class": "sklearn.preprocessing._data.StandardScaler",
+              "params": {
+                "copy": true,
+                "with_mean": true,
+                "with_std": true
+              }
+            }
+          ],
+          [
+            "model",
+            {
+              "class": "sklearn.linear_model._ridge.Ridge",
+              "params": {
+                "alpha": 100,
+                "copy_X": true,
+                "fit_intercept": true,
+                "max_iter": null,
+                "positive": false,
+                "random_state": null,
+                "solver": "auto",
+                "tol": 0.0001
+              }
+            }
+          ]
+        ],
+        "transform_input": null,
+        "verbose": false,
+        "imputer": {
+          "class": "sklearn.impute._base.SimpleImputer",
+          "params": {
+            "add_indicator": false,
+            "copy": true,
+            "fill_value": null,
+            "keep_empty_features": false,
+            "missing_values": "nan",
+            "strategy": "median"
+          }
+        },
+        "scaler": {
+          "class": "sklearn.preprocessing._data.StandardScaler",
+          "params": {
+            "copy": true,
+            "with_mean": true,
+            "with_std": true
+          }
+        },
+        "model": {
+          "class": "sklearn.linear_model._ridge.Ridge",
+          "params": {
+            "alpha": 100,
+            "copy_X": true,
+            "fit_intercept": true,
+            "max_iter": null,
+            "positive": false,
+            "random_state": null,
+            "solver": "auto",
+            "tol": 0.0001
+          }
+        },
+        "imputer__add_indicator": false,
+        "imputer__copy": true,
+        "imputer__fill_value": null,
+        "imputer__keep_empty_features": false,
+        "imputer__missing_values": "nan",
+        "imputer__strategy": "median",
+        "scaler__copy": true,
+        "scaler__with_mean": true,
+        "scaler__with_std": true,
+        "model__alpha": 100,
+        "model__copy_X": true,
+        "model__fit_intercept": true,
+        "model__max_iter": null,
+        "model__positive": false,
+        "model__random_state": null,
+        "model__solver": "auto",
+        "model__tol": 0.0001
+      },
+      "ElasticNet": {
+        "memory": null,
+        "steps": [
+          [
+            "imputer",
+            {
+              "class": "sklearn.impute._base.SimpleImputer",
+              "params": {
+                "add_indicator": false,
+                "copy": true,
+                "fill_value": null,
+                "keep_empty_features": false,
+                "missing_values": "nan",
+                "strategy": "median"
+              }
+            }
+          ],
+          [
+            "scaler",
+            {
+              "class": "sklearn.preprocessing._data.StandardScaler",
+              "params": {
+                "copy": true,
+                "with_mean": true,
+                "with_std": true
+              }
+            }
+          ],
+          [
+            "model",
+            {
+              "class": "sklearn.compose._target.TransformedTargetRegressor",
+              "params": {
+                "check_inverse": true,
+                "func": null,
+                "inverse_func": null,
+                "regressor": {
+                  "class": "sklearn.linear_model._coordinate_descent.ElasticNet",
+                  "params": {
+                    "alpha": 0.001,
+                    "copy_X": true,
+                    "fit_intercept": true,
+                    "l1_ratio": 0.5,
+                    "max_iter": 5000,
+                    "positive": false,
+                    "precompute": false,
+                    "random_state": 1021,
+                    "selection": "cyclic",
+                    "tol": 1e-05,
+                    "warm_start": false
+                  }
+                },
+                "transformer": {
+                  "class": "sklearn.preprocessing._data.StandardScaler",
+                  "params": {
+                    "copy": true,
+                    "with_mean": true,
+                    "with_std": true
+                  }
+                }
+              }
+            }
+          ]
+        ],
+        "transform_input": null,
+        "verbose": false,
+        "imputer": {
+          "class": "sklearn.impute._base.SimpleImputer",
+          "params": {
+            "add_indicator": false,
+            "copy": true,
+            "fill_value": null,
+            "keep_empty_features": false,
+            "missing_values": "nan",
+            "strategy": "median"
+          }
+        },
+        "scaler": {
+          "class": "sklearn.preprocessing._data.StandardScaler",
+          "params": {
+            "copy": true,
+            "with_mean": true,
+            "with_std": true
+          }
+        },
+        "model": {
+          "class": "sklearn.compose._target.TransformedTargetRegressor",
+          "params": {
+            "check_inverse": true,
+            "func": null,
+            "inverse_func": null,
+            "regressor": {
+              "class": "sklearn.linear_model._coordinate_descent.ElasticNet",
+              "params": {
+                "alpha": 0.001,
+                "copy_X": true,
+                "fit_intercept": true,
+                "l1_ratio": 0.5,
+                "max_iter": 5000,
+                "positive": false,
+                "precompute": false,
+                "random_state": 1021,
+                "selection": "cyclic",
+                "tol": 1e-05,
+                "warm_start": false
+              }
+            },
+            "transformer": {
+              "class": "sklearn.preprocessing._data.StandardScaler",
+              "params": {
+                "copy": true,
+                "with_mean": true,
+                "with_std": true
+              }
+            }
+          }
+        },
+        "imputer__add_indicator": false,
+        "imputer__copy": true,
+        "imputer__fill_value": null,
+        "imputer__keep_empty_features": false,
+        "imputer__missing_values": "nan",
+        "imputer__strategy": "median",
+        "scaler__copy": true,
+        "scaler__with_mean": true,
+        "scaler__with_std": true,
+        "model__check_inverse": true,
+        "model__func": null,
+        "model__inverse_func": null,
+        "model__regressor__alpha": 0.001,
+        "model__regressor__copy_X": true,
+        "model__regressor__fit_intercept": true,
+        "model__regressor__l1_ratio": 0.5,
+        "model__regressor__max_iter": 5000,
+        "model__regressor__positive": false,
+        "model__regressor__precompute": false,
+        "model__regressor__random_state": 1021,
+        "model__regressor__selection": "cyclic",
+        "model__regressor__tol": 1e-05,
+        "model__regressor__warm_start": false,
+        "model__regressor": {
+          "class": "sklearn.linear_model._coordinate_descent.ElasticNet",
+          "params": {
+            "alpha": 0.001,
+            "copy_X": true,
+            "fit_intercept": true,
+            "l1_ratio": 0.5,
+            "max_iter": 5000,
+            "positive": false,
+            "precompute": false,
+            "random_state": 1021,
+            "selection": "cyclic",
+            "tol": 1e-05,
+            "warm_start": false
+          }
+        },
+        "model__transformer__copy": true,
+        "model__transformer__with_mean": true,
+        "model__transformer__with_std": true,
+        "model__transformer": {
+          "class": "sklearn.preprocessing._data.StandardScaler",
+          "params": {
+            "copy": true,
+            "with_mean": true,
+            "with_std": true
+          }
+        }
+      },
+      "ExtraTrees": {
+        "memory": null,
+        "steps": [
+          [
+            "imputer",
+            {
+              "class": "sklearn.impute._base.SimpleImputer",
+              "params": {
+                "add_indicator": false,
+                "copy": true,
+                "fill_value": null,
+                "keep_empty_features": false,
+                "missing_values": "nan",
+                "strategy": "median"
+              }
+            }
+          ],
+          [
+            "model",
+            {
+              "class": "sklearn.ensemble._forest.ExtraTreesRegressor",
+              "params": {
+                "bootstrap": false,
+                "ccp_alpha": 0.0,
+                "criterion": "squared_error",
+                "max_depth": 8,
+                "max_features": 1.0,
+                "max_leaf_nodes": null,
+                "max_samples": null,
+                "min_impurity_decrease": 0.0,
+                "min_samples_leaf": 100,
+                "min_samples_split": 2,
+                "min_weight_fraction_leaf": 0.0,
+                "monotonic_cst": null,
+                "n_estimators": 64,
+                "n_jobs": 4,
+                "oob_score": false,
+                "random_state": 1021,
+                "verbose": 0,
+                "warm_start": false
+              }
+            }
+          ]
+        ],
+        "transform_input": null,
+        "verbose": false,
+        "imputer": {
+          "class": "sklearn.impute._base.SimpleImputer",
+          "params": {
+            "add_indicator": false,
+            "copy": true,
+            "fill_value": null,
+            "keep_empty_features": false,
+            "missing_values": "nan",
+            "strategy": "median"
+          }
+        },
+        "model": {
+          "class": "sklearn.ensemble._forest.ExtraTreesRegressor",
+          "params": {
+            "bootstrap": false,
+            "ccp_alpha": 0.0,
+            "criterion": "squared_error",
+            "max_depth": 8,
+            "max_features": 1.0,
+            "max_leaf_nodes": null,
+            "max_samples": null,
+            "min_impurity_decrease": 0.0,
+            "min_samples_leaf": 100,
+            "min_samples_split": 2,
+            "min_weight_fraction_leaf": 0.0,
+            "monotonic_cst": null,
+            "n_estimators": 64,
+            "n_jobs": 4,
+            "oob_score": false,
+            "random_state": 1021,
+            "verbose": 0,
+            "warm_start": false
+          }
+        },
+        "imputer__add_indicator": false,
+        "imputer__copy": true,
+        "imputer__fill_value": null,
+        "imputer__keep_empty_features": false,
+        "imputer__missing_values": "nan",
+        "imputer__strategy": "median",
+        "model__bootstrap": false,
+        "model__ccp_alpha": 0.0,
+        "model__criterion": "squared_error",
+        "model__max_depth": 8,
+        "model__max_features": 1.0,
+        "model__max_leaf_nodes": null,
+        "model__max_samples": null,
+        "model__min_impurity_decrease": 0.0,
+        "model__min_samples_leaf": 100,
+        "model__min_samples_split": 2,
+        "model__min_weight_fraction_leaf": 0.0,
+        "model__monotonic_cst": null,
+        "model__n_estimators": 64,
+        "model__n_jobs": 4,
+        "model__oob_score": false,
+        "model__random_state": 1021,
+        "model__verbose": 0,
+        "model__warm_start": false
+      },
+      "LightGBM": {
+        "memory": null,
+        "steps": [
+          [
+            "imputer",
+            {
+              "class": "sklearn.impute._base.SimpleImputer",
+              "params": {
+                "add_indicator": false,
+                "copy": true,
+                "fill_value": null,
+                "keep_empty_features": false,
+                "missing_values": "nan",
+                "strategy": "median"
+              }
+            }
+          ],
+          [
+            "model",
+            {
+              "class": "lightgbm.sklearn.LGBMRegressor",
+              "params": {
+                "boosting_type": "gbdt",
+                "class_weight": null,
+                "colsample_bytree": 1.0,
+                "importance_type": "split",
+                "learning_rate": 0.05,
+                "max_depth": -1,
+                "min_child_samples": 100,
+                "min_child_weight": 0.001,
+                "min_split_gain": 0.0,
+                "n_estimators": 160,
+                "n_jobs": 4,
+                "num_leaves": 17,
+                "objective": null,
+                "random_state": 1021,
+                "reg_alpha": 0.0,
+                "reg_lambda": 1,
+                "subsample": 1.0,
+                "subsample_for_bin": 200000,
+                "subsample_freq": 0,
+                "deterministic": true,
+                "force_col_wise": true,
+                "device_type": "cpu",
+                "verbosity": -1
+              }
+            }
+          ]
+        ],
+        "transform_input": null,
+        "verbose": false,
+        "imputer": {
+          "class": "sklearn.impute._base.SimpleImputer",
+          "params": {
+            "add_indicator": false,
+            "copy": true,
+            "fill_value": null,
+            "keep_empty_features": false,
+            "missing_values": "nan",
+            "strategy": "median"
+          }
+        },
+        "model": {
+          "class": "lightgbm.sklearn.LGBMRegressor",
+          "params": {
+            "boosting_type": "gbdt",
+            "class_weight": null,
+            "colsample_bytree": 1.0,
+            "importance_type": "split",
+            "learning_rate": 0.05,
+            "max_depth": -1,
+            "min_child_samples": 100,
+            "min_child_weight": 0.001,
+            "min_split_gain": 0.0,
+            "n_estimators": 160,
+            "n_jobs": 4,
+            "num_leaves": 17,
+            "objective": null,
+            "random_state": 1021,
+            "reg_alpha": 0.0,
+            "reg_lambda": 1,
+            "subsample": 1.0,
+            "subsample_for_bin": 200000,
+            "subsample_freq": 0,
+            "deterministic": true,
+            "force_col_wise": true,
+            "device_type": "cpu",
+            "verbosity": -1
+          }
+        },
+        "imputer__add_indicator": false,
+        "imputer__copy": true,
+        "imputer__fill_value": null,
+        "imputer__keep_empty_features": false,
+        "imputer__missing_values": "nan",
+        "imputer__strategy": "median",
+        "model__boosting_type": "gbdt",
+        "model__class_weight": null,
+        "model__colsample_bytree": 1.0,
+        "model__importance_type": "split",
+        "model__learning_rate": 0.05,
+        "model__max_depth": -1,
+        "model__min_child_samples": 100,
+        "model__min_child_weight": 0.001,
+        "model__min_split_gain": 0.0,
+        "model__n_estimators": 160,
+        "model__n_jobs": 4,
+        "model__num_leaves": 17,
+        "model__objective": null,
+        "model__random_state": 1021,
+        "model__reg_alpha": 0.0,
+        "model__reg_lambda": 1,
+        "model__subsample": 1.0,
+        "model__subsample_for_bin": 200000,
+        "model__subsample_freq": 0,
+        "model__deterministic": true,
+        "model__force_col_wise": true,
+        "model__device_type": "cpu",
+        "model__verbosity": -1
+      },
+      "XGBoost": {
+        "memory": null,
+        "steps": [
+          [
+            "imputer",
+            {
+              "class": "sklearn.impute._base.SimpleImputer",
+              "params": {
+                "add_indicator": false,
+                "copy": true,
+                "fill_value": null,
+                "keep_empty_features": false,
+                "missing_values": "nan",
+                "strategy": "median"
+              }
+            }
+          ],
+          [
+            "model",
+            {
+              "class": "xgboost.sklearn.XGBRegressor",
+              "params": {
+                "objective": "reg:squarederror",
+                "base_score": null,
+                "booster": null,
+                "callbacks": null,
+                "colsample_bylevel": null,
+                "colsample_bynode": null,
+                "colsample_bytree": null,
+                "device": "cpu",
+                "early_stopping_rounds": null,
+                "enable_categorical": true,
+                "eval_metric": null,
+                "feature_types": null,
+                "feature_weights": null,
+                "gamma": null,
+                "grow_policy": null,
+                "importance_type": null,
+                "interaction_constraints": null,
+                "learning_rate": 0.05,
+                "max_bin": null,
+                "max_cat_threshold": null,
+                "max_cat_to_onehot": null,
+                "max_delta_step": null,
+                "max_depth": 4,
+                "max_leaves": null,
+                "min_child_weight": 100,
+                "missing": "nan",
+                "monotone_constraints": null,
+                "multi_strategy": null,
+                "n_estimators": 160,
+                "n_jobs": 4,
+                "num_parallel_tree": null,
+                "random_state": 1021,
+                "reg_alpha": null,
+                "reg_lambda": 1,
+                "sampling_method": null,
+                "scale_pos_weight": null,
+                "subsample": null,
+                "tree_method": "hist",
+                "validate_parameters": null,
+                "verbosity": null
+              }
+            }
+          ]
+        ],
+        "transform_input": null,
+        "verbose": false,
+        "imputer": {
+          "class": "sklearn.impute._base.SimpleImputer",
+          "params": {
+            "add_indicator": false,
+            "copy": true,
+            "fill_value": null,
+            "keep_empty_features": false,
+            "missing_values": "nan",
+            "strategy": "median"
+          }
+        },
+        "model": {
+          "class": "xgboost.sklearn.XGBRegressor",
+          "params": {
+            "objective": "reg:squarederror",
+            "base_score": null,
+            "booster": null,
+            "callbacks": null,
+            "colsample_bylevel": null,
+            "colsample_bynode": null,
+            "colsample_bytree": null,
+            "device": "cpu",
+            "early_stopping_rounds": null,
+            "enable_categorical": true,
+            "eval_metric": null,
+            "feature_types": null,
+            "feature_weights": null,
+            "gamma": null,
+            "grow_policy": null,
+            "importance_type": null,
+            "interaction_constraints": null,
+            "learning_rate": 0.05,
+            "max_bin": null,
+            "max_cat_threshold": null,
+            "max_cat_to_onehot": null,
+            "max_delta_step": null,
+            "max_depth": 4,
+            "max_leaves": null,
+            "min_child_weight": 100,
+            "missing": "nan",
+            "monotone_constraints": null,
+            "multi_strategy": null,
+            "n_estimators": 160,
+            "n_jobs": 4,
+            "num_parallel_tree": null,
+            "random_state": 1021,
+            "reg_alpha": null,
+            "reg_lambda": 1,
+            "sampling_method": null,
+            "scale_pos_weight": null,
+            "subsample": null,
+            "tree_method": "hist",
+            "validate_parameters": null,
+            "verbosity": null
+          }
+        },
+        "imputer__add_indicator": false,
+        "imputer__copy": true,
+        "imputer__fill_value": null,
+        "imputer__keep_empty_features": false,
+        "imputer__missing_values": "nan",
+        "imputer__strategy": "median",
+        "model__objective": "reg:squarederror",
+        "model__base_score": null,
+        "model__booster": null,
+        "model__callbacks": null,
+        "model__colsample_bylevel": null,
+        "model__colsample_bynode": null,
+        "model__colsample_bytree": null,
+        "model__device": "cpu",
+        "model__early_stopping_rounds": null,
+        "model__enable_categorical": true,
+        "model__eval_metric": null,
+        "model__feature_types": null,
+        "model__feature_weights": null,
+        "model__gamma": null,
+        "model__grow_policy": null,
+        "model__importance_type": null,
+        "model__interaction_constraints": null,
+        "model__learning_rate": 0.05,
+        "model__max_bin": null,
+        "model__max_cat_threshold": null,
+        "model__max_cat_to_onehot": null,
+        "model__max_delta_step": null,
+        "model__max_depth": 4,
+        "model__max_leaves": null,
+        "model__min_child_weight": 100,
+        "model__missing": "nan",
+        "model__monotone_constraints": null,
+        "model__multi_strategy": null,
+        "model__n_estimators": 160,
+        "model__n_jobs": 4,
+        "model__num_parallel_tree": null,
+        "model__random_state": 1021,
+        "model__reg_alpha": null,
+        "model__reg_lambda": 1,
+        "model__sampling_method": null,
+        "model__scale_pos_weight": null,
+        "model__subsample": null,
+        "model__tree_method": "hist",
+        "model__validate_parameters": null,
+        "model__verbosity": null
+      },
+      "CatBoost": {
+        "memory": null,
+        "steps": [
+          [
+            "imputer",
+            {
+              "class": "sklearn.impute._base.SimpleImputer",
+              "params": {
+                "add_indicator": false,
+                "copy": true,
+                "fill_value": null,
+                "keep_empty_features": false,
+                "missing_values": "nan",
+                "strategy": "median"
+              }
+            }
+          ],
+          [
+            "model",
+            {
+              "class": "catboost.core.CatBoostRegressor",
+              "params": {
+                "iterations": 180,
+                "learning_rate": 0.05,
+                "depth": 6,
+                "l2_leaf_reg": 3,
+                "loss_function": "RMSE",
+                "thread_count": 4,
+                "random_seed": 1021,
+                "verbose": false,
+                "allow_writing_files": false,
+                "task_type": "CPU"
+              }
+            }
+          ]
+        ],
+        "transform_input": null,
+        "verbose": false,
+        "imputer": {
+          "class": "sklearn.impute._base.SimpleImputer",
+          "params": {
+            "add_indicator": false,
+            "copy": true,
+            "fill_value": null,
+            "keep_empty_features": false,
+            "missing_values": "nan",
+            "strategy": "median"
+          }
+        },
+        "model": {
+          "class": "catboost.core.CatBoostRegressor",
+          "params": {
+            "iterations": 180,
+            "learning_rate": 0.05,
+            "depth": 6,
+            "l2_leaf_reg": 3,
+            "loss_function": "RMSE",
+            "thread_count": 4,
+            "random_seed": 1021,
+            "verbose": false,
+            "allow_writing_files": false,
+            "task_type": "CPU"
+          }
+        },
+        "imputer__add_indicator": false,
+        "imputer__copy": true,
+        "imputer__fill_value": null,
+        "imputer__keep_empty_features": false,
+        "imputer__missing_values": "nan",
+        "imputer__strategy": "median",
+        "model__iterations": 180,
+        "model__learning_rate": 0.05,
+        "model__depth": 6,
+        "model__l2_leaf_reg": 3,
+        "model__loss_function": "RMSE",
+        "model__thread_count": 4,
+        "model__random_seed": 1021,
+        "model__verbose": false,
+        "model__allow_writing_files": false,
+        "model__task_type": "CPU"
+      },
+      "Dummy": {
+        "memory": null,
+        "steps": [
+          [
+            "imputer",
+            {
+              "class": "sklearn.impute._base.SimpleImputer",
+              "params": {
+                "add_indicator": false,
+                "copy": true,
+                "fill_value": null,
+                "keep_empty_features": false,
+                "missing_values": "nan",
+                "strategy": "median"
+              }
+            }
+          ],
+          [
+            "model",
+            {
+              "class": "sklearn.dummy.DummyRegressor",
+              "params": {
+                "constant": null,
+                "quantile": null,
+                "strategy": "mean"
+              }
+            }
+          ]
+        ],
+        "transform_input": null,
+        "verbose": false,
+        "imputer": {
+          "class": "sklearn.impute._base.SimpleImputer",
+          "params": {
+            "add_indicator": false,
+            "copy": true,
+            "fill_value": null,
+            "keep_empty_features": false,
+            "missing_values": "nan",
+            "strategy": "median"
+          }
+        },
+        "model": {
+          "class": "sklearn.dummy.DummyRegressor",
+          "params": {
+            "constant": null,
+            "quantile": null,
+            "strategy": "mean"
+          }
+        },
+        "imputer__add_indicator": false,
+        "imputer__copy": true,
+        "imputer__fill_value": null,
+        "imputer__keep_empty_features": false,
+        "imputer__missing_values": "nan",
+        "imputer__strategy": "median",
+        "model__constant": null,
+        "model__quantile": null,
+        "model__strategy": "mean"
+      }
+    },
+    "parameters_sha256": "55445a387c884bbe5a03ae3aa378053fc443ae3bb590c661f901069b7cefba94",
+    "code_sha256": {
+      "compare_models.py": "e04f0d1e71c76ea787d356fc3b6877bf2babe2aacbcf3d46a56e585793f9d084",
+      "test_compare_models.py": "ccc3d55323c9c394d9d7b5916517cfdcf99615304145e965f8ff59eb53a1388c"
+    },
+    "panel_path": "/Users/stellan/Desktop/北京市金融人工智能重点实验室笔试/asset_allocation/outputs/factor_timing/pit_research_panel.csv.gz",
+    "inputs_sha256": {
+      "pit_panel": "57447e720d1a432eba86be9dba06678dca9c062f3f2ed4def86bc0e6dc82a104",
+      "timing_manifest": "dbaa77a2c22ff2567759234d9383e20d3fd9ead39a2e9240b50b87d771ddb09d"
+    },
+    "versions": {
+      "python": "3.12.13",
+      "numpy": "2.5.4",
+      "pandas": "2.3.3",
+      "scikit-learn": "1.9.1",
+      "lightgbm": "4.7.0",
+      "xgboost": "3.4.1",
+      "catboost": "1.2.10"
+    },
+    "threads_environment": {
+      "OMP_NUM_THREADS": "4",
+      "OPENBLAS_NUM_THREADS": "1",
+      "MKL_NUM_THREADS": "1"
+    },
+    "label": "open(t+6 business days) / open(t+1 business day) - 1",
+    "validation": {
+      "training_signal_years": [
+        2021,
+        2022
+      ],
+      "evaluation_signal_year": 2023,
+      "evaluation_exit_before": "2024-01-01"
+    },
+    "confirmation": {
+      "training_signal_years": [
+        2021,
+        2022,
+        2023
+      ],
+      "evaluation_signal_year": 2024
+    },
+    "training_purge": "exit_date strictly before the first evaluation signal date",
+    "fitting": "All training rows; training-only median imputation; no tuning, early stopping or eval_set",
+    "selection": "Highest defined 2023 mean daily RankIC; undefined candidates explicitly ineligible; exact ties use candidate_order",
+    "deciles": "Each tail has n*0.1 weight; all tied cutoff scores share equal fractional inclusion; constant scores undefined",
+    "phases": {
+      "calendar": "Monday-Friday synthetic trading dates",
+      "origin": "2021-01-01",
+      "assignment": "busday_count(origin, signal_date) % 5"
+    },
+    "bootstrap": {
+      "kind": "noncircular moving blocks on complete business-day calendar",
+      "block_days": 20,
+      "draws": 2000,
+      "seed": 1021,
+      "interval": "2.5/97.5 percentiles",
+      "paired": "candidate minus HGB on the same defined dates, resampled jointly"
+    }
+  }
+}

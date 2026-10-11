@@ -1,0 +1,52 @@
+{
+  "status": "completed",
+  "stage": "validation",
+  "started_at_utc": "2026-10-11T09:50:15.006475+00:00",
+  "finished_at_utc": "2026-10-11T09:50:24.933981+00:00",
+  "command": [
+    "asset_allocation/.venv_models/bin/python",
+    "-B",
+    "asset_allocation/compare_models.py",
+    "--stage",
+    "validation",
+    "--out",
+    "asset_allocation/outputs/model_benchmark"
+  ],
+  "scope": "Historical temporal holdout on a previously inspected full-period dataset; 2024 is not an untouched new sample. The 2023-selected model is the sole prespecified confirmation candidate; other 2024 models are descriptive. Five-day decile spreads are gross grouping diagnostics, not executable portfolio returns; no fees, NAV or Sharpe are inferred.",
+  "protocol_sha256": "e44b55540ca16258df890b9291182637a6776a70b872f823c8abc4a19e0f7b99",
+  "selected_model": "Ridge",
+  "code_sha256": {
+    "compare_models.py": "e04f0d1e71c76ea787d356fc3b6877bf2babe2aacbcf3d46a56e585793f9d084",
+    "test_compare_models.py": "ccc3d55323c9c394d9d7b5916517cfdcf99615304145e965f8ff59eb53a1388c"
+  },
+  "inputs_sha256": {
+    "pit_panel": "57447e720d1a432eba86be9dba06678dca9c062f3f2ed4def86bc0e6dc82a104",
+    "timing_manifest": "dbaa77a2c22ff2567759234d9383e20d3fd9ead39a2e9240b50b87d771ddb09d"
+  },
+  "outputs_sha256": {
+    "validation/CatBoost_fit_metadata.json": "a7a238cb3e45930e6f3d7c3a3058bc58f4d9eac1ec65f7ddd8df636900360c5e",
+    "validation/CatBoost_predictions.csv.gz": "e2fa1d29d1e6c45c4c97e5a7aac16964c0d50bece949ce49cc2dbd6e91804e6e",
+    "validation/Dummy_fit_metadata.json": "a7a238cb3e45930e6f3d7c3a3058bc58f4d9eac1ec65f7ddd8df636900360c5e",
+    "validation/Dummy_predictions.csv.gz": "9e99caff3d15d8257136ed6623684993f080bef874a35f0c774d7e5ccf010fdc",
+    "validation/ElasticNet_fit_metadata.json": "cc9d1fb6acf1589315e9458cb8866ec067aa76a7d9e2afffbf0a81d2fadb2eb6",
+    "validation/ElasticNet_predictions.csv.gz": "6e70471a0fa38b30fbfec9c67f7f596c0743d50e8bea1918621479ddbacbe2ef",
+    "validation/ExtraTrees_fit_metadata.json": "a7a238cb3e45930e6f3d7c3a3058bc58f4d9eac1ec65f7ddd8df636900360c5e",
+    "validation/ExtraTrees_predictions.csv.gz": "dd3c079e057b53b85fa5b0cea3df737ffabec9416363fa7ff07a7dafde3c3a4b",
+    "validation/HGB_fit_metadata.json": "a7a238cb3e45930e6f3d7c3a3058bc58f4d9eac1ec65f7ddd8df636900360c5e",
+    "validation/HGB_predictions.csv.gz": "9351589ea3d3c93b8faa45e06b73f1759e94f9f830f851d8e7dad44864ca1e38",
+    "validation/LightGBM_fit_metadata.json": "a7a238cb3e45930e6f3d7c3a3058bc58f4d9eac1ec65f7ddd8df636900360c5e",
+    "validation/LightGBM_predictions.csv.gz": "a5ebe4cad321ba36e4847b26e94e15ee9abeff5a7a351b726a0cca12a034db47",
+    "validation/Ridge_fit_metadata.json": "113d6154fcd73be6e4a75724d03e5c8bfaad86d6da315f9754f4aabb6ddca324",
+    "validation/Ridge_predictions.csv.gz": "f32024d7c601563012fa2cac8034ac355401f98cad7b6acc400e551c3967940b",
+    "validation/XGBoost_fit_metadata.json": "a7a238cb3e45930e6f3d7c3a3058bc58f4d9eac1ec65f7ddd8df636900360c5e",
+    "validation/XGBoost_predictions.csv.gz": "52d03cd3fe9130d95787a89e9f2728fdcf092895e969452f2ac6cc5a80c8d3eb",
+    "validation/daily_metrics.csv": "e76200f3c28b0682abffe421e1fbeef27aa3afe6ded38e99e80f880c0ddadc88",
+    "validation/phases.csv": "af9ad880a0df773c4f86972736343ca82f028d4aa558d2a233d893b36f951eb3",
+    "validation/quarterly.csv": "e02bc252eecc17f7267ae6c0a535da3126fc7944e32d8da78a2f70f2bf4aee61",
+    "validation/split_manifest.json": "e52a61d32a70e2efc9c555995db2f8b1d72114dc74b53057c76897c9a348d68e",
+    "validation/summary.csv": "e560158dffed37d195063afbbda1e610f2c4a8f2655467c48ac02a314e8229e5",
+    "validation/timing.csv": "e2ba0210fd350951f2e5663ede6d084dd0606a3008df133d90bd1794901298a9",
+    "selection.json": "1cc35824aff4043b11f4e50121f153c4f50eb9f9951d8038e74390a627974503",
+    "protocol.json": "e7558489b53c26c2b4fdf918ddc325c4eedc114ff1757988849f11472919f0b9"
+  }
+}

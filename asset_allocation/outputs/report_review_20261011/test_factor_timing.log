@@ -1,0 +1,12 @@
+test_align_before_membership_and_preserve_other_factors (test_factor_timing.FactorTimingTests.test_align_before_membership_and_preserve_other_factors) ... ok
+test_labels_use_business_dates_and_require_actual_endpoints (test_factor_timing.FactorTimingTests.test_labels_use_business_dates_and_require_actual_endpoints) ... ok
+test_latest_missing_snapshot_is_not_replaced_by_old_value (test_factor_timing.FactorTimingTests.test_latest_missing_snapshot_is_not_replaced_by_old_value) ... ok
+test_latest_reference_wins_when_releases_share_a_date (test_factor_timing.FactorTimingTests.test_latest_reference_wins_when_releases_share_a_date) ... ok
+test_paired_ic_uses_same_assets_and_reranks (test_factor_timing.FactorTimingTests.test_paired_ic_uses_same_assets_and_reranks) ... ok
+test_release_close_boundary_and_asset_isolation (test_factor_timing.FactorTimingTests.test_release_close_boundary_and_asset_isolation) ... ok
+test_reordered_release_dates_fail_explicitly (test_factor_timing.FactorTimingTests.test_reordered_release_dates_fail_explicitly) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.057s
+
+OK

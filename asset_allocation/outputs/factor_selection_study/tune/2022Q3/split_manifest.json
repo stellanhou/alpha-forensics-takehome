@@ -1,0 +1,26 @@
+{
+  "fold": "2022Q3",
+  "train": {
+    "rows": 142560,
+    "signal_dates": 383,
+    "signal_start": "2021-01-04",
+    "signal_end": "2022-06-22",
+    "max_exit_date": "2022-06-30",
+    "ordered_keys_sha256": "eeea025b487cebf0d6d50925153b3692a12c300969b62ce991c9c9464af82f86"
+  },
+  "evaluation": {
+    "rows": 22895,
+    "signal_dates": 60,
+    "signal_start": "2022-07-01",
+    "signal_end": "2022-09-22",
+    "max_exit_date": "2022-09-30",
+    "ordered_keys_sha256": "52d394eca856fdf7418375e80a5dbfe6d60eaba8a51f158ee83c29eb9822295d"
+  },
+  "quarter_first_business_day": "2022-07-01",
+  "next_quarter_first_business_day": "2022-10-03",
+  "purged_training_rows": 2274,
+  "purged_evaluation_rows": 2298,
+  "source": "Already purged outer validation training segment",
+  "training_exit_before_quarter_start": true,
+  "evaluation_exit_before_next_quarter": true
+}

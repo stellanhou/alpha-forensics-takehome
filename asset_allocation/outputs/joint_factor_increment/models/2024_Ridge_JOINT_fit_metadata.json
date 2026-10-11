@@ -1,0 +1,529 @@
+{
+  "year": 2024,
+  "predictor": "Ridge_JOINT",
+  "training_rows": 294192,
+  "training_keys_sha256": "bb2fe9578e332df3ef9d0dd32e4497666ad220cf411d60dcde7d3b5035ec4517",
+  "max_training_label_exit": "2023-12-29",
+  "training_mean": 0.0019337457963872835,
+  "input_features": [
+    "industry",
+    "log_market_cap",
+    "factor_01",
+    "factor_02",
+    "factor_03",
+    "factor_04",
+    "factor_05",
+    "factor_06",
+    "factor_07",
+    "factor_08",
+    "factor_09",
+    "factor_10",
+    "factor_11",
+    "factor_12",
+    "factor_13",
+    "factor_14",
+    "factor_15",
+    "factor_16",
+    "factor_17",
+    "factor_18",
+    "factor_19",
+    "factor_20"
+  ],
+  "feature_names": [
+    "industry__industry_IND00",
+    "industry__industry_IND01",
+    "industry__industry_IND02",
+    "industry__industry_IND03",
+    "industry__industry_IND04",
+    "industry__industry_IND05",
+    "industry__industry_IND06",
+    "industry__industry_IND07",
+    "industry__industry_IND08",
+    "industry__industry_IND09",
+    "size__log_market_cap",
+    "factors__factor_01",
+    "factors__factor_02",
+    "factors__factor_03",
+    "factors__factor_04",
+    "factors__factor_05",
+    "factors__factor_06",
+    "factors__factor_07",
+    "factors__factor_08",
+    "factors__factor_09",
+    "factors__factor_10",
+    "factors__factor_11",
+    "factors__factor_12",
+    "factors__factor_13",
+    "factors__factor_14",
+    "factors__factor_15",
+    "factors__factor_16",
+    "factors__factor_17",
+    "factors__factor_18",
+    "factors__factor_19",
+    "factors__factor_20"
+  ],
+  "industry_categories": [
+    "IND00",
+    "IND01",
+    "IND02",
+    "IND03",
+    "IND04",
+    "IND05",
+    "IND06",
+    "IND07",
+    "IND08",
+    "IND09"
+  ],
+  "parameters": {
+    "memory": null,
+    "steps": [
+      [
+        "preprocessing",
+        {
+          "class": "sklearn.compose._column_transformer.ColumnTransformer",
+          "params": {
+            "n_jobs": null,
+            "remainder": "drop",
+            "sparse_threshold": 0,
+            "transformer_weights": null,
+            "transformers": [
+              [
+                "industry",
+                {
+                  "class": "sklearn.preprocessing._encoders.OneHotEncoder",
+                  "params": {
+                    "categories": "auto",
+                    "drop": null,
+                    "dtype": "float64",
+                    "feature_name_combiner": "concat",
+                    "handle_unknown": "error",
+                    "max_categories": null,
+                    "min_frequency": null,
+                    "sparse_output": false
+                  }
+                },
+                [
+                  "industry"
+                ]
+              ],
+              [
+                "size",
+                "passthrough",
+                [
+                  "log_market_cap"
+                ]
+              ],
+              [
+                "factors",
+                {
+                  "class": "sklearn.impute._base.SimpleImputer",
+                  "params": {
+                    "add_indicator": false,
+                    "copy": true,
+                    "fill_value": null,
+                    "keep_empty_features": false,
+                    "missing_values": "nan",
+                    "strategy": "median"
+                  }
+                },
+                [
+                  "factor_01",
+                  "factor_02",
+                  "factor_03",
+                  "factor_04",
+                  "factor_05",
+                  "factor_06",
+                  "factor_07",
+                  "factor_08",
+                  "factor_09",
+                  "factor_10",
+                  "factor_11",
+                  "factor_12",
+                  "factor_13",
+                  "factor_14",
+                  "factor_15",
+                  "factor_16",
+                  "factor_17",
+                  "factor_18",
+                  "factor_19",
+                  "factor_20"
+                ]
+              ]
+            ],
+            "verbose": false,
+            "verbose_feature_names_out": true
+          }
+        }
+      ],
+      [
+        "scaler",
+        {
+          "class": "sklearn.preprocessing._data.StandardScaler",
+          "params": {
+            "copy": true,
+            "with_mean": true,
+            "with_std": true
+          }
+        }
+      ],
+      [
+        "model",
+        {
+          "class": "sklearn.linear_model._ridge.Ridge",
+          "params": {
+            "alpha": 100,
+            "copy_X": true,
+            "fit_intercept": true,
+            "max_iter": null,
+            "positive": false,
+            "random_state": null,
+            "solver": "auto",
+            "tol": 0.0001
+          }
+        }
+      ]
+    ],
+    "transform_input": null,
+    "verbose": false,
+    "preprocessing": {
+      "class": "sklearn.compose._column_transformer.ColumnTransformer",
+      "params": {
+        "n_jobs": null,
+        "remainder": "drop",
+        "sparse_threshold": 0,
+        "transformer_weights": null,
+        "transformers": [
+          [
+            "industry",
+            {
+              "class": "sklearn.preprocessing._encoders.OneHotEncoder",
+              "params": {
+                "categories": "auto",
+                "drop": null,
+                "dtype": "float64",
+                "feature_name_combiner": "concat",
+                "handle_unknown": "error",
+                "max_categories": null,
+                "min_frequency": null,
+                "sparse_output": false
+              }
+            },
+            [
+              "industry"
+            ]
+          ],
+          [
+            "size",
+            "passthrough",
+            [
+              "log_market_cap"
+            ]
+          ],
+          [
+            "factors",
+            {
+              "class": "sklearn.impute._base.SimpleImputer",
+              "params": {
+                "add_indicator": false,
+                "copy": true,
+                "fill_value": null,
+                "keep_empty_features": false,
+                "missing_values": "nan",
+                "strategy": "median"
+              }
+            },
+            [
+              "factor_01",
+              "factor_02",
+              "factor_03",
+              "factor_04",
+              "factor_05",
+              "factor_06",
+              "factor_07",
+              "factor_08",
+              "factor_09",
+              "factor_10",
+              "factor_11",
+              "factor_12",
+              "factor_13",
+              "factor_14",
+              "factor_15",
+              "factor_16",
+              "factor_17",
+              "factor_18",
+              "factor_19",
+              "factor_20"
+            ]
+          ]
+        ],
+        "verbose": false,
+        "verbose_feature_names_out": true
+      }
+    },
+    "scaler": {
+      "class": "sklearn.preprocessing._data.StandardScaler",
+      "params": {
+        "copy": true,
+        "with_mean": true,
+        "with_std": true
+      }
+    },
+    "model": {
+      "class": "sklearn.linear_model._ridge.Ridge",
+      "params": {
+        "alpha": 100,
+        "copy_X": true,
+        "fit_intercept": true,
+        "max_iter": null,
+        "positive": false,
+        "random_state": null,
+        "solver": "auto",
+        "tol": 0.0001
+      }
+    },
+    "preprocessing__n_jobs": null,
+    "preprocessing__remainder": "drop",
+    "preprocessing__sparse_threshold": 0,
+    "preprocessing__transformer_weights": null,
+    "preprocessing__transformers": [
+      [
+        "industry",
+        {
+          "class": "sklearn.preprocessing._encoders.OneHotEncoder",
+          "params": {
+            "categories": "auto",
+            "drop": null,
+            "dtype": "float64",
+            "feature_name_combiner": "concat",
+            "handle_unknown": "error",
+            "max_categories": null,
+            "min_frequency": null,
+            "sparse_output": false
+          }
+        },
+        [
+          "industry"
+        ]
+      ],
+      [
+        "size",
+        "passthrough",
+        [
+          "log_market_cap"
+        ]
+      ],
+      [
+        "factors",
+        {
+          "class": "sklearn.impute._base.SimpleImputer",
+          "params": {
+            "add_indicator": false,
+            "copy": true,
+            "fill_value": null,
+            "keep_empty_features": false,
+            "missing_values": "nan",
+            "strategy": "median"
+          }
+        },
+        [
+          "factor_01",
+          "factor_02",
+          "factor_03",
+          "factor_04",
+          "factor_05",
+          "factor_06",
+          "factor_07",
+          "factor_08",
+          "factor_09",
+          "factor_10",
+          "factor_11",
+          "factor_12",
+          "factor_13",
+          "factor_14",
+          "factor_15",
+          "factor_16",
+          "factor_17",
+          "factor_18",
+          "factor_19",
+          "factor_20"
+        ]
+      ]
+    ],
+    "preprocessing__verbose": false,
+    "preprocessing__verbose_feature_names_out": true,
+    "preprocessing__industry": {
+      "class": "sklearn.preprocessing._encoders.OneHotEncoder",
+      "params": {
+        "categories": "auto",
+        "drop": null,
+        "dtype": "float64",
+        "feature_name_combiner": "concat",
+        "handle_unknown": "error",
+        "max_categories": null,
+        "min_frequency": null,
+        "sparse_output": false
+      }
+    },
+    "preprocessing__size": "passthrough",
+    "preprocessing__factors": {
+      "class": "sklearn.impute._base.SimpleImputer",
+      "params": {
+        "add_indicator": false,
+        "copy": true,
+        "fill_value": null,
+        "keep_empty_features": false,
+        "missing_values": "nan",
+        "strategy": "median"
+      }
+    },
+    "preprocessing__industry__categories": "auto",
+    "preprocessing__industry__drop": null,
+    "preprocessing__industry__dtype": "float64",
+    "preprocessing__industry__feature_name_combiner": "concat",
+    "preprocessing__industry__handle_unknown": "error",
+    "preprocessing__industry__max_categories": null,
+    "preprocessing__industry__min_frequency": null,
+    "preprocessing__industry__sparse_output": false,
+    "preprocessing__factors__add_indicator": false,
+    "preprocessing__factors__copy": true,
+    "preprocessing__factors__fill_value": null,
+    "preprocessing__factors__keep_empty_features": false,
+    "preprocessing__factors__missing_values": "nan",
+    "preprocessing__factors__strategy": "median",
+    "scaler__copy": true,
+    "scaler__with_mean": true,
+    "scaler__with_std": true,
+    "model__alpha": 100,
+    "model__copy_X": true,
+    "model__fit_intercept": true,
+    "model__max_iter": null,
+    "model__positive": false,
+    "model__random_state": null,
+    "model__solver": "auto",
+    "model__tol": 0.0001
+  },
+  "preprocessing_fit_scope": "training only; full industry dummies and natural log market_cap; JOINT adds all 20 PIT factors with training-median imputation",
+  "factor_imputation_medians": {
+    "factor_01": -0.0034414159500000003,
+    "factor_02": 0.00628473075,
+    "factor_03": 0.000151278225,
+    "factor_04": -0.00591566135,
+    "factor_05": -0.0018572625500000001,
+    "factor_06": -0.14236658000000002,
+    "factor_07": -0.0041658762,
+    "factor_08": 0.0057175972000000005,
+    "factor_09": -0.00295204015,
+    "factor_10": -0.0018932995,
+    "factor_11": -0.07705652700000001,
+    "factor_12": 0.0034172832,
+    "factor_13": 0.004025037150000001,
+    "factor_14": -0.00147768035,
+    "factor_15": -0.000324207475,
+    "factor_16": -0.050209321,
+    "factor_17": 0.0012749829,
+    "factor_18": 0.00226996515,
+    "factor_19": -0.0037196577,
+    "factor_20": 0.046093458000000004
+  },
+  "x_scaler_mean": [
+    0.1008287105019851,
+    0.10142356012400065,
+    0.10319451242725838,
+    0.09675314080600424,
+    0.0974873551966063,
+    0.10164450426932072,
+    0.09921411867080002,
+    0.09899317452547995,
+    0.097776282155871,
+    0.10268464132267363,
+    22.763758509397416,
+    0.0006779626001449599,
+    0.0031022506565936614,
+    0.0006782560185742097,
+    -0.027602453799217854,
+    0.00047825964212726605,
+    -0.004409732708049239,
+    0.0015245780517869514,
+    0.003159849587469386,
+    -0.0027390085421788914,
+    -0.0037684208536800713,
+    -0.012033302512095518,
+    0.002672572094245035,
+    -0.0001603003467808085,
+    -0.002117380902935927,
+    -0.0014819384193010096,
+    -0.05718708940540579,
+    0.0009598448983792903,
+    0.003360123947171304,
+    -0.001792911054165216,
+    0.043422755953734
+  ],
+  "x_scaler_scale": [
+    0.30110177953798584,
+    0.30188875695418466,
+    0.3042127627706194,
+    0.29562132965947074,
+    0.29662024673504045,
+    0.30218024260559495,
+    0.2989492888894392,
+    0.298652851858266,
+    0.29701192030605544,
+    0.30354654628000055,
+    0.8890649173289327,
+    1.135381067391897,
+    1.076208399593817,
+    1.021891364413553,
+    1.0080660386297715,
+    1.0305476785701302,
+    1.1265490829446292,
+    1.0820849616972659,
+    1.0077264112481936,
+    1.0996943979917257,
+    0.9991402042904391,
+    1.0235371036833079,
+    1.0112028438660619,
+    1.2250994988044417,
+    1.2140054423970619,
+    1.101312975134049,
+    1.0234151726608356,
+    1.13990699058224,
+    0.9159157042148404,
+    0.9952739253009928,
+    1.003902556101359
+  ],
+  "x_scaler_var": [
+    0.09066228164094184,
+    0.09113682157534277,
+    0.09254540503253318,
+    0.08739197054963348,
+    0.08798357077315627,
+    0.09131289902117622,
+    0.0893706773275014,
+    0.08919352592307539,
+    0.08821608080389062,
+    0.09214050575851652,
+    0.7904364272251019,
+    1.289090168191963,
+    1.158224519356285,
+    1.044261960662993,
+    1.0161971382387198,
+    1.0620285178062845,
+    1.2691128362833852,
+    1.1709078643313735,
+    1.0155125199271633,
+    1.2093277689743842,
+    0.9982811478295406,
+    1.0476282026164143,
+    1.022531191442811,
+    1.5008687819708941,
+    1.4738092141696857,
+    1.21289026919861,
+    1.0473786156324079,
+    1.299387947178259,
+    0.8389015772273669,
+    0.9905701863840461,
+    1.0078203421468421
+  ],
+  "fit_predict_seconds": 0.6625385829829611,
+  "action": "annual joint fit; no tuning"
+}
