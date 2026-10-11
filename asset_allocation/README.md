@@ -6,7 +6,7 @@
 
 此前季度 HGB 的资金账本试验保留为历史参考，见[扩展研究记录](research_upgrade_report.md)和[扩展运行说明](UPGRADE_README.md)。本轮新增年度模型组合比较使用独立输出目录；独立新样本验证仍需额外数据，列为未来研究。
 
-私有研究仓库：[stellanhou/alpha-forensics-takehome](https://github.com/stellanhou/alpha-forensics-takehome)，其中保留季度研究报告、源码与各阶段关键结果。
+公开研究仓库：[stellanhou/alpha-forensics-takehome](https://github.com/stellanhou/alpha-forensics-takehome)，其中保留季度研究报告、源码与各阶段关键结果。
 
 ## 报告阅读与最小复现入口（2026-10-11 整理）
 

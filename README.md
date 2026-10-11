@@ -10,7 +10,7 @@
 
 ## 研究仓库与季度报告
 
-私有 GitHub 仓库：[stellanhou/alpha-forensics-takehome](https://github.com/stellanhou/alpha-forensics-takehome)。仓库归档本题报告、实验源码和关键证据；访问需要仓库授权，提交包仍保留相同的阅读材料。
+公开 GitHub 仓库：[stellanhou/alpha-forensics-takehome](https://github.com/stellanhou/alpha-forensics-takehome)。仓库归档本题报告、实验源码和关键证据；仓库可直接访问，提交包也保留相同的阅读材料。
 
 - [季度模型与季度账本专题报告](asset_allocation/research_upgrade_report.md)
 - [季度研究的运行说明](asset_allocation/UPGRADE_README.md)

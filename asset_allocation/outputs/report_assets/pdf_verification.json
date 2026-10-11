@@ -1,11 +1,10 @@
 {
   "pages": 6,
-  "pages_1_to_5_pixels_and_text_unchanged": true,
-  "page_6_verification_and_gaps_separated": true,
-  "requested_footer_removed": true,
-  "material_counts_and_uncertainty_preserved": true,
-  "page_6_visual_review": "passed",
-  "english_and_digits": "Times New Roman",
-  "checked_characters": 2111,
-  "pdf_sha256": "69638a260a27330c56dafd023a1cf9b57d127d96ae6966bb26cf5b4fdfb80fcd"
+  "page_1_visual_review": "passed",
+  "pages_2_to_6_pixels_unchanged": true,
+  "repository_url": "https://github.com/stellanhou/alpha-forensics-takehome",
+  "repository_visibility": "PUBLIC",
+  "anonymous_repository_http_status": 200,
+  "private_access_note_removed": true,
+  "pdf_sha256": "1764473303b6b33d78b3bc5536c155d6d2eb84a45df3095df6a333ab6c6d3d94"
 }
